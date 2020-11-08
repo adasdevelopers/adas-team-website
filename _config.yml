@@ -1,3 +1,10 @@
+title: Ada's Team 
+baseurl: ""
+
+# Build settings
+sass:
+    sass_dir: _sass
+
 # Handling Reading
 safe                : true
 exclude             : ["Gemfile", "vendor/bundle/", "vendor/cache/", "vendor/gems/", "vendor/ruby/"]
@@ -8,5 +15,3 @@ strict_front_matter : true
 
 timezone            : "America/Edmonton"
 
-sass:
-    sass_dir: _sass
