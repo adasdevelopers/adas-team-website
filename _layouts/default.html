@@ -7,7 +7,21 @@
 
     <body>
 
-        <h1>Hello Della and Debby!</h1>
+        <header>
+            {% include _header.html %}
+        </header>
+
+        <nav>
+            {% include _navigation.html %}
+        </nav>
+
+        <div id="content">
+                {{ content }}
+        </div>
+
+        <footer>
+            {% include _footer.html %}
+        </footer>
 
     </body>
     
