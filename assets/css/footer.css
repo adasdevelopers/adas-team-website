@@ -1,11 +1,23 @@
-#e37_35 { 
-	position:relative;
-	background-color:rgba(255, 255, 255, 1);
-	opacity:1;
+@media only screen and (max-width:620px) {
+	/* For mobile */
+	footer {
+		width:100%;
+	}
+}
+footer { 
+	background-color:#253e4b;
+	/* opacity:1;
 	width:414px;
 	height:737px;
+	position:absolute;
+	left:0px;
+	top:0px; */
+
 }
-#e12_0 { 
+
+
+/*
+#address-bg { 
 	background-color:rgba(37.00000159442425, 62.00000010430813, 75.00000312924385, 1);
 	opacity:1;
 	width:414px;
@@ -14,7 +26,7 @@
 	left:0px;
 	top:0px;
 }
-#e48_29 { 
+#address { 
 	color:rgba(255, 255, 255, 1);
 	opacity:1;
 	width:346px;
@@ -27,7 +39,7 @@
 	letter-spacing:0;
 	line-height:undefined;
 }
-#e34_16 { 
+#divider { 
 	background-color:rgba(248.0000004172325, 187.00000405311584, 218.00000220537186, 1);
 	opacity:1;
 	width:72px;
@@ -36,7 +48,7 @@
 	left:33px;
 	top:160px;
 }
-#e32_37 { 
+#navigation-title { 
 	color:rgba(57.00000040233135, 182.00000435113907, 251.00000023841858, 1);
 	opacity:1;
 	width:184px;
@@ -72,64 +84,64 @@
 	left:33px;
 	top:54px;
 }
-#e34_1 { 
+#facebook-icon { 
 	opacity:1;
 	width:43.30158615112305px;
 	height:43.30158615112305px;
 	position:absolute;
 	left:33px;
 	top:54px;
-	background-image:url(images/efacebook.png);
+	background-image:url(../img/efacebook.png);
 	background-repeat:no-repeat;
 }
-#e34_4 { 
+#twitter-icon { 
 	opacity:1;
 	width:43.30158615112305px;
 	height:43.30158615112305px;
 	position:absolute;
 	left:92.5398941040039px;
 	top:54px;
-	background-image:url(images/etwitter.png);
+	background-image:url(../img/etwitter.png);
 	background-repeat:no-repeat;
 }
-#e34_6 { 
+#instagram-icon { 
 	opacity:1;
 	width:43.30158615112305px;
 	height:43.30158615112305px;
 	position:absolute;
 	left:152.0797882080078px;
 	top:54px;
-	background-image:url(images/einstagram.png);
+	background-image:url(../img/einstagram.png);
 	background-repeat:no-repeat;
 }
-#e34_8 { 
+#linkedin-icon { 
 	opacity:1;
 	width:43.30158615112305px;
 	height:43.30158615112305px;
 	position:absolute;
 	left:211.6187286376953px;
 	top:54px;
-	background-image:url(images/elinkedin.png);
+	background-image:url(../img/elinkedin.png);
 	background-repeat:no-repeat;
 }
-#e34_10 { 
+#github-icon { 
 	opacity:1;
 	width:43.30158615112305px;
 	height:43.30158615112305px;
 	position:absolute;
 	left:271.15863037109375px;
 	top:54px;
-	background-image:url(images/egithub.png);
+	background-image:url(../img/egithub.png);
 	background-repeat:no-repeat;
 }
-#e34_12 { 
+#email-icon { 
 	opacity:1;
 	width:43.30158615112305px;
 	height:43.30158615112305px;
 	position:absolute;
 	left:330.6985168457031px;
 	top:54px;
-	background-image:url(images/eemail.png);
+	background-image:url(../img/eemail.png);
 	background-repeat:no-repeat;
 }
 #e34_15 { 
@@ -157,7 +169,7 @@
 	left:0px;
 	top:0px;
 }
-#e108_225 { 
+#nav-home { 
 	color:rgba(255, 255, 255, 1);
 	opacity:1;
 	width:50px;
@@ -171,7 +183,7 @@
 	letter-spacing:0;
 	line-height:undefined;
 }
-#e108_226 { 
+#nav-about { 
 	color:rgba(255, 255, 255, 1);
 	opacity:1;
 	width:50px;
@@ -185,7 +197,7 @@
 	letter-spacing:0;
 	line-height:undefined;
 }
-#e108_227 { 
+#nav-faq { 
 	color:rgba(255, 255, 255, 1);
 	opacity:1;
 	width:34px;
@@ -199,7 +211,7 @@
 	letter-spacing:0;
 	line-height:undefined;
 }
-#e108_228 { 
+#nav-events { 
 	color:rgba(255, 255, 255, 1);
 	opacity:1;
 	width:54px;
@@ -213,7 +225,7 @@
 	letter-spacing:0;
 	line-height:undefined;
 }
-#e108_348 { 
+#nav-job-board { 
 	color:rgba(255, 255, 255, 1);
 	opacity:1;
 	width:80px;
@@ -227,7 +239,7 @@
 	letter-spacing:0;
 	line-height:undefined;
 }
-#e108_349 { 
+#nav-join { 
 	color:rgba(255, 255, 255, 1);
 	opacity:1;
 	width:31px;
@@ -241,7 +253,7 @@
 	letter-spacing:0;
 	line-height:undefined;
 }
-#e108_350 { 
+#nav-contact { 
 	color:rgba(255, 255, 255, 1);
 	opacity:1;
 	width:66px;
@@ -255,3 +267,4 @@
 	letter-spacing:0;
 	line-height:undefined;
 }
+*/
