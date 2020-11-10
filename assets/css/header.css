@@ -1,0 +1,23 @@
+@media only screen and (max-width:620px) {
+	/* For mobile */
+	header {
+		width:100%;
+	}
+}
+header { 
+	background-color:red;
+	/* opacity:1;
+	width:414px;
+	height:737px;
+	position:absolute;
+	left:0px;
+	top:0px; */
+
+}
+
+#icon-option {
+	height:150px;
+	width: 50%;
+	background-color: black;
+	color:white;
+}
