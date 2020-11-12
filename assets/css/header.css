@@ -1,23 +1,171 @@
-@media only screen and (max-width:620px) {
+@media only screen and (max-width:670px) {
 	/* For mobile */
 	header {
 		width:100%;
 	}
-}
-header { 
-	background-color:black;
-	/* opacity:1;
-	width:414px;
-	height:737px;
-	position:absolute;
-	left:0px;
-	top:0px; */
 
+
+	sidebarMenu li{
+		margin-left: auto;
+		padding-right: 15%;
+    padding-top: 15%;
+    text-align: right;
+	}
+	.smallbar{
+		margin-left: 80%;
+	}
+
+	.hamburger{
+		margin-left: 50%;
+	}
+	#sidebarMenu {
+    height: 100%;
+    padding-top: 28%;
+    position: fixed;
+    left: 0;
+		text-align: right;
+	}
+
+}
+
+*{
+	margin: 0;
+	padding: 0;
+}
+header {
+	/* background-color:grey; */
+	width:100%;
+	height: 100px;
+	position: fixed;
+	display: flex;
+	flex-direction: row;
 }
 
 #icon-option {
-	height:150px;
-	width: 50%;
-	background-color: black;
-	color:white;
+	height:60px;
+	width:60px;
+	margin-top:1%;
+	margin-left:2%;
+	background-image: url('/assets/img/eicon_head_1.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+	position: absolute;
+	z-index: 50;
+	color:black;
+}
+
+.hamburger{
+	height: 100%;
+	margin-left: auto;
+	margin-right: 2%;
+	margin-top: 2%;
+	width: 30px;
+}
+
+#sidebarMenu {
+    height: 100%;
+		padding-top: 7%;
+    position: fixed;
+    left: 0;
+		top:0;
+    width: 100%;
+    transform: translateX(-100%);
+    transition: transform 250ms ease-in-out;
+    background: #253E4B;
+}
+.sidebarMenuInner{
+    margin:auto;
+    padding:0;
+    border-top: 1px solid rgba(255, 255, 255, 0.10);
+}
+.sidebarMenuInner li{
+    list-style: none;
+    color: #fff;
+    padding: 20px;
+    cursor: pointer;
+}
+.sidebarMenuInner li span{
+    display: block;
+    font-size: 14px;
+    color: white;
+}
+.sidebarMenuInner li a{
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+}
+input[type="checkbox"]:checked ~ #sidebarMenu {
+    transform: translateX(0);
+}
+
+input[type=checkbox] {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    display: none;
+}
+.sidebarIconToggle {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    cursor: pointer;
+    position: absolute;
+    z-index: 99;
+    height: 10%;
+    width: 3%;
+
+}
+.spinner {
+		transition: all 0.3s;
+		box-sizing: border-box;
+		position: absolute;
+		height: 3px;
+		width: 100%;
+    background-color: black;
+}
+.horizontal {
+	transition: all 0.3s;
+ box-sizing: border-box;
+ position: relative;
+ float: left;
+ margin-top: 7px;
+}
+.diagonal.part-1 {
+	position: relative;
+	 transition: all 0.3s;
+	 box-sizing: border-box;
+	 float: left;
+}
+.diagonal.part-2 {
+	transition: all 0.3s;
+	box-sizing: border-box;
+	position: relative;
+	float: left;
+	margin-top: 7px;
+}
+input[type=checkbox]:checked ~ .sidebarIconToggle > .horizontal {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    opacity: 0;
+}
+input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-1 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    transform: rotate(135deg);
+    margin-top: 8px;
+		background-color:white;
+}
+input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    transform: rotate(-135deg);
+    margin-top: -10px;
+		background-color:white;
+}
+
+.smallbar
+{
+	width:72px;
+	height:10px;
+	position: absolute;
+	margin-top: 2%;
+	background-color:#F8BBDA;
 }
