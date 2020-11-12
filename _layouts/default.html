@@ -13,13 +13,18 @@
             {% include _header.html %}
         </header>
 
+
         <div id="content">
                 {{ content }}
-
         </div>
 
         <footer>
-            <!-- {% include _footer.html %} -->
+            {% include _footer.html %}
+            
+            <nav>
+                {% include _navigation.html %}
+            </nav>
+
         </footer>
 
     </body>
