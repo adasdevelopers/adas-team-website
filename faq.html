@@ -1,25 +1,27 @@
 ---
 layout: default
 ---
-<div class="big-logo"> </div>
-<div>
-  <h1>FAQ</h1>
-  <h3>Answering your most frequently asked questions</h2>
-</div>
 
-<ul style=color:black>
-  {% for question in site.data.questions %}
-  <li> {{ question["question"] }}</li>
-  <li> {{ question["answer"] }}</li>
-  {% endfor %}
-</ul>
-
-
-    <!--<div id="q1"></div>
-<div id="q2"></div>
-<div id="q3"></div>
-<div id="q4"></div>
-<div id="q5"></div>
-<div id="q6"></div>
-<div id="questions"></div>-->
+<div id="faq-content">
   
+  <div class="page-heading">
+    <div class="big-logo-faq"> </div>
+    <h1>FAQ</h1>
+    <h3>Answering your most frequently asked questions</h2>
+  </div>
+
+  <div id="q1"> 
+    <h1> 
+      {{ site.data.questions[0]["question"] }}
+    </h1>
+    <h3>
+      {{ site.data.questions[0]["answer"]}}
+    </h3>
+  </div>
+  <div id="q2"></div>
+  <div id="q3"></div>
+  <div id="q4"></div>
+  <div id="q5"></div>
+  <div id="q6"></div>
+  <div id="questions"></div>
+</div>
