@@ -1,0 +1,111 @@
+[
+    {
+        "name": "Helen Gezahegn",
+        "role": "President",
+        "description": " Responsible for managing the general executives, setting a strategic direction for Ada's Team, creating meeting agendas, and more.",
+        "contact": 
+            {
+                "LinkedIn" : "https://www.adasteam.ca/www.linkedin.com/in/helengezahegn/",
+                "Github" : " https://github.com/HelenGezahegn",
+                "Resume" : "https://drive.google.com/file/d/1-33a1TZP_NpskvWJMifWAhppUsD9eylC/view?usp=sharing"
+            },
+        "image": ""
+    }
+    {
+        "name": "Katherine Patenio",
+        "role": "VP Administration",
+        "description": "Responsible for organizing and planning meetings, recording meeting minutes, and maintaining internal communication within the executive team and committees.",
+        "contact": 
+            {
+                "LinkedIn" : "https://www.linkedin.com/in/katherine-patenio/",
+                "Github" : "https://github.com/kpatenio "
+            },
+        "image": ""
+    }
+    {
+        "name": "Amrees Almonte",
+        "role": "VP Academic",
+        "description": "Responsible for scheduling Ada’s Base office hours and tutoring services, collecting information regarding student struggles, and advocating for changes on behalf of students to the department.",
+        "contact": 
+            {
+                "LinkedIn" : "https://www.linkedin.com/in/amreesalmonte/",
+                "Github" : "https://github.com/amreesalmonte"
+            },
+        "image": ""
+    }
+    {
+        "name": "Amanda Nguyen",
+        "role": "VP Finance",
+        "description": "Responsible for reimbursements, setting a budget, tracking all incoming and outgoing cash flow, and applying for grants used by the student group for operations.",
+        "contact": 
+            {
+                "LinkedIn" : "https://www.linkedin.com/in/amanda-nguyeen/",
+                "Github" : "https://github.com/amandanguyeen"
+            },
+        "image": ""
+    }
+    {
+        "name": "JuSong Baek",
+        "role": "VP Digital Media",
+        "description": "Responsible for maintaining the website, blog, social media, and Ada’s Base whiteboard/bulletin board. Also, collaborating with VP Communications in making posters and advertising for events.",
+        "contact": 
+            {
+                "LinkedIn" : "https://www.linkedin.com/in/jusongb/",
+                "Github" : "https://github.com/jusongb"
+            },
+        "image": ""
+    }
+    {
+        "name": "Celina Shang",
+        "role": "VP Communications",
+        "description": "Responsible for tracking membership, sending out monthly newsletters, replying to emails, and collaborating with VP Digital Media in making posters and advertising for events.",
+        "contact": 
+            {
+                "LinkedIn" : "https://www.linkedin.com/in/celina-sheng-5163821b3/",
+                "Github" : "https://github.com/csheng2"
+            },
+        "image": ""
+    }
+    {
+        "name": "Dorsa Nahid",
+        "role": "VP Industry Outreach",
+        "description": "Responsible for liaising with companies and industry partners to organize events with Ada's Team to enrich members’ university experiences.",
+        "contact": 
+        "image":
+    }
+    {
+        "name": 
+        "role": 
+        "description": 
+        "contact": 
+        "image":
+    }
+    {
+        "name": 
+        "role": 
+        "description": 
+        "contact": 
+        "image":
+    }
+    {
+        "name": 
+        "role": 
+        "description": 
+        "contact": 
+        "image":
+    }
+    {
+        "name": 
+        "role": 
+        "description": 
+        "contact": 
+        "image":
+    }
+    {
+        "name": 
+        "role": 
+        "description": 
+        "contact": 
+        "image":
+    }
+]
