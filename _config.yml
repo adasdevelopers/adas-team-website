@@ -1,7 +1,7 @@
 title: Ada's Team 
 baseurl: ""
 
-# Build settings
+# # Build settings
 sass:
     sass_dir: _sass
 
