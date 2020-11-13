@@ -2,8 +2,10 @@
 layout: default
 title: About
 ---
+<div class="title">
+    <h1>About</h1>
+</div>
 
-<h1>About</h1>
 <div class="introduction">
     <p>Learn more about Ada's Team.</p>
 </div>
@@ -16,20 +18,20 @@ title: About
          other factor of discrimination or minority group. We embrace and 
          celebrate your differences, striving to foster an inclusive culture 
          and safe space for everyone to collaborate and thrive in.
-        <br>
+    </p>
+    <br><br>
+    <p>
         Subscribe to our mailing list to join our community, and check out 
         what we have planned for the year in the Events tab!
     </p>
 </div>
 
-<div id="values">
-    <h2>Values</h2>
-    <br>
-</div>
 
 <div id="initiatives">
-    <h2>Ada's Initiatives</h2>
-    <div class="initative">
+    <div class="title">
+        <h2>ADA'S INITIATIVES</h2>
+    </div>
+    <div class="initiative">
     {% for initiative in site.data.initiatives %}
         <div class="name">
             <h3>{{ initiative["name"] }}</h3>
@@ -40,10 +42,11 @@ title: About
             {% endif %}
         </div>
         <div class="description">
-            {{ initiative["description"] }}
+            <p>{{ initiative["description"] }}</p>
         </div>
         <div class="contact">
-            {% for contact in initiative["contact"] %}
+            <p>
+                {% for contact in initiative["contact"] %}
                 {% if contact["email"] != "" %}
                     {{ contact["email"] }}
                 {% endif %}
@@ -53,6 +56,7 @@ title: About
                 {% if contact["other"] != "" %}
                     {{ contact["other"] }}
                 {% endif %}
+            </p>
             <br>
             {% endfor %}
         </div>
@@ -62,7 +66,10 @@ title: About
 </div>
 
 <div id="the-team">
-    <h2>Meet the Team</h2>
+    <div class="title">
+        <h2>MEET THE TEAM</h2>
+        <h3>2020-2021</h3>
+    </div>
     <div class="executive">
     {% for executive in site.data.executives %}
         <div class="image">
@@ -71,12 +78,20 @@ title: About
             {% endif %}
         </div>
         <div class="name">
-            <h4>{{ executive["name"] }}</h4>
+            <p>
+                <h4>{{ executive["name"] }}</h4>
+            </p>
+        </div>
+        <div class="role">
+            <p>
+                <em>{{ executive["role"] }}</em>
+            </p>
         </div>
         <div class="description">
-            {{ executive["description"] }}
+            <p>{{ executive["description"] }}</p>
         </div>
         <div class="contact">
+            <p>
             {% for contact in executive["contact"] %}
                 {{ contact["LinkedIn"] }} 
                 {{ contact["Github"] }}
@@ -84,6 +99,8 @@ title: About
                     {{ contact["Other"] }}
                 {% endif %}
             {% endfor %}
+            </p>
+
         </div>
         <br>
     {% endfor %}
