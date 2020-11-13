@@ -7,7 +7,7 @@
             {
                 "LinkedIn" : "https://www.adasteam.ca/www.linkedin.com/in/helengezahegn/",
                 "Github" : " https://github.com/HelenGezahegn",
-                "Resume" : "https://drive.google.com/file/d/1-33a1TZP_NpskvWJMifWAhppUsD9eylC/view?usp=sharing"
+                "Other" : "https://drive.google.com/file/d/1-33a1TZP_NpskvWJMifWAhppUsD9eylC/view?usp=sharing"
             },
         "image": ""
     },
@@ -18,7 +18,8 @@
         "contact": 
             {
                 "LinkedIn" : "https://www.linkedin.com/in/katherine-patenio/",
-                "Github" : "https://github.com/kpatenio "
+                "Github" : "https://github.com/kpatenio",
+                "Other" : ""
             },
         "image": ""
     },
@@ -29,7 +30,8 @@
         "contact": 
             {
                 "LinkedIn" : "https://www.linkedin.com/in/amreesalmonte/",
-                "Github" : "https://github.com/amreesalmonte"
+                "Github" : "https://github.com/amreesalmonte",
+                "Other" : ""
             },
         "image": ""
     },
@@ -40,7 +42,8 @@
         "contact": 
             {
                 "LinkedIn" : "https://www.linkedin.com/in/amanda-nguyeen/",
-                "Github" : "https://github.com/amandanguyeen"
+                "Github" : "https://github.com/amandanguyeen",
+                "Other" : ""
             },
         "image": ""
     },
@@ -51,7 +54,8 @@
         "contact": 
             {
                 "LinkedIn" : "https://www.linkedin.com/in/jusongb/",
-                "Github" : "https://github.com/jusongb"
+                "Github" : "https://github.com/jusongb",
+                "Other" : ""
             },
         "image": ""
     },
@@ -62,7 +66,8 @@
         "contact": 
             {
                 "LinkedIn" : "https://www.linkedin.com/in/celina-sheng-5163821b3/",
-                "Github" : "https://github.com/csheng2"
+                "Github" : "https://github.com/csheng2",
+                "Other" : ""
             },
         "image": ""
     },
@@ -74,7 +79,7 @@
             {
                 "LinkedIn" : "https://www.linkedin.com/in/dorsanahid/",
                 "Github" : "https://github.com/dorsMaster",
-                "Website" : "https://sites.ualberta.ca/~dorsa/"
+                "Other" : "https://sites.ualberta.ca/~dorsa/"
             },
         "image": ""
     },
@@ -85,7 +90,8 @@
         "contact": 
             {
                 "LinkedIn" : "https://www.linkedin.com/in/riona-wiberg-3949791b2/",
-                "Github" : "https://github.com/riona-wiberg"
+                "Github" : "https://github.com/riona-wiberg",
+                "Other" : ""
             },
         "image": ""
     },
@@ -96,7 +102,8 @@
         "contact": 
             {
                 "LinkedIn" : "https://www.linkedin.com/in/amyxiang/",
-                "Github" : "https://github.com/amy-xiang"
+                "Github" : "https://github.com/amy-xiang",
+                "Other" : ""
             },
         "image": ""
     },
@@ -108,7 +115,7 @@
             {
                 "LinkedIn" : "https://www.linkedin.com/in/chelsea-hong/",
                 "Github" : "https://github.com/tembear",
-                "Email" : "mailto:chelsea4@ualberta.ca"
+                "Other" : "mailto:chelsea4@ualberta.ca"
             },
         "image": ""
     },
@@ -119,7 +126,8 @@
         "contact": 
             {
                 "LinkedIn" : "https://www.linkedin.com/in/monicab8/",
-                "Github" : "https://github.com/bui1"
+                "Github" : "https://github.com/bui1",
+                "Other" : ""
             },
         "image": ""
     }
