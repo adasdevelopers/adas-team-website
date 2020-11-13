@@ -1,1 +1,92 @@
+---
+layout: default
+title: About
+---
+
 <h1>About</h1>
+<div class="introduction">
+    <p>Learn more about Ada's Team.</p>
+</div>
+
+<div class="text">
+    <p>Our goal is to promote diversity in computing science, games, 
+        technology, engineering, and mathematics. By diversity, we include 
+        but are not limited to the following categories: gender, race, 
+        ethnicity, religion, ability, sexuality, social class, and any
+         other factor of discrimination or minority group. We embrace and 
+         celebrate your differences, striving to foster an inclusive culture 
+         and safe space for everyone to collaborate and thrive in.
+        <br>
+        Subscribe to our mailing list to join our community, and check out 
+        what we have planned for the year in the Events tab!
+    </p>
+</div>
+
+<div id="values">
+    <h2>Values</h2>
+    <br>
+</div>
+
+<div id="initiatives">
+    <h2>Ada's Initiatives</h2>
+    <div class="initative">
+    {% for initiative in site.data.initiatives %}
+        <div class="name">
+            <h3>{{ initiative["name"] }}</h3>
+        </div>
+        <div class="bot-image">
+            {% if initiative["image"] != "" %}
+                {{ initiative["image"] }}
+            {% endif %}
+        </div>
+        <div class="description">
+            {{ initiative["description"] }}
+        </div>
+        <div class="contact">
+            {% for contact in initiative["contact"] %}
+                {% if contact["email"] != "" %}
+                    {{ contact["email"] }}
+                {% endif %}
+                {% if contact["instagram"] != "" %}
+                    {{ contact["instagram"] }}
+                {% endif %}
+                {% if contact["other"] != "" %}
+                    {{ contact["other"] }}
+                {% endif %}
+            <br>
+            {% endfor %}
+        </div>
+        <br>
+    {% endfor %}
+    </div>
+</div>
+
+<div id="the-team">
+    <h2>Meet the Team</h2>
+    <div class="executive">
+    {% for executive in site.data.executives %}
+        <div class="image">
+            {% if executive["image"] != "" %}
+                {{ executive["image"] }}
+            {% endif %}
+        </div>
+        <div class="name">
+            <h4>{{ executive["name"] }}</h4>
+        </div>
+        <div class="description">
+            {{ executive["description"] }}
+        </div>
+        <div class="contact">
+            {% for contact in executive["contact"] %}
+                {{ contact["LinkedIn"] }} 
+                {{ contact["Github"] }}
+                {% if contact["Other"] != "" %}
+                    {{ contact["Other"] }}
+                {% endif %}
+            {% endfor %}
+        </div>
+        <br>
+    {% endfor %}
+    </div>
+
+</div>
