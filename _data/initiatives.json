@@ -7,7 +7,8 @@
                 "email" : "mailto:adasdevelopers@gmail.com",
                 "instagram" : "https://www.instagram.com/adasdevelopers/",
                 "other" : "http://tinyurl.com/y5n3vjxv"
-            }
+            },
+        "image" : "eada_bot_scarf.png"
     },
     {
         "name" : "Ada's Students",
@@ -17,7 +18,8 @@
                 "email" : "",
                 "instagram" : "",
                 "other" : ""
-            }
+            },
+        "image" : "eada_bot_sleepy.png"
     },
     {
         "name" : "Ada's Mentors",
@@ -27,7 +29,8 @@
                 "email" : "mailto:adasmentors@gmail.com",
                 "instagram" : "https://www.instagram.com/adasmentors/",
                 "other" : ""
-            }
+            },
+        "image" : "eada_bot_hands_up.png"
     },
     {
         "name" : "Ada's Podcast",
@@ -37,6 +40,7 @@
                 "email" : "",
                 "instagram" : "",
                 "other" : "https://open.spotify.com/show/32lOHUjFvXAHwNbnFK2BZS?si=2UOoaCDPRwCRrzfaSQbzZw"
-            }
+            },
+        "image" : "eplace_holder_only.png"
     }
 ]
