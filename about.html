@@ -69,8 +69,8 @@ title: About
         <h2>MEET THE TEAM</h2>
         <h3>2020-2021</h3>
     </div>
-    <div class="executive">
     {% for executive in site.data.executives %}
+    <div class="executive">
         <div class="image">
             {% if executive["image"] != "" %}
                 {{ executive["image"] }}
@@ -102,7 +102,7 @@ title: About
             {% endif %}
         </div>
         <br>
-    {% endfor %}
     </div>
+    {% endfor %}
 
 </div>
