@@ -3,21 +3,19 @@ layout: default
 title: About
 ---
 <div class="title">
+    <img src="../assets/img/eicon_body_2.png" alt="standing bot">
     <h1>About</h1>
 </div>
 
 <div class="introduction">
-    <p>Learn more about Ada's Team.</p>
-</div>
-
-<div class="text">
-    <p>Our goal is to promote diversity in computing science, games, 
+    <p class="small">Learn more about Ada's Team.</p><br>
+    <p class="large">Our goal is to promote diversity in computing science, games, 
         technology, engineering, and mathematics. By diversity, we include 
         but are not limited to the following categories: gender, race, 
         ethnicity, religion, ability, sexuality, social class, and any
-         other factor of discrimination or minority group. We embrace and 
-         celebrate your differences, striving to foster an inclusive culture 
-         and safe space for everyone to collaborate and thrive in.
+        other factor of discrimination or minority group. We embrace and 
+        celebrate your differences, striving to foster an inclusive culture 
+        and safe space for everyone to collaborate and thrive in.
     </p>
     <br><br>
     <p>
@@ -26,6 +24,7 @@ title: About
     </p>
 </div>
 
+<div class="divider-thick"></div>
 
 <div id="initiatives">
     <div class="title">
@@ -38,7 +37,7 @@ title: About
         </div>
         <div class="bot-image">
             {% if initiative["image"] != "" %}
-                {{ initiative["image"] }}
+                <img src="../assets/img/{{ initiative.image }}" alt="bot-image">
             {% endif %}
         </div>
         <div class="description">
@@ -91,16 +90,16 @@ title: About
             <p>{{ executive["description"] }}</p>
         </div>
         <div class="contact">
-            <p>
-            {% for contact in executive["contact"] %}
-                {{ contact["LinkedIn"] }} 
-                {{ contact["Github"] }}
-                {% if contact["Other"] != "" %}
-                    {{ contact["Other"] }}
-                {% endif %}
-            {% endfor %}
-            </p>
-
+            <img class="LinkedIn" src="../assets/img/elinkedin.png" href="{{ executive.contact.LinkedIn }}"
+                alt="LinkedIn">
+            <img class="Github" src="../assets/img/egithub.png" href="{{ executive.contact.Github }}"
+                alt="Github">
+            {% if executive.contact.Other != "" %}
+                <img class="Contact" src="../assets/img/eemail.png" href="{{ executive.contact.Other }}"
+                    alt="Contact">    
+            {% else %}
+                <br>
+            {% endif %}
         </div>
         <br>
     {% endfor %}
