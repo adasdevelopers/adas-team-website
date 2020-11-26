@@ -1,0 +1,108 @@
+---
+layout: default
+title: About
+---
+<div class="title">
+    <img src="../assets/img/eicon_body_2.png" alt="standing bot">
+    <h1>About</h1>
+</div>
+
+<div class="introduction">
+    <p class="small">Learn more about Ada's Team.</p><br>
+    <p class="large">Our goal is to promote diversity in computing science, games, 
+        technology, engineering, and mathematics. By diversity, we include 
+        but are not limited to the following categories: gender, race, 
+        ethnicity, religion, ability, sexuality, social class, and any
+        other factor of discrimination or minority group. We embrace and 
+        celebrate your differences, striving to foster an inclusive culture 
+        and safe space for everyone to collaborate and thrive in.
+    </p>
+    <br><br>
+    <p>
+        Subscribe to our mailing list to join our community, and check out 
+        what we have planned for the year in the Events tab!
+    </p>
+</div>
+
+<div class="divider-thick"></div>
+
+<div id="initiatives">
+    <div class="title">
+        <h2>ADA'S INITIATIVES</h2>
+    </div>
+    <div class="initiative">
+    {% for initiative in site.data.initiatives %}
+        <div class="name">
+            <h3>{{ initiative["name"] }}</h3>
+        </div>
+        <div class="bot-image">
+            {% if initiative["image"] != "" %}
+                <img src="../assets/img/{{ initiative.image }}" alt="bot-image">
+            {% endif %}
+        </div>
+        <div class="description">
+            <p>{{ initiative["description"] }}</p>
+        </div>
+        <div class="contact">
+            <p>
+                {% for contact in initiative["contact"] %}
+                {% if contact["email"] != "" %}
+                    {{ contact["email"] }}
+                {% endif %}
+                {% if contact["instagram"] != "" %}
+                    {{ contact["instagram"] }}
+                {% endif %}
+                {% if contact["other"] != "" %}
+                    {{ contact["other"] }}
+                {% endif %}
+            </p>
+            <br>
+            {% endfor %}
+        </div>
+        <br>
+    {% endfor %}
+    </div>
+</div>
+
+<div id="the-team">
+    <div class="title">
+        <h2>MEET THE TEAM</h2>
+        <h3>2020-2021</h3>
+    </div>
+    {% for executive in site.data.executives %}
+    <div class="executive">
+        <div class="image">
+            {% if executive["image"] != "" %}
+                {{ executive["image"] }}
+            {% endif %}
+        </div>
+        <div class="name">
+            <p>
+                <h4>{{ executive["name"] }}</h4>
+            </p>
+        </div>
+        <div class="role">
+            <p>
+                <em>{{ executive["role"] }}</em>
+            </p>
+        </div>
+        <div class="description">
+            <p>{{ executive["description"] }}</p>
+        </div>
+        <div class="contact">
+            <img class="LinkedIn" src="../assets/img/elinkedin.png" href="{{ executive.contact.LinkedIn }}"
+                alt="LinkedIn">
+            <img class="Github" src="../assets/img/egithub.png" href="{{ executive.contact.Github }}"
+                alt="Github">
+            {% if executive.contact.Other != "" %}
+                <img class="Contact" src="../assets/img/eemail.png" href="{{ executive.contact.Other }}"
+                    alt="Contact">    
+            {% else %}
+                <br>
+            {% endif %}
+        </div>
+        <br>
+    </div>
+    {% endfor %}
+
+</div>
