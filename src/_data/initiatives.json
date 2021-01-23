@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Ada's Developers",
+    "description": "Open-source technical opportunities within an agile team to prepare students for entering the tech industry.",
+    "contact": {
+      "email": "mailto:adasdevelopers@gmail.com",
+      "instagram": "https://www.instagram.com/adasdevelopers/",
+      "other": "http://tinyurl.com/y5n3vjxv"
+    },
+    "image": "eada_bot_scarf.png"
+  },
+  {
+    "name": "Ada's Students",
+    "description": "A collaborative space to organize mini-study groups, tutors, room-sitters, and crash courses.",
+    "contact": {
+      "email": "",
+      "instagram": "",
+      "other": ""
+    },
+    "image": "eada_bot_sleepy.png"
+  },
+  {
+    "name": "Ada's Mentors",
+    "description": "Mentoring underprivileged high school students lacking the confidence and exposure to university.",
+    "contact": {
+      "email": "mailto:adasmentors@gmail.com",
+      "instagram": "https://www.instagram.com/adasmentors/",
+      "other": ""
+    },
+    "image": "eada_bot_hands_up.png"
+  },
+  {
+    "name": "Ada's Podcast",
+    "description": " A series aimed at enriching the experiences of university students amidst the current COVID-19 pandemic.",
+    "contact": {
+      "email": "",
+      "instagram": "",
+      "other": "https://open.spotify.com/show/32lOHUjFvXAHwNbnFK2BZS?si=2UOoaCDPRwCRrzfaSQbzZw"
+    },
+    "image": "eplace_holder_only.png"
+  }
+]

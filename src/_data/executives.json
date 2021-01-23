@@ -1,0 +1,123 @@
+[
+  {
+    "name": "Helen Gezahegn",
+    "role": "President",
+    "description": " Responsible for managing the general executives, setting a strategic direction for Ada's Team, creating meeting agendas, and more.",
+    "contact": {
+      "LinkedIn": "https://www.adasteam.ca/www.linkedin.com/in/helengezahegn/",
+      "Github": " https://github.com/HelenGezahegn",
+      "Other": "https://drive.google.com/file/d/1-33a1TZP_NpskvWJMifWAhppUsD9eylC/view?usp=sharing"
+    },
+    "image": ""
+  },
+  {
+    "name": "Katherine Patenio",
+    "role": "VP Administration",
+    "description": "Responsible for organizing and planning meetings, recording meeting minutes, and maintaining internal communication within the executive team and committees.",
+    "contact": {
+      "LinkedIn": "https://www.linkedin.com/in/katherine-patenio/",
+      "Github": "https://github.com/kpatenio",
+      "Other": ""
+    },
+    "image": ""
+  },
+  {
+    "name": "Amrees Almonte",
+    "role": "VP Academic",
+    "description": "Responsible for scheduling Ada’s Base office hours and tutoring services, collecting information regarding student struggles, and advocating for changes on behalf of students to the department.",
+    "contact": {
+      "LinkedIn": "https://www.linkedin.com/in/amreesalmonte/",
+      "Github": "https://github.com/amreesalmonte",
+      "Other": ""
+    },
+    "image": ""
+  },
+  {
+    "name": "Amanda Nguyen",
+    "role": "VP Finance",
+    "description": "Responsible for reimbursements, setting a budget, tracking all incoming and outgoing cash flow, and applying for grants used by the student group for operations.",
+    "contact": {
+      "LinkedIn": "https://www.linkedin.com/in/amanda-nguyeen/",
+      "Github": "https://github.com/amandanguyeen",
+      "Other": ""
+    },
+    "image": ""
+  },
+  {
+    "name": "JuSong Baek",
+    "role": "VP Digital Media",
+    "description": "Responsible for maintaining the website, blog, social media, and Ada’s Base whiteboard/bulletin board. Also, collaborating with VP Communications in making posters and advertising for events.",
+    "contact": {
+      "LinkedIn": "https://www.linkedin.com/in/jusongb/",
+      "Github": "https://github.com/jusongb",
+      "Other": ""
+    },
+    "image": ""
+  },
+  {
+    "name": "Celina Shang",
+    "role": "VP Communications",
+    "description": "Responsible for tracking membership, sending out monthly newsletters, replying to emails, and collaborating with VP Digital Media in making posters and advertising for events.",
+    "contact": {
+      "LinkedIn": "https://www.linkedin.com/in/celina-sheng-5163821b3/",
+      "Github": "https://github.com/csheng2",
+      "Other": ""
+    },
+    "image": ""
+  },
+  {
+    "name": "Dorsa Nahid",
+    "role": "VP Industry Outreach",
+    "description": "Responsible for liaising with companies and industry partners to organize events with Ada's Team to enrich members’ university experiences.",
+    "contact": {
+      "LinkedIn": "https://www.linkedin.com/in/dorsanahid/",
+      "Github": "https://github.com/dorsMaster",
+      "Other": "https://sites.ualberta.ca/~dorsa/"
+    },
+    "image": ""
+  },
+  {
+    "name": "Riona Wiberg",
+    "role": "VP Campus Outreach",
+    "description": "Responsible for acting as a liaison between Ada's Team and other student groups on campus with similar goals or missions. Including but not limited to: Student Group Services, BearsDen, TeamUP Science, and WISEST.",
+    "contact": {
+      "LinkedIn": "https://www.linkedin.com/in/riona-wiberg-3949791b2/",
+      "Github": "https://github.com/riona-wiberg",
+      "Other": ""
+    },
+    "image": ""
+  },
+  {
+    "name": "Amy Xiang",
+    "role": "VP Conference Finance",
+    "description": "Responsible for applying for grants, talking to professors regarding fundraising for conferences, and handling reimbursements for students attending conferences.",
+    "contact": {
+      "LinkedIn": "https://www.linkedin.com/in/amyxiang/",
+      "Github": "https://github.com/amy-xiang",
+      "Other": ""
+    },
+    "image": ""
+  },
+  {
+    "name": "Chelsea Hong",
+    "role": "VP Conference Operations",
+    "description": "Responsible for booking accommodations at conferences in foreign cities, coordinating flights to and from the event, and handling other logistics in the conference city.",
+    "contact": {
+      "LinkedIn": "https://www.linkedin.com/in/chelsea-hong/",
+      "Github": "https://github.com/tembear",
+      "Other": "mailto:chelsea4@ualberta.ca"
+    },
+    "image": ""
+  },
+  {
+    "name": "Monica Bui",
+    "role": "VP Conference Relations",
+    "description": "Responsible for increasing the presence of Ada's Team and the University of Alberta at conferences by hosting events, bringing promotional materials, and coordinating with the university.",
+    "contact": {
+      "LinkedIn": "https://www.linkedin.com/in/monicab8/",
+      "Github": "https://github.com/bui1",
+      "Other": ""
+    },
+    "image": ""
+  }
+]
