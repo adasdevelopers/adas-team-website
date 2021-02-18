@@ -51,9 +51,9 @@ function App() {
 
       <footer>
         <Footer />
-        <nav>
+        {/* <nav>
           <Navigation />
-        </nav>
+        </nav> */}
         <div className="divider-thin"></div>
         <p>© Copyright 2020 Ada's Team</p>
       </footer>
