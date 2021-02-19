@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-function Header() {
+function Navbar() {
   return (
     <header>
       <div id="icon-option"></div>
@@ -45,4 +45,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default Navbar;

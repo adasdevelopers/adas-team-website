@@ -1,3 +1,37 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: Noto Sans;
+        font-weight: 400;
+        src: url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap")
+
+    }
+    @font-face {
+        font-family: Rubik;
+        src: url("https://fonts.googleapis.com/css2?family=Noto+Sans&family=Rubik:wght@700&display=swap");
+    }
+}
+
+
+/* Custom Styles for Classes */
+@layer utilities {
+    .divider-thick {
+        width: 4.5em;
+        height: 0.625em;
+        background-color: pink;
+        margin-bottom: 29px;
+        margin-top: 62.7px;
+    }
+
+    .divider-thin {
+        width: 17em;
+        height: 0.01em;
+        background-color: pink;
+        margin-bottom: 1.38em;
+        margin-right: 2.44em;
+        margin-top: 5.13em;
+      }
+}
