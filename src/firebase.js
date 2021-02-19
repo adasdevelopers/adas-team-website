@@ -11,7 +11,75 @@ const firebaseConfig = {
 };
 
 firebase.initializeApp(firebaseConfig);
-export const db = firebase.firestore();
+const db = firebase.firestore();
 //
 // const userRef = firestore.doc(`users/${user.uid}`);
 // const snapshot = await userRef.get();
+
+let execs = [];
+let jobs = [];
+let questions = [];
+let initiatives = [];
+
+db.collection("execsutives")
+  .get()
+  .then((querySnapshot) => {
+    querySnapshot.forEach((doc) => {
+      // doc.data() is never undefined for query doc snapshots
+      
+
+      execs.push(doc.data());
+      // const execs = doc.data();
+      // console.log(doc.id, " => ", doc.data());
+    });
+  })
+  .catch((error) => {
+    console.log("Error getting documents: ", error);
+  });
+
+db.collection("job-postings")
+  .get()
+  .then((querySnapshot) => {
+    querySnapshot.forEach((doc) => {
+      // doc.data() is never undefined for query doc snapshots
+      jobs.push(doc.data());
+      // const execs = doc.data();
+      // console.log(doc.id, " => ", doc.data());
+    });
+  })
+  .catch((error) => {
+    console.log("Error getting documents: ", error);
+});
+
+db.collection("questions")
+  .get()
+  .then((querySnapshot) => {
+    querySnapshot.forEach((doc) => {
+      // doc.data() is never undefined for query doc snapshots
+      questions.push(doc.data());
+      // const execs = doc.data();
+      // console.log(doc.id, " => ", doc.data());
+    });
+  })
+  .catch((error) => {
+    console.log("Error getting documents: ", error);
+});
+
+db.collection("initiatives")
+  .get()
+  .then((querySnapshot) => {
+    querySnapshot.forEach((doc) => {
+      // doc.data() is never undefined for query doc snapshots
+      initiatives.push(doc.data());
+      // const execs = doc.data();
+      // console.log(doc.id, " => ", doc.data());
+    });
+  })
+  .catch((error) => {
+    console.log("Error getting documents: ", error);
+});
+
+
+
+
+export { execs, jobs, questions, initiatives };

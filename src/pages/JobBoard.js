@@ -1,21 +1,15 @@
-import { db } from "../firebase";
+import { jobs } from "../firebase";
 
-db.collection("job-postings")
-  .get()
-  .then((querySnapshot) => {
-    querySnapshot.forEach((doc) => {
-      // doc.data() is never undefined for query doc snapshots
-      console.log(doc.id, " => ", doc.data());
-    });
-  })
-  .catch((error) => {
-    console.log("Error getting documents: ", error);
-  });
+const temp = JSON.stringify(jobs.company);
+console.log(temp);
 
 function JobBoard() {
   return (
     <div>
       <h1>Job Board</h1>
+      <p>
+         {/* { temp } */}
+      </p>
     </div>
   );
 }
