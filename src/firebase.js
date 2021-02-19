@@ -1,15 +1,85 @@
-import firebase from 'firebase';
+import firebase from "firebase";
+import "firebase/firestore";
 
-const firebaseApp = firebase.initializeApp({
-    apiKey: "AIzaSyBMgYcu4ifbQd5o29cfYbLuZ4SWYfdYHuI",
-    authDomain: "freakyjolly-c91ee.firebaseapp.com",
-    databaseURL: "https://freakyjolly-c91ee.firebaseio.com",
-    projectId: "freakyjolly-c91ee",
-    storageBucket: "freakyjolly-c91ee.appspot.com",
-    messagingSenderId: "997516632089",
-    appId: "1:997516632089:web:46746c6f9815f43e2c4a88",
-    measurementId: "G-V6X4RQ389S"
+const firebaseConfig = {
+  apiKey: "AIzaSyAJiMxedmef79J8Q3r0y-i6ejM5Q0DKDCA",
+  authDomain: "adas-website-345a1.firebaseapp.com",
+  projectId: "adas-website-345a1",
+  storageBucket: "adas-website-345a1.appspot.com",
+  messagingSenderId: "618207126821",
+  appId: "1:618207126821:web:e98f773948b792419a66cc",
+};
+
+firebase.initializeApp(firebaseConfig);
+const db = firebase.firestore();
+//
+// const userRef = firestore.doc(`users/${user.uid}`);
+// const snapshot = await userRef.get();
+
+let execs = [];
+let jobs = [];
+let questions = [];
+let initiatives = [];
+
+db.collection("execsutives")
+  .get()
+  .then((querySnapshot) => {
+    querySnapshot.forEach((doc) => {
+      // doc.data() is never undefined for query doc snapshots
+      
+
+      execs.push(doc.data());
+      // const execs = doc.data();
+      // console.log(doc.id, " => ", doc.data());
+    });
+  })
+  .catch((error) => {
+    console.log("Error getting documents: ", error);
+  });
+
+db.collection("job-postings")
+  .get()
+  .then((querySnapshot) => {
+    querySnapshot.forEach((doc) => {
+      // doc.data() is never undefined for query doc snapshots
+      jobs.push(doc.data());
+      // const execs = doc.data();
+      // console.log(doc.id, " => ", doc.data());
+    });
+  })
+  .catch((error) => {
+    console.log("Error getting documents: ", error);
 });
 
-const db = firebaseApp.firestore();
-export default db;
+db.collection("questions")
+  .get()
+  .then((querySnapshot) => {
+    querySnapshot.forEach((doc) => {
+      // doc.data() is never undefined for query doc snapshots
+      questions.push(doc.data());
+      // const execs = doc.data();
+      // console.log(doc.id, " => ", doc.data());
+    });
+  })
+  .catch((error) => {
+    console.log("Error getting documents: ", error);
+});
+
+db.collection("initiatives")
+  .get()
+  .then((querySnapshot) => {
+    querySnapshot.forEach((doc) => {
+      // doc.data() is never undefined for query doc snapshots
+      initiatives.push(doc.data());
+      // const execs = doc.data();
+      // console.log(doc.id, " => ", doc.data());
+    });
+  })
+  .catch((error) => {
+    console.log("Error getting documents: ", error);
+});
+
+
+
+
+export { execs, jobs, questions, initiatives };
