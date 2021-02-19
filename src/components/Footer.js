@@ -8,8 +8,8 @@ import email from "../assets/img/eemail.png";
 
 function Footer() {
   return (
-    <div>
-      <div className="social-icons">
+    <footer className="bg-navy text-center text-xs absolute bottom-0 w-full">
+      {/* <div className="social-icons">
         <a href="#">
           <img src={facebook} alt="facebook" />
         </a>
@@ -28,8 +28,8 @@ function Footer() {
         <a href="#">
           <img src={email} alt="email" />
         </a>
-      </div>
-      <div id="address">
+      </div> */}
+      {/* <div id="address">
         <div className="divider-thick"></div>
         <div className="address-heading">Our Office Location</div>
         <p>CSC 1-32</p>
@@ -41,8 +41,8 @@ function Footer() {
           <br />
           Edmonton, AB T6G 2S4
         </p>
-      </div>
-    </div>
+      </div> */}
+    </footer>
   );
 }
 
