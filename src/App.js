@@ -1,4 +1,5 @@
 // Import componenets
+import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import Navigation from "./components/Navigation";
@@ -15,7 +16,7 @@ import Join from "./pages/Join";
 // Import Styles
 
 ////// commented to use tailwind
-// import "../src/_sass/main.css";
+import "../src/_sass/main.scss";
 
 // Import React libraries
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
@@ -24,6 +25,8 @@ function App() {
   return (
 
     <div>
+
+      <Header />
 
       <Router className="App">
         <Navbar />
@@ -53,13 +56,12 @@ function App() {
                 <Home />
               </Route>
             </Switch>
-
           </div>
 
         </div>
       </Router>
 
-      <Footer />
+      <Footer className="absolute inset-x-0 bottom-0 w-full"/>
 
 
     </div>
