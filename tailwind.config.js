@@ -9,7 +9,7 @@ module.exports = {
       'pink': '#f8bbda',
       'black': '#000000',
       'light-blue': '#deeffc'
-    }
+    },
   },
   variants: {
     extend: {},
