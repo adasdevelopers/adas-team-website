@@ -16,6 +16,8 @@ import mentor_image from "../assets/img/eada_bot_hands_up.png";
 import podcast_image from "../assets/img/eplace_holder_only.png";
 const images = [dev_image, student_image, mentor_image, podcast_image];
 
+
+
 function About() {
   return (
     <div>

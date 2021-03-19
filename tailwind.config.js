@@ -7,8 +7,12 @@ module.exports = {
       'navy': '#253e4b',
       'white': '#ffffff',
       'pink': '#f8bbda',
-      'black': '#000000',
+      'black': '#080E11',
       'light-blue': '#deeffc'
+    },
+    fontFamily: {
+      title: ['Spartan', 'sans-serif'],
+      body: ['Open\\ Sans', 'sans-serif']
     },
   },
   variants: {
