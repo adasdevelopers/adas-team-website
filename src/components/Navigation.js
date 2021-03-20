@@ -1,10 +1,14 @@
 import React, { useState } from 'react' 
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fab } from '@fortawesome/free-brands-svg-icons'
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars } from '@fortawesome/free-solid-svg-icons'
-import {useTransition, animated} from 'react-spring'
+import { faBars, faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { useTransition, animated } from 'react-spring'
 
 
 function Navigation() {
+    library.add(fab, faEnvelope); //importing brand icons for social-media
 
     const [showMenu, setShowMenu] = useState(false)
 
@@ -23,7 +27,7 @@ function Navigation() {
 
     return (
         <nav>
-            <span className="text-xl">
+            <span className="text-xl p-3">
                 <FontAwesomeIcon 
                     icon={faBars}
                     onClick={() => setShowMenu(!showMenu)}
@@ -50,16 +54,33 @@ function Navigation() {
                         key={key} 
                         style={props}
                         className="fixed bg-black top-0 left-0 w-4/5 h-full z-50 shadow p-3
-                                text-white font-title"
-                    >
-                        <span className="font-bold">
-                            Menu
-                        </span>
-                        <ul>
-                            <li>Home</li>
-                            <li>About</li>
-
+                                text-white font-title">
+                    <div className="p-3">
+                      <div id="hamburger-menu"></div>
+                      <ul className="space-y-6">
+                        <li>Home</li>
+                        <li>About</li>
+                        <li>FAQ</li>
+                        <li>Events</li>
+                        <li>Job Board</li>
+                        <li>Join</li>
+                        <li>Contact</li> 
                         </ul>
+                      <div className="divider-thick"></div>
+                      <div id="hamburger-social-media-icons"
+                        className="space-x-5 text-3xl">
+                        <FontAwesomeIcon icon={['fab', 'facebook']} />
+                        <FontAwesomeIcon icon={['fab', 'twitter']} />
+                        <FontAwesomeIcon icon={['fab', 'instagram']} />
+                        <FontAwesomeIcon icon={['fab', 'linkedin']} />
+                        <FontAwesomeIcon icon={['fab', 'github']} />
+                        <FontAwesomeIcon icon={'faEnvelope'} />
+
+
+                      </div>
+                    </div>
+
+
                     </animated.div>
                 )
             }
