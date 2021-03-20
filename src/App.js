@@ -1,7 +1,6 @@
 // Import componenets
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import Navbar from "./components/Navbar";
 
 // Import pages
 import Home from "./pages/Home";
@@ -13,7 +12,6 @@ import JobBoard from "./pages/JobBoard";
 import Join from "./pages/Join";
 
 // Import Styles
-
 import "../src/_sass/main.scss";
 
 // Import React libraries
@@ -24,35 +22,33 @@ function App() {
 
     <div>
 
-      <Header />
-
-      <div id="body" className="">
+      <div id="body">
         <Router className="App">
-          {/* <Navbar /> */}
+          <Header />
 
           <div id="content">
             <div className="md:container md:mx-auto">
               <Switch>
-                <Route exact path="/connect">
-                  <Connect />
-                </Route>
-                <Route exact path="/events">
-                  <Events />
-                </Route>
-                <Route exact path="/faq">
-                  <FAQ />
+                <Route exact path="/">
+                  <Home />
                 </Route>
                 <Route exact path="/about">
                   <About />
                 </Route>
+                <Route exact path="/faq">
+                  <FAQ />
+                </Route>
+                <Route exact path="/events">
+                  <Events />
                 <Route exact path="/jobboard">
                   <JobBoard />
+                </Route>
                 </Route>
                 <Route exact path="/join">
                   <Join />
                 </Route>
-                <Route exact path="/">
-                  <Home />
+                <Route exact path="/connect">
+                  <Connect />
                 </Route>
               </Switch>
             </div>

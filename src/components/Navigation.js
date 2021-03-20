@@ -1,7 +1,8 @@
 import React, { useState } from 'react' 
+import {Link} from 'react-router-dom'
+// Import icons
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { useTransition, animated } from 'react-spring'
@@ -58,14 +59,28 @@ function Navigation() {
                     <div className="p-3">
                       <div id="hamburger-menu"></div>
                       <ul className="space-y-6">
-                        <li>Home</li>
-                        <li>About</li>
-                        <li>FAQ</li>
-                        <li>Events</li>
-                        <li>Job Board</li>
-                        <li>Join</li>
-                        <li>Contact</li> 
-                        </ul>
+                        <li key="Home">
+                          <Link to="/">Home</Link>
+                        </li>
+                        <li key="About">
+                          <Link to="/about">About</Link>
+                        </li>
+                        <li key="FAQ">
+                          <Link to="/faq">FAQ</Link>
+                        </li>
+                        <li key="Events">
+                          <Link to="/events">Events</Link>
+                        </li>
+                        <li key="JobBoard">
+                          <Link to="/jobboard">Job Board</Link>
+                        </li>
+                        <li key="JoinUs">
+                          <Link to="/join">Join</Link>
+                        </li>
+                        <li key="Contact">
+                          <Link to="/connect">Contact</Link>
+                        </li>
+                      </ul>
                       <div className="divider-thick"></div>
                       <div id="hamburger-social-media-icons"
                         className="space-x-5 text-3xl">
@@ -75,8 +90,6 @@ function Navigation() {
                         <FontAwesomeIcon icon={['fab', 'linkedin']} />
                         <FontAwesomeIcon icon={['fab', 'github']} />
                         <FontAwesomeIcon icon={'faEnvelope'} />
-
-
                       </div>
                     </div>
 
