@@ -1,6 +1,7 @@
 // Import componenets
-import Footer from "./components/Footer";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Navbar from "./components/Navbar";
 import Navigation from "./components/Navigation";
 
 // Import pages
@@ -13,51 +14,60 @@ import JobBoard from "./pages/JobBoard";
 import Join from "./pages/Join";
 
 // Import Styles
-import "../src/_sass/main.css";
+
+////// commented to use tailwind
+import "../src/_sass/main.scss";
 
 // Import React libraries
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
   return (
-    <Router className="App">
+
+    <div>
+
       <Header />
 
-      <div id="content">
-        <Switch>
-          <Route exact path="/connect">
-            <Connect />
-          </Route>
-          <Route exact path="/events">
-            <Events />
-          </Route>
-          <Route exact path="/faq">
-            <FAQ />
-          </Route>
-          <Route exact path="/about">
-            <About />
-          </Route>
-          <Route exact path="/jobboard">
-            <JobBoard />
-          </Route>
-          <Route exact path="/join">
-            <Join />
-          </Route>
-          <Route exact path="/">
-            <Home />
-          </Route>
-        </Switch>
-      </div>
+      <Router className="App">
+        <Navbar />
 
-      <footer>
-        <Footer />
-        {/* <nav>
-          <Navigation />
-        </nav> */}
-        <div className="divider-thin"></div>
-        <p>© Copyright 2020 Ada's Team</p>
-      </footer>
-    </Router>
+        <div id="content">
+          <div className="md:container md:mx-auto">
+            <Switch>
+              <Route exact path="/connect">
+                <Connect />
+              </Route>
+              <Route exact path="/events">
+                <Events />
+              </Route>
+              <Route exact path="/faq">
+                <FAQ />
+              </Route>
+              <Route exact path="/about">
+                <About />
+              </Route>
+              <Route exact path="/jobboard">
+                <JobBoard />
+              </Route>
+              <Route exact path="/join">
+                <Join />
+              </Route>
+              <Route exact path="/">
+                <Home />
+              </Route>
+            </Switch>
+          </div>
+
+        </div>
+      </Router>
+
+      <Footer className="absolute inset-x-0 bottom-0 w-full"/>
+
+
+    </div>
+   
+
+
   );
 }
 
