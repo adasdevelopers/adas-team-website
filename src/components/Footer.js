@@ -9,10 +9,10 @@ import email from "../assets/img/eemail.png";
 function Footer() {
   return (
     <footer>
-      <div className="m-0 bg-navy text-xs text-white">
+      <div className="m-0 bg-black text-xs text-white">
 
         <div className="py-8 mx-8">
-          <div id="socialMedia" className="space-x-4">
+          <div id="social-media-icons" className="content-evenly space-x-4">
               <a href="#" className="inline-block">
                 <img src={facebook} alt="facebook" />
               </a>
@@ -43,10 +43,26 @@ function Footer() {
               8900 114 St NW<br />
               Edmonton, AB T6G 2S4
             </p>
+
+            <div id="footer-nav">
+              <h3 className="font-title text-blue text-lg bold pt-3">NAVIGATION</h3>
+              <nav className="grid grid-cols-2 gap-2">
+                <ul>Home</ul>
+                <ul>JobBoard</ul>
+                <ul>About</ul>
+                <ul>Join</ul>
+                <ul>FAQ</ul>
+                <ul>Contact</ul>
+                <ul>Events</ul>
+              </nav>
+            </div>
+
             <div className="divider-thin"></div>
             <p>© Copyright 2020 Ada's Team</p> 
           </div>
         </div>
+
+
 
 
        

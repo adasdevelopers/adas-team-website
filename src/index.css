@@ -34,4 +34,9 @@
         margin-right: 2.44em;
         margin-top: 5.13em;
       }
+
+    #social-media-icons > a > img {
+        width: 33.3px;
+        height: 33.3px;
+    }
 }
