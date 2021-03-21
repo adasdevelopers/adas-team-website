@@ -1,8 +1,6 @@
 // Import componenets
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import Navbar from "./components/Navbar";
-import Navigation from "./components/Navigation";
 
 // Import pages
 import Home from "./pages/Home";
@@ -14,8 +12,6 @@ import JobBoard from "./pages/JobBoard";
 import Join from "./pages/Join";
 
 // Import Styles
-
-////// commented to use tailwind
 import "../src/_sass/main.scss";
 
 // Import React libraries
@@ -26,40 +22,41 @@ function App() {
 
     <div>
 
-      <Header />
+      <div id="body">
+        <Router className="App">
+          <Header />
 
-      <Router className="App">
-        <Navbar />
+          <div id="content">
+            <div className="md:container md:mx-auto">
+              <Switch>
+                <Route exact path="/">
+                  <Home />
+                </Route>
+                <Route exact path="/about">
+                  <About />
+                </Route>
+                <Route exact path="/faq">
+                  <FAQ />
+                </Route>
+                <Route exact path="/events">
+                  <Events />
+                <Route exact path="/jobboard">
+                  <JobBoard />
+                </Route>
+                </Route>
+                <Route exact path="/join">
+                  <Join />
+                </Route>
+                <Route exact path="/connect">
+                  <Connect />
+                </Route>
+              </Switch>
+            </div>
 
-        <div id="content">
-          <div className="md:container md:mx-auto">
-            <Switch>
-              <Route exact path="/connect">
-                <Connect />
-              </Route>
-              <Route exact path="/events">
-                <Events />
-              </Route>
-              <Route exact path="/faq">
-                <FAQ />
-              </Route>
-              <Route exact path="/about">
-                <About />
-              </Route>
-              <Route exact path="/jobboard">
-                <JobBoard />
-              </Route>
-              <Route exact path="/join">
-                <Join />
-              </Route>
-              <Route exact path="/">
-                <Home />
-              </Route>
-            </Switch>
           </div>
-
-        </div>
-      </Router>
+        </Router>
+      </div>
+ 
 
       <Footer className="absolute inset-x-0 bottom-0 w-full"/>
 

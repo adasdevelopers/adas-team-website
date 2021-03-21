@@ -4,7 +4,7 @@ import Navigation from "./Navigation"
 
 function Header() {
     return (
-        <header className="border-b p-3 flex justify-between items-center">
+        <header className="shadow-md p-3 flex justify-between items-center">
             <a href="/" className="inline-block">
               <img id="home-icon" src={icon} alt="adas-team-icon" />
             </a>
