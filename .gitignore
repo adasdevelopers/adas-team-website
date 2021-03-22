@@ -35,5 +35,5 @@ _site/
 vendor/
 .eslintcache
 
-yarn.lock 
+yarn.lock
 package-lock.json
