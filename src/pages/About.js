@@ -20,43 +20,33 @@ const images = [dev_image, student_image, mentor_image, podcast_image];
 
 function About() {
   return (
-    <div>
-      <div className="title">
-        <img src={initiative_image} alt="standing bot" />
-        <h1>About</h1>
+    <div id="about-title" className="p-7">
+      <div className="text-center my-12">
+        <h1 className="font-title text-5xl">About</h1>
+        <h3 className="font-body text-xl">Learn more about Ada's Team.</h3>
       </div>
 
-      <div className="introduction">
-        <p className="small">Learn more about Ada's Team.</p>
-        <br />
-        <p className="large">
-          Our goal is to promote diversity in computing science, games, technology, engineering, and
-          mathematics. By diversity, we include but are not limited to the following categories:
+      <div id="about-goal" className="my-6 mb-8">
+        <p className="text-base">
+          In Ada's Team, our goal is to <b>promote diversity in computing science, games, technology, engineering, and
+          mathematics.</b> By diversity, we include but are not limited to the following categories:
           gender, race, ethnicity, religion, ability, sexuality, social class, and any other factor
-          of discrimination or minority group. We embrace and celebrate your differences, striving
-          to foster an inclusive culture and safe space for everyone to collaborate and thrive in.
-        </p>
-        <br />
-        <br />
-        <p>
-          Subscribe to our mailing list to join our community, and check out what we have planned
-          for the year in the Events tab!
+          of discrimination or minority group. <br /> 
+          <b>We embrace and celebrate your differences, striving
+          to foster an inclusive culture and safe space for everyone to collaborate and thrive in.</b>
         </p>
       </div>
 
-      <div className="divider-thick"></div>
 
       <div id="initiatives">
-        <div className="title">
-          <h2>ADA'S INITIATIVES</h2>
-        </div>
+        <h2 className="font-title text-blue text-3xl">OUR INITIATIVES</h2>
         {initiatives.map((initiative, i) => (
           <div className="initiative">
-            <div className="name">
-              <h3>{initiative["name"]}</h3>
-            </div>
+            <h3 className="font-title text-2xl">{initiative["name"]}</h3>
+  
             <div className="bot-image">
-              {initiative["image"] !== "" && <img src={images[i]} alt="bot" />}
+              {initiative["image"] !== "" && <img src={images[i]} alt="adas-team-bot"
+                className="" />}
             </div>
             <div className="description">
               <p>{initiative["description"]}</p>
