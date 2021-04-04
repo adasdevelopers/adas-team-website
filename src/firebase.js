@@ -43,8 +43,7 @@ db.collection("job-postings")
     querySnapshot.forEach((doc) => {
       // doc.data() is never undefined for query doc snapshots
       jobs.push(doc.data());
-      // const execs = doc.data();
-      // console.log(doc.id, " => ", doc.data());
+      console.log("Doc Data" + doc.data());
     });
   })
   .catch((error) => {
@@ -78,7 +77,6 @@ db.collection("initiatives")
   .catch((error) => {
     console.log("Error getting documents: ", error);
 });
-
 
 
 

@@ -34,3 +34,6 @@ _site/
 .bundle/
 vendor/
 .eslintcache
+
+package-lock.json
+yarn.lock

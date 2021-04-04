@@ -1,7 +1,9 @@
 function Join() {
   return (
-    <div>
-      <h1>Join Us</h1>
+    <div className="page">
+      <div className="page-title">
+        <h1>Join Us</h1>
+      </div>
     </div>
   );
 }
