@@ -2,11 +2,10 @@ import questions from "../_data/questions.json";
 
 function FAQ() {
   return (
-    <div id="faq-content">
-      <div class="page-heading">
-        <div class="big-logo-faq"></div>
+    <div className="page">
+      <div className="page-title">
         <h1>FAQ</h1>
-        <h2>Answering your most frequently asked questions</h2>
+        <h3>Answering your most frequently asked questions</h3>
       </div>
 
       <div id="questions">
@@ -14,19 +13,23 @@ function FAQ() {
           if (i % 2 == 0) {
             return (
               <div id={`q${i}`} className="left-question">
-                <h2>{question["question"]}</h2>
-                <h3>{question["answer"]}</h3>
+                <h4>{question["question"]}</h4>
+                <p>{question["answer"]}</p>
+                <div className="divider-thin"></div>
               </div>
+              
             );
           } else {
             return (
               <div id={`q${i}`} className="right-question">
-                <h2>{question["question"]}</h2>
-                <h3>{question["answer"]}</h3>
+                <h4>{question["question"]}</h4>
+                <p>{question["answer"]}</p>
+                <div className="divider-thin"></div>
               </div>
             );
           }
         })}
+        
       </div>
     </div>
   );

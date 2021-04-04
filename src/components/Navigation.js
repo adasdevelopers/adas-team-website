@@ -84,12 +84,12 @@ function Navigation() {
                       <div className="divider-thick"></div>
                       <div id="hamburger-social-media-icons"
                         className="space-x-5 text-3xl">
-                        <FontAwesomeIcon icon={['fab', 'facebook']} />
-                        <FontAwesomeIcon icon={['fab', 'twitter']} />
-                        <FontAwesomeIcon icon={['fab', 'instagram']} />
-                        <FontAwesomeIcon icon={['fab', 'linkedin']} />
-                        <FontAwesomeIcon icon={['fab', 'github']} />
-                        <FontAwesomeIcon icon={'faEnvelope'} />
+                        <FontAwesomeIcon icon={['fab', 'facebook']}/>
+                        <FontAwesomeIcon icon={['fab', 'twitter']}/>
+                        <FontAwesomeIcon icon={['fab', 'instagram']}/>
+                        <FontAwesomeIcon icon={['fab', 'linkedin']}/>
+                        <FontAwesomeIcon icon={['fab', 'github']}/>
+                        <FontAwesomeIcon icon={faEnvelope}/>
                       </div>
                     </div>
 
