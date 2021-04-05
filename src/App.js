@@ -40,10 +40,11 @@ function App() {
                 </Route>
                 <Route exact path="/events">
                   <Events />
+                  </Route>
                 <Route exact path="/jobboard">
                   <JobBoard />
                 </Route>
-                </Route>
+                
                 <Route exact path="/join">
                   <Join />
                 </Route>

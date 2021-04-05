@@ -1,3 +1,4 @@
+import { render } from '@testing-library/react';
 import React from 'react';
 import db from "../firebase";
 
@@ -25,22 +26,24 @@ class JobBoard extends React.Component {
       <div className="JobBoard">
         <h1>Jobs Postings</h1>
         {
-          this.state.jobs && this.state.jobs.map(job => {
-            return (
+          this.state.jobs &&
+          this.state.jobs.map( job => {
+            return(
               <div>
-                <p>{
-                  job.company
-                }</p>
-                <p>{
-                  job.title
-                }</p>
+                <p>{ job.company }</p>
+                <p>{ job.website }</p>
+                <p>{ job.job_title }</p>
+              
+                
                 <br></br>
-              </div>
+                </div>
             )
           })
-        } </div>
+        }
+        </div>
     )
   }
+  
 }
 
 export default JobBoard;
