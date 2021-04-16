@@ -24,7 +24,7 @@ function Home() {
         </div> */}
      
 
-        <div id="home-information" className="bg-black px-8 py-2 py-6">
+        <div id="home-information" className="bg-black w-full px-8 py-2 py-6">
           <h2 className="font-title text-blue text-2xl">COVID 19 UPDATE</h2>
           <p className="font-body text-white">
             Due to COVID-19, all Ada's Team events can be assumed to operate in a virtual manner until

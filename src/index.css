@@ -3,15 +3,39 @@
 @tailwind utilities;
 
 @layer base {
-    @font-face {
-        font-family: Noto Sans;
-        font-weight: 400;
-        src: url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap")
 
+    h1 {
+        @apply text-5xl;
+        @apply font-title;
     }
-    @font-face {
-        font-family: Rubik;
-        src: url("https://fonts.googleapis.com/css2?family=Noto+Sans&family=Rubik:wght@700&display=swap");
+    h2 {
+        @apply text-3xl;
+        @apply font-title;
+    }
+    h3 {
+        @apply text-xl;
+        @apply font-body;
+    }
+
+    h4 {
+        @apply font-title;
+    }
+
+    a {
+        @apply hover:text-blue;
+    }
+
+    p {
+        @apply text-base;
+    }
+
+    .page {
+        @apply p-7;
+    }
+
+    .page-title {
+        @apply text-center;
+        @apply my-12;
     }
 }
 
