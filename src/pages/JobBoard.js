@@ -1,20 +1,49 @@
-// import { jobs } from "../firebase";
+import { render } from '@testing-library/react';
+import React from 'react';
+import db from "../firebase";
 
+class JobBoard extends React.Component {
 
-// console.log(jobs[0]["company"]);
-// const temp = JSON.stringify(jobs[0]["job-title"]);
-// console.log(temp);
+  state = {
+    jobs: null
+  }
 
-function JobBoard() {
-  return (
+  componentDidMount() {
+    console.log("mounted")
+    db.collection("job-postings").get().then(snapshot => {
+      const jobs = []
+      snapshot.forEach(doc => {
+        const data = doc.data()
+        jobs.push(data)
+      })
+      this.setState({ jobs: jobs })
 
-    <div className="page">
-      <div className="page-title">
-        <h1>Job Board</h1>
-      </div>
-    </div>
+    }).catch(error => console.log(error))
+  }
 
-  );
+  render() {
+    return (
+      <div className="JobBoard">
+        <h1>Jobs Postings</h1>
+        {
+          this.state.jobs &&
+          this.state.jobs.map( job => {
+            return(
+              <div>
+                <p>{ job.company }</p>
+                <p>{ job.website }</p>
+                <p>{ job.job_title }</p>
+              
+                
+                <br></br>
+                </div>
+            )
+          })
+        }
+        </div>
+    )
+  }
+  
 }
 
 export default JobBoard;

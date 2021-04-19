@@ -1,38 +1,47 @@
-import questions from "../_data/questions.json";
+import React from 'react'
+import db from '../firebase'
 
-function FAQ() {
-  return (
-    <div className="page">
-      <div className="page-title">
-        <h1>FAQ</h1>
-        <h3>Answering your most frequently asked questions</h3>
-      </div>
 
-      <div id="questions">
-        {questions.map((question, i) => {
-          if (i % 2 == 0) {
-            return (
-              <div id={`q${i}`} className="left-question">
-                <h4>{question["question"]}</h4>
-                <p>{question["answer"]}</p>
-                <div className="divider-thin"></div>
-              </div>
-              
-            );
-          } else {
-            return (
-              <div id={`q${i}`} className="right-question">
-                <h4>{question["question"]}</h4>
-                <p>{question["answer"]}</p>
-                <div className="divider-thin"></div>
-              </div>
-            );
-          }
-        })}
-        
+class FAQ extends React.Component {
+
+  state = {
+    questions: null
+  }
+
+  componentDidMount() {
+    console.log("mounted")
+    db.collection("questions").get()
+    .then( snapshot => {
+      const questions = []
+      snapshot.forEach( doc => {
+        const data = doc.data()
+        questions.push(data)
+      })
+      this.setState({ questions: questions })
+      
+    })
+    .catch( error => console.log(error) )
+  }
+  
+  render() {
+    return(
+      <div className="FAQ">
+        <h1>Frequently Asked Questions</h1>
+        {
+          this.state.questions &&
+          this.state.questions.map( question => {
+            return(
+              <div>
+                <p>{ question.question}</p>
+                <p>{ question.answer}</p>
+                <br></br>
+                </div>
+            )
+          })
+        }
       </div>
-    </div>
-  );
+    )
+  }
 }
 
 export default FAQ;
