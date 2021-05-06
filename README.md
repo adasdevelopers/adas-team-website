@@ -7,7 +7,8 @@ Run `yarn` or `npm install`
 ### To start the development server (localhost:3000)
 Run `yarn start` or `npm start`
 
+---
 ### Common Issues
-#### Incompatible node-sass version with node
-Node: v14.16.1
-Node-sass: v4.14.1
+1. Incompatible node-sass version with node
+   - Node: v14.16.1
+   - Node-sass: v4.14.1
