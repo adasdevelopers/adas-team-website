@@ -83,7 +83,7 @@ function Navigation() {
                       </ul>
                       <div className="divider-thick"></div>
                       <div id="hamburger-social-media-icons"
-                        className="space-x-5 text-3xl">
+                        className="space-x-3 text-3xl">
                         <FontAwesomeIcon icon={['fab', 'facebook']}/>
                         <FontAwesomeIcon icon={['fab', 'twitter']}/>
                         <FontAwesomeIcon icon={['fab', 'instagram']}/>
