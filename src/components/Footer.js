@@ -6,6 +6,8 @@ import linkedin from "../assets/img/elinkedin.png";
 import github from "../assets/img/egithub.png";
 import email from "../assets/img/eemail.png";
 
+import {Link} from 'react-router-dom'
+
 function Footer() {
   return (
     <footer>
@@ -46,14 +48,34 @@ function Footer() {
 
             <div id="footer-nav">
               <h3 className="font-title text-blue text-lg bold pt-3">NAVIGATION</h3>
-              <nav className="grid grid-cols-2 gap-2">
-                <ul>Home</ul>
-                <ul>JobBoard</ul>
-                <ul>About</ul>
-                <ul>Join</ul>
-                <ul>FAQ</ul>
-                <ul>Contact</ul>
-                <ul>Events</ul>
+              <nav className="grid grid-cols-2 gap-x-2 text-base">
+                <ul>
+                  <li key="Home">
+                    <Link to="/">Home</Link>
+                  </li>
+                  <li key="About">
+                    <Link to="/about">About</Link>
+                  </li>
+                  <li key="FAQ">
+                    <Link to="/faq">FAQ</Link>
+                  </li>
+                  <li key="Events">
+                    <Link to="/events">Events</Link>
+                  </li>
+                </ul>
+                <ul>
+                  <li key="JobBoard">
+                    <Link to="/jobboard">Job Board</Link>
+                  </li>
+                  <li key="JoinUs">
+                    <Link to="/join">Join</Link>
+                  </li>
+                  <li key="Contact">
+                    <Link to="/connect">Contact</Link>
+                  </li>
+
+                </ul>
+
               </nav>
             </div>
 

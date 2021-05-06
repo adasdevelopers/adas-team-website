@@ -21,9 +21,9 @@ function App() {
   return (
 
     <div>
-
+      <Router className="App">
       <div id="body">
-        <Router className="App">
+        {/* <Router className="App"> */}
           <Header />
 
           <div id="content">
@@ -55,12 +55,12 @@ function App() {
             </div>
 
           </div>
-        </Router>
+        {/* </Router> */}
       </div>
  
 
       <Footer className="absolute inset-x-0 bottom-0 w-full"/>
-
+      </Router>
 
     </div>
    

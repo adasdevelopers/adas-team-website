@@ -31,7 +31,7 @@ function About() {
       </div>
       {/* Title Intro */}
       <div id="about-goal" className="my-6 mb-8">
-        <p className="text-base">
+        <p>
           In Ada's Team, our goal is to <b>promote diversity in computing science, games, technology, engineering, and
           mathematics.</b> By diversity, we include but are not limited to the following categories:
           gender, race, ethnicity, religion, ability, sexuality, social class, and any other factor
@@ -41,18 +41,25 @@ function About() {
         </p>
       </div>
 
-      {/* Initiative info */}
-      <div id="initiatives" className="p-3">
-        <h2 className="text-blue">OUR INITIATIVES</h2>
-        <div className="py-6">
+      {/* Initiative block */}
+      <div id="initiatives" className="py-7">
+        <h2 className="pb-4">OUR INITIATIVES</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-36 gap-y-10">
+
           {initiatives.map((initiative, i) => (
-            <div className="initiative-info">
-              <h3 className="font-title text-2xl">{initiative["name"]}</h3>
+            // Initiative Info
+            <div className="grid justify-items-center">
+              <div className="initiative-image">
                 {initiative["image"] !== "" && <img src={images[i]} alt="adas-team-bot" 
-                  className="h-40 w-28" />}
+                className="h-40 w-30 pb-3" />}
+              </div>
+              
+              <h3 className="font-title text-2xl">{initiative["name"]}</h3>
+
               <div className="description">
                 <p>{initiative["description"]}</p>
               </div>  
+
               <div className="initiative-social-media" className="my-2 space-x-4">
                 {initiative["contact"]["instagram"] !== "" && (
                   <a href={initiative["contact"]["instagram"]} className="text-3xl">
@@ -61,18 +68,38 @@ function About() {
                 {initiative["contact"]["email"] !== "" && (
                   <a href={initiative["contact"]["email"]} className="text-3xl">
                     <FontAwesomeIcon icon={faEnvelope}/>
-                  </a>)})
+                  </a>)}
               </div>
-              ))
             </div>
           ))}
+
+        </div>
+      </div>
+
+      <div className="join-links" className="flex flex-col space-y-5 py-5">
+        <div id="adas-tutoring-join">
+          <h3 className="font-title">Ada's Podcast</h3>
+          <p>
+            Get FREE access to virtual one-on-one tutoring sessions, and connect 
+            with our students through virtual hangouts and study group sessions. 
+            There are tutors available to help with various CMPUT, MATH and STAT courses.
+          </p>
+        </div>
+        <div id="adas-base-join">
+          <h3 className="font-title">Ada's Base</h3>
+          <p>
+            Join the Ada's Base Discord server: an online community of students that 
+            share job opportunities and hackathons, review resumes, and hold each other 
+            accountable with virtual coworking sessions. 
+          </p>
         </div>
       </div>
 
 
+
       <div id="the-team">
         <div className="title">
-          <h2 className="text-blue text-3xl">MEET THE TEAM</h2>
+          <h2>MEET THE TEAM</h2>
           <h3 className="font-title text-pink text-2xl">2020-2021</h3>
         </div>
 
