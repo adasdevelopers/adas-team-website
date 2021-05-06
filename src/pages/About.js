@@ -2,11 +2,6 @@
 import initiatives from "../_data/initiatives.json";
 import executives from "../_data/executives.json";
 
-// // Import images
-// import linkedin from "../assets/img/elinkedin.png";
-// import github from "../assets/img/egithub.png";
-// import email from "../assets/img/eemail.png";
-// import instagram from "../assets/img/einstagram.png";
 
 // Import icons 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -46,35 +41,39 @@ function About() {
         </p>
       </div>
 
+      
 
-      <div id="initiatives" className="container flex flex-wrap p-3">
+
+      <div id="initiatives" className="p-3">
         <h2 className="text-blue">OUR INITIATIVES</h2>
-        {initiatives.map((initiative, i) => (
-          <div className="initiative">
-            <h3 className="font-title text-2xl">{initiative["name"]}</h3>
-            <div className="">
-              {initiative["image"] !== "" && <img src={images[i]} alt="adas-team-bot" 
-                className="h-40 w-28" />}
-            </div>
-            <div className="description">
-              <p>{initiative["description"]}</p>
+
+        <div className="py-6">
+          {initiatives.map((initiative, i) => (
+
+            <div className="initiative-info">
+              <h3 className="font-title text-2xl">{initiative["name"]}</h3>
+                {initiative["image"] !== "" && <img src={images[i]} alt="adas-team-bot" 
+                  className="h-40 w-28" />}
+              </div>
+              <div className="description">
+                <p>{initiative["description"]}</p>
             </div>
 
-            <div className="my-2 space-x-4">
-              {initiative["contact"]["instagram"] !== "" && (
-                <a href={initiative["contact"]["instagram"]} className="text-3xl">
-                  <FontAwesomeIcon icon={['fab', 'instagram']}/>
-                </a>)
-              }
-              {initiative["contact"]["email"] !== "" && (
-                <a href={initiative["contact"]["email"]} className="text-3xl">
-                  <FontAwesomeIcon icon={faEnvelope}/>
-                </a>)
-              }
-            </div>
-            <br />
-          </div>
-        ))}
+              <div className="initiative-social-media" className="my-2 space-x-4">
+                {initiative["contact"]["instagram"] !== "" && (
+                  <a href={initiative["contact"]["instagram"]} className="text-3xl">
+                    <FontAwesomeIcon icon={['fab', 'instagram']}/>
+                  </a>)}
+                {initiative["contact"]["email"] !== "" && (
+                  <a href={initiative["contact"]["email"]} className="text-3xl">
+                    <FontAwesomeIcon icon={faEnvelope}/>
+                  </a>)}
+              </div>
+              
+        </div>
+          ))}
+      </div>
+        
       </div>
 
       <div id="the-team">
@@ -84,7 +83,7 @@ function About() {
         </div>
 
         {executives.map((executive, i) => (
-          <div id="executives" className="bg-light-blue p-3 shadow-md rounded-lg my-4">
+          <div id="executives" className="blue-rect-shadow">
             <div className="image">{executive["image"] !== "" && executive["image"]}</div>
             <div className="">
               <div className="name">
