@@ -16,6 +16,9 @@ import student_image from "../assets/img/ada_bot_sleepy.png";
 import mentor_image from "../assets/img/ada_bot_hands_up.png";
 import podcast_image from "../assets/img/ada_bot_hat1.png";
 
+// Import Material-UI components
+import { Button } from '@material-ui/core';
+
 
 
 function About() {
@@ -76,7 +79,7 @@ function About() {
         </div>
       </div>
 
-      <div className="join-links" className="flex flex-col space-y-5 py-5">
+      <div className="join-links" className="flex flex-col space-y-5 py-5 items-stretch">
         <div id="adas-tutoring-join">
           <h3 className="font-title">Ada's Podcast</h3>
           <p>
@@ -84,6 +87,11 @@ function About() {
             with our students through virtual hangouts and study group sessions. 
             There are tutors available to help with various CMPUT, MATH and STAT courses.
           </p>
+          {/* <Button variant="contained" color="primary">Join Ada's Tutoring</Button> */}
+          <button className="self-center"> 
+            <span className="pr-3 text-lg"><FontAwesomeIcon icon={['fab', 'slack']}/></span>
+            Join Ada's Tutoring
+          </button>
         </div>
         <div id="adas-base-join">
           <h3 className="font-title">Ada's Base</h3>
@@ -92,6 +100,10 @@ function About() {
             share job opportunities and hackathons, review resumes, and hold each other 
             accountable with virtual coworking sessions. 
           </p>
+          <button>
+            <span className="pr-3 text-lg"><FontAwesomeIcon icon={['fab', 'discord']}/></span>
+            Join Ada's Base
+          </button>
         </div>
       </div>
 

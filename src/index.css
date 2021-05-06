@@ -57,6 +57,17 @@
         @apply shadow-md;
     }
 
+    button {
+        @apply bg-blue;
+        @apply px-9; 
+        @apply py-3;
+        @apply my-5;
+        @apply rounded-xl;
+        @apply text-white;
+        @apply font-semibold;
+    }
+
+
     
 }
 
