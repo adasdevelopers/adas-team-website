@@ -25,21 +25,29 @@ class FAQ extends React.Component {
   
   render() {
     return(
-      <div className="FAQ">
-        <h1>Frequently Asked Questions</h1>
+      <div className="page">
+        <div className="page-title">
+          <h1>FAQ</h1>
+          <h3>Answering your most frequently asked questions.</h3>
+        </div>
+        <div>
         {
           this.state.questions &&
           this.state.questions.map( question => {
             return(
-              <div>
-                <p>{ question.question}</p>
-                <p>{ question.answer}</p>
-                <br></br>
+              <div className="bg-light-blue p-3 shadow-md rounded-3xl my-4">
+                <div className="my-8 mx-4">
+                  <p className="font-title text-xl">{question.question}</p>
+                  <p>{ question.answer}</p>
+                  <div className="divider-thin"></div>
                 </div>
+              </div>
             )
           })
         }
+        </div>
       </div>
+
     )
   }
 }

@@ -2,11 +2,11 @@
 import initiatives from "../_data/initiatives.json";
 import executives from "../_data/executives.json";
 
-// Import images
-import linkedin from "../assets/img/elinkedin.png";
-import github from "../assets/img/egithub.png";
-import email from "../assets/img/eemail.png";
-import instagram from "../assets/img/einstagram.png";
+// // Import images
+// import linkedin from "../assets/img/elinkedin.png";
+// import github from "../assets/img/egithub.png";
+// import email from "../assets/img/eemail.png";
+// import instagram from "../assets/img/einstagram.png";
 
 // Import icons 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -16,11 +16,10 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
 
 // Import initiative assets
-import initiative_image from "../assets/img/eicon_body_2.png";
-import dev_image from "../assets/img/eada_bot_scarf.png";
-import student_image from "../assets/img/eada_bot_sleepy.png";
-import mentor_image from "../assets/img/eada_bot_hands_up.png";
-import podcast_image from "../assets/img/eplace_holder_only.png";
+import dev_image from "../assets/img/ada_bot_scarf.png";
+import student_image from "../assets/img/ada_bot_sleepy.png";
+import mentor_image from "../assets/img/ada_bot_hands_up.png";
+import podcast_image from "../assets/img/ada_bot_hat1.png";
 
 
 
@@ -110,7 +109,7 @@ function About() {
                 <FontAwesomeIcon icon={['fab', 'github']}/> 
               </a>
               {executive.contact.Other !== "" && (
-                <a className="Contact" src={email} href={executive.contact.Other} alt="Contact">
+                <a className="Contact" href={executive.contact.Other} alt="Contact">
                   <FontAwesomeIcon icon={faEnvelope} />
                 </a>
               )}

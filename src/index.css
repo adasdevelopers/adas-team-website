@@ -7,6 +7,7 @@
     h1 {
         @apply text-5xl;
         @apply font-title;
+        @apply text-center;
     }
     h2 {
         @apply text-3xl;
@@ -19,6 +20,8 @@
 
     h4 {
         @apply font-title;
+        @apply text-blue;
+        @apply text-xl;
     }
 
     a {
@@ -34,9 +37,26 @@
     }
 
     .page-title {
-        @apply text-center;
         @apply my-12;
+
     }
+
+    .blue-rect {
+        @apply bg-light-blue;
+        @apply p-3;
+        @apply rounded-3xl;
+        @apply my-4;
+    }
+
+    .blue-rect-shadow {
+        @apply bg-light-blue;
+        @apply p-3;
+        @apply rounded-3xl;
+        @apply my-4;
+        @apply shadow-md;
+    }
+
+    
 }
 
 

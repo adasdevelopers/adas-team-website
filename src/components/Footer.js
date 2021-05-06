@@ -13,22 +13,22 @@ function Footer() {
 
         <div className="py-8 mx-8">
           <div id="social-media-icons" className="content-evenly space-x-4">
-              <a href="#" className="inline-block">
+              <a href="https://www.facebook.com/AdasTeamFB/" className="inline-block">
                 <img src={facebook} alt="facebook" />
               </a>
-              <a href="#" className="inline-block">
+              <a href="https://twitter.com/adas_team?lang=en" className="inline-block">
                 <img src={twitter} alt="twitter" />
               </a>
-              <a href="#" className="inline-block">
+              <a href="https://www.instagram.com/adas_team/" className="inline-block">
                 <img src={instagram} alt="instagram" />
               </a>
-              <a href="#" className="inline-block">
+              <a href="https://www.linkedin.com/company/adas-team/" className="inline-block">
                 <img src={linkedin} alt="linkedin" />
               </a>
-              <a href="#" className="inline-block">
+              <a href="https://github.com/adas-team" className="inline-block">
                 <img src={github} alt="github" />
               </a>
-              <a href="#" className="inline-block">
+              <a href="mailto:adasteam@ualberta.ca" className="inline-block">
                 <img src={email} alt="email" />
               </a>
           </div>
