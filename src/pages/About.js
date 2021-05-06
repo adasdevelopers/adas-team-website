@@ -21,6 +21,7 @@ import { Button } from '@material-ui/core';
 
 
 
+
 function About() {
   library.add(fab, faEnvelope); //importing brand icons for social-media
   const images = [dev_image, student_image, mentor_image, podcast_image];
@@ -77,6 +78,8 @@ function About() {
           ))}
 
         </div>
+
+
       </div>
 
       <div className="join-links" className="flex flex-col space-y-5 py-5 items-stretch">

@@ -1,6 +1,7 @@
 # adas-team-website
 The official Ada's Team website.
 
+
 ### Before starting the application
 Run `yarn` or `npm install`
 

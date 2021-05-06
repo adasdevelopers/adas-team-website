@@ -39,7 +39,6 @@
 
     .page-title {
         @apply my-12;
-
     }
 
     .blue-rect {
@@ -66,7 +65,6 @@
         @apply text-white;
         @apply font-semibold;
     }
-
 
     
 }
