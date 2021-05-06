@@ -29,7 +29,7 @@ function About() {
         <h1>About</h1>
         <h3>Learn more about Ada's Team.</h3>
       </div>
-
+      {/* Title Intro */}
       <div id="about-goal" className="my-6 mb-8">
         <p className="text-base">
           In Ada's Team, our goal is to <b>promote diversity in computing science, games, technology, engineering, and
@@ -41,24 +41,18 @@ function About() {
         </p>
       </div>
 
-      
-
-
+      {/* Initiative info */}
       <div id="initiatives" className="p-3">
         <h2 className="text-blue">OUR INITIATIVES</h2>
-
         <div className="py-6">
           {initiatives.map((initiative, i) => (
-
             <div className="initiative-info">
               <h3 className="font-title text-2xl">{initiative["name"]}</h3>
                 {initiative["image"] !== "" && <img src={images[i]} alt="adas-team-bot" 
                   className="h-40 w-28" />}
-              </div>
               <div className="description">
                 <p>{initiative["description"]}</p>
-            </div>
-
+              </div>  
               <div className="initiative-social-media" className="my-2 space-x-4">
                 {initiative["contact"]["instagram"] !== "" && (
                   <a href={initiative["contact"]["instagram"]} className="text-3xl">
@@ -67,14 +61,14 @@ function About() {
                 {initiative["contact"]["email"] !== "" && (
                   <a href={initiative["contact"]["email"]} className="text-3xl">
                     <FontAwesomeIcon icon={faEnvelope}/>
-                  </a>)}
+                  </a>)})
               </div>
-              
-        </div>
+              ))
+            </div>
           ))}
+        </div>
       </div>
-        
-      </div>
+
 
       <div id="the-team">
         <div className="title">
@@ -119,6 +113,7 @@ function About() {
         ))}
       </div>
     </div>
+
   );
 }
 
