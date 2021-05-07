@@ -17,9 +17,12 @@ class JobBoard extends React.Component {
         jobs.push(data)
       })
       this.setState({ jobs: jobs })
-
+      console.log(jobs.length);
     }).catch(error => console.log(error))
+    
   }
+
+  
 
   render() {
     return (
@@ -47,9 +50,11 @@ class JobBoard extends React.Component {
             })
           }
         </div>
-
-        <b className="font-title">Have a job posting you'd like to advertise here?</b>
-        {/* <button>POST A JOB</button> */}
+        
+        <div className="flex flex-col mt-10">
+          <h4 className="text-black">Have a job posting you'd like to advertise here?</h4>
+          <button className="w-5/6 self-center md:w-2/5 lg:w-3/4">POST A JOB</button>
+        </div>
       </div>
 
     )

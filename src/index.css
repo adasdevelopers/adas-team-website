@@ -59,12 +59,13 @@
 
     button {
         @apply bg-blue;
-        @apply px-9; 
+        @apply px-7; 
         @apply py-3;
         @apply my-5;
         @apply rounded-xl;
         @apply text-white;
         @apply font-semibold;
+        @apply w-2/5;
     }
 
 
