@@ -5,4 +5,4 @@ The official Ada's Team website.
 Run `yarn` or `npm install`
 
 ### To start the development server (localhost:3000)
-Run `yarn start` or `npm start`
+Run `yarn start` or `npm run`
