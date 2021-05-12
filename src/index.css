@@ -23,6 +23,7 @@
         @apply text-2xl;
         @apply font-title;
         @apply text-blue;
+        @apply font-bold;
     }
 
     h4 {
@@ -62,7 +63,7 @@
         @apply font-bold; 
     }
 
-    input {
+    input, textarea {
         @apply rounded-lg;
     }
 

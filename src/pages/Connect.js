@@ -58,7 +58,7 @@ function Connect() {
               prefix="Message" 
               field="message"
               errors={state.errors}/>
-              
+
             <button type="submit" disabled={state.submitting}
                     className="w-5/6 justify-self-center">
               SEND MESSAGE
