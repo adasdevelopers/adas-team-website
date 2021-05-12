@@ -19,7 +19,7 @@
         @apply text-3xl;
         @apply font-title;
         @apply text-blue;
-        @apply font-semibold;
+        @apply font-bold;
     }
     h3 {
         @apply text-2xl;
@@ -30,8 +30,7 @@
 
     h4 {
         @apply font-title;
-
-        /* @apply text-blue; */
+        @apply font-bold;
         @apply text-xl;
     }
 
@@ -69,6 +68,7 @@
 
     input, textarea {
         @apply rounded-lg;
+        @apply w-full;
     }
 
 }
