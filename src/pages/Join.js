@@ -4,8 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 
-
-
+//TODO: fix links
 function Join() {
   library.add(fab); //importing brand icons for social-media
   const [state, handleSubmit] = useForm("mqkwpaoe");
@@ -23,7 +22,7 @@ function Join() {
       </div>
 
       <h3>JOIN US</h3>
-      <p>Subcribe to our mailing list to receive updates on events, opportunities,
+      <p className="my-5">Subcribe to our mailing list to receive updates on events, opportunities,
         scholarships, and more!</p>
 
       <div>

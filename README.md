@@ -13,9 +13,10 @@ Run `yarn start` or `npm run`
 1. Incompatible node-sass version with node
    - Node: v14.16.1
    - Node-sass: v4.14.1
-   Run the following commands:
-   ```
-   nvm use 14
-   npm rebuild node-sass
-   ```
+   
+   - Run the following commands:
+      ```
+      nvm use 14
+      npm rebuild node-sass
+      ```
 

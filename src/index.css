@@ -59,7 +59,7 @@
         @apply rounded-xl;
         @apply text-white;
         @apply font-semibold;
-        @apply w-2/5;
+        @apply w-3/5;
     }
     
     label {
