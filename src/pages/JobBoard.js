@@ -23,24 +23,35 @@ class JobBoard extends React.Component {
 
   render() {
     return (
-      <div className="JobBoard">
-        <h1>Jobs Postings</h1>
-        {
-          this.state.jobs &&
-          this.state.jobs.map( job => {
-            return(
-              <div>
-                <p>{ job.company }</p>
-                <p>{ job.website }</p>
-                <p>{ job.job_title }</p>
-              
-                
-                <br></br>
-                </div>
-            )
-          })
-        }
+      <div className="page">
+        <div className="page-title">
+          <h1>Job Board</h1>
+          <h3 className="text-lg">Search through our current job listings from various 
+            companies to get in touch and land your next job.</h3>
         </div>
+
+        <div>
+          <h4>AVAILABLE JOBS</h4>
+        </div>
+        <div className="blue-rect rounded-xl">
+          {
+            this.state.jobs &&
+            this.state.jobs.map( job => {
+              return(
+                <div className="mx-4">
+                  <p className="font-title">{ job.job_title }</p>
+                  <p>{ job.company }</p>
+                  <p>{ job.website }</p>
+                </div>
+              )
+            })
+          }
+        </div>
+
+        <b className="font-title">Have a job posting you'd like to advertise here?</b>
+        {/* <button>POST A JOB</button> */}
+      </div>
+
     )
   }
   
