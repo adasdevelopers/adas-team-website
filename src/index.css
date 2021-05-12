@@ -12,6 +12,7 @@
     h2 {
         @apply text-3xl;
         @apply font-title;
+        @apply text-blue;
     }
     h3 {
         @apply text-xl;
@@ -55,6 +56,18 @@
         @apply my-4;
         @apply shadow-md;
     }
+
+    button {
+        @apply bg-blue;
+        @apply px-7; 
+        @apply py-3;
+        @apply my-5;
+        @apply rounded-xl;
+        @apply text-white;
+        @apply font-semibold;
+        @apply w-2/5;
+    }
+
 
     
 }
