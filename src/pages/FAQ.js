@@ -28,9 +28,10 @@ class FAQ extends React.Component {
       <div className="page">
         <div className="page-title">
           <h1>FAQ</h1>
-          <h3>Answering your most frequently asked questions.</h3>
+          <h5>Answering your most frequently asked questions.</h5>
         </div>
-        <div>
+
+        <div id="faq-section">
         {
           this.state.questions &&
           this.state.questions.map( question => {

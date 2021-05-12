@@ -29,12 +29,12 @@ class JobBoard extends React.Component {
       <div className="page">
         <div className="page-title">
           <h1>Job Board</h1>
-          <h3 className="text-lg">Search through our current job listings from various 
-            companies to get in touch and land your next job.</h3>
+          <h5 className="text-lg">Search through our current job listings from various 
+            companies to get in touch and land your next job.</h5>
         </div>
 
         <div>
-          <h4>AVAILABLE JOBS</h4>
+          <h2>AVAILABLE JOBS</h2>
         </div>
         <div className="blue-rect rounded-xl">
           {
