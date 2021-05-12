@@ -5,6 +5,7 @@
 /* Import Spartan and Open Sans fonts */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;0,700;0,800;1,400&family=Spartan:wght@400;500;600;700;800;900&display=swap');
 
+
 @layer base {
 
     h1 {
@@ -12,6 +13,7 @@
         @apply font-title;
         @apply text-center;
         @apply font-extrabold;
+
     }
     h2 {
         @apply text-3xl;
@@ -28,6 +30,7 @@
 
     h4 {
         @apply font-title;
+
         /* @apply text-blue; */
         @apply text-xl;
     }
@@ -47,6 +50,7 @@
     p {
         @apply text-base;
     }
+
 
     button {
         @apply bg-blue;
@@ -79,6 +83,7 @@
     .page-title {
         @apply my-12;
         @apply mx-6;
+
     }
 
     .blue-rect {
@@ -95,9 +100,11 @@
         @apply my-4;
         @apply shadow-md;
     }
+
 }
 
 /* Custom Shapes */
+
 @layer utilities {
     .divider-thick {
         width: 4.5em;

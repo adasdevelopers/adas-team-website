@@ -3,10 +3,12 @@ import { useForm, ValidationError } from '@formspree/react';
 
 function Connect() {
 
+
   // React hook
   const [state, handleSubmit] = useForm("mrgredan");
   if (state.succeeded) {
       return <p>Thanks for connecting!</p>;
+
   }
 
 

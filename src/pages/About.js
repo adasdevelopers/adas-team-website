@@ -29,9 +29,11 @@ function About() {
 
   return (
     <div className="page">
+
       <div className="page-title">
         <h1>About</h1>
         <h5 className="text-center">Learn more about Ada's Team.</h5>
+
       </div>
       {/* Title Intro */}
       <div id="about-goal" className="my-6 mb-8">
@@ -58,6 +60,7 @@ function About() {
                 className="h-40 w-30 pb-3" />}
               </div>
               
+
               <h4 className="font-title text-2xl">{initiative["name"]}</h4>
 
               <div className="description">
