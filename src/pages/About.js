@@ -16,10 +16,6 @@ import student_image from "../assets/img/ada_bot_sleepy.png";
 import mentor_image from "../assets/img/ada_bot_hands_up.png";
 import podcast_image from "../assets/img/ada_bot_hat1.png";
 
-// Import Material-UI components
-import { Button } from '@material-ui/core';
-
-
 
 
 function About() {
@@ -29,9 +25,11 @@ function About() {
 
   return (
     <div className="page">
-      <div className="page-title" className="text-center my-12">
+
+      <div className="page-title">
         <h1>About</h1>
-        <h3>Learn more about Ada's Team.</h3>
+        <h5 className="text-center">Learn more about Ada's Team.</h5>
+
       </div>
       {/* Title Intro */}
       <div id="about-goal" className="my-6 mb-8">
@@ -58,7 +56,8 @@ function About() {
                 className="h-40 w-30 pb-3" />}
               </div>
               
-              <h3 className="font-title text-2xl">{initiative["name"]}</h3>
+
+              <h4 className="font-title text-2xl">{initiative["name"]}</h4>
 
               <div className="description">
                 <p>{initiative["description"]}</p>
@@ -90,7 +89,6 @@ function About() {
             with our students through virtual hangouts and study group sessions. 
             There are tutors available to help with various CMPUT, MATH and STAT courses.
           </p>
-          {/* <Button variant="contained" color="primary">Join Ada's Tutoring</Button> */}
           <button className="self-center"> 
             <span className="pr-3 text-lg"><FontAwesomeIcon icon={['fab', 'slack']}/></span>
             Join Ada's Tutoring
