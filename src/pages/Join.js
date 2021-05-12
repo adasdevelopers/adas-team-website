@@ -1,4 +1,8 @@
+
+
+
 function Join() {
+
   return (
     <div className="page">
       <div className="page-title">
@@ -19,6 +23,7 @@ function Join() {
         an online community of students that share job opportunities and hackathons, 
         review resumes, and hold each other accountable with virtual coworking sessions. 
       </p>
+
 
     </div>
   );
