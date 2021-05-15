@@ -1,3 +1,130 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Import Spartan and Open Sans fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;0,700;0,800;1,400&family=Spartan:wght@400;500;600;700;800;900&display=swap');
+
+
+@layer base {
+
+    h1 {
+        @apply text-5xl;
+        @apply font-title;
+        @apply text-center;
+        @apply font-extrabold;
+
+    }
+    h2 {
+        @apply text-3xl;
+        @apply font-title;
+        @apply text-blue;
+        @apply font-bold;
+    }
+    h3 {
+        @apply text-2xl;
+        @apply font-title;
+        @apply text-blue;
+        @apply font-bold;
+    }
+
+    h4 {
+        @apply font-title;
+        @apply font-bold;
+        @apply text-xl;
+    }
+
+    h5 {
+        @apply text-xl;
+    }
+
+    a {
+        @apply hover:text-blue;
+    }
+
+    li {
+        @apply font-bold;
+    }
+
+    p {
+        @apply text-base;
+    }
+
+
+    button {
+        @apply bg-blue;
+        @apply px-7; 
+        @apply py-3;
+        @apply my-5;
+        @apply rounded-xl;
+        @apply text-white;
+        @apply font-semibold;
+        @apply w-3/5;
+    }
+    
+    label {
+        @apply font-bold; 
+    }
+
+    input, textarea {
+        @apply rounded-lg;
+        @apply w-full;
+    }
+
+}
+
+
+@layer components {
+
+    .page {
+        @apply p-7;
+    }
+
+    .page-title {
+        @apply my-12;
+        @apply mx-6;
+
+    }
+
+    .blue-rect {
+        @apply bg-light-blue;
+        @apply p-3;
+        @apply rounded-3xl;
+        @apply my-4;
+    }
+
+    .blue-rect-shadow {
+        @apply bg-light-blue;
+        @apply p-3;
+        @apply rounded-3xl;
+        @apply my-4;
+        @apply shadow-md;
+    }
+
+}
+
+/* Custom Shapes */
+
+@layer utilities {
+    .divider-thick {
+        width: 4.5em;
+        height: 0.625em;
+        background-color: pink;
+        margin-bottom: 29px;
+        margin-top: 62.7px;
+    }
+
+    .divider-thin {
+        width: 17em;
+        height: 0.01em;
+        background-color: pink;
+        margin-bottom: 1.38em;
+        margin-right: 2.44em;
+        margin-top: 5.13em;
+      }
+
+    #social-media-icons > a > img {
+        width: 33.3px;
+        height: 33.3px;
+    }
+}

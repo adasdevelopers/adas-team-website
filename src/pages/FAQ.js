@@ -1,43 +1,56 @@
-import questions from "../_data/questions.json";
+import React from 'react'
+import db from '../firebase'
 
-function FAQ() {
-  return (
-    <div id="faq-content">
-      <div class="page-heading">
-        <div class="big-logo-faq"></div>
-        <h1>FAQ</h1>
-        <h2>Answering your most frequently asked questions</h2>
+
+class FAQ extends React.Component {
+
+  state = {
+    questions: null
+  }
+
+  componentDidMount() {
+    console.log("mounted")
+    db.collection("questions").get()
+    .then( snapshot => {
+      const questions = []
+      snapshot.forEach( doc => {
+        const data = doc.data()
+        questions.push(data)
+      })
+      this.setState({ questions: questions })
+      
+    })
+    .catch( error => console.log(error) )
+  }
+  
+  render() {
+    return(
+      <div className="page">
+        <div className="page-title">
+          <h1>FAQ</h1>
+          <h5>Answering your most frequently asked questions.</h5>
+        </div>
+
+        <div id="faq-section">
+        {
+          this.state.questions &&
+          this.state.questions.map( question => {
+            return(
+              <div className="bg-light-blue p-3 shadow-md rounded-3xl my-4">
+                <div className="my-8 mx-4">
+                  <h4 className="font-title text-xl">{question.question}</h4>
+                  <p>{ question.answer}</p>
+                  <div className="divider-thin"></div>
+                </div>
+              </div>
+            )
+          })
+        }
+        </div>
       </div>
 
-      <div id="questions">
-        <div id="q1" class="left-question">
-          <h2>{questions[0]["question"]}</h2>
-          <h3>{questions[0]["answer"]}</h3>
-        </div>
-        <div id="q2" class="right-question">
-          <h2>{questions[1]["question"]}</h2>
-          <h3>{questions[1]["answer"]}</h3>
-        </div>
-        <div id="q3" class="left-question">
-          <h2>{questions[2]["question"]}</h2>
-          <h3>{questions[2]["answer"]}</h3>
-        </div>
-        <div id="q4" class="right-question">
-          <h2>{questions[3]["question"]}</h2>
-          <h3>{questions[3]["answer"]}</h3>
-        </div>
-        <div id="q5" class="left-question">
-          <h2>{questions[4]["question"]}</h2>
-          <h3>{questions[4]["answer"]}</h3>
-        </div>
-        <div id="q6" class="right-question">
-          <h2>{questions[5]["question"]}</h2>
-          <h3>{questions[5]["answer"]}</h3>
-        </div>
-        <div id="questions"></div>
-      </div>
-    </div>
-  );
+    )
+  }
 }
 
 export default FAQ;
