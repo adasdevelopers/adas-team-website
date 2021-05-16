@@ -4,8 +4,10 @@ import db from '../firebase'
 
 class FAQ extends React.Component {
 
+  
   state = {
-    questions: null
+    questions: null,
+  
   }
 
   componentDidMount() {
@@ -18,7 +20,7 @@ class FAQ extends React.Component {
         questions.push(data)
       })
       this.setState({ questions: questions })
-      
+      console.log(questions) 
     })
     .catch( error => console.log(error) )
   }

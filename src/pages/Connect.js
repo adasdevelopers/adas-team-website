@@ -7,7 +7,9 @@ function Connect() {
   const [state, handleSubmit] = useForm("mrgredan");
   if (state.succeeded) {
       return <p>Thanks for connecting!</p>;
+
   }
+
 
   return (
     <div className="page">
