@@ -12,7 +12,7 @@ import JobBoard from "./pages/JobBoard";
 import Join from "./pages/Join";
 
 // Import Styles
-import "../src/_sass/main.scss";
+// import "../src/_sass/main.scss";
 
 // Import React libraries
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
@@ -23,7 +23,6 @@ function App() {
     <div>
       <Router className="App">
       <div id="body">
-        {/* <Router className="App"> */}
           <Header />
 
           <div id="content">

@@ -1,8 +1,3 @@
-//Import data files
-import initiatives from "../_data/initiatives.json";
-import executives from "../_data/executives.json";
-
-
 // Import icons 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { library } from '@fortawesome/fontawesome-svg-core'
