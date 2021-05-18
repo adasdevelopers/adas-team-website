@@ -196,6 +196,7 @@ class About extends React.Component {
   }
 }
 
+<<<<<<< HEAD
 
 
 // function About() {
@@ -337,4 +338,6 @@ class About extends React.Component {
   // );
 // }
 
+=======
+>>>>>>> 7668679d3add9699fa201f2f5793c1bf3318e1d5
 export default About;

@@ -10,9 +10,12 @@ function Home() {
     <div>
         <div id="home-title" className="container mx-auto static p-9 md:p-5">
           <img id="home-bot" src={BigBot} alt="Ada's Home Bot" 
-                className="absolute inset-y-0 right-0 mt-20 z-0"></img>
+                className="absolute inset-y-0 right-0 mt-24 z-0"></img>
           <div className="flex flex-col place-items-center inline-block mt-96 pt-2">
-            <h1 className="font-title text-7xl md:text-blue">ADA'S TEAM</h1>
+            <h1 
+              className="font-title text-7xl md:text-blue">
+                ADA'S TEAM
+            </h1>
             <p className="font-body italic text-lg">
                 Promoting diversity in STEAM with an emphasis on technology.</p> 
             <div className="text-5xl py-20">

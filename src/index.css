@@ -101,6 +101,11 @@
         @apply shadow-md;
     }
 
+    #navigation-menu > li {
+        @apply block;
+
+    }
+
 }
 
 /* Custom Shapes */
@@ -127,4 +132,14 @@
         width: 33.3px;
         height: 33.3px;
     }
+
+    #home-icon {
+        width: 73px;
+        height: 61px;
+    }
+
+    #home-bot {
+        width:20em;
+    }
+
 }
