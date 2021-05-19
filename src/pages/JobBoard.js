@@ -34,8 +34,10 @@ class JobBoard extends React.Component {
         </div>
 
         <div>
-          <h2>AVAILABLE JOBS</h2>
+          <h2> AVAILABLE JOBS</h2>
         </div>
+        <h5>  {
+          this.state.jobs && this.state.jobs.length} job listings</h5>
         <div className="blue-rect rounded-xl">
           {
             this.state.jobs &&
