@@ -1,23 +1,27 @@
 import React from 'react'
-
 import { Link } from 'react-router-dom'
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { fab } from '@fortawesome/free-brands-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
+import SocialMedia from './SocialMedia'
+import NavigationLinks from './NavigationLinks'
 
 
 function NavigationMenu(props) {
-    library.add(fab, faEnvelope); //importing brand icons for social-media
 
     return (
-        <div className="p-3">
-        <ul id="navigation-menu" className="space-y-6">
+        /*
+            Navigation Animation 
+        */
+        <div 
+            // className={
+            //     "p-3 lg:flex flex-grow items-center" +
+            //     (props.closeMenu ? "flex" : "hidden")}
+        > 
+
+        <ul id="navigation-menu" 
+            className="flex flex-col lg:flex-row list-none lg:ml-auto">
           <li key="Home">
             <Link to="/"
-                  onClick={(props.closeMenu)}
-            >
+                  onClick={(props.closeMenu)}>
               Home
             </Link>
           </li>
@@ -64,18 +68,12 @@ function NavigationMenu(props) {
             </Link>
           </li>
         </ul>
-
+        
+        {/* Pink divider */}
         <div className="divider-thick"></div>
         
-        <div id="hamburger-social-media-icons"
-          className="space-x-3 text-3xl">
-          <FontAwesomeIcon icon={['fab', 'facebook']}/>
-          <FontAwesomeIcon icon={['fab', 'twitter']}/>
-          <FontAwesomeIcon icon={['fab', 'instagram']}/>
-          <FontAwesomeIcon icon={['fab', 'linkedin']}/>
-          <FontAwesomeIcon icon={['fab', 'github']}/>
-          <FontAwesomeIcon icon={faEnvelope}/>
-        </div>
+        <SocialMedia />
+
       </div>
 
     );

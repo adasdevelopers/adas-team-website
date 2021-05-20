@@ -30,7 +30,8 @@ function Navigation() {
 
 
     return (
-        <nav>
+        <nav 
+            className="relative flex flex-wrap items-center justify-between px-2 py-3 mb-3">
             <span className="text-xl p-3">
                 <FontAwesomeIcon 
                     icon={faBars}
@@ -38,13 +39,15 @@ function Navigation() {
                 />
             </span>
 
+            {/* Navigation Bar Transition Animation */}
             {
                 maskTransitions.map(({ item, key, props }) =>
                     item && 
                     <animated.div 
                         key={key} 
                         style={props}
-                        className="bg-black-t-50 fixed top-0 left-0 w-full h-full z-50"
+                        className=
+                            "bg-black-t-50 fixed top-0 left-0 w-full h-full z-50"
                         onClick={() => setShowMenu(false)}
                     >
                     </animated.div>
