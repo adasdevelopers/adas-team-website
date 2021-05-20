@@ -1,5 +1,5 @@
 import SocialMedia from './SocialMedia'
-import NavigationLinks  from './NavigationLinks'
+// import NavigationLinks  from './NavigationLinks'
 
 function Footer() {
   return (
@@ -24,12 +24,12 @@ function Footer() {
               Edmonton, AB T6G 2S4
             </p>
 
-            <div id="footer-nav">
+            {/* <div id="footer-nav">
               <h3 className="font-title text-blue text-lg bold pt-3">NAVIGATION</h3>
               <nav className="grid grid-cols-2 gap-x-2 text-base">
                 <NavigationLinks />
               </nav>
-            </div>
+            </div> */}
 
             <div className="divider-thin"></div>
             <p>© Copyright 2020 Ada's Team</p> 

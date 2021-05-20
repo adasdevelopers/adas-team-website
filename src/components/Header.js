@@ -1,11 +1,11 @@
 import icon from "../assets/img/eicon_head_1.png";
 import Navigation from "./Navigation"
-import Navbar from "./Navigation2"
+import Nav from './NavigationTW'
 
 
 function Header() {
     return (
-        <header className=" p-3 flex justify-between items-center">
+        <header className="p-3 flex justify-between items-center z-20 top-0">
             <a href="/" className="">
                 <img id="home-icon" src={icon} alt="adas-team-icon"
                     className="inline float-left" />
@@ -17,9 +17,9 @@ function Header() {
                 </h4>
             </a>
 
-            <Navigation />
-            {/* <Navbar /> */}
-    
+            {/* <Navigation /> */}
+            {/* <Nav /> */}
+
         </header>
     );
 }
