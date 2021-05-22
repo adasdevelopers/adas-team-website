@@ -8,10 +8,11 @@ import { faArrowDown } from '@fortawesome/free-solid-svg-icons'
 function Home() {
   return (
     <div>
-        <div id="home-title" className="container mx-auto static p-9 md:p-5">
+        <div id="home-title" className=" mx-auto static p-9 md:p-5 relative">
           <img id="home-bot" src={BigBot} alt="Ada's Home Bot" 
-                className="absolute inset-y-0 right-0 mt-24 z-0"></img>
-          <div className="flex flex-col place-items-center inline-block mt-96 pt-2">
+                className="absolute inset-y-0 right-0 mt-1 z-40 lg:inset-y-0 lg:right-0"></img>
+          <div className="flex flex-col place-items-center inline-block 
+                        mt-96 pt-2 z-30">
             <h1 
               className="font-title text-7xl md:text-blue">
                 ADA'S TEAM

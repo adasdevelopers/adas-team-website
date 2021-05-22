@@ -77,6 +77,8 @@
 @layer components {
 
     .page {
+        @apply container;
+        @apply mx-auto;
         @apply p-7;
     }
 
