@@ -2,6 +2,7 @@
 import React from 'react'
 import db from '../firebase'
 
+
 /**
  * Displays FAQ for Ada's Team
  */
