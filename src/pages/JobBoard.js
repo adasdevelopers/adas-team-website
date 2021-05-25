@@ -1,67 +1,86 @@
-import { render } from '@testing-library/react';
+// Import React libraries
 import React from 'react';
 import db from "../firebase";
+import { render } from '@testing-library/react';
 
+
+/**
+ * Displays the Job Board with data
+ * pulled in from Firebase
+ */
 class JobBoard extends React.Component {
 
-  state = {
-    jobs: null
-  }
+    // Constants
+    state = {
+        jobs: null
+    }
 
-  componentDidMount() {
+    // Pull in Firebase data
+    componentDidMount() {
     console.log("mounted")
     db.collection("job-postings").get().then(snapshot => {
-      const jobs = []
-      snapshot.forEach(doc => {
+        const jobs = []
+        snapshot.forEach(doc => {
         const data = doc.data()
         jobs.push(data)
-      })
-      this.setState({ jobs: jobs })
-      console.log(jobs.length);
+        })
+        this.setState({ jobs: jobs })
+        console.log(jobs.length);
     }).catch(error => console.log(error))
-    
-  }
+
+    }
 
   
+    render() {
+        return (
+            <div className="page">
+            <header>
+                <h1>Job Board</h1>
+                <h5 className="text-lg">
+                    Search through our current job listings from various 
+                companies to get in touch and land your next job.
+                </h5>
+            </header>
 
-  render() {
-    return (
-      <div className="page">
-        <div className="page-title">
-          <h1>Job Board</h1>
-          <h5 className="text-lg">Search through our current job listings from various 
-            companies to get in touch and land your next job.</h5>
-        </div>
 
-        <div>
-          <h2> AVAILABLE JOBS</h2>
-        </div>
-        <h5>  {
-          this.state.jobs && this.state.jobs.length} job listings</h5>
-        <div className="blue-rect rounded-xl">
-          {
-            this.state.jobs &&
-            this.state.jobs.map( job => {
-              return(
-                <div className="mx-4">
-                  <p className="font-title">{ job.job_title }</p>
-                  <p>{ job.company }</p>
-                  <p>{ job.website }</p>
-                </div>
-              )
-            })
-          }
-        </div>
-        
-        <div className="flex flex-col mt-10">
-          <h4 className="text-black">Have a job posting you'd like to advertise here?</h4>
-          <button className="w-5/6 self-center md:w-2/5 lg:w-3/4">POST A JOB</button>
-        </div>
-      </div>
+            <h2>AVAILABLE JOBS</h2>
 
-    )
-  }
-  
-}
+            <div classNam="text-xl">  
+                {
+                    this.state.jobs && this.state.jobs.length
+                } job listings
+            </div>
+
+            <div className="blue-rect rounded-xl">
+                {
+                this.state.jobs &&
+                this.state.jobs.map( job => {
+                    return(
+                    <div className="mx-4">
+                        <p className="font-title">
+                            <b>{ job.job_title }</b> <br />
+                            { job.company } <br />
+                            { job.website }
+                        </p>    
+                    </div>
+                    )
+                })
+                }
+            </div>
+            
+            <div className="flex flex-col mt-10">
+                <h4 className="text-black">
+                    Have a job posting you'd like to advertise here?
+                </h4>
+                <button className="w-5/6 self-center md:w-2/5 lg:w-3/4">
+                    POST A JOB
+                </button>
+            </div>
+            </div>
+
+        )
+    }
+
+    }
 
 export default JobBoard;

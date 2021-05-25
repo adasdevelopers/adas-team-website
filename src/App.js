@@ -1,8 +1,6 @@
 // Import componenets
-import Header from "./components/Header";
 import Footer from "./components/Footer";
-import Navigation from './components/Navigation';
-import Nav from './components/NavigationTW';
+import Nav from './components/Navigation';
 
 // Import pages
 import Home from "./pages/Home";
@@ -16,14 +14,18 @@ import Join from "./pages/Join";
 // Import React libraries
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
+/**
+ * Renders the entire website
+ * @returns App
+ */
 function App() {
   return (
 
     <div>
       <Router className="App">
         <Nav />
-        {/* <Header /> */}
 
+            {/* Routers */}
             <Switch>
                 <Route exact path="/">
                     <Home />    
