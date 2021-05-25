@@ -1,8 +1,3 @@
-//Import data files
-import initiatives from "../_data/initiatives.json";
-import executives from "../_data/executives.json";
-
-
 // Import icons 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { library } from '@fortawesome/fontawesome-svg-core'
@@ -15,10 +10,48 @@ import dev_image from "../assets/img/ada_bot_scarf.png";
 import student_image from "../assets/img/ada_bot_sleepy.png";
 import mentor_image from "../assets/img/ada_bot_hands_up.png";
 import podcast_image from "../assets/img/ada_bot_hat1.png";
+import React from 'react'
+import db from '../firebase'
+
+class About extends React.Component {
+
+  state = {
+    initiatives: null,
+    executives: null
+  }
 
 
+  componentDidMount() {
 
-function About() {
+    console.log("mounted")
+    db.collection("executives").get()
+    .then( snapshot => {
+      const executives = []
+      snapshot.forEach(doc => {
+        const data = doc.data()
+        executives.push(data)
+
+      })
+      this.setState({executives: executives})
+      console.log(executives)
+    })
+    .catch(error => console.log(error))
+    
+    db.collection("initiatives").get()
+    .then( snapshot => {
+      const initiatives = []
+      snapshot.forEach(doc => {
+        const data = doc.data()
+        initiatives.push(data)
+      })
+      this.setState( {initiatives: initiatives})
+      console.log(initiatives)
+    })
+    .catch(error => console.log(error))
+  }
+
+
+  render() {
   library.add(fab, faEnvelope); //importing brand icons for social-media
   const images = [dev_image, student_image, mentor_image, podcast_image];
 
@@ -48,7 +81,7 @@ function About() {
         <h2 className="pb-4">OUR INITIATIVES</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-36 gap-y-10">
 
-          {initiatives.map((initiative, i) => (
+          {this.state.initiatives && this.state.initiatives.map((initiative, i) => (
             // Initiative Info
             <div className="grid justify-items-center">
               <div className="initiative-image">
@@ -116,7 +149,7 @@ function About() {
           <h3 className="font-title text-pink text-2xl">2020-2021</h3>
         </div>
 
-        {executives.map((executive, i) => (
+        {this.state.executives && this.state.executives.map((executive, i) => (
           <div id="executives" className="blue-rect-shadow">
             <div className="image">{executive["image"] !== "" && executive["image"]}</div>
             <div className="">
@@ -155,6 +188,8 @@ function About() {
     </div>
 
   );
+  }
 }
+
 
 export default About;

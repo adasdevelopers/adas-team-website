@@ -1,105 +1,92 @@
-import React, { useState } from 'react' 
-import {Link} from 'react-router-dom'
-// Import icons
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { fab } from '@fortawesome/free-brands-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars, faEnvelope } from '@fortawesome/free-solid-svg-icons'
-import { useTransition, animated } from 'react-spring'
+// import React, { useState } from 'react' 
+
+// import NavigationMenu from './NavigationMenu'
+// import NavigationLinks from './NavigationLinks'
 
 
-function Navigation() {
-    library.add(fab, faEnvelope); //importing brand icons for social-media
-
-    const [showMenu, setShowMenu] = useState(false)
-
-    const maskTransitions = useTransition(showMenu, null, {
-        from: { position: 'absolute', opacity: 0 },
-        enter: { opacity: 1 },
-        leave: { opacity: 0 },
-    })
-    const menuTransitions = useTransition(showMenu, null, {
-        from: { opacity: 0, transform: 'translateX(-100%)' },
-        enter: { opacity: 1, transform: 'translateX(0%)' },
-        leave: { opacity: 0, transform: 'translateX(-100%)' },
-    })
+// // Import icons
+// import { library } from '@fortawesome/fontawesome-svg-core'
+// import { fab } from '@fortawesome/free-brands-svg-icons'
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { faBars, faEnvelope } from '@fortawesome/free-solid-svg-icons'
+// import { useTransition, animated } from 'react-spring'
 
 
+// function Navigation() {
+//     library.add(fab, faEnvelope); //importing brand icons for social-media
 
-    return (
-        <nav>
-            <span className="text-xl p-3">
-                <FontAwesomeIcon 
-                    icon={faBars}
-                    onClick={() => setShowMenu(!showMenu)}
-                />
-            </span>
+//     const [showMenu, setShowMenu] = useState(false)
 
-            {
-                maskTransitions.map(({ item, key, props }) =>
-                    item && 
-                    <animated.div 
-                        key={key} 
-                        style={props}
-                        className="bg-black-t-50 fixed top-0 left-0 w-full h-full z-50"
-                        onClick={() => setShowMenu(false)}
-                    >
-                    </animated.div>
-                )
-            }
-
-            {
-                menuTransitions.map(({ item, key, props }) =>
-                    item && 
-                    <animated.div 
-                        key={key} 
-                        style={props}
-                        className="fixed bg-black top-0 left-0 w-4/5 h-full z-50 shadow p-3
-                                text-white font-title">
-                    <div className="p-3">
-                      <div id="hamburger-menu"></div>
-                      <ul className="space-y-6">
-                        <li key="Home">
-                          <Link to="/">Home</Link>
-                        </li>
-                        <li key="About">
-                          <Link to="/about">About</Link>
-                        </li>
-                        <li key="FAQ">
-                          <Link to="/faq">FAQ</Link>
-                        </li>
-                        <li key="Events">
-                          <Link to="/events">Events</Link>
-                        </li>
-                        <li key="JobBoard">
-                          <Link to="/jobboard">Job Board</Link>
-                        </li>
-                        <li key="JoinUs">
-                          <Link to="/join">Join</Link>
-                        </li>
-                        <li key="Contact">
-                          <Link to="/connect">Contact</Link>
-                        </li>
-                      </ul>
-                      <div className="divider-thick"></div>
-                      <div id="hamburger-social-media-icons"
-                        className="space-x-3 text-3xl">
-                        <FontAwesomeIcon icon={['fab', 'facebook']}/>
-                        <FontAwesomeIcon icon={['fab', 'twitter']}/>
-                        <FontAwesomeIcon icon={['fab', 'instagram']}/>
-                        <FontAwesomeIcon icon={['fab', 'linkedin']}/>
-                        <FontAwesomeIcon icon={['fab', 'github']}/>
-                        <FontAwesomeIcon icon={faEnvelope}/>
-                      </div>
-                    </div>
+//     const maskTransitions = useTransition(showMenu, null, {
+//         from: { position: 'absolute', opacity: 0 },
+//         enter: { opacity: 1 },
+//         leave: { opacity: 0 },
+//     })
+//     const menuTransitions = useTransition(showMenu, null, {
+//         from: { opacity: 0, transform: 'translateX(-100%)' },
+//         enter: { opacity: 1, transform: 'translateX(0%)' },
+//         leave: { opacity: 0, transform: 'translateX(-100%)' },
+//     })
 
 
-                    </animated.div>
-                )
-            }
 
-        </nav>
-    );
-}
+//     return (
+//         <nav></nav>
 
-export default Navigation;
+//         // LG ONLY
+//         // <nav 
+//         //     className="lg:h-16 lg:w-4/6 lg:flex lg:flex-row lg:space-between 
+//         //                 lg:z-40 lg:inset-x-0 lg:top-0">
+//         //     <NavigationLinks />
+//         // </nav>
+
+
+//         //SM/MD ONLY
+//         // <nav 
+//         //     className="relative flex flex-wrap 
+//         //                 items-center justify-between px-2 py-3 mb-3 z-10">
+//         //     <span className="text-xl p-3">
+//         //         <FontAwesomeIcon 
+//         //             icon={faBars}
+//         //             onClick={() => setShowMenu(!showMenu)}
+//         //         />
+//         //     </span>
+
+//         //     {/* Navigation Bar Transition Animation */}
+//         //     {
+//         //         maskTransitions.map(({ item, key, props }) =>
+//         //             item && 
+//         //             <animated.div 
+//         //                 key={key} 
+//         //                 style={props}
+//         //                 className=
+//         //                     "bg-black-t-50 fixed top-0 left-0 w-full h-full z-50"
+//         //                 onClick={() => setShowMenu(false)}
+//         //             >
+//         //             </animated.div>
+//         //         )
+//         //     }
+
+//         //     {
+//         //         menuTransitions.map(({ item, key, props }) =>
+//         //             item && 
+//         //             <animated.div 
+//         //                 key={key} 
+//         //                 style={props}
+//         //                 className="fixed bg-black top-0 left-0 w-4/5 h-full z-50 shadow p-3
+//         //                         text-white font-title">
+
+//         //               <NavigationMenu
+//         //                 closeMenu={() => setShowMenu(false)} 
+//         //               />
+
+//         //             </animated.div>
+//         //         )
+//         //     }
+
+//         // </nav>
+    
+//     );
+// }
+
+// export default Navigation;

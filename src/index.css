@@ -77,6 +77,8 @@
 @layer components {
 
     .page {
+        @apply container;
+        @apply mx-auto;
         @apply p-7;
     }
 
@@ -99,6 +101,11 @@
         @apply rounded-3xl;
         @apply my-4;
         @apply shadow-md;
+    }
+
+    #navigation-menu > li {
+        @apply block;
+
     }
 
 }
@@ -127,4 +134,14 @@
         width: 33.3px;
         height: 33.3px;
     }
+
+    #home-icon {
+        width: 73px;
+        height: 61px;
+    }
+
+    #home-bot {
+        width:20em;
+    }
+
 }
