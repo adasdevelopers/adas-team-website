@@ -20,11 +20,11 @@ class FAQ extends React.Component {
         questions.push(data)
       })
       this.setState({ questions: questions })
-      console.log(questions) 
+
     })
     .catch( error => console.log(error) )
   }
-  
+
   render() {
     return(
       <div className="page">
@@ -38,6 +38,7 @@ class FAQ extends React.Component {
           this.state.questions &&
           this.state.questions.map( question => {
             return(
+
               <div className={question.left ? "w-3/5 bg-light-blue p-3 shadow-md rounded-3xl my-7" : "w-3/5 bg-light-blue p-3 shadow-md rounded-3xl my-7 ml-auto"}>
               <div className="px-14 my-8">
                 <h4 className="font-title text-xl">{question.question}</h4>
