@@ -26,7 +26,7 @@ function App() {
 
             <Switch>
                 <Route exact path="/">
-                    <Home />    
+                    <Home />
                 </Route>
                 <Route exact path="/about">
                     <About />
@@ -40,7 +40,7 @@ function App() {
                 <Route exact path="/jobboard">
                     <JobBoard />
                 </Route>
-                
+
                 <Route exact path="/join">
                     <Join />
                 </Route>
@@ -55,7 +55,7 @@ function App() {
       </Router>
 
     </div>
-   
+
 
 
   );

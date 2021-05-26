@@ -9,7 +9,7 @@ function Header() {
             <a href="/" className="">
                 <img id="home-icon" src={icon} alt="adas-team-icon"
                     className="inline float-left" />
-                <h4 
+                <h4
                     className=
                         {"inline float-right my-5 mx-3 invisible lg:visible"}
                 >
