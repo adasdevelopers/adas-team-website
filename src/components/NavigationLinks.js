@@ -2,7 +2,8 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 /**
- * @returns Links required for Navigation sections
+ * Collection of the links to each page
+ * @returns Links 
  */
 function NavigationLinks() {
     return (
