@@ -70,6 +70,25 @@ class FAQ extends React.Component {
                     })
                 }
                 </div>
+                
+                <div className="divider-thick"></div>
+                
+                <div>
+                    <h2 className="pt-4 pb-7">
+                        Still have questions?
+                    </h2>
+
+                    <p>
+                        Please feel free to reach out to us at:<br/>
+                        <a
+                            href="mailto:adasteam@ualberta.ca"
+                            className="text-blue font-semibold"
+                        >
+                            adasteam@ualberta.ca
+                        </a>
+                    </p>
+                </div>
+
             </div>
 
         )
