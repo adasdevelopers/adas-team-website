@@ -82,6 +82,11 @@
         @apply mx-6;
     }
 
+    header {
+        @apply my-12;
+        @apply mx-6;
+    }
+
 }
 
 

@@ -8,7 +8,10 @@ import { faArrowDown } from '@fortawesome/free-solid-svg-icons'
 // Import components 
 import JoinForm from '../components/JoinForm'
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> bf19fb7a51c3348e6dbb415ae1e74199400703df
 /**
  * Welcome page
  * @returns 
@@ -94,6 +97,7 @@ function Home() {
 
 
         <div 
+<<<<<<< HEAD
             className="p-7"
         >
             
@@ -117,6 +121,18 @@ function Home() {
 
             </div>
             <div className="divider-thick"></div>
+=======
+            id="join-us-form" 
+            className="p-7"
+        >
+
+            <h2>
+                JOIN US
+            </h2>
+
+            {/* TODO: get Join Us form component */}
+            <div className="join"></div>
+>>>>>>> bf19fb7a51c3348e6dbb415ae1e74199400703df
 
             <div id="sponsors-list">
                 <h2>
