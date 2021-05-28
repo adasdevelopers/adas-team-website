@@ -9,11 +9,11 @@ function JoinForm() {
     return (    
         <div 
             id="connect-form" 
-            className="bg-light-blue p-5 rounded-lg"
+            className="bg-light-blue p-5 rounded-lg my-7"
         >
             <form 
                 onSubmit={handleSubmit} 
-                className="grid grid-cols-1 gap-3 justify-items-stretch
+                className="grid grid-cols-1 gap-3 justify-items-stretch 
                         lg:grid-cols-2 lg:mx-10 lg:my-3">
             
                 <div className="col-span-2">                
