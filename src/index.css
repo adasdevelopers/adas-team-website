@@ -63,6 +63,7 @@
         @apply text-white;
         @apply font-semibold;
         @apply w-3/5;
+
     }
     
     label {
@@ -72,6 +73,8 @@
     input, textarea {
         @apply rounded-lg;
         @apply w-full;
+        
+        height: 45px;
     }
 
     header {

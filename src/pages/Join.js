@@ -4,6 +4,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 
+// Import images
+import icon from '../assets/img/eicon_head_1.png'
+
+// Import components
+import JoinForm from '../components/JoinForm'
+
 
 /**
  * Displays a form that allows the users to subscribe
@@ -41,91 +47,48 @@ function Join() {
                 scholarships, and more!
                 </p>
 
-            <div>
+                <JoinForm />
 
-                <div 
-                    id="connect-form" 
-                    className="bg-light-blue p-5 rounded-lg"
-                >
-                    <form 
-                        onSubmit={handleSubmit} 
-                        className="grid grid-cols-1 gap-3">
-                    
-                        <label htmlFor="email">
-                            Email Address
-                        </label>
-                        <input
-                            id="form-email"
-                            type="email" 
-                            name="email"/>
-                        <ValidationError 
-                            prefix="Email" 
-                            field="email"
-                            errors={state.errors}/>
-                        
-                        <label htmlFor="name">
-                            First Name
-                        </label>
-                        <input
-                            id="form-first-name"
-                            type="name" 
-                            name="first-name"/>
 
-                        <label htmlFor="name">
-                            Last Name
-                        </label>
-                        <input
-                            id="form-last-name"
-                            type="name" 
-                            name="last-name"/>
-
-                        <label htmlFor="name">
-                            Student Affiliation
-                        </label>
-                        <input
-                            id="form-student-group"
-                            type="name" 
-                            name="student-group-name"/>
-
-                        <label htmlFor="name">
-                            Faculty
-                        </label>
-                        <input
-                            id="form-faculty"
-                            type="name" 
-                            name="faculty-name"/>
-
-                        <button 
-                            type="submit" 
-                            disabled={state.submitting}
-                            className="w-5/6 justify-self-center"
-                        >
-                            SUBSCRIBE
-                        </button>
-                    </form> 
-
-                </div>
-            </div>
-
-            <div className="divider-thick"></div>
+            <div className="divider-thick lg:invisible"></div>
+            
+            <img
+                src={icon}
+                alt="Ada's Team icon"
+                className="hidden 
+                            lg:block px-2 w-36 pr-7 pb-28 float-left">
+            </img>
 
             <div id="discord-invite">
-                <h4>
-                    ADA'S BASE
+                <h4 className="uppercase lg:normal-case">
+                    Ada's Base
                 </h4>
+                <div className="container py-3">
+                    <p className="block lg:hidden">
+                        Join the Ada's Base Discord server: 
+                        an online community of students that share job opportunities and hackathons, 
+                        review resumes, and hold each other accountable with virtual coworking sessions. 
+                    </p>
 
-                <p>
-                    Join the Ada's Base Discord server: 
-                    an online community of students that share job opportunities and hackathons, 
-                    review resumes, and hold each other accountable with virtual coworking sessions. 
-                </p>
+                    <p className="hidden lg:block">
+                        Pre-COVID, students were able to drop-by anytime to our room and connect with 
+                        other students. However, that casual, supportive atmosphere has now been hampered due 
+                        to the virtual environment. 
+                        <br /><br />
+                        To welcome new students and help us all stay connected during COVID-19, join 
+                        the Ada's Base Discord server! Join a community of students that share job opportunities 
+                        and hackathons, review resumes, host jackbox sessions, and hold you accountable during 
+                        virtual coworking sessions. 
+                    </p>
 
-                <button className="w-4/5">
-                    <span className="pr-3 text-lg">
-                        <FontAwesomeIcon icon={['fab', 'discord']}/>
-                    </span>
-                    Join Ada's Base
-                </button>
+                    <button className="w-4/5 lg:w-2/6">
+                        <span className="pr-3 text-lg">
+                            <FontAwesomeIcon icon={['fab', 'discord']}/>
+                        </span>
+                        Join Ada's Base
+                    </button>
+                </div>
+
             </div>
 
         </div>
