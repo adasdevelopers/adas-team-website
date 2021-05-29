@@ -5,7 +5,13 @@ import BigBot from "../assets/img/ada-home-bot.png"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowDown } from '@fortawesome/free-solid-svg-icons'
 
+// Import components 
+import JoinForm from '../components/JoinForm'
 
+<<<<<<< HEAD
+
+=======
+>>>>>>> bf19fb7a51c3348e6dbb415ae1e74199400703df
 /**
  * Welcome page
  * @returns 
@@ -91,6 +97,31 @@ function Home() {
 
 
         <div 
+<<<<<<< HEAD
+            className="p-7"
+        >
+            
+            <div id="subscribe-form">
+                <h2 className="lg:hidden">
+                    JOIN US
+                </h2>
+                
+                <h2 className="hidden lg:block">
+                    Subscribe to our Mailing List
+                </h2>
+
+                <p className="hidden lg:block">
+                    Join Ada’s Team and receive updates on events, opportunities, scholarships,
+                    and more!
+                </p>
+
+                <div id="connect-form" className="hidden md:block">
+                    <JoinForm />
+                </div>
+
+            </div>
+            <div className="divider-thick"></div>
+=======
             id="join-us-form" 
             className="p-7"
         >
@@ -101,6 +132,7 @@ function Home() {
 
             {/* TODO: get Join Us form component */}
             <div className="join"></div>
+>>>>>>> bf19fb7a51c3348e6dbb415ae1e74199400703df
 
             <div id="sponsors-list">
                 <h2>

@@ -75,7 +75,7 @@ class About extends React.Component {
                 <div id="about-goal" className="my-6 mb-8">
                     <p>
                         In Ada's Team, our goal is to 
-                        <b>promote diversity in computing science, games, technology, engineering, and
+                        <b> promote diversity in computing science, games, technology, engineering, and
                         mathematics. </b>
                         By diversity, we include but are not limited to the following categories:
                         gender, race, ethnicity, religion, ability, sexuality, social class, and any other factor
@@ -128,7 +128,10 @@ class About extends React.Component {
                 </div>
 
                 {/* Slack and Discord Invite links*/}
-                <div id="join-links" className="flex flex-col space-y-5 py-5 items-stretch">
+                <div 
+                    id="join-links" 
+                    className="flex flex-col space-y-5 py-5 items-stretch"
+                >
                     <div id="adas-tutoring-join">
                         <h3 className="font-title">
                             Ada's Podcast
@@ -138,11 +141,16 @@ class About extends React.Component {
                             with our students through virtual hangouts and study group sessions. 
                             There are tutors available to help with various CMPUT, MATH and STAT courses.
                         </p>
-                        <button className="self-center"> 
-                            <span className="pr-3 text-lg">
-                                <FontAwesomeIcon icon={['fab', 'slack']}/>
-                            </span>
-                            Join Ada's Tutoring
+                        <button 
+                            className="lg:w-1/5"> 
+                            {/* TODO: add Slack invite link */}
+                            <a href="#" alt="Ada's Team Tutoring Slack Invite Link">
+                                <span className="pr-3 text-lg">
+                                    <FontAwesomeIcon icon={['fab', 'slack']}/>
+                                </span>
+                                Join Ada's Tutoring
+                            </a>
+                            
                         </button>
                     </div>
                     <div id="adas-base-join">
@@ -154,11 +162,15 @@ class About extends React.Component {
                             share job opportunities and hackathons, review resumes, and hold each other 
                             accountable with virtual coworking sessions. 
                         </p>
-                        <button>
-                            <span className="pr-3 text-lg">
-                                <FontAwesomeIcon icon={['fab', 'discord']}/>
-                            </span>
-                            Join Ada's Base
+                        <button
+                            className="lg:w-1/5">
+                            {/* TODO: add Discord invite link */}
+                            <a href="#" alt="Ada's Team Discord Invite Link">
+                                <span className="pr-3 text-lg">
+                                    <FontAwesomeIcon icon={['fab', 'discord']}/>
+                                </span>
+                                Join Ada's Base
+                            </a>
                         </button>
                     </div>
                 </div>

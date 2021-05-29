@@ -89,7 +89,7 @@ class JobBoard extends React.Component {
                     </h4>
 
                     <button 
-                        className="w-5/6 self-center md:w-2/5 lg:w-3/4"
+                        className="w-full self-center md:w-2/5"
                     >
                         POST A JOB
                     </button>
