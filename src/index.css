@@ -8,6 +8,7 @@
 
 @layer base {
 
+    /* Header: Title */
     h1 {
         @apply text-5xl;
         @apply font-title;
@@ -34,8 +35,10 @@
         @apply text-xl;
     }
 
+    /* Header: Subtitles */
     h5 {
         @apply text-xl;
+        @apply text-center;
     }
 
     a {
@@ -71,19 +74,25 @@
         @apply w-full;
     }
 
+    header {
+        @apply my-12;
+        @apply mx-6;
+    }
+
 }
 
 
 @layer components {
 
     .page {
+        @apply container;
+        @apply mx-auto;
         @apply p-7;
     }
 
     .page-title {
         @apply my-12;
         @apply mx-6;
-
     }
 
     .blue-rect {
@@ -108,9 +117,14 @@
 
 }
 
-/* Custom Shapes */
+/*
+*   Custom Shape
+*   and fixed image sizes
+*/
 
 @layer utilities {
+    
+    /* TODO: change margins to em */
     .divider-thick {
         width: 4.5em;
         height: 0.625em;

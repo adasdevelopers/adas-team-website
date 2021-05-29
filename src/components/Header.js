@@ -1,15 +1,13 @@
 import icon from "../assets/img/eicon_head_1.png";
 import Navigation from "./Navigation"
+import Nav from './NavigationTW'
+
 
 function Header() {
     return (
-        <header className="shadow-md p-3 flex justify-between items-center">
-            <a href="/" className="inline-block">
-              <img id="home-icon" src={icon} alt="adas-team-icon" />
-            </a>
+        <header>
 
-            <Navigation />
-    
+
         </header>
     );
 }

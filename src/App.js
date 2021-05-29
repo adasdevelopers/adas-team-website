@@ -1,6 +1,6 @@
 // Import componenets
-import Header from "./components/Header";
 import Footer from "./components/Footer";
+import Nav from './components/Navigation';
 
 // Import pages
 import Home from "./pages/Home";
@@ -11,54 +11,49 @@ import FAQ from "./pages/FAQ";
 import JobBoard from "./pages/JobBoard";
 import Join from "./pages/Join";
 
-// Import Styles
-// import "../src/_sass/main.scss";
-
 // Import React libraries
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
+/**
+ * Renders the entire website
+ * @returns App
+ */
 function App() {
   return (
 
     <div>
       <Router className="App">
-      <div id="body">
-          <Header />
+        <Nav />
 
-          <div id="content">
-            <div className="md:container md:mx-auto">
-              <Switch>
+            {/* Routers */}
+            <Switch>
                 <Route exact path="/">
-                  <Home />
+                    <Home />    
                 </Route>
                 <Route exact path="/about">
-                  <About />
+                    <About />
                 </Route>
                 <Route exact path="/faq">
-                  <FAQ />
+                    <FAQ />
                 </Route>
                 <Route exact path="/events">
-                  <Events />
-                  </Route>
+                    <Events />
+                </Route>
                 <Route exact path="/jobboard">
-                  <JobBoard />
+                    <JobBoard />
                 </Route>
                 
                 <Route exact path="/join">
-                  <Join />
+                    <Join />
                 </Route>
                 <Route exact path="/connect">
-                  <Connect />
+                    <Connect />
                 </Route>
-              </Switch>
-            </div>
+            </Switch>
 
-          </div>
-        {/* </Router> */}
-      </div>
- 
 
-      <Footer className="absolute inset-x-0 bottom-0 w-full"/>
+        <Footer className="absolute inset-x-0 bottom-0 w-full"/>
+
       </Router>
 
     </div>
