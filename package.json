@@ -1,4 +1,5 @@
 {
+    "homepage": "https://adasdevelopers.github.io/adas-team-website/",
   "name": "ateam-site",
   "version": "0.1.0",
   "private": true,
@@ -28,7 +29,9 @@
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
