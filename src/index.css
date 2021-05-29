@@ -56,7 +56,7 @@
 
     button {
         @apply bg-blue;
-        @apply px-7; 
+        @apply px-7;
         @apply py-3;
         @apply my-5;
         @apply rounded-xl;
@@ -65,15 +65,15 @@
         @apply w-3/5;
 
     }
-    
+
     label {
-        @apply font-bold; 
+        @apply font-bold;
     }
 
     input, textarea {
         @apply rounded-lg;
         @apply w-full;
-        
+
         height: 45px;
     }
 
@@ -131,14 +131,15 @@
 */
 
 @layer utilities {
-    
+
     /* TODO: change margins to em */
     .divider-thick {
         width: 4.5em;
         height: 0.625em;
         background-color: pink;
         margin-bottom: 29px;
-        margin-top: 62.7px;
+        /* margin-top: 62.7px; */
+        margin-top: 0;
     }
 
     .divider-thin {

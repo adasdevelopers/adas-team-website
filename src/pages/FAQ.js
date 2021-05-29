@@ -8,7 +8,7 @@ import db from '../firebase'
  */
 class FAQ extends React.Component {
 
-  
+
     state = {
         questions: null,
 
@@ -25,14 +25,14 @@ class FAQ extends React.Component {
             questions.push(data)
             })
             this.setState({ questions: questions })
-            console.log(questions) 
+            console.log(questions)
         })
         .catch( error => console.log(error) )
     }
 
     render() {
         return(
-            <div id="faq-page" className="page">
+            <div id="faq-page" className="page animate-fade-in-down">
                 <header>
                     <h1>
                         FAQ
@@ -45,14 +45,14 @@ class FAQ extends React.Component {
                 <div id="faq-section">
                 {
                     this.state.questions &&
-                    this.state.questions.map( question => 
+                    this.state.questions.map( question =>
                     {
                         return(
-                            <div 
+                            <div
                                 className={
-                                    question.left ? 
-                                    "w-3/5 bg-light-blue p-3 shadow-md rounded-3xl my-7" 
-                                    : 
+                                    question.left ?
+                                    "w-3/5 bg-light-blue p-3 shadow-md rounded-3xl my-7"
+                                    :
                                     "w-3/5 bg-light-blue p-3 shadow-md rounded-3xl my-7 ml-auto"}
                             >
                                 <div id="faq-question-and-answer" className="px-14 my-8">
@@ -62,7 +62,7 @@ class FAQ extends React.Component {
                                     <p id="faq-answer">
                                         { question.answer}
                                     </p>
-                                    
+
                                     <div className="divider-thin"></div>
                                 </div>
                         </div>
@@ -70,9 +70,9 @@ class FAQ extends React.Component {
                     })
                 }
                 </div>
-                
+
                 <div className="divider-thick"></div>
-                
+
                 <div>
                     <h2 className="pt-4 pb-7">
                         Still have questions?

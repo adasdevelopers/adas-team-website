@@ -17,7 +17,7 @@ import db from '../firebase'
 /**
  * Displays information about Ada's Team
  * initiatives and executive team
- * 
+ *
  */
 class About extends React.Component {
 
@@ -64,7 +64,7 @@ class About extends React.Component {
 
 
         return (
-            <div className="page">
+            <div className="page animate-fade-in-down">
 
                 <header>
                     <h1>About</h1>
@@ -74,12 +74,12 @@ class About extends React.Component {
                 {/* Title Intro */}
                 <div id="about-goal" className="my-6 mb-8">
                     <p>
-                        In Ada's Team, our goal is to 
+                        In Ada's Team, our goal is to
                         <b> promote diversity in computing science, games, technology, engineering, and
                         mathematics. </b>
                         By diversity, we include but are not limited to the following categories:
                         gender, race, ethnicity, religion, ability, sexuality, social class, and any other factor
-                        of discrimination or minority group. <br /> 
+                        of discrimination or minority group. <br />
                         <b>We embrace and celebrate your differences, striving
                         to foster an inclusive culture and safe space for everyone to collaborate and thrive in.</b>
                     </p>
@@ -95,7 +95,7 @@ class About extends React.Component {
 
                         <div className="grid justify-items-center">
                             <div className="initiative-image">
-                            {initiative["image"] !== "" && <img src={images[i]} alt="adas-team-bot" 
+                            {initiative["image"] !== "" && <img src={images[i]} alt="adas-team-bot"
                             className="h-40 w-30 pb-3" />}
                             </div>
 
@@ -105,7 +105,7 @@ class About extends React.Component {
 
                             <div className="description">
                                 <p>{initiative["description"]}</p>
-                            </div>  
+                            </div>
 
                             <div className="initiative-social-media" className="my-2 space-x-4">
                                 {initiative["contact"]["instagram"] !== "" && (
@@ -128,8 +128,8 @@ class About extends React.Component {
                 </div>
 
                 {/* Slack and Discord Invite links*/}
-                <div 
-                    id="join-links" 
+                <div
+                    id="join-links"
                     className="flex flex-col space-y-5 py-5 items-stretch"
                 >
                     <div id="adas-tutoring-join">
@@ -137,12 +137,12 @@ class About extends React.Component {
                             Ada's Podcast
                         </h3>
                         <p>
-                            Get FREE access to virtual one-on-one tutoring sessions, and connect 
-                            with our students through virtual hangouts and study group sessions. 
+                            Get FREE access to virtual one-on-one tutoring sessions, and connect
+                            with our students through virtual hangouts and study group sessions.
                             There are tutors available to help with various CMPUT, MATH and STAT courses.
                         </p>
-                        <button 
-                            className="lg:w-1/5"> 
+                        <button
+                            className="lg:w-1/5">
                             {/* TODO: add Slack invite link */}
                             <a href="#" alt="Ada's Team Tutoring Slack Invite Link">
                                 <span className="pr-3 text-lg">
@@ -150,7 +150,7 @@ class About extends React.Component {
                                 </span>
                                 Join Ada's Tutoring
                             </a>
-                            
+
                         </button>
                     </div>
                     <div id="adas-base-join">
@@ -158,9 +158,9 @@ class About extends React.Component {
                             Ada's Base
                         </h3>
                         <p>
-                            Join the Ada's Base Discord server: an online community of students that 
-                            share job opportunities and hackathons, review resumes, and hold each other 
-                            accountable with virtual coworking sessions. 
+                            Join the Ada's Base Discord server: an online community of students that
+                            share job opportunities and hackathons, review resumes, and hold each other
+                            accountable with virtual coworking sessions.
                         </p>
                         <button
                             className="lg:w-1/5">
@@ -186,9 +186,9 @@ class About extends React.Component {
                         </h3>
                     </div>
 
-    
+
                     {
-                        this.state.executives && this.state.executives.map((executive, i) => 
+                        this.state.executives && this.state.executives.map((executive, i) =>
 
                             <div id="executives" className="blue-rect-shadow">
 
@@ -208,25 +208,25 @@ class About extends React.Component {
                                         <p>{executive["description"]}</p>
                                     </div>
                                 </div>
-                            
+
                                 {/* Executive Contact Information */}
                                 <div id="executive-contact" className="my-2 space-x-4 text-3xl">
-                                    <a 
-                                        href={executive.contact.LinkedIn}> 
+                                    <a
+                                        href={executive.contact.LinkedIn}>
                                             <FontAwesomeIcon icon={['fab', 'linkedin']} />
                                     </a>
-                                    <a 
+                                    <a
                                         href={executive.contact.Github} alt="Github">
-                                            <FontAwesomeIcon icon={['fab', 'github']}/> 
+                                            <FontAwesomeIcon icon={['fab', 'github']}/>
                                     </a>
-                                    
+
                                     {executive.contact.Other !== "" && (
-                                        <a className="Contact" 
+                                        <a className="Contact"
                                             href={executive.contact.Other} alt="Contact">
                                                 <FontAwesomeIcon icon={faEnvelope} />
                                         </a>
                                     )}
-                                    
+
                                 </div>
 
                             </div>

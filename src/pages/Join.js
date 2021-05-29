@@ -1,5 +1,4 @@
 // Import libraries
-import { useForm, ValidationError } from '@formspree/react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
@@ -14,18 +13,17 @@ import JoinForm from '../components/JoinForm'
 /**
  * Displays a form that allows the users to subscribe
  * to the mailing list
- * @returns 
+ * @returns
  */
 function Join() {
     // importing brand icons
-    library.add(fab); 
-    const [state, handleSubmit] = useForm("mqkwpaoe");
+    library.add(fab);
 
     // TODO: display popup sucess message
-    if (state.succeeded) {
-        return <p>Thanks for connecting!</p>;
-
-    }
+    // if (state.succeeded) {
+    //     return <p>Thanks for connecting!</p>;
+    //
+    // }
 
     return (
         <div id="join-page" className="page">
@@ -51,11 +49,11 @@ function Join() {
 
 
             <div className="divider-thick lg:invisible"></div>
-            
+
             <img
                 src={icon}
                 alt="Ada's Team icon"
-                className="hidden 
+                className="hidden
                             lg:block px-2 w-36 pr-7 pb-28 float-left">
             </img>
 
@@ -65,20 +63,20 @@ function Join() {
                 </h4>
                 <div className="container py-3">
                     <p className="block lg:hidden">
-                        Join the Ada's Base Discord server: 
-                        an online community of students that share job opportunities and hackathons, 
-                        review resumes, and hold each other accountable with virtual coworking sessions. 
+                        Join the Ada's Base Discord server:
+                        an online community of students that share job opportunities and hackathons,
+                        review resumes, and hold each other accountable with virtual coworking sessions.
                     </p>
 
                     <p className="hidden lg:block">
-                        Pre-COVID, students were able to drop-by anytime to our room and connect with 
-                        other students. However, that casual, supportive atmosphere has now been hampered due 
-                        to the virtual environment. 
+                        Pre-COVID, students were able to drop-by anytime to our room and connect with
+                        other students. However, that casual, supportive atmosphere has now been hampered due
+                        to the virtual environment.
                         <br /><br />
-                        To welcome new students and help us all stay connected during COVID-19, join 
-                        the Ada's Base Discord server! Join a community of students that share job opportunities 
-                        and hackathons, review resumes, host jackbox sessions, and hold you accountable during 
-                        virtual coworking sessions. 
+                        To welcome new students and help us all stay connected during COVID-19, join
+                        the Ada's Base Discord server! Join a community of students that share job opportunities
+                        and hackathons, review resumes, host jackbox sessions, and hold you accountable during
+                        virtual coworking sessions.
                     </p>
 
                     <button className="w-4/5 lg:w-2/6">
