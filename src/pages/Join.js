@@ -1,98 +1,98 @@
+// Import libraries
 import { useForm, ValidationError } from '@formspree/react';
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 
-//TODO: fix links
+// Import images
+import icon from '../assets/img/eicon_head_1.png'
+
+// Import components
+import JoinForm from '../components/JoinForm'
+
+
+/**
+ * Displays a form that allows the users to subscribe
+ * to the mailing list
+ * @returns 
+ */
 function Join() {
-  library.add(fab); //importing brand icons for social-media
-  const [state, handleSubmit] = useForm("mqkwpaoe");
-  if (state.succeeded) {
-      return <p>Thanks for connecting!</p>;
+    // importing brand icons
+    library.add(fab); 
+    const [state, handleSubmit] = useForm("mqkwpaoe");
 
-  }
+    // TODO: display popup sucess message
+    if (state.succeeded) {
+        return <p>Thanks for connecting!</p>;
 
-  return (
-    <div className="page">
-      <div className="page-title">
-        <h1>Join Us</h1>
-        <h5>Join the Ada's Team community to stay updated
-          and get involved!</h5>
-      </div>
+    }
 
-      <h3>JOIN US</h3>
-      <p className="my-5">Subcribe to our mailing list to receive updates on events, opportunities,
-        scholarships, and more!</p>
+    return (
+        <div id="join-page" className="page">
+            <header>
+                <h1>
+                    Join Us
+                </h1>
+                <h5>
+                    Join the Ada's Team community to stay updated
+                    and get involved!
+                </h5>
+            </header>
 
-      <div>
+                <h3>
+                    JOIN US
+                </h3>
+                <p className="my-5">
+                    Subcribe to our mailing list to receive updates on events, opportunities,
+                scholarships, and more!
+                </p>
 
-        <div id="connect-form" className="bg-light-blue p-5 rounded-lg">
-          <form onSubmit={handleSubmit} 
-                className="grid grid-cols-1 gap-3">
+                <JoinForm />
+
+
+            <div className="divider-thick lg:invisible"></div>
             
-            <label htmlFor="email">Email Address</label>
-            <input
-              id="form-email"
-              type="email" 
-              name="email"/>
-            <ValidationError 
-              prefix="Email" 
-              field="email"
-              errors={state.errors}/>
-          
-            <label htmlFor="name">First Name</label>
-            <input
-              id="form-first-name"
-              type="name" 
-              name="first-name"/>
+            <img
+                src={icon}
+                alt="Ada's Team icon"
+                className="hidden 
+                            lg:block px-2 w-36 pr-7 pb-28 float-left">
+            </img>
 
-            <label htmlFor="name">Last Name</label>
-            <input
-              id="form-last-name"
-              type="name" 
-              name="last-name"/>
+            <div id="discord-invite">
+                <h4 className="uppercase lg:normal-case">
+                    Ada's Base
+                </h4>
+                <div className="container py-3">
+                    <p className="block lg:hidden">
+                        Join the Ada's Base Discord server: 
+                        an online community of students that share job opportunities and hackathons, 
+                        review resumes, and hold each other accountable with virtual coworking sessions. 
+                    </p>
 
-            <label htmlFor="name">Student Affiliation</label>
-            <input
-              id="form-student-group"
-              type="name" 
-              name="student-group-name"/>
+                    <p className="hidden lg:block">
+                        Pre-COVID, students were able to drop-by anytime to our room and connect with 
+                        other students. However, that casual, supportive atmosphere has now been hampered due 
+                        to the virtual environment. 
+                        <br /><br />
+                        To welcome new students and help us all stay connected during COVID-19, join 
+                        the Ada's Base Discord server! Join a community of students that share job opportunities 
+                        and hackathons, review resumes, host jackbox sessions, and hold you accountable during 
+                        virtual coworking sessions. 
+                    </p>
 
-            <label htmlFor="name">Faculty</label>
-            <input
-              id="form-faculty"
-              type="name" 
-              name="faculty-name"/>
+                    <button className="w-4/5 lg:w-2/6">
+                        <span className="pr-3 text-lg">
+                            <FontAwesomeIcon icon={['fab', 'discord']}/>
+                        </span>
+                        Join Ada's Base
+                    </button>
+                </div>
 
-            <button type="submit" disabled={state.submitting}
-                    className="w-5/6 justify-self-center">
-              SUBSCRIBE
-            </button>
-          </form> 
+            </div>
 
         </div>
-
-      </div>
-      <div className="divider-thick"></div>
-      <h4>ADA'S BASE</h4>
-
-      <p>
-      Join the Ada's Base Discord server: 
-        an online community of students that share job opportunities and hackathons, 
-        review resumes, and hold each other accountable with virtual coworking sessions. 
-      </p>
-
-      <button className="w-4/5">
-        <span className="pr-3 text-lg"><FontAwesomeIcon icon={['fab', 'discord']}/></span>
-        Join Ada's Base
-      </button>
-
-
-
-
-    </div>
-  );
+    );
 }
 
 export default Join;

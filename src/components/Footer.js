@@ -1,6 +1,10 @@
+// Import components
 import SocialMedia from './SocialMedia'
-// import NavigationLinks  from './NavigationLinks'
 
+/**
+ * Displays the footer without navigation
+ * @returns Footer
+ */
 function Footer() {
   return (
     <footer>
@@ -23,13 +27,6 @@ function Footer() {
               8900 114 St NW<br />
               Edmonton, AB T6G 2S4
             </p>
-
-            {/* <div id="footer-nav">
-              <h3 className="font-title text-blue text-lg bold pt-3">NAVIGATION</h3>
-              <nav className="grid grid-cols-2 gap-x-2 text-base">
-                <NavigationLinks />
-              </nav>
-            </div> */}
 
             <div className="divider-thin"></div>
             <p>© Copyright 2020 Ada's Team</p> 

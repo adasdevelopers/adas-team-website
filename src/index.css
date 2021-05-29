@@ -8,6 +8,7 @@
 
 @layer base {
 
+    /* Header: Title */
     h1 {
         @apply text-5xl;
         @apply font-title;
@@ -34,8 +35,10 @@
         @apply text-xl;
     }
 
+    /* Header: Subtitles */
     h5 {
         @apply text-xl;
+        @apply text-center;
     }
 
     a {
@@ -60,6 +63,7 @@
         @apply text-white;
         @apply font-semibold;
         @apply w-3/5;
+
     }
     
     label {
@@ -69,6 +73,18 @@
     input, textarea {
         @apply rounded-lg;
         @apply w-full;
+        
+        height: 45px;
+    }
+
+    header {
+        @apply my-12;
+        @apply mx-6;
+    }
+
+    header {
+        @apply my-12;
+        @apply mx-6;
     }
 
 }
@@ -85,7 +101,6 @@
     .page-title {
         @apply my-12;
         @apply mx-6;
-
     }
 
     .blue-rect {
@@ -110,9 +125,14 @@
 
 }
 
-/* Custom Shapes */
+/*
+*   Custom Shape
+*   and fixed image sizes
+*/
 
 @layer utilities {
+    
+    /* TODO: change margins to em */
     .divider-thick {
         width: 4.5em;
         height: 0.625em;
