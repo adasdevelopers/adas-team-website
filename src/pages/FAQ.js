@@ -63,7 +63,7 @@ class FAQ extends React.Component {
                                         { question.answer}
                                     </p>
                                     
-                                    <div className="divider-thin"></div>
+                                    <div className="divider-thin w-4/5"></div>
                                 </div>
                         </div>
                         )
