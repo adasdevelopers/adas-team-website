@@ -8,6 +8,9 @@
 
 @layer base {
 
+    /* active link style */
+
+
     /* Header: Title */
     h1 {
         @apply text-5xl;
@@ -122,6 +125,11 @@
         @apply block;
 
     }
+    .activeSelected
+    {
+      font-weight: "bold";
+      color: "red";
+    }
 
 }
 
@@ -163,6 +171,23 @@
 
     #home-bot {
         width:20em;
+    }
+
+    .wrapper {
+      display: flex;
+      flex-direction: column wrap;
+      flex-wrap: wrap;
+      color: black;
+    }
+
+    .image--cover {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+
+      background-color: grey;
+      object-fit: cover;
+      object-position: center right;
     }
 
 }

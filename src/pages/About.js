@@ -3,9 +3,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import Typist from 'react-typist';
 
 
 // Import initiative assets
+import about_image from "../assets/img/about.svg"
 import dev_image from "../assets/img/ada_bot_scarf.png";
 import student_image from "../assets/img/ada_bot_sleepy.png";
 import mentor_image from "../assets/img/ada_bot_hands_up.png";
@@ -65,14 +67,30 @@ class About extends React.Component {
 
         return (
             <div className="page animate-fade-in-down">
-
+            <div
+                id="about_image"
+                className=" mx-auto static p-5 md:p-5 relative animate-fade-in-down mb-72" >
+                {/* About image */}
+                <img
+                    id="about"
+                    src={about_image} alt="people sitting on infographics"
+                    className="absolute inset-y-0 mt-1 z-40 lg:inset-y-0 lg:right-0 ">
+                </img>
                 <header>
-                    <h1>About</h1>
-                    <h5 className="text-center">Learn more about Ada's Team.</h5>
+                    <h1 className="text-left mx-48">About</h1>
+                    <p
+                        className="font-body italic text-lg mx-48">
+                        <Typist>
+                        <Typist.Delay ms={1800}/>
+                        Learn more about Ada's Team.
+                        </Typist>
+
+                    </p>
                 </header>
+                </div>
 
                 {/* Title Intro */}
-                <div id="about-goal" className="my-6 mb-8">
+                <div id="about-goal" className="mt-20 px-36">
                     <p>
                         In Ada's Team, our goal is to
                         <b> promote diversity in computing science, games, technology, engineering, and
@@ -85,12 +103,22 @@ class About extends React.Component {
                     </p>
                 </div>
 
+                <br/>
+
+
+                <div className="divider-thick mx-36 "></div>
+
                 {/* Initiative block */}
-                <div id="initiatives" className="py-7">
+                <div id="initiatives" className="my-28 mx-36">
                     <h2 className="pb-4">OUR INITIATIVES</h2>
+                    {/* Initiative information */}
+                    <p
+                        className="font-body italic text-sm mb-20">Integer auctor at proin posuere etiam integer amet sed. Ut pellentesque
+                        nullam et adipiscing ultrices amet, interdum eu vel.</p>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-x-36 gap-y-10">
 
-                        {/* Initiative information */}
+
+
                         {this.state.initiatives && this.state.initiatives.map((initiative, i) => (
 
                         <div className="grid justify-items-center">
@@ -103,7 +131,7 @@ class About extends React.Component {
                                 {initiative["name"]}
                             </h4>
 
-                            <div className="description">
+                            <div className="description text-left">
                                 <p>{initiative["description"]}</p>
                             </div>
 
@@ -130,7 +158,7 @@ class About extends React.Component {
                 {/* Slack and Discord Invite links*/}
                 <div
                     id="join-links"
-                    className="flex flex-col space-y-5 py-5 items-stretch"
+                    className="flex flex-col space-y-5 py-5 items-stretch my-32 mx-36 mr-48"
                 >
                     <div id="adas-tutoring-join">
                         <h3 className="font-title">
@@ -177,7 +205,7 @@ class About extends React.Component {
 
                 {/* Executive information from Firebase */}
                 <div id="executive-team">
-                    <div className="title">
+                    <div className="title my-10 mx-36">
                         <h2>
                             MEET THE TEAM
                         </h2>
@@ -190,7 +218,7 @@ class About extends React.Component {
                     {
                         this.state.executives && this.state.executives.map((executive, i) =>
 
-                            <div id="executives" className="blue-rect-shadow">
+                            <div id="executives" className="blue-rect-shadow mx-36">
 
                                 <div alt="Image of an executive of Ada's Team">
                                     {executive["image"] !== "" && executive["image"]}

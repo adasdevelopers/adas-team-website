@@ -106,15 +106,55 @@ function Home() {
             </h2>
             <span className="px-32">Join Ada’s Team and receive updates on events, opportunities, scholarships, and more!</span>
 
-            <div className="join px-32">  <JoinForm/></div>
+            <div className="join mx-32">  <JoinForm/></div>
+            <br/>
 
-            <div id="sponsors-list">
+              <div id="sponsors-list" className="mx-32">
+              <div className="divider-thick"></div>
                 <h2>
                     SPONSORS
                 </h2>
+                {/** main flex box wrapper **/}
+                <div className="wrapper my-10 mx-18">
 
-                <div className="sponsor px-16">
+                {/** divs within flex box **/}
+                <div className="w-60 h-30 m-8">
+                <img src="https://i.pinimg.com/originals/7f/10/58/7f1058153c8d23968a1778794512ea3e.jpg" className="image--cover "/>
+                <h4 className="text-lg mx-10 my-8">INTUIT</h4>
                 </div>
+
+
+                <div className="w-60 h-40 m-10">
+                <img src="https://i.pinimg.com/originals/18/bb/0e/18bb0eb7190e7f956790031404849834.jpg" className="image--cover "/>
+                <h4 className="text-lg text-center m-5">DOTDASH</h4>
+                </div>
+
+                  <div className="w-60 h-40 m-10">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW2ASvjczznm6jREHfFGzl_AM7Codo-42B6A&usqp=CAU" className="image--cover "/>
+                <h4 className="text-lg text-center m-5">STARTUP EDMONTON</h4>
+                </div>
+
+                <div className="w-60 h-40 m-10">
+                <img src="https://64.media.tumblr.com/347da48af495e97bd49ae19b1b9823d0/2224fb45ec99743a-23/s400x600/f2bd461b58e4735610901a845fc2724fd6e7641c.jpg" className="image--cover "/>
+                <h4 className="text-lg mx-10 my-8">SCOTIABANK</h4>
+                </div>
+
+                <div className="w-60 h-40 m-10">
+                <img src="https://64.media.tumblr.com/2b0a9f33bb8bcd58dffb8c09d9d6ec10/7ae78fc22ff92b2e-81/s640x960/82b48eadeab117eb2c276079b6bf2e1702f011ac.jpg" className="image--cover "/>
+                <h4 className="text-lg mx-10 my-8">JOBBER</h4>
+                </div>
+
+
+                <div className="w-60 h-40 m-10">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLaKDzEY40Au7ggR4u9anmsLz-RivJG5Sotg&usqp=CAU" className="image--cover "/>
+                <h4 className="text-lg mx-10 my-8 ">DEEPMIND</h4>
+                </div>
+
+
+
+                 </div>
+
+
             </div>
 
       </div>
