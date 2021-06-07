@@ -3,8 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
-import Typist from 'react-typist';
-
+import Header from '../components/Header'
 
 // Import initiative assets
 import about_image from "../assets/img/about.svg"
@@ -76,17 +75,7 @@ class About extends React.Component {
                     src={about_image} alt="people sitting on infographics"
                     className="absolute inset-y-0 mt-1 z-40 lg:inset-y-0 lg:right-0 ">
                 </img>
-                <header>
-                    <h1 className="text-left mx-48">About</h1>
-                    <p
-                        className="font-body italic text-lg mx-48">
-                        <Typist>
-                        <Typist.Delay ms={1800}/>
-                        Learn more about Ada's Team.
-                        </Typist>
-
-                    </p>
-                </header>
+                <Header title="About" subtitle="Learn more about Ada's Team."/>
                 </div>
 
                 {/* Title Intro */}

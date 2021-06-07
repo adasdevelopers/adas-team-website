@@ -2,6 +2,7 @@
 import React from 'react';
 import db from "../firebase";
 import { render } from '@testing-library/react';
+import Header from '../components/Header'
 
 
 /**
@@ -30,38 +31,30 @@ class JobBoard extends React.Component {
 
     }
 
-  
+
     render() {
         return (
-            <div 
-                id="job-board-page" 
+            <div
+                id="job-board-page"
                 className="page"
             >
-                <header>
-                    <h1>
-                        Job Board
-                    </h1>
-                    <h5>
-                        Search through our current job listings from various 
-                        companies to get in touch and land your next job.
-                    </h5>
-                </header>
+                <Header title="Job Board" subtitle=" Search through our current job listings from various companies to get in touch and land your next job."></Header>
 
 
                 <h2>
                     AVAILABLE JOBS
                 </h2>
 
-                <div 
-                    id="job-listings-number" 
+                <div
+                    id="job-listings-number"
                     className="text-xl"
-                >  
+                >
                     {
                         this.state.jobs && this.state.jobs.length
                     } job listings
                 </div>
 
-                <div 
+                <div
                     id="job-posting"
                     className="blue-rect rounded-xl">
                     {
@@ -73,14 +66,14 @@ class JobBoard extends React.Component {
                                     <b>{ job.job_title }</b> <br />
                                     { job.company } <br />
                                     { job.website }
-                                </p>    
+                                </p>
                             </div>
                             )
                         })
                     }
                 </div>
-                
-                <div 
+
+                <div
                     id="post-a-job"
                     className="flex flex-col mt-10"
                 >
@@ -88,7 +81,7 @@ class JobBoard extends React.Component {
                         Have a job posting you'd like to advertise here?
                     </h4>
 
-                    <button 
+                    <button
                         className="w-full self-center md:w-2/5"
                     >
                         POST A JOB

@@ -1,10 +1,11 @@
 // Import React libaries
 import React, { useRef, useEffect, useState } from 'react';
 import { useForm, ValidationError } from '@formspree/react';
+import Header from '../components/Header'
 
 /**
- * 
- * @returns 
+ *
+ * @returns
  */
 function Connect() {
 
@@ -26,7 +27,7 @@ function Connect() {
                 Connect With Us
             </h1>
             <h5>
-                We’d love to get in touch with you! 
+                We’d love to get in touch with you!
                 Connect with us through email or any of our social media.
             </h5>
             </header>
@@ -37,31 +38,31 @@ function Connect() {
             </h3>
 
             <div id="connect-form" className="bg-light-blue p-5 rounded-lg">
-                <form onSubmit={handleSubmit} 
+                <form onSubmit={handleSubmit}
                     className="grid grid-cols-1 gap-3">
-                
+
                 <label htmlFor="email">
                     Email Address
                 </label>
                 <input
                     id="form-email"
-                    type="email" 
+                    type="email"
                     name="email"
                     className="w-5/6"
                     ref={editFieldRef}
                 />
-                <ValidationError 
-                    prefix="Email" 
+                <ValidationError
+                    prefix="Email"
                     field="email"
                     errors={state.errors}
                 />
-                
+
                 <label htmlFor="name">
                     Name
                 </label>
                 <input
                     id="form-name"
-                    type="name" 
+                    type="name"
                     name="name"
                     ref={editFieldRef}
                     className="w-5/6"
@@ -72,7 +73,7 @@ function Connect() {
                 </label>
                 <input
                     id="form-subject"
-                    type="subject" 
+                    type="subject"
                     name="subject"
                     ref={editFieldRef}
                     className="w-5/6"
@@ -85,21 +86,21 @@ function Connect() {
                     id="message"
                     name="message"
                 />
-                <ValidationError 
-                    prefix="Message" 
+                <ValidationError
+                    prefix="Message"
                     field="message"
                     errors={state.errors}
                 />
 
-                <button 
-                    type="submit" 
+                <button
+                    type="submit"
                     disabled={state.submitting}
                     ref={editButtonRef}
                     className="w-5/6 justify-self-center">
                         SEND MESSAGE
                 </button>
 
-                </form> 
+                </form>
 
             </div>
 

@@ -9,25 +9,27 @@ function JoinForm() {
       const [faculty, setFaculty] = useState("")
       const [studentAff, setStudentAff] = useState("")
 
-      function subscribe(event) {
-          event.preventDefault();
-          fetch("https://adasteam.us18.list-manage.com/subscribe/post?u=9d8e6ca3c4618877981922611&amp;id=8ac3f17ed3",
-          { method: 'post',
-            mode: 'no-cors',
-            body: {'EMAIL': email, 'FNAME':first, 'LNAME':last, 'MMERGE4':faculty, 'MMERGE3':studentAff},
-            headers: {Accept:'application/json'}
-          })
-          .then(() => {
-            console.log('success');
-          });
-        }
+      // function subscribe(event) {
+      //     event.preventDefault();
+      //     fetch("https://adasteam.us18.list-manage.com/subscribe/post?u=9d8e6ca3c4618877981922611&amp;id=8ac3f17ed3",
+      //     { method: 'post',
+      //       mode: 'no-cors',
+      //       body: {'EMAIL': email, 'FNAME':first, 'LNAME':last, 'MMERGE4':faculty, 'MMERGE3':studentAff},
+      //       headers: {Accept:'application/json'}
+      //     })
+      //     .then(() => {
+      //       console.log('success');
+      //     });
+      //   }
+
+
         // "https://adasteam.us18.list-manage.com/subscribe/post?u=9d8e6ca3c4618877981922611&amp;id=8ac3f17ed3"
 
     return (
         <div
             id="connect-form"
             className="bg-light-blue p-5 rounded-lg my-7">
-            <form onSubmit={subscribe} noValidate className="grid grid-cols-1 gap-3 justify-items-stretch lg:grid-cols-2 lg:mx-20 lg:my-6">
+            <form action="https://adasteam.us18.list-manage.com/subscribe/post" noValidate className="grid grid-cols-1 gap-3 justify-items-stretch lg:grid-cols-2 lg:mx-20 lg:my-6">
                <input type="hidden" name="u" value="9d8e6ca3c4618877981922611"/>
              <input type="hidden" name="id" value="8ac3f17ed3"/>
                 <div className="col-span-2">
@@ -37,7 +39,7 @@ function JoinForm() {
                     <input
                         id="form-email"
                         type="email"
-                        name="email"
+                        name="EMAIL"
                         className="focus:outline-none focus:ring focus:border-blue-50 px-2"
                         value={email}
                         onChange={(e)=> {setEmail(e.target.value)}}
@@ -52,7 +54,7 @@ function JoinForm() {
                     <input
                         id="form-first-name"
                         type="name"
-                        name="first-name"
+                        name="FNAME"
                         className="focus:outline-none focus:ring focus:border-blue-50 px-2"
                         value={first}
                         onChange={(e)=> {setFirst(e.target.value)}}/>
@@ -65,7 +67,7 @@ function JoinForm() {
                     <input
                         id="form-last-name"
                         type="name"
-                        name="last-name"
+                        name="LNAME"
                         className="focus:outline-none focus:ring focus:border-blue-50 px-2"
                         value={last}
                         onChange={(e)=> {setLast(e.target.value)}}/>
@@ -78,7 +80,7 @@ function JoinForm() {
                     <input
                         id="form-student-group"
                         type="name"
-                        name="student-group-name"
+                        name="MMERGE3"
                         className="focus:outline-none focus:ring focus:border-blue-50 px-2" value={studentAff}
 onChange={(e)=> {setStudentAff(e.target.value)}}/>
                 </div>
@@ -90,7 +92,7 @@ onChange={(e)=> {setStudentAff(e.target.value)}}/>
                     <input
                         id="form-faculty"
                         type="name"
-                        name="faculty-name"
+                        name="MMERGE4"
                         className="focus:outline-none focus:ring focus:border-blue-50 px-2" value={faculty}
 onChange={(e)=> {setFaculty(e.target.value)}}/>
                 </div>
@@ -98,7 +100,7 @@ onChange={(e)=> {setFaculty(e.target.value)}}/>
 
                 <button
                     type="submit"
-                    className="w-5/6 justify-self-center col-span-2 lg:w-2/5">
+                    className="w-5/6 justify-self-center col-span-2 lg:w-2/5 active:bg-blue-700">
                     SUBSCRIBE
                 </button>
             </form>

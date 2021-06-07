@@ -8,6 +8,7 @@ import Typist from 'react-typist';
 import { Link } from 'react-scroll';
 // Import components
 import JoinForm from '../components/JoinForm'
+import Header from '../components/Header'
 
 
 
@@ -32,21 +33,8 @@ function Home() {
             <div
                 id="home-title"
                 className="flex flex-col place-items-center inline-block
-                    mt-72 pt-2 z-30"
-            >
-                <header>
-                    <h4
-                        className="font-title text-7xl md:text-blue animate-fade-in-down">
-                            ADA'S TEAM
-                    </h4>
-                    <p
-                        className="font-body italic text-lg">
-                        <Typist>
-                        <Typist.Delay ms={1800}/>
-                        Promoting diversity in STEAM with an emphasis on technology.</Typist>
-
-                    </p>
-                </header>
+                    mt-72 pt-2 z-30">
+                <Header title="ADA'S TEAM" homepage="true" subtitle="Promoting diversity in STEAM with an emphasis on technology."/>
 
             {/* Arrow */}
             <div

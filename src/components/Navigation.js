@@ -11,9 +11,9 @@ import icon from "../assets/img/eicon_head_1.png";
 import NavigationLinks from './NavigationLinks'
 
 /**
- * Styles, animates and displays the navigation links 
+ * Styles, animates and displays the navigation links
  * in mobile/tablet and desktop views
- * @returns 
+ * @returns
  */
 function Nav() {
   const [isOpen, setIsOpen] = useState(false);
@@ -30,7 +30,7 @@ function Nav() {
                     <a href="/">
                         <img id="home-icon" src={icon} alt="adas-team-icon"
                             className="inline float-left" />
-                        <h4 
+                        <h4
                             className=
                                 "inline float-right my-5 mx-3 invisible md:visible"
                         >
@@ -44,11 +44,11 @@ function Nav() {
                         <NavigationLinks />
                 </div>
             </div>
-            
+
             {/* Mobile/Tablet Navigation Menu */}
             <div className="-mr-2 flex lg:hidden">
                 <span className="text-xl p-3">
-                 <FontAwesomeIcon 
+                 <FontAwesomeIcon
                      icon={faBars}
                      onClick={() => setIsOpen(!isOpen)}
                      aria-controls="mobile-menu"
@@ -72,8 +72,8 @@ function Nav() {
         >
           {(ref) => (
             <div className="lg:hidden" id="mobile-menu">
-              <div ref={ref} 
-                className="px-2 pt-2 pb-3 space-y-4 sm:px-3 
+              <div ref={ref}
+                className="px-2 pt-2 pb-3 space-y-4 sm:px-3
                             bg-black text-white hover:">
                   <NavigationLinks />
               </div>

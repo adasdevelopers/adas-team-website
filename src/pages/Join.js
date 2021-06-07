@@ -8,6 +8,7 @@ import icon from '../assets/img/eicon_head_1.png'
 
 // Import components
 import JoinForm from '../components/JoinForm'
+import Header from '../components/Header'
 
 
 /**
@@ -27,15 +28,8 @@ function Join() {
 
     return (
         <div id="join-page" className="page">
-            <header>
-                <h1>
-                    Join Us
-                </h1>
-                <h5>
-                    Join the Ada's Team community to stay updated
-                    and get involved!
-                </h5>
-            </header>
+            <Header title="Join Us" subtitle="Join the Ada's Team community to stay updated and get involved!">
+            </Header>
 
                 <h3>
                     JOIN US

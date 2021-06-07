@@ -1,6 +1,8 @@
 // Import libraries
 import React from 'react'
 import db from '../firebase'
+import Header from '../components/Header'
+
 
 
 /**

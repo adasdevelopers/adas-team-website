@@ -5,6 +5,8 @@
   "dependencies": {
     "@babel/core": "^7.12.10",
     "@craco/craco": "^6.1.1",
+    "@emotion/react": "^11.4.0",
+    "@ericz1803/react-google-calendar": "^4.2.0",
     "@formspree/react": "^2.2.3",
     "@fortawesome/fontawesome-svg-core": "^1.2.35",
     "@fortawesome/free-brands-svg-icons": "^5.15.3",
