@@ -1,5 +1,5 @@
 // Import React libaries
-import React, { useRef, useEffect, useState } from 'react';
+import React from 'react';
 import { useForm, ValidationError } from '@formspree/react';
 
 /**
@@ -10,8 +10,6 @@ function Connect() {
 
     // React hook
     const [state, handleSubmit] = useForm("mrgredan");
-    const editFieldRef = useRef(null);
-    const editButtonRef = useRef(null);
 
     // TODO: display success message
     if (state.succeeded) {
@@ -48,7 +46,7 @@ function Connect() {
                     type="email" 
                     name="email"
                     className="w-5/6"
-                    ref={editFieldRef}
+
                 />
                 <ValidationError 
                     prefix="Email" 
@@ -63,7 +61,6 @@ function Connect() {
                     id="form-name"
                     type="name" 
                     name="name"
-                    ref={editFieldRef}
                     className="w-5/6"
                 />
 
@@ -74,7 +71,6 @@ function Connect() {
                     id="form-subject"
                     type="subject" 
                     name="subject"
-                    ref={editFieldRef}
                     className="w-5/6"
                 />
 
