@@ -4,7 +4,6 @@ import BigBot from "../assets/img/ada-home-bot.png"
 // Import assets
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
-import Typist from 'react-typist';
 import { Link } from 'react-scroll';
 // Import components
 import JoinForm from '../components/JoinForm'

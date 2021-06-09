@@ -1,6 +1,5 @@
 // Import libraries
 import React, {useState} from 'react';
-import axios from 'axios';
 
 function JoinForm() {
       const [email, setEmail] = useState("")

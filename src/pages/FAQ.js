@@ -35,14 +35,8 @@ class FAQ extends React.Component {
     render() {
         return(
             <div id="faq-page" className="page animate-fade-in-down">
-                <header>
-                    <h1>
-                        FAQ
-                    </h1>
-                    <h5>
-                        Answering your most frequently asked questions.
-                    </h5>
-                </header>
+              <Header title="FAQ" subtitle="Answering your most frequently asked questions."/>
+                        
 
                 <div id="faq-section">
                 {

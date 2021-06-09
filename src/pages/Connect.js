@@ -1,5 +1,5 @@
 // Import React libaries
-import React, { useRef, useEffect, useState } from 'react';
+import React from 'react';
 import { useForm, ValidationError } from '@formspree/react';
 import Header from '../components/Header'
 
@@ -11,8 +11,6 @@ function Connect() {
 
     // React hook
     const [state, handleSubmit] = useForm("mrgredan");
-    const editFieldRef = useRef(null);
-    const editButtonRef = useRef(null);
 
     // TODO: display success message
     if (state.succeeded) {
@@ -22,15 +20,9 @@ function Connect() {
 
     return (
         <div id="contact-page" className="page">
-            <header>
-            <h1>
-                Connect With Us
-            </h1>
-            <h5>
-                We’d love to get in touch with you!
-                Connect with us through email or any of our social media.
-            </h5>
-            </header>
+            <Header title="Connect With Us" subtitle="We’d love to get in touch with you! Connect with us through email or any of our social media."/>
+
+            
 
             <div>
             <h3 className="text-center">
@@ -49,7 +41,7 @@ function Connect() {
                     type="email"
                     name="email"
                     className="w-5/6"
-                    ref={editFieldRef}
+
                 />
                 <ValidationError
                     prefix="Email"
@@ -64,7 +56,6 @@ function Connect() {
                     id="form-name"
                     type="name"
                     name="name"
-                    ref={editFieldRef}
                     className="w-5/6"
                 />
 
@@ -75,7 +66,6 @@ function Connect() {
                     id="form-subject"
                     type="subject"
                     name="subject"
-                    ref={editFieldRef}
                     className="w-5/6"
                 />
 
@@ -95,7 +85,7 @@ function Connect() {
                 <button
                     type="submit"
                     disabled={state.submitting}
-                    ref={editButtonRef}
+                    // ref={editButtonRef}
                     className="w-5/6 justify-self-center">
                         SEND MESSAGE
                 </button>

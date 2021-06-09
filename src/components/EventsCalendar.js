@@ -1,6 +1,5 @@
 import React from "react";
 import Calendar from "@ericz1803/react-google-calendar";
-import { css } from "@emotion/react";
 
 const API_KEY = "AIzaSyAJiMxedmef79J8Q3r0y-i6ejM5Q0DKDCA";
 let calendars = [
