@@ -1,14 +1,20 @@
 import icon from "../assets/img/eicon_head_1.png";
-import Navigation from "./Navigation"
-import Nav from './NavigationTW'
-
+import Nav from './Navigation'
+import Typist from 'react-typist';
 // TODO: make props
-function Header() {
+function Header({title, subtitle, additional, homepage}) {
     return (
-        <header>
-
-
-        </header>
+      <header>
+          <h1 className={homepage?"font-title text-7xl md:text-blue animate-fade-in-down": "text-left mx-48"}>{title}</h1>
+          <p
+              className="font-body italic text-lg mx-48">
+              <Typist>
+              <Typist.Delay ms={1800}/>
+              {subtitle}
+              </Typist>
+              <b>{additional || ""}</b>
+          </p>
+      </header>
     );
 }
 

@@ -8,7 +8,7 @@ import SocialMedia from './SocialMedia'
 function Footer() {
   return (
     <footer>
-      <div id="footer" 
+      <div id="footer"
         className="m-0 bg-black text-xs text-white">
 
         <div id="footer-social-media"
@@ -29,14 +29,14 @@ function Footer() {
             </p>
 
             <div className="divider-thin"></div>
-            <p>© Copyright 2020 Ada's Team</p> 
+            <p>© Copyright 2020 Ada's Team</p>
           </div>
         </div>
 
 
 
 
-       
+
       </div>
 
     </footer>

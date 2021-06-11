@@ -8,6 +8,9 @@
 
 @layer base {
 
+    /* active link style */
+
+
     /* Header: Title */
     h1 {
         @apply text-5xl;
@@ -56,7 +59,7 @@
 
     button {
         @apply bg-blue;
-        @apply px-7; 
+        @apply px-7;
         @apply py-3;
         @apply my-5;
         @apply rounded-xl;
@@ -65,15 +68,15 @@
         @apply w-3/5;
 
     }
-    
+
     label {
-        @apply font-bold; 
+        @apply font-bold;
     }
 
     input, textarea {
         @apply rounded-lg;
         @apply w-full;
-        
+
         height: 45px;
     }
 
@@ -122,6 +125,7 @@
         @apply block;
 
     }
+  
 
 }
 
@@ -131,14 +135,15 @@
 */
 
 @layer utilities {
-    
+
     /* TODO: change margins to em */
     .divider-thick {
         width: 4.5em;
         height: 0.625em;
         background-color: pink;
         margin-bottom: 29px;
-        margin-top: 62.7px;
+        /* margin-top: 62.7px; */
+        margin-top: 0;
     }
 
     .divider-thin {
@@ -161,6 +166,23 @@
 
     #home-bot {
         width:20em;
+    }
+
+    .wrapper {
+      display: flex;
+      flex-direction: column wrap;
+      flex-wrap: wrap;
+      color: black;
+    }
+
+    .image--cover {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+
+      background-color: grey;
+      object-fit: cover;
+      object-position: center right;
     }
 
 }

@@ -1,6 +1,8 @@
 // Import libraries
 import React from 'react'
 import db from '../firebase'
+import Header from '../components/Header'
+
 
 
 /**
@@ -8,7 +10,7 @@ import db from '../firebase'
  */
 class FAQ extends React.Component {
 
-  
+
     state = {
         questions: null,
 
@@ -25,34 +27,28 @@ class FAQ extends React.Component {
             questions.push(data)
             })
             this.setState({ questions: questions })
-            console.log(questions) 
+            console.log(questions)
         })
         .catch( error => console.log(error) )
     }
 
     render() {
         return(
-            <div id="faq-page" className="page">
-                <header>
-                    <h1>
-                        FAQ
-                    </h1>
-                    <h5>
-                        Answering your most frequently asked questions.
-                    </h5>
-                </header>
+            <div id="faq-page" className="page animate-fade-in-down">
+              <Header title="FAQ" subtitle="Answering your most frequently asked questions."/>
+                        
 
                 <div id="faq-section">
                 {
                     this.state.questions &&
-                    this.state.questions.map( question => 
+                    this.state.questions.map( question =>
                     {
                         return(
-                            <div 
+                            <div
                                 className={
-                                    question.left ? 
-                                    "w-3/5 bg-light-blue p-3 shadow-md rounded-3xl my-7" 
-                                    : 
+                                    question.left ?
+                                    "w-3/5 bg-light-blue p-3 shadow-md rounded-3xl my-7"
+                                    :
                                     "w-3/5 bg-light-blue p-3 shadow-md rounded-3xl my-7 ml-auto"}
                             >
                                 <div id="faq-question-and-answer" className="px-14 my-8">
@@ -62,17 +58,17 @@ class FAQ extends React.Component {
                                     <p id="faq-answer">
                                         { question.answer}
                                     </p>
-                                    
-                                    <div className="divider-thin w-4/5"></div>
+
+                                    <div className="divider-thin"></div>
                                 </div>
                         </div>
                         )
                     })
                 }
                 </div>
-                
+
                 <div className="divider-thick"></div>
-                
+
                 <div>
                     <h2 className="pt-4 pb-7">
                         Still have questions?
