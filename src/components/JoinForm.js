@@ -36,6 +36,7 @@ function JoinForm() {
 						/>
 					</div>
 
+
 					<div className="col-span-6 sm:col-span-3">
 						<label for="last_name" className="block text-sm font-medium text-gray-700">
 							Last name
@@ -126,6 +127,7 @@ function JoinForm() {
 			</form>
 		</div>
 	);
+
 }
 
 export default JoinForm;

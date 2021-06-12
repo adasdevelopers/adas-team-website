@@ -6,6 +6,7 @@ import { Link } from "react-scroll";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
+
 import { IoIosArrowDown } from "react-icons/io";
 
 // Import components
@@ -152,6 +153,14 @@ class Home extends React.Component {
 		);
 	}
 }
+const Sponsor = ({ company, image }) => (
+<div className="w-max flex flex-col item-center">
+<img src={image} className="image--cover" />
+<h4 className="text-lg text-center uppercase">{company}</h4>
+</div>
+);
+
+
 
 const Sponsor = ({ company, image }) => (
 	<div className="flex self-center justify-self-center flex-col items-center justify-between mt-8">

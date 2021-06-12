@@ -116,6 +116,7 @@
 	#navigation-menu > li {
 		@apply block;
 	}
+
 }
 
 /*
@@ -185,5 +186,10 @@
 		justify-content: center;
 		border-radius: 50%;
 	}
+
+
+    .dropdown:hover .dropdown-menu {
+  display: block;
+    }
 
 }

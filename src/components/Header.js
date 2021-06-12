@@ -25,6 +25,7 @@ function Header({ title, subtitle, additional, homepage }) {
 			</p>
 		</header>
 	);
+
 }
 
 export default Header;
