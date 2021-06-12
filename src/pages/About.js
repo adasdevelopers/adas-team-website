@@ -243,7 +243,6 @@ class About extends React.Component {
                                                 <FontAwesomeIcon icon={faEnvelope} />
                                         </a>
                                     )}
-
                                 </div>
 
                             </div>

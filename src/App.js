@@ -12,7 +12,7 @@ import JobBoard from "./pages/JobBoard";
 import Join from "./pages/Join";
 
 // Import React libraries
-import { HashRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 /**
  * Renders the entire website
