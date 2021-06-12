@@ -87,40 +87,6 @@
 }
 
 @layer components {
-<<<<<<< HEAD
-
-    .page {
-        @apply container;
-        @apply mx-auto;
-        @apply p-7;
-    }
-
-    .page-title {
-        @apply my-12;
-        @apply mx-6;
-    }
-
-    .blue-rect {
-        @apply bg-light-blue;
-        @apply p-3;
-        @apply rounded-3xl;
-        @apply my-4;
-    }
-
-    .blue-rect-shadow {
-        @apply bg-light-blue;
-        @apply p-3;
-        @apply rounded-3xl;
-        @apply my-4;
-        @apply shadow-md;
-    }
-
-    #navigation-menu > li {
-        @apply block;
-
-    }
-
-=======
 	.page {
 		@apply container;
 		@apply mx-auto;
@@ -150,8 +116,6 @@
 	#navigation-menu > li {
 		@apply block;
 	}
->>>>>>> 362caa7198ae391a9619b5db6b60654c677f38ef
-
 }
 
 /*
@@ -160,56 +124,6 @@
 */
 
 @layer utilities {
-<<<<<<< HEAD
-
-    /* TODO: change margins to em */
-    .divider-thick {
-        width: 4.5em;
-        height: 0.625em;
-        background-color: pink;
-        margin-bottom: 29px;
-        /* margin-top: 62.7px; */
-        margin-top: 0;
-    }
-
-    .divider-thin {
-        height: 0.01em;
-        background-color: pink;
-        margin-bottom: 1.38em;
-        margin-right: 2.44em;
-        margin-top: 5.13em;
-      }
-
-    #social-media-icons > a > img {
-        width: 33.3px;
-        height: 33.3px;
-    }
-
-    #home-icon {
-        width: 73px;
-        height: 61px;
-    }
-
-    #home-bot {
-        width:20em;
-    }
-
-    .wrapper {
-      display: flex;
-      flex-direction: column wrap;
-      flex-wrap: wrap;
-      color: black;
-    }
-
-    .image--cover {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-
-      background-color: bg-light-blue;
-      object-fit: cover;
-      object-position: center right;
-=======
 	/* TODO: change margins to em */
 	.divider-thick {
 		width: 4em;
@@ -275,11 +189,11 @@
 
     .dropdown:hover .dropdown-menu {
   display: block;
->>>>>>> 362caa7198ae391a9619b5db6b60654c677f38ef
     }
 
     .dropdown:hover .dropdown-menu {
   display: block;
     }
+
 
 }
