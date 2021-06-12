@@ -125,7 +125,7 @@
         @apply block;
 
     }
-  
+
 
 }
 
@@ -176,13 +176,17 @@
     }
 
     .image--cover {
-      width: 200px;
-      height: 200px;
+      width: 150px;
+      height: 150px;
       border-radius: 50%;
 
       background-color: bg-light-blue;
       object-fit: cover;
       object-position: center right;
+    }
+
+    .dropdown:hover .dropdown-menu {
+  display: block;
     }
 
 }

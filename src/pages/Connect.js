@@ -22,16 +22,16 @@ function Connect() {
         <div id="contact-page" className="page">
             <Header title="Connect With Us" subtitle="We’d love to get in touch with you! Connect with us through email or any of our social media."/>
 
-            
+
 
             <div>
-            <h3 className="text-center">
+            <h3 className="text-center mb-10">
                 SEND A MESSAGE
             </h3>
 
-            <div id="connect-form" className="bg-light-blue p-5 rounded-lg">
+            <div id="connect-form" className="bg-light-blue p-5 rounded-lg mx-18 lg:mx-28 md:16 lg:mb-10">
                 <form onSubmit={handleSubmit}
-                    className="grid grid-cols-1 gap-3">
+                    className="grid grid-cols-1 gap-3 ">
 
                 <label htmlFor="email">
                     Email Address
@@ -40,7 +40,7 @@ function Connect() {
                     id="form-email"
                     type="email"
                     name="email"
-                    className="w-5/6"
+                    className="w-full"
 
                 />
                 <ValidationError
@@ -56,7 +56,7 @@ function Connect() {
                     id="form-name"
                     type="name"
                     name="name"
-                    className="w-5/6"
+                    className="w-full"
                 />
 
                 <label htmlFor="subject">
@@ -66,7 +66,7 @@ function Connect() {
                     id="form-subject"
                     type="subject"
                     name="subject"
-                    className="w-5/6"
+                    className="w-full"
                 />
 
                 <label htmlFor="message">
@@ -75,6 +75,7 @@ function Connect() {
                 <textarea
                     id="message"
                     name="message"
+                    className="w-full"
                 />
                 <ValidationError
                     prefix="Message"
@@ -86,7 +87,7 @@ function Connect() {
                     type="submit"
                     disabled={state.submitting}
                     // ref={editButtonRef}
-                    className="w-5/6 justify-self-center">
+                    className="w-3/6 justify-self-center">
                         SEND MESSAGE
                 </button>
 

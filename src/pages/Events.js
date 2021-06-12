@@ -51,7 +51,7 @@ function Events() {
 
 
             <button
-                className="w-full self-center md:w-2/5">
+                className="w-full self-center md:w-2/5 hover:text-grey-900">
                     <a href="#" alt="Ada's Team Roadmap">
                         CHECK OUT OUR ROADMAP
                     </a>
