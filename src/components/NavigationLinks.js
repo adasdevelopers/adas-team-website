@@ -18,8 +18,8 @@ function NavigationLinks() {
 	];
 
 	return (
-		<div className="w-full block flex-grow lg:flex lg:items-center  lg:w-auto" id="navbar">
-			<ul className="text-sm lg:flex-grow  text-center lg:text-right lg:justify-between pl-36 lg:pl-0 last:mr-0">
+		<div className="w-full block flex-grow lg:flex lg:items-center lg:w-auto" id="navbar">
+			<ul className="text-sm lg:flex-grow  text-center lg:text-right lg:justify-between lg:pl-0 last:mr-0">
 				{pages.map((page) => (
 					<NavigationLink title={page.title} link={page.link} />
 				))}
@@ -31,7 +31,7 @@ function NavigationLinks() {
 const NavigationLink = ({ title, link }) => (
 	<li
 		key={title}
-		className="block mt-4 lg:inline-block lg:mt-0 text-teal-100 ml-12 text-md font-extralight font-title"
+		className="block mt-4  text-teal-100 text-md font-extralight font-title lg:inline-block lg:mt-0 lg:ml-12 "
 	>
 		<NavLink
 			to={link}
