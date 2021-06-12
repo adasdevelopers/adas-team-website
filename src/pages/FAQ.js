@@ -6,7 +6,6 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import faq from "../assets/img/faq.svg";
 
-
 /**
  * Displays FAQ for Ada's Team
  */
@@ -113,7 +112,6 @@ class FAQ extends React.Component {
 			</div>
 		);
 	}
-
 }
 
 export default FAQ;
