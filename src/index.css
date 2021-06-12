@@ -180,7 +180,7 @@
       height: 200px;
       border-radius: 50%;
 
-      background-color: grey;
+      background-color: bg-light-blue;
       object-fit: cover;
       object-position: center right;
     }
