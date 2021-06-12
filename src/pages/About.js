@@ -11,14 +11,13 @@ import dev_image from "../assets/img/ada_bot_scarf.png";
 import student_image from "../assets/img/ada_bot_sleepy.png";
 import mentor_image from "../assets/img/ada_bot_hands_up.png";
 import podcast_image from "../assets/img/ada_bot_hat1.png";
+import blank_user from "../assets/img/blank-user.png"
 import React from 'react'
 import db from '../firebase'
-
 
 /**
  * Displays information about Ada's Team
  * initiatives and executive team
- *
  */
 class About extends React.Component {
 
@@ -66,16 +65,19 @@ class About extends React.Component {
 
         return (
             <div className="page animate-fade-in-down">
-            <div
-                id="about_image"
-                className=" mx-auto static p-5 md:p-5 relative animate-fade-in-down mb-72" >
-                {/* About image */}
-                <img
-                    id="about"
-                    src={about_image} alt="people sitting on infographics"
-                    className="absolute inset-y-0 mt-1 z-40 lg:inset-y-0 lg:right-0 ">
-                </img>
-                <Header title="About" subtitle="Learn more about Ada's Team."/>
+                <div
+                    id="about_image"
+                    className="mx-auto static p-5 md:p-5 relative animate-fade-in-down mb-72"
+                >
+                    {/* About image */}
+                    <img
+                        id="about"
+                        src={about_image} alt="people sitting on infographics"
+                        className="absolute inset-y-0 mt-1 z-40 lg:inset-y-0 lg:right-0 sm:invisible md:visible">
+                    </img>
+                
+                    <Header title="About" subtitle="Learn more about Ada's Team."/>
+                  
                 </div>
 
                 {/* Title Intro */}
@@ -105,43 +107,17 @@ class About extends React.Component {
                         className="font-body italic text-sm mb-20">Integer auctor at proin posuere etiam integer amet sed. Ut pellentesque
                         nullam et adipiscing ultrices amet, interdum eu vel.</p>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-x-36 gap-y-10">
-
-
-
-                        {this.state.initiatives && this.state.initiatives.map((initiative, i) => (
-
-                        <div className="grid justify-items-center">
-                            <div className="initiative-image">
-                            {initiative["image"] !== "" && <img src={images[i]} alt="adas-team-bot"
-                            className="h-40 w-30 pb-3" />}
-                            </div>
-
-                            <h4 className="font-title text-2xl">
-                                {initiative["name"]}
-                            </h4>
-
-                            <div className="description text-left">
-                                <p>{initiative["description"]}</p>
-                            </div>
-
-                            <div className="initiative-social-media" className="my-2 space-x-4">
-                                {initiative["contact"]["instagram"] !== "" && (
-                                    <a href={initiative["contact"]["instagram"]} className="text-3xl">
-                                        <FontAwesomeIcon icon={['fab', 'instagram']}/>
-                                    </a>)
-                                }
-                                {initiative["contact"]["email"] !== "" && (
-                                    <a href={initiative["contact"]["email"]} className="text-3xl">
-                                        <FontAwesomeIcon icon={faEnvelope}/>
-                                    </a>)
-                                }
-                            </div>
-                        </div>
-                        ))}
+                        {this.state.initiatives &&
+							this.state.initiatives.map(({ name, description, contact }, i) => (
+								<Initiative
+									name={name}
+									description={description}
+									contact={contact}
+									image={images[i]}
+								/>
+							))}
 
                     </div>
-
-
                 </div>
 
                 {/* Slack and Discord Invite links*/}
@@ -160,8 +136,7 @@ class About extends React.Component {
                         </p>
                         <button
                             className="lg:w-1/5">
-                            {/* TODO: add Slack invite link */}
-                            <a href="#" alt="Ada's Team Tutoring Slack Invite Link">
+                            <a href="https://join.slack.com/t/adastutoring/shared_invite/zt-rxka4nnk-Ox~fBNx2XgXkU4gk9TLQfw" alt="Ada's Team Tutoring Slack Invite Link">
                                 <span className="pr-3 text-lg">
                                     <FontAwesomeIcon icon={['fab', 'slack']}/>
                                 </span>
@@ -181,8 +156,7 @@ class About extends React.Component {
                         </p>
                         <button
                             className="lg:w-1/5">
-                            {/* TODO: add Discord invite link */}
-                            <a href="#" alt="Ada's Team Discord Invite Link">
+                            <a href="https://discord.gg/7ZhmzHZjc8" alt="Ada's Team Discord Invite Link">
                                 <span className="pr-3 text-lg">
                                     <FontAwesomeIcon icon={['fab', 'discord']}/>
                                 </span>
@@ -203,55 +177,83 @@ class About extends React.Component {
                         </h3>
                     </div>
 
-
-                    {
-                        this.state.executives && this.state.executives.map((executive, i) =>
-
-                            <div id="executives" className="blue-rect-shadow mx-36">
-
-                                <div alt="Image of an executive of Ada's Team">
-                                    {executive["image"] !== "" && executive["image"]}
-                                </div>
-                                <div id="executive-information">
-                                    <div className="font-title font-bold text-xl">
-                                        {executive["name"]}
-                                    </div>
-                                    <div className="mb-2">
-                                        <p>
-                                            <em>{executive["role"]}</em>
-                                        </p>
-                                    </div>
-                                    <div>
-                                        <p>{executive["description"]}</p>
-                                    </div>
-                                </div>
-
-                                {/* Executive Contact Information */}
-                                <div id="executive-contact" className="my-2 space-x-4 text-3xl">
-                                    <a
-                                        href={executive.contact.LinkedIn}>
-                                            <FontAwesomeIcon icon={['fab', 'linkedin']} />
-                                    </a>
-                                    <a
-                                        href={executive.contact.Github} alt="Github">
-                                            <FontAwesomeIcon icon={['fab', 'github']}/>
-                                    </a>
-
-                                    {executive.contact.Other !== "" && (
-                                        <a className="Contact"
-                                            href={executive.contact.Other} alt="Contact">
-                                                <FontAwesomeIcon icon={faEnvelope} />
-                                        </a>
-                                    )}
-                                </div>
-
-                            </div>
-                        )}
+                    {this.state.executives && this.state.executives.map(({image, role, name, description, contact}, i) =>
+                        <Executive image={image} role={role} name={name} description={description} contact={contact} />
+                    )}
                 </div>
             </div>
 
         );
         }
-    }
+}
+
+const Executive = ({image, role, name, description, contact}) => (
+    <div id="executives" className="blue-rect-shadow mx-36 flex flex-row">
+        <img src={image == "" ? blank_user : image} alt="Image of an executive of Ada's Team" className="image--cover mr-8">
+        
+        </img>
+        <div>
+            <div id="executive-information">
+                <div className="font-title font-bold text-xl">
+                    {name}
+                </div>
+                <div className="mb-2">
+                    <p>
+                        <em>{role}</em>
+                    </p>
+                </div>
+                <div>
+                    <p>{description}</p>
+                </div>
+            </div>
+
+            {/* Executive Contact Information */}
+            <div id="executive-contact" className="my-2 space-x-4 text-3xl">
+                <a
+                    href={contact.LinkedIn}>
+                        <FontAwesomeIcon icon={['fab', 'linkedin']} />
+                </a>
+                <a
+                    href={contact.Github} alt="Github">
+                        <FontAwesomeIcon icon={['fab', 'github']}/>
+                </a>
+
+                {contact.Other !== "" && (
+                    <a className="Contact"
+                        href={contact.Other} alt="Contact">
+                            <FontAwesomeIcon icon={faEnvelope} />
+                    </a>
+                )}
+            </div>
+        </div>
+    </div>
+)
+
+const Initiative = ({ name, image, description, contact }) => (
+	<div className="grid justify-items-center">
+		<div className="initiative-image">
+			{image !== "" && <img src={image} alt="adas-team-bot" className="h-40 w-30 pb-3" />}
+		</div>
+
+		<h4 className="font-title text-2xl">{name}</h4>
+
+		<div className="description text-left">
+			<p>{description}</p>
+		</div>
+
+		<div className="initiative-social-media" className="my-2 space-x-4">
+			{contact["instagram"] !== "" && (
+				<a href={contact["instagram"]} className="text-3xl">
+					<FontAwesomeIcon icon={["fab", "instagram"]} />
+				</a>
+			)}
+			{contact["email"] !== "" && (
+				<a href={contact["email"]} className="text-3xl">
+					<FontAwesomeIcon icon={faEnvelope} />
+				</a>
+			)}
+		</div>
+	</div>
+);
 
 export default About;
