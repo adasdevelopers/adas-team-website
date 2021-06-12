@@ -5,8 +5,6 @@ import BigBot from "../assets/img/ada-home-bot.png";
 import { Link } from "react-scroll";
 import AOS from "aos";
 import "aos/dist/aos.css";
-
-
 import { IoIosArrowDown } from "react-icons/io";
 
 // Import components
@@ -27,7 +25,6 @@ AOS.init({
 	mirror: false, // whether elements should animate out while scrolling past them
 	anchorPlacement: "top-bottom", // defines which position of the element regarding to window should trigger the animation
 });
-
 
 class Home extends React.Component {
 	// Constants
@@ -62,14 +59,12 @@ class Home extends React.Component {
 						src={BigBot}
 						alt="Ada's Home Bot waving"
 						className="absolute inset-y-0 right-0 md:mt-1 z-40 lg:inset-y-0 lg:right-0 "
-
 					></img>
 
 					{/* Welcome title */}
 					<div
 						id="home-title"
-						className="flex flex-col place-items-center inline-block mt-96 w-11/12 lg:mt-72 pt-2 z-30"
-
+						className="flex flex-col place-items-center mx-auto inline-block mt-96 w-11/12 lg:mt-72 pt-2 z-30"
 					>
 						<Header
 							title="ADA'S TEAM"
@@ -111,7 +106,7 @@ class Home extends React.Component {
 
 				<div
 					id="join-us-form"
-					className="max-w-6xl mx-8 md:mx-16 lg:py-24 2xl:mx-auto animate-fade-in-down"
+					className="max-w-6xl mx-8 md:mx-16 lg:py-24 lg:mx-auto animate-fade-in-down"
 				>
 					<div
 						data-aos="fade-in"
@@ -140,7 +135,6 @@ class Home extends React.Component {
 							data-aos-delay="500"
 							data-aos-easing="ease-in-sine"
 						>
-
 							{/** divs within flex box **/}
 							{sponsors &&
 								sponsors.map(({ company_name, image }) => (
@@ -153,14 +147,6 @@ class Home extends React.Component {
 		);
 	}
 }
-// const Sponsor = ({ company, image }) => (
-// <div className="w-max flex flex-col item-center">
-// <img src={image} className="image--cover" />
-// <h4 className="text-lg text-center uppercase">{company}</h4>
-// </div>
-// );
-
-
 
 const Sponsor = ({ company, image }) => (
 	<div className="flex self-center justify-self-center flex-col items-center justify-between mt-8">

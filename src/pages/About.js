@@ -4,8 +4,8 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import Header from "../components/Header";
-import { AiFillLinkedin } from "react-icons/ai";
 
+import { AiFillLinkedin } from "react-icons/ai";
 
 // Import initiative assets
 import about_image from "../assets/img/about.svg";
@@ -108,7 +108,6 @@ class About extends React.Component {
 
 				{/* Initiative block */}
 				<div id="initiatives" className="my-12 lg:my-28 lg:mx-36">
-
 					<h2 className="pb-4">OUR INITIATIVES</h2>
 					{/* Initiative information */}
 					<p className="font-body italic text-sm mb-20">
@@ -178,7 +177,6 @@ class About extends React.Component {
 						<h3 className="font-title text-pink text-2xl">2020-2021</h3>
 					</div>
 
-
 					{this.state.executives &&
 						this.state.executives.map(({ image, role, name, description, contact }, i) => (
 							<Executive
@@ -206,7 +204,6 @@ const Executive = ({ image, role, name, description, contact }) => (
 			/>
 		</div>
 		<div className="flex justify-between flex-col my-2">
-
 			<div id="executive-information">
 				<div className="font-title font-bold text-xl">{name}</div>
 				<div className="mb-2 uppercase">
@@ -244,7 +241,6 @@ const Executive = ({ image, role, name, description, contact }) => (
 							<FontAwesomeIcon icon={faEnvelope} />
 						</a>
 					</div>
-
 				)}
 			</div>
 		</div>
