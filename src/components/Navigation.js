@@ -9,6 +9,7 @@ import icon from "../assets/img/eicon_head_1.png";
 
 // Import components
 import NavigationLinks from './NavigationLinks'
+import { NavLink } from "react-router-dom";
 
 /**
  * Styles, animates and displays the navigation links
@@ -27,7 +28,7 @@ function Nav() {
 
                 {/* Ada's Team Home Icon */}
                 <div className="flex-shrink-0 mt-4">
-                    <a href="/">
+                    <NavLink exact to="/">
                         <img id="home-icon" src={icon} alt="adas-team-icon"
                             className="inline float-left" />
                         <h4
@@ -36,7 +37,7 @@ function Nav() {
                         >
                             ADA'S TEAM
                         </h4>
-                    </a>
+                    </NavLink>
                 </div>
 
                 {/* Desktop Navigation */}
