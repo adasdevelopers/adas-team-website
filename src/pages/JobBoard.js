@@ -132,6 +132,7 @@ const JobPosting = ({
 
 			{deadline && <p className="font-body font-light mt-4">Deadline: {deadline}</p>}
 
+
 			<div className="mt-4 flex justify-between space-x-4">
 				{email && (
 					<a

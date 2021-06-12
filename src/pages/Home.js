@@ -65,6 +65,7 @@ class Home extends React.Component {
 					<div
 						id="home-title"
 						className="flex flex-col place-items-center mx-auto inline-block mt-96 w-11/12 lg:mt-72 pt-2 z-30"
+
 					>
 						<Header
 							title="ADA'S TEAM"
@@ -107,6 +108,7 @@ class Home extends React.Component {
 				<div
 					id="join-us-form"
 					className="max-w-6xl mx-8 md:mx-16 lg:py-24 lg:mx-auto animate-fade-in-down"
+
 				>
 					<div
 						data-aos="fade-in"
@@ -154,5 +156,4 @@ const Sponsor = ({ company, image }) => (
 		<h4 className="text-base uppercase text-center mt-2">{company}</h4>
 	</div>
 );
-
 export default Home;
