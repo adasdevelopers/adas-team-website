@@ -4,6 +4,8 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import Header from "../components/Header";
+import { AiFillLinkedin } from "react-icons/ai";
+
 
 // Import initiative assets
 import about_image from "../assets/img/about.svg";
@@ -70,21 +72,21 @@ class About extends React.Component {
 			<div className="page animate-fade-in-down font-body">
 				<div
 					id="about_image"
-					className="mx-auto static lg:p-5 md:p-5 relative animate-fade-in-down lg:mb-72"
+					className="max-w-3xl lg:mx-auto flex flex-col items-center justify-between lg:flex-row-reverse animate-fade-in-down"
 				>
 					{/* About image */}
 					<img
 						id="about"
 						src={about_image}
 						alt="people sitting on infographics"
-						className="hidden md:visible md:absolute md:inset-y-0 md:mt-1 md:z-40 lg:inset-y-0 lg:right-0 "
+						className="hidden md:inline-block w-screen px-16 lg:w-auto lg:px-0 lg:h-72"
 					/>
 
 					<Header title="About" subtitle="Learn more about Ada's Team." />
 				</div>
 
 				{/* Title Intro */}
-				<div id="about-goal" className="mt-20 lg:px-36">
+				<div id="about-goal" className="lg:mt-20 lg:px-36">
 					<p className="font-sans font-thin">
 						In Ada's Team, our goal is to{" "}
 						<b>
@@ -105,7 +107,8 @@ class About extends React.Component {
 				<div className="divider-thick hidden lg:mx-36 "></div>
 
 				{/* Initiative block */}
-				<div id="initiatives" className="my-12 lg:my-28 lg:mx-4">
+				<div id="initiatives" className="my-12 lg:my-28 lg:mx-36">
+
 					<h2 className="pb-4">OUR INITIATIVES</h2>
 					{/* Initiative information */}
 					<p className="font-body italic text-sm mb-20">
@@ -175,6 +178,7 @@ class About extends React.Component {
 						<h3 className="font-title text-pink text-2xl">2020-2021</h3>
 					</div>
 
+
 					{this.state.executives &&
 						this.state.executives.map(({ image, role, name, description, contact }, i) => (
 							<Executive
@@ -192,15 +196,17 @@ class About extends React.Component {
 }
 
 const Executive = ({ image, role, name, description, contact }) => (
-	<div id="executives" className="blue-rect-shadow p-8 lg:mx-36 flex flex-col lg:flex-row">
-		<div className="rounded-full w-full h-auto overflow-hidden">
+	<div id="executives" className="blue-rect-shadow p-8 flex flex-col md:flex-row lg:mx-36 h-full">
+		{/* <div className="rounded-full w-full h-auto overflow-hidden"> */}
+		<div className="flex self-center md:mr-8" style={{ maxWidth: "240px", height: "auto" }}>
 			<img
 				src={image == "" ? blank_user : image}
 				alt="Image of an executive of Ada's Team"
-				className="object-cover mb-8 lg:mr-8"
+				className="rounded-full mb-8 md:mb-0 flex-1"
 			/>
 		</div>
-		<div>
+		<div className="flex justify-between flex-col my-2">
+
 			<div id="executive-information">
 				<div className="font-title font-bold text-xl">{name}</div>
 				<div className="mb-2 uppercase">
@@ -214,18 +220,31 @@ const Executive = ({ image, role, name, description, contact }) => (
 			</div>
 
 			{/* Executive Contact Information */}
-			<div id="executive-contact" className="my-2 space-x-4 text-3xl">
-				<a href={contact.LinkedIn}>
-					<FontAwesomeIcon icon={["fab", "linkedin"]} />
-				</a>
-				<a href={contact.Github} alt="Github">
-					<FontAwesomeIcon icon={["fab", "github"]} />
-				</a>
+			<div id="executive-contact" className="mt-4 flex self-end space-x-2 text-xl">
+				{contact.LinkedIn && (
+					<div className="executive--contact">
+						<a href={contact.LinkedIn}>
+							<FontAwesomeIcon icon={["fab", "linkedin"]} />
+							{/* <AiFillLinkedin /> */}
+						</a>
+					</div>
+				)}
 
-				{contact.Other !== "" && (
-					<a className="Contact" href={contact.Other} alt="Contact">
-						<FontAwesomeIcon icon={faEnvelope} />
-					</a>
+				{contact.Github && (
+					<div className="executive--contact">
+						<a href={contact.Github} alt="Github">
+							<FontAwesomeIcon icon={["fab", "github"]} />
+						</a>
+					</div>
+				)}
+
+				{contact.Other && (
+					<div className="executive--contact">
+						<a className="Contact" href={contact.Other} alt="Contact">
+							<FontAwesomeIcon icon={faEnvelope} />
+						</a>
+					</div>
+
 				)}
 			</div>
 		</div>

@@ -32,6 +32,11 @@ module.exports = {
 				wiggle: "wiggle 1s ease-in-out infinite",
 				"fade-in-down": "fade-in-down 1s ease-out",
 			},
+			width: {
+				"11/10": "110%",
+				"6/5": "120%",
+				"7/5": "140%",
+			},
 		},
 	},
 	variants: {

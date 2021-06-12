@@ -126,20 +126,19 @@
 @layer utilities {
 	/* TODO: change margins to em */
 	.divider-thick {
-		width: 4.5em;
+		width: 4em;
 		height: 0.625em;
 		background-color: pink;
-		margin-bottom: 29px;
-		/* margin-top: 62.7px; */
-		margin-top: 0;
 	}
 
 	.divider-thin {
-		height: 0.01em;
+		height: 0.25em;
 		background-color: pink;
-		margin-bottom: 1.38em;
-		margin-right: 2.44em;
-		margin-top: 5.13em;
+	}
+
+	.divider-verythin {
+		height: 0.1em;
+		background-color: pink;
 	}
 
 	#social-media-icons > a > img {
@@ -172,4 +171,19 @@
 		object-fit: cover;
 		object-position: center right;
 	}
+
+	.dropdown:hover .dropdown-menu {
+		display: block;
+	}
+
+	.executive--contact {
+		background: white;
+		height: 2.25rem;
+		width: 2.25rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 50%;
+	}
+
 }

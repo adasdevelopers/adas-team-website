@@ -1,8 +1,7 @@
 // Import React libraries
 import React, { useState } from "react";
 import { Transition } from "@headlessui/react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { AiOutlineMenu } from "react-icons/ai";
 
 // Import Images
 import icon from "../assets/img/eicon_head_1.png";
@@ -39,11 +38,11 @@ function Nav() {
 					{/* Mobile/Tablet Navigation Menu */}
 					<div className="-mr-2 flex lg:hidden">
 						<span className="text-xl p-3">
-							<FontAwesomeIcon
-								icon={faBars}
+							<AiOutlineMenu
 								onClick={() => setIsOpen(!isOpen)}
 								aria-controls="mobile-menu"
 								aria-expanded="false"
+								size="1.5em"
 							/>
 						</span>
 					</div>

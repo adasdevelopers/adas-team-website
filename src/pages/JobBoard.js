@@ -1,9 +1,10 @@
 // Import React libraries
 import React from "react";
 import db from "../firebase";
-import { render } from "@testing-library/react";
 import Header from "../components/Header";
-import { Button } from "react-scroll";
+import jobboard from "../assets/img/jobboard.svg";
+import blank_image from "../assets/img/blank.svg";
+
 
 /**
  * Displays the Job Board with data
@@ -18,6 +19,8 @@ class JobBoard extends React.Component {
 	// Pull in Firebase data
 	componentDidMount() {
 		db.collection("job-postings")
+			.orderBy("created", "asc")
+
 			.get()
 			.then((snapshot) => {
 				const jobs = [];
@@ -31,33 +34,62 @@ class JobBoard extends React.Component {
 	}
 
 	render() {
+		const { jobs } = this.state;
 		return (
 			<div id="job-board-page" className="page">
-				<Header
-					title="Job Board"
-					subtitle=" Search through our current job listings from various companies to get in touch and land your next job."
-				></Header>
+				<div
+					id="faq_image"
+					className="max-w-6xl mx-auto flex flex-col items-center justify-between lg:flex-row-reverse animate-fade-in-down"
+				>
+					{/* Events image */}
+					<img
+						id="jobboard"
+						src={jobboard}
+						alt="people in a job interview"
+						className="hidden md:inline-block w-screen px-16 lg:w-auto lg:px-0 lg:h-72"
+					/>
+					<Header
+						title="Job Board"
+						subtitle=" Search through our current job listings from various companies to get in touch and land your next job."
+					/>
+				</div>
 
-				<div className="md:mx-48 sm:mx-20 lg:mx-48 xl:mx-72">
-					<h2>AVAILABLE JOBS</h2>
+				<div className="max-w-6xl mx-8 lg:mx-auto">
+					<h2 className="font-title">AVAILABLE JOBS</h2>
+					{jobs && (
+						<div id="job-listings-number" className="text-xl font-body">
+							{jobs.length} Job Listing{jobs.length !== 1 && "s"}
+						</div>
+					)}
 
-					<div id="job-listings-number" className="text-xl">
-						{this.state.jobs && this.state.jobs.length} job listings
-					</div>
-
-					<div id="job-posting" className="blue-rect rounded-xl">
+					<div id="job-posting" className="">
 						{this.state.jobs &&
 							this.state.jobs.map(
-								({ job_title, company, description, website, apply_link, email, image }, i) => (
+								(
+									{
+										job_title,
+										company,
+										location,
+										description,
+										deadline,
+										website,
+										apply_link,
+										email,
+										image,
+									},
+									i
+								) => (
 									<JobPosting
 										key={`jobposting${i}`}
 										title={job_title}
 										company={company}
 										description={description}
+										location={location}
 										website={website}
 										apply_link={apply_link}
 										email={email}
 										image={image}
+										deadline={deadline && deadline.toDate().toDateString()}
 									/>
 								)
 							)}
@@ -66,7 +98,7 @@ class JobBoard extends React.Component {
 					<div id="post-a-job" className="flex flex-col mt-10">
 						<h4>Have a job posting you'd like to advertise here?</h4>
 
-						<button className="w-full self-center md:w-2/5">POST A JOB</button>
+						<button className="w-full self-center md:w-2/5 uppercase font-title">Post a job</button>
 					</div>
 				</div>
 			</div>
@@ -74,21 +106,40 @@ class JobBoard extends React.Component {
 	}
 }
 
-const JobPosting = ({ title, company, website, description, apply_link, email, image }) => (
-	<div className="mx-4 flex">
-		<img className="rounded-full h-24 w-24  mr-16" src={image ? image : ""} />
-		<div>
-			<div className="font-title">
-				<h3>{title}</h3>
-				<p>{company}</p>
-				<p> {description}</p>
-				<a href={website}>Website</a>
+const JobPosting = ({
+	title,
+	company,
+	website,
+	location,
+	description,
+	deadline,
+	apply_link,
+	email,
+	image,
+}) => (
+	<div className="p-4 lg:px-16 md:flex justify-between md:space-x-8 blue-rect rounded-xl">
+		<img className="hidden md:block h-24 w-auto" src={image ? image : blank_image} />
+
+		<div className="md:flex-1">
+			<div className="flex md:flex-col justify-between space-x-8 md:space-x-0 font-title mb-4">
+				<img className="md:hidden h-24 w-auto" src={image ? image : blank_image} />
+				<div className="font-title flex-1">
+					<h4 className="">{title}</h4>
+					<a href={website}>{company}</a>
+					<p>{location}</p>
+				</div>
 			</div>
-			<div className="mt-4 flex justify-between">
+
+			<p className="font-body font-light">{description}</p>
+
+			{deadline && <p className="font-body font-light mt-4">Deadline: {deadline}</p>}
+
+			<div className="mt-4 flex justify-between space-x-4">
 				{email && (
 					<a
 						id="email"
-						className="flex-1 mr-2 border-2 border-solid border-blue bg-white px-2 py-1 text-blue font-semibold rounded uppercase"
+						className="flex-1 border text-center border-blue py-3 bg-white text-blue font-title font-semibold rounded-lg uppercase"
+
 						href={`mailto:${email}`}
 					>
 						Contact
@@ -97,7 +148,8 @@ const JobPosting = ({ title, company, website, description, apply_link, email, i
 				{apply_link && (
 					<a
 						id="application_link"
-						className="flex-1 mr-2 border-2 border-blue bg-blue px-2 py-1 text-white font-semibold rounded uppercase"
+						className="flex-1 border text-center border-blue py-3 bg-blue text-white hover:text-white font-title font-semibold rounded-lg uppercase"
+
 						href={apply_link}
 					>
 						Apply
