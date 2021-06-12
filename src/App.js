@@ -24,7 +24,7 @@ function App() {
   return (
 
     <div>
-      <Router className="App">
+      <Router className="App" basename="/">
         <Nav />
 
             {/* Routers */}
