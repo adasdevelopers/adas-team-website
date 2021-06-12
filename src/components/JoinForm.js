@@ -27,8 +27,8 @@ function JoinForm() {
     return (
         <div
             id="connect-form"
-            className="bg-light-blue p-5 rounded-lg my-7">
-            <form action="https://adasteam.us18.list-manage.com/subscribe/post" noValidate className="grid grid-cols-1 gap-3 justify-items-stretch lg:grid-cols-2 lg:mx-20 lg:my-6">
+            className="bg-light-blue p-5 rounded-lg md:my-7">
+            <form action="https://adasteam.us18.list-manage.com/subscribe/post" noValidate className="flex flex-col">
                <input type="hidden" name="u" value="9d8e6ca3c4618877981922611"/>
              <input type="hidden" name="id" value="8ac3f17ed3"/>
                 <div className="col-span-2">
@@ -54,7 +54,7 @@ function JoinForm() {
                         id="form-first-name"
                         type="name"
                         name="FNAME"
-                        className="focus:outline-none focus:ring focus:border-blue-50 px-2"
+                        className="focus:outline-none focus:ring focus:border-blue-50 "
                         value={first}
                         onChange={(e)=> {setFirst(e.target.value)}}/>
                 </div>
@@ -99,7 +99,7 @@ onChange={(e)=> {setFaculty(e.target.value)}}/>
 
                 <button
                     type="submit"
-                    className="w-5/6 justify-self-center col-span-2 lg:w-2/5 active:bg-blue-700">
+                    className="flex-1 lg:w-2/5 active:bg-blue-700">
                     SUBSCRIBE
                 </button>
             </form>

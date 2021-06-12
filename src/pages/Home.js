@@ -5,6 +5,9 @@ import BigBot from "../assets/img/ada-home-bot.png"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-scroll';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 // Import components
 import JoinForm from '../components/JoinForm'
 import Header from '../components/Header'
@@ -15,6 +18,9 @@ import Header from '../components/Header'
  * Welcome page
  * @returns
  */
+
+AOS.init();
+
 function Home() {
   return (
     <div id="home-page">
@@ -54,6 +60,9 @@ function Home() {
         >
 
         <div className="md:mx-48 sm:mx-20 lg:mx-62 xl:mx-72">
+
+            <div data-aos="fade-right" data-aos-duration="900"
+     data-aos-easing="ease-in-sine">
             <h2
                 className="text-2xl"
             >
@@ -64,11 +73,14 @@ function Home() {
                 Due to COVID-19, all Ada's Team events can be assumed to operate in a
                 virtual manner until it's officially deemed safe to host in-person events.
             </p>
+            </div>
             <br />
             <div className="divider-thick"></div>
-            <h2
-                className="text-2xl"
-            >
+
+
+            <div data-aos="fade-left" data-aos-duration="900"
+       data-aos-easing="ease-in-sine">
+            <h2>
                 TREATY 6 ACKNOWLEDGEMENT
             </h2>
             <p
@@ -79,24 +91,31 @@ function Home() {
                 Metis, Nakota Sioux, Iroquois, Dene, Ojibway/Saulteaux/Anishinaabe, Inuit, and many others
                 whose histories, languages, and cultures continue to influence our vibrant community.
             </p>
-
+          </div>
         </div>
       </div>
 
+      <div data-aos="fade-in" data-aos-duration="900" data-aos-delay="500"
+ data-aos-easing="ease-in-sine">
         <div
             id="join-us-form"
-            className="p-24 animate-fade-in-down"
+            className="md:p-24"
         >
 
-            <h2 className="px-32">
+            <h2 className="md:px-32 sm:mx-8">
             Subscribe to our Mailing List
             </h2>
-            <span className="px-32">Join Ada’s Team and receive updates on events, opportunities, scholarships, and more!</span>
+            <span className="md:px-32 sm:mx-8">Join Ada’s Team and receive updates on events, opportunities, scholarships, and more!</span>
 
-            <div className="join mx-32">  <JoinForm/></div>
+            <div className="join md:mx-32 sm:mx-8">  <JoinForm/></div>
+
+
+            </div>
+            </div>
+
             <br/>
 
-              <div id="sponsors-list" className="mx-32">
+              <div id="sponsors-list" className="mx-32 mb-32">
               <div className="divider-thick"></div>
                 <h2>
                     SPONSORS
@@ -143,9 +162,7 @@ function Home() {
 
 
             </div>
-
       </div>
-    </div>
   );
 }
 
