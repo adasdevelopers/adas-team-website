@@ -14,7 +14,7 @@ function SocialMedia() {
 
     return (
         <div
-            className="space-x-3 text-3xl lg:hidden">
+            className="space-x-3 text-3xl ">
             <a href="https://www.facebook.com/AdasTeamFB/"
                 alt="Ada's">
                 <FontAwesomeIcon icon={['fab', 'facebook']}/>

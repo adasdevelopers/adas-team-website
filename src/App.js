@@ -12,7 +12,9 @@ import JobBoard from "./pages/JobBoard";
 import Join from "./pages/Join";
 
 // Import React libraries
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { HashRouter as Router, Switch, Route } from "react-router-dom";
+import "animate.css/animate.min.css";
+
 
 /**
  * Renders the entire website
@@ -22,13 +24,13 @@ function App() {
   return (
 
     <div>
-      <Router className="App">
+      <Router className="App" basename="/">
         <Nav />
 
             {/* Routers */}
             <Switch>
                 <Route exact path="/">
-                    <Home />    
+                    <Home />
                 </Route>
                 <Route exact path="/about">
                     <About />
@@ -42,7 +44,7 @@ function App() {
                 <Route exact path="/jobboard">
                     <JobBoard />
                 </Route>
-                
+
                 <Route exact path="/join">
                     <Join />
                 </Route>
@@ -57,7 +59,7 @@ function App() {
       </Router>
 
     </div>
-   
+
 
 
   );
