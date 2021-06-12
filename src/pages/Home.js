@@ -153,12 +153,12 @@ class Home extends React.Component {
 		);
 	}
 }
-const Sponsor = ({ company, image }) => (
-<div className="w-max flex flex-col item-center">
-<img src={image} className="image--cover" />
-<h4 className="text-lg text-center uppercase">{company}</h4>
-</div>
-);
+// const Sponsor = ({ company, image }) => (
+// <div className="w-max flex flex-col item-center">
+// <img src={image} className="image--cover" />
+// <h4 className="text-lg text-center uppercase">{company}</h4>
+// </div>
+// );
 
 
 
