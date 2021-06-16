@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import { Transition } from "@headlessui/react";
 import { AiOutlineMenu } from "react-icons/ai";
+import { Link } from "react-router-dom";
 
 // Import Images
 import icon from "../assets/img/eicon_head_1.png";
@@ -23,10 +24,10 @@ function Nav() {
 					<div className="flex flex-1 justify-between items-center">
 						{/* Ada's Team Home Icon */}
 						<div className="flex-shrink-0 mt-2">
-							<a href="/">
+							<Link to="/">
 								<img id="home-icon" src={icon} alt="adas-team-icon" className="inline float-left" />
 								<h4 className="inline float-right my-4 mx-3 invisible md:visible">ADA'S TEAM</h4>
-							</a>
+							</Link>
 						</div>
 
 						{/* Desktop Navigation */}

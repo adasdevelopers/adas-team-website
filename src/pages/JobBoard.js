@@ -5,7 +5,6 @@ import Header from "../components/Header";
 import jobboard from "../assets/img/jobboard.svg";
 import blank_image from "../assets/img/blank.svg";
 
-
 /**
  * Displays the Job Board with data
  * pulled in from Firebase
@@ -20,7 +19,6 @@ class JobBoard extends React.Component {
 	componentDidMount() {
 		db.collection("job-postings")
 			.orderBy("created", "asc")
-
 			.get()
 			.then((snapshot) => {
 				const jobs = [];
@@ -133,6 +131,7 @@ const JobPosting = ({
 			<p className="font-body font-light">{description}</p>
 
 			{deadline && <p className="font-body font-light mt-4">Deadline: {deadline}</p>}
+
 
 			<div className="mt-4 flex justify-between space-x-4">
 				{email && (
