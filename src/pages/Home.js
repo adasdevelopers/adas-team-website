@@ -107,7 +107,7 @@ class Home extends React.Component {
 
 				<div
 					id="join-us-form"
-					className="max-w-4xl 2xl:max-w-6xl mx-8 md:mx-16 lg:py-24 lg:mx-auto animate-fade-in-down"
+					className="max-w-6xl mx-8 md:mx-16 lg:py-24 lg:mx-auto animate-fade-in-down"
 
 				>
 					<div

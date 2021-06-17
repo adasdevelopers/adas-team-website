@@ -7,7 +7,6 @@ import Header from "../components/Header";
 
 import { AiFillLinkedin } from "react-icons/ai";
 
-
 // Import initiative assets
 import about_image from "../assets/img/about.svg";
 import dev_image from "../assets/img/ada_bot_scarf.png";
