@@ -36,6 +36,22 @@ function JoinForm() {
 						/>
 					</div>
 
+					<div className="col-span-6 sm:col-span-3">
+						<label for="last_name" className="block text-sm font-medium text-gray-700">
+							Last name
+						</label>
+						<input
+							id="form-last-name"
+							type="name"
+							name="LNAME"
+							value={last}
+							onChange={(e) => {
+								setLast(e.target.value);
+							}}
+							autocomplete="family-name"
+							className="mt-1 focus:outline-none focus:ring focus:border-blue-50 "
+						/>
+					</div>
 
 					<div className="col-span-6 sm:col-span-3">
 						<label for="last_name" className="block text-sm font-medium text-gray-700">
@@ -127,7 +143,6 @@ function JoinForm() {
 			</form>
 		</div>
 	);
-
 }
 
 export default JoinForm;

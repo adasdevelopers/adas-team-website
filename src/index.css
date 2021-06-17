@@ -116,7 +116,6 @@
 	#navigation-menu > li {
 		@apply block;
 	}
-
 }
 
 /*
@@ -191,5 +190,10 @@
     .dropdown:hover .dropdown-menu {
   display: block;
     }
+
+    .dropdown:hover .dropdown-menu {
+  display: block;
+    }
+
 
 }
