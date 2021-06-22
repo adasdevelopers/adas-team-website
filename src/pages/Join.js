@@ -20,29 +20,26 @@ function Join() {
 	// importing brand icons
 	library.add(fab);
 
-	// TODO: display popup sucess message
-	// if (state.succeeded) {
-	//     return <p>Thanks for connecting!</p>;
-	//
-	// }
-
 	return (
 		<div id="join-page" className="page">
 			<div
 				id="join"
 				className="max-w-6xl mx-auto flex flex-col items-center justify-between lg:flex-row-reverse animate-fade-in-down"
 			>
-				{/* Join image */}
-				<img
-					id="join_image"
-					src={join_image}
-					alt="person standing next to envelope"
-					className="hidden md:inline-block w-screen px-16 lg:w-auto lg:px-0 lg:h-72"
-				/>
-				<Header
-					title="Join Us"
-					subtitle="Join the Ada's Team community to stay updated and get involved!"
-				/>
+                        <title>
+                              {/* Join image */}
+                              <img
+                                    id="join_image"
+                                    src={join_image}
+                                    alt="person standing next to envelope"
+                                    className="hidden md:inline-block w-screen px-16 lg:w-auto lg:px-0 lg:h-72"
+                              />
+                              <Header
+                                    title="Join Us"
+                                    subtitle="Join the Ada's Team community to stay updated and get involved!"
+                              />
+                        </title>
+
 			</div>
 
 			<div className="max-w-6xl mx-auto">

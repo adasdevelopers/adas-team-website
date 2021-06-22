@@ -14,13 +14,13 @@ function Header({ title, subtitle, additional, homepage }) {
 			>
 				{title}
 			</h1>
-			<p className="font-body text-left md:text-center lg:text-left italic text-lg">
+			<h2 className="font-body text-left text-lg text-black font-normal md:text-center lg:text-left italic ">
 				<Typist avgTypingDelay={40} stdTypingDelay={0}>
 					<Typist.Delay ms={800} />
 					{subtitle}
 				</Typist>
 				<b>{additional || ""}</b>
-			</p>
+			</h2>
 		</header>
 	);
 }
