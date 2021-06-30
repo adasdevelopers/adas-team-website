@@ -12,6 +12,7 @@ import JoinForm from "../components/JoinForm";
 import Header from "../components/Header";
 import db from "../firebase";
 import React from "react";
+import renderer from 'react-test-renderer';
 
 /**
  * Welcome page
@@ -156,4 +157,6 @@ const Sponsor = ({ company, image }) => (
 		<h4 className="text-base uppercase text-center mt-2">{company}</h4>
 	</div>
 );
+
+
 export default Home;
