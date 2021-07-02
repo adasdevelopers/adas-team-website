@@ -40,3 +40,5 @@ package-lock.json
 yarn.lock
 
 TODO.md
+
+src/tests/__snapshots__/*

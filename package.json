@@ -15,7 +15,6 @@
         "@headlessui/react": "^1.2.0",
         "@material-ui/core": "^4.11.4",
         "@testing-library/jest-dom": "^5.11.4",
-        "@testing-library/react": "^11.1.0",
         "@testing-library/user-event": "^12.1.10",
         "animate.css": "^4.1.1",
         "aos": "^3.0.0-beta.6",
@@ -35,7 +34,7 @@
     "scripts": {
         "start": "craco start",
         "build": "craco build",
-        "test": "jest",
+        "test": "craco test",
         "eject": "react-scripts eject",
         "predeploy": "npm run build",
         "deploy": "gh-pages -d build"
@@ -64,6 +63,7 @@
         "@babel/preset-flow": "^7.14.5",
         "@pmmmwh/react-refresh-webpack-plugin": "^0.4.3",
         "@tailwindcss/postcss7-compat": "^2.0.4",
+        "@testing-library/react": "^12.0.0",
         "autoprefixer": "^9.8.6",
         "babel-jest": "^26.6.3",
         "gh-pages": "^3.2.0",

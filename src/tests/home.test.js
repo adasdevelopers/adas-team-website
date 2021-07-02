@@ -1,10 +1,10 @@
-import Home from "../pages/Home.js";
-import renderer from 'react-test-renderer';
-import React from 'react';
+import React from "react";
+import { render, cleanup } from "@testing-library/react";
+import Home from "../pages/Home";
 
-it('renders correctly', () => {
-    const tree = renderer
-      .create(<Home />)
-      .toJSON();
-    expect(tree).toMatchSnapshot();
-  });
+afterEach(cleanup);
+
+it("renders", () => {
+  const { asFragment } = render(<Home />);
+  expect(asFragment()).toMatchSnapshot();
+});
