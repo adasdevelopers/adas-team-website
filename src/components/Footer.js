@@ -1,6 +1,6 @@
 // Import components
 import SocialMedia from "./SocialMedia";
-import NavigationLinks from "./NavigationLinks";
+import NavigationFooter from "./NavigationFooter";
 /**
  * Displays the footer without navigation
  * @returns Footer
@@ -30,10 +30,10 @@ function Footer() {
 							<br />
 							Edmonton, AB T6G 2S4
 						</p>
-                    <div id="footer_nav" className=""> 
+                    <div id="footer_nav" className="mt-6"> 
                     <h3>Navigation</h3>
                     <div className="">
-                        <NavigationLinks />
+                        <NavigationFooter />
                     </div>
                     </div>
 						<div className="divider-verythin my-4" />
