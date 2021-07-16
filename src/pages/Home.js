@@ -12,6 +12,7 @@ import JoinForm from "../components/JoinForm";
 import Header from "../components/Header";
 import db from "../firebase";
 import React from "react";
+import renderer from 'react-test-renderer';
 
 /**
  * Welcome page
@@ -152,8 +153,10 @@ class Home extends React.Component {
 
 const Sponsor = ({ company, image }) => (
 	<div className="flex self-center justify-self-center flex-col items-center justify-between mt-8">
-		<img src={image} className="w-32 h-auto md:w-40 md:h-auto" />
+		<img src={image} className="w-32 h-auto md:w-40 md:h-auto" alt={company+" logo"}/>
 		<h4 className="text-base uppercase text-center mt-2">{company}</h4>
 	</div>
 );
+
+
 export default Home;
