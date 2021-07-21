@@ -14,8 +14,8 @@ function Connect() {
 	const [state, handleSubmit] = useForm("mrgredan");
 
       const [email, setEmail] = useState("");
-	const [first, setFirst] = useState("");
-	const [last, setLast] = useState("");
+	// /const [first, setFirst] = useState("");
+	// const [last, setLast] = useState("");
 
 	// TODO: display success message
 	if (state.succeeded) {

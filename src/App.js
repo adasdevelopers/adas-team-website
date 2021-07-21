@@ -1,7 +1,7 @@
 // Import components
 import Footer from "./components/Footer";
 import Nav from "./components/Navigation";
-
+import ScrollToTop from "./components/ScrollToTop";
 // Import pages
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -21,39 +21,38 @@ import "animate.css/animate.min.css";
  */
 function App() {
 	return (
-		<div>
-			<Router className="App" basename="/">
-				<Nav />
+		<Router className="App">
+			<ScrollToTop />
+			<Nav />
 
-				{/* Routers */}
-				<Switch>
-					<Route exact path="/">
-						<Home />
-					</Route>
-					<Route exact path="/about">
-						<About />
-					</Route>
-					<Route exact path="/faq">
-						<FAQ />
-					</Route>
-					<Route exact path="/events">
-						<Events />
-					</Route>
-					<Route exact path="/jobboard">
-						<JobBoard />
-					</Route>
+			{/* Routers */}
+			<Switch>
+				<Route exact path="/">
+					<Home />
+				</Route>
+				<Route exact path="/about">
+					<About />
+				</Route>
+				<Route exact path="/faq">
+					<FAQ />
+				</Route>
+				<Route exact path="/events">
+					<Events />
+				</Route>
+				<Route exact path="/jobboard">
+					<JobBoard />
+				</Route>
 
-					<Route exact path="/join">
-						<Join />
-					</Route>
-					<Route exact path="/connect">
-						<Connect />
-					</Route>
-				</Switch>
+				<Route exact path="/join">
+					<Join />
+				</Route>
+				<Route exact path="/connect">
+					<Connect />
+				</Route>
+			</Switch>
 
-				<Footer className="absolute inset-x-0 bottom-0 w-full" />
-			</Router>
-		</div>
+			<Footer className="absolute inset-x-0 bottom-0 w-full" />
+		</Router>
 	);
 }
 
