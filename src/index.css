@@ -1,0 +1,199 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Import Spartan and Open Sans fonts */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Spartan:wght@400;500;600;700;800;900&display=swap");
+
+@layer base {
+	/* active link style */
+
+	/* Header: Title */
+	h1 {
+		@apply text-5xl;
+		@apply font-title;
+		@apply text-center;
+		@apply font-extrabold;
+	}
+	h2 {
+		@apply text-3xl;
+		@apply font-title;
+		@apply text-blue;
+		@apply font-bold;
+	}
+	h3 {
+		@apply text-2xl;
+		@apply font-title;
+		@apply text-blue;
+		@apply font-bold;
+	}
+
+	h4 {
+		@apply font-title;
+		@apply font-bold;
+		@apply text-xl;
+	}
+
+	/* Header: Subtitles */
+	h5 {
+		@apply text-xl;
+		@apply text-center;
+	}
+
+	a {
+		@apply hover:text-blue;
+	}
+
+	li {
+		@apply font-bold;
+	}
+
+	p {
+		@apply text-base;
+	}
+
+	button {
+		@apply bg-blue;
+		@apply px-7;
+		@apply py-3;
+		@apply my-5;
+		@apply rounded-xl;
+		@apply text-white;
+		@apply font-semibold;
+		@apply w-3/5;
+	}
+
+	label {
+		@apply font-bold;
+	}
+
+	input,
+	textarea {
+		@apply rounded-lg;
+		@apply w-full;
+
+		height: 45px;
+	}
+
+	header {
+		@apply my-12;
+		@apply mx-6;
+	}
+
+	header {
+		@apply my-12;
+		@apply mx-6;
+	}
+}
+
+@layer components {
+	.page {
+		@apply container;
+		@apply mx-auto;
+		@apply p-7;
+	}
+
+	.page-title {
+		@apply my-12;
+		@apply mx-6;
+	}
+
+	.blue-rect {
+		@apply bg-light-blue;
+		@apply p-3;
+		@apply rounded-3xl;
+		@apply my-4;
+	}
+
+	.blue-rect-shadow {
+		@apply bg-light-blue;
+		@apply p-3;
+		@apply rounded-3xl;
+		@apply my-4;
+		@apply shadow-md;
+	}
+
+	#navigation-menu > li {
+		@apply block;
+	}
+}
+
+/*
+*   Custom Shape
+*   and fixed image sizes
+*/
+
+@layer utilities {
+	/* TODO: change margins to em */
+	.divider-thick {
+		width: 4em;
+		height: 0.625em;
+		background-color: pink;
+	}
+
+	.divider-thin {
+		height: 0.25em;
+		background-color: pink;
+	}
+
+	.divider-verythin {
+		height: 0.1em;
+		background-color: pink;
+	}
+
+	#social-media-icons > a > img {
+		width: 33.3px;
+		height: 33.3px;
+	}
+
+	#home-icon {
+		width: 73px;
+		height: 61px;
+	}
+
+	#home-bot {
+		width: 20em;
+	}
+
+	.wrapper {
+		display: flex;
+		flex-direction: column wrap;
+		flex-wrap: wrap;
+		color: black;
+	}
+
+	.image--cover {
+		width: 150px;
+		height: 150px;
+		border-radius: 50%;
+
+		background-color: bg-light-blue;
+		object-fit: cover;
+		object-position: center right;
+	}
+
+	.dropdown:hover .dropdown-menu {
+		display: block;
+	}
+
+	.executive--contact {
+		background: white;
+		height: 2.25rem;
+		width: 2.25rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 50%;
+	}
+
+
+    .dropdown:hover .dropdown-menu {
+  display: block;
+    }
+
+    .dropdown:hover .dropdown-menu {
+  display: block;
+    }
+
+
+}
