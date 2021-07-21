@@ -78,7 +78,7 @@ class FAQ extends React.Component {
                                                             >
                                                                   <div
                                                                         className={`bg-light-blue w-11/10 lg:p-3 shadow-md rounded-3xl my-7 py-12 md:w-full lg:w-3/4 ${
-                                                                              i % 2 == 0
+                                                                              i % 2 === 0
                                                                                     ? "-ml-12 pl-16 pr-12 sm:-ml-18 md:-ml-20 md:pl-32 lg:ml-0"
                                                                                     : "-mr-12 pr-16 pl-12 sm:-mr-18 md:-mr-20 md:pr-32 ml-auto lg:mr-0"
                                                                         }`}
@@ -92,7 +92,7 @@ class FAQ extends React.Component {
                                                                               </p>
                                                                               <div
                                                                                     className={`divider-thin mt-8 w-6/5 lg:w-full lg:ml-0 lg:mr-0 ${
-                                                                                          i % 2 == 0 ? "-ml-20 sm:-ml-32 md:-ml-44" : "-mr-12"
+                                                                                          i % 2 === 0 ? "-ml-20 sm:-ml-32 md:-ml-44" : "-mr-12"
                                                                                     }`}
                                                                               ></div>
                                                                         </div>

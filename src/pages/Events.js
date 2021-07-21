@@ -57,7 +57,7 @@ function Events() {
 							willChange: "transform",
 						}}
 					>
-						<iframe
+						<iframe title="canva roadmap"
 							loading="lazy"
 							style={{
 								position: "absolute",
@@ -75,9 +75,10 @@ function Events() {
 				</div>
 
 				<button className="w-full self-center md:w-max hover:text-grey-900">
-					<a
+					<a 
 						href="https://www.canva.com/design/DAEE64Enu-4/view"
 						target="_blank"
+                        rel="noreferrer"
 						alt="Ada's Team Roadmap"
 					>
 						CHECK OUT OUR ROADMAP
