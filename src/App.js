@@ -1,7 +1,7 @@
 // Import componenets
 import Footer from "./components/Footer";
 import Nav from './components/Navigation';
-
+import ScrollToTop from "./components/ScrollToTop";
 // Import pages
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -25,6 +25,7 @@ function App() {
 
     <div>
       <Router className="App" basename="/">
+        <ScrollToTop />
         <Nav />
 
             {/* Routers */}

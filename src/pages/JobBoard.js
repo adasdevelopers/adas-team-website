@@ -116,11 +116,11 @@ const JobPosting = ({
 	image,
 }) => (
 	<div className="p-4 lg:px-16 md:flex justify-between md:space-x-8 blue-rect rounded-xl">
-		<img className="hidden md:block h-24 w-auto" src={image ? image : blank_image} />
+		<img className="hidden md:block h-24 w-auto" src={image ? image : blank_image} alt={`${company} logo`}/>
 
 		<div className="md:flex-1">
 			<div className="flex md:flex-col justify-between space-x-8 md:space-x-0 font-title mb-4">
-				<img className="md:hidden h-24 w-auto" src={image ? image : blank_image} />
+				<img className="md:hidden h-24 w-auto" src={image ? image : blank_image} alt={`${company} logo`}/>
 				<div className="font-title flex-1">
 					<h4 className="">{title}</h4>
 					<a href={website}>{company}</a>

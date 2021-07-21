@@ -5,7 +5,6 @@ import { fab } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import Header from "../components/Header";
 
-import { AiFillLinkedin } from "react-icons/ai";
 
 // Import initiative assets
 import about_image from "../assets/img/about.svg";
@@ -198,8 +197,8 @@ const Executive = ({ image, role, name, description, contact }) => (
 		{/* <div className="rounded-full w-full h-auto overflow-hidden"> */}
 		<div className="flex self-center md:mr-8" style={{ maxWidth: "240px", height: "auto" }}>
 			<img
-				src={image == "" ? blank_user : image}
-				alt="Image of an executive of Ada's Team"
+				src={image === "" ? blank_user : image}
+				alt="executive of Ada's Team"
 				className="rounded-full mb-8 md:mb-0 flex-1"
 			/>
 		</div>
@@ -259,7 +258,7 @@ const Initiative = ({ name, image, description, contact }) => (
 			<p>{description}</p>
 		</div>
 
-		<div className="initiative-social-media" className="my-2 space-x-4">
+		<div className="initiative-social-media my-2 space-x-4">
 			{contact["instagram"] !== "" && (
 				<a href={contact["instagram"]} className="text-3xl">
 					<FontAwesomeIcon icon={["fab", "instagram"]} />
