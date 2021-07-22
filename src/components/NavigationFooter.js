@@ -21,7 +21,7 @@ const NavigationLinks = () => {
 		<div className="w-1/2  lg:items-center lg:w-auto" id="navbar">
 			<ul className="text-sm grid grid-cols-2 gap-2 lg:flex text-left md:text-left md:justify-start md:pr-0 last:ml-0">
 				{pages.map((page) => (
-					<NavigationLink title={page.title} link={page.link} />
+					<NavigationLink title={page.title} link={page.link} key={page.title} />
 				))}
 			</ul>
 		</div>

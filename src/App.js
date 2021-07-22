@@ -1,6 +1,6 @@
 // Import components
 import Footer from "./components/Footer";
-import Nav from "./components/Navigation";
+import Navigation from "./components/Navigation";
 import ScrollToTop from "./components/ScrollToTop";
 
 // Import pages
@@ -24,7 +24,7 @@ function App() {
 	return (
 		<Router className="App" basename="/">
 			<ScrollToTop />
-			<Nav />
+			<Navigation />
 
 			{/* Routers */}
 			<Switch>
@@ -43,7 +43,6 @@ function App() {
 				<Route exact path="/jobboard">
 					<JobBoard />
 				</Route>
-
 				<Route exact path="/join">
 					<Join />
 				</Route>

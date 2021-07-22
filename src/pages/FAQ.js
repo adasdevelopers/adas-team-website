@@ -16,8 +16,15 @@ import faq from "../assets/img/PageHeaders/faq.svg";
  */
 const FAQ = () => {
 	const [questions, setQuestions] = useState(null);
+	const [loading, setLoading] = useState(true);
 
 	useEffect(() => {
+		// Set a timeout to wait at least 2 seconds before displaying data
+		// (so that spinner is not weird)
+		setTimeout(() => {
+			setLoading(false);
+		}, 3500);
+
 		// Pull in data from Firebase
 		db.collection("questions")
 			.get()
@@ -28,19 +35,17 @@ const FAQ = () => {
 					questions.push(data);
 				});
 				setQuestions(questions);
-				console.log(questions);
 			})
 			.catch((error) => console.log(error));
 
-		AOS.init();
-
+		// Initialize animations
 		AOS.init({
 			easing: "ease", // default easing for AOS animations
 			once: true, // whether animation should happen only once - while scrolling down
 			mirror: false, // whether elements should animate out while scrolling past them
 			anchorPlacement: "top-bottom", // defines which position of the element regarding to window should trigger the animation
 		});
-	});
+	}, []);
 
 	return (
 		<div
@@ -48,24 +53,22 @@ const FAQ = () => {
 			className="max-w-7xl lg:mx-auto page animate-fade-in-down font-body overflow-hidden"
 		>
 			<main>
-				<div
+				<title
 					id="faq_image"
 					className="max-w-4xl mx-auto flex flex-col items-center justify-between lg:flex-row-reverse animate-fade-in-down"
 				>
-					<title>
-						{/* FAQ image */}
-						<img
-							id="faq"
-							src={faq}
-							alt="people sitting on infographics"
-							className="hidden md:inline-block w-screen px-16 lg:w-auto lg:px-0 lg:h-72"
-						/>
+					{/* FAQ image */}
+					<img
+						id="faq"
+						src={faq}
+						alt="people sitting on infographics"
+						className="hidden md:inline-block w-screen px-16 lg:w-auto lg:px-0 lg:h-72"
+					/>
 
-						<Header title="FAQ" subtitle="Answering your most frequently asked questions." />
-					</title>
-				</div>
+					<Header title="FAQ" subtitle="Answering your most frequently asked questions." />
+				</title>
 
-				<Loader loading={!questions}>
+				<Loader loading={loading || !questions}>
 					<section id="faq-section">
 						{questions &&
 							questions.map((question, i) => {
@@ -74,6 +77,7 @@ const FAQ = () => {
 										data-aos={question.left ? "fade-right" : "fade-left"}
 										data-aos-duration="500"
 										data-aos-easing="ease-in-sine"
+										key={i}
 									>
 										<div
 											className={`bg-light-blue w-11/10 lg:p-3 shadow-md rounded-3xl my-7 py-12 md:w-full lg:w-3/4 ${

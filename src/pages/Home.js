@@ -8,6 +8,7 @@ import { Link } from "react-scroll";
 // Import components
 import JoinForm from "../components/JoinForm";
 import Header from "../components/Header";
+import Loader from "../components/Loader";
 
 // Import assets
 import BigBot from "../assets/img/AdaBot/ada-home-bot.png";
@@ -19,8 +20,15 @@ import { IoIosArrowDown } from "react-icons/io";
  */
 const Home = () => {
 	const [sponsors, setSponsors] = useState(null);
+	const [loading, setLoading] = useState(true);
 
 	useEffect(() => {
+		// Set a timeout to wait at least 2 seconds before displaying data
+		// (so that spinner is not weird)
+		setTimeout(() => {
+			setLoading(false);
+		}, 3500);
+
 		// Fetch data from Firebase
 		db.collection("sponsors")
 			.get()
@@ -85,7 +93,7 @@ const Home = () => {
 
 			<div id="home-information" className="bg-black w-full py-20">
 				<div className="max-w-4xl mx-8 md:mx-24 lg:mx-64 xl:mx-auto">
-					<div data-aos="fade-right" data-aos-duration="900" data-aos-easing="ease-in-sine">
+					<div data-aos="fade-right" data-aos-duration="500" data-aos-easing="ease-in-sine">
 						<h2 className="text-2xl font-title font-blue">COVID 19 UPDATE</h2>
 						<p className="font-body font-light text-white">
 							Due to COVID-19, all Ada's Team events can be assumed to operate in a virtual manner
@@ -93,7 +101,7 @@ const Home = () => {
 						</p>
 					</div>
 					<div className="divider-thick my-4" />
-					<div data-aos="fade-left" data-aos-duration="900" data-aos-easing="ease-in-sine">
+					<div data-aos="fade-left" data-aos-duration="500" data-aos-easing="ease-in-sine">
 						<h2 className="text-2xl font-title mb-4">TREATY 6 ACKNOWLEDGEMENT</h2>
 						<p className="font-body font-light text-white">
 							We respectfully acknowledge that Ada’s Team is located on Treaty 6 territory, a
@@ -112,8 +120,7 @@ const Home = () => {
 			>
 				<div
 					data-aos="fade-in"
-					data-aos-duration="900"
-					data-aos-delay="500"
+					data-aos-duration="500"
 					data-aos-easing="ease-in-sine"
 					className="pt-20 pb-8"
 				>
@@ -127,22 +134,23 @@ const Home = () => {
 
 				<div className="divider-thick mt-16 mb-8"></div>
 
-				<div id="sponsors-list">
+				<div
+					id="sponsors-list"
+					data-aos="fade-in"
+					data-aos-duration="500"
+					data-aos-easing="ease-in-sine"
+				>
 					<h2>SPONSORS</h2>
 					{/** main flex box wrapper **/}
-					<div
-						className="mb-8 grid grid-cols-2 grid-rows-3 md:grid-cols-3  md:grid-rows-2 lg:my-10"
-						data-aos="fade-in"
-						data-aos-duration="900"
-						data-aos-delay="500"
-						data-aos-easing="ease-in-sine"
-					>
-						{/** divs within flex box **/}
-						{sponsors &&
-							sponsors.map(({ company_name, image }) => (
-								<Sponsor company={company_name} image={image} />
-							))}
-					</div>
+					<Loader loading={loading || !sponsors}>
+						<div className="mb-8 grid grid-cols-2 grid-rows-3 md:grid-cols-3  md:grid-rows-2 lg:my-10">
+							{/** divs within flex box **/}
+							{sponsors &&
+								sponsors.map(({ company_name, image }) => (
+									<Sponsor company={company_name} image={image} key={company_name} />
+								))}
+						</div>
+					</Loader>
 				</div>
 			</div>
 		</div>

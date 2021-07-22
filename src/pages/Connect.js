@@ -15,7 +15,6 @@ import connect_image from "../assets/img/PageHeaders/connect.svg";
 const Connect = () => {
 	// React hook
 	const [state, handleSubmit] = useForm("mrgredan");
-
 	const [email, setEmail] = useState("");
 	// /const [first, setFirst] = useState("");
 	// const [last, setLast] = useState("");
@@ -27,25 +26,23 @@ const Connect = () => {
 
 	return (
 		<div id="contact-page" className="page">
-			<div
+			<title
 				id="connect_image"
 				className="max-w-6xl mx-auto flex flex-col items-center justify-between lg:flex-row-reverse animate-fade-in-down"
 			>
-				<title>
-					{/* Connect image */}
-					<img
-						id="connect"
-						src={connect_image}
-						alt="person sending paper airplane"
-						className="hidden md:inline-block w-screen px-16 lg:w-auto lg:px-0 lg:h-72"
-					/>
+				{/* Connect image */}
+				<img
+					id="connect"
+					src={connect_image}
+					alt="person sending paper airplane"
+					className="hidden md:inline-block w-screen px-16 lg:w-auto lg:px-0 lg:h-72"
+				/>
 
-					<Header
-						title="Connect With Us"
-						subtitle="We’d love to get in touch with you! Connect with us through email or any of our social media."
-					/>
-				</title>
-			</div>
+				<Header
+					title="Connect With Us"
+					subtitle="We’d love to get in touch with you! Connect with us through email or any of our social media."
+				/>
+			</title>
 
 			<div>
 				<h3 className="text-center mb-10">SEND A MESSAGE</h3>
@@ -55,7 +52,7 @@ const Connect = () => {
 					className="bg-light-blue p-5 rounded-lg mx-18 max-w-6xl lg:mx-auto md:16 lg:mb-10"
 				>
 					<form onSubmit={handleSubmit} className="grid grid-cols-1 gap-3">
-						<label for="email" className="font-medium text-gray-700 ">
+						<label htmlFor="email" className="font-medium text-gray-700 ">
 							Email Address
 						</label>
 						<input
@@ -72,7 +69,7 @@ const Connect = () => {
 						/>
 						<ValidationError prefix="Email" field="email" errors={state.errors} />
 
-						<label for="name" className="font-medium text-gray-700 ">
+						<label htmlFor="name" className="font-medium text-gray-700 ">
 							Name
 						</label>
 						<input
@@ -83,7 +80,7 @@ const Connect = () => {
 							aria-required="false"
 						/>
 
-						<label for="subject" className="font-medium text-gray-700 ">
+						<label htmlFor="subject" className="font-medium text-gray-700 ">
 							Subject
 						</label>
 						<input
@@ -94,7 +91,7 @@ const Connect = () => {
 							aria-required="true"
 						/>
 
-						<label for="message" className="font-medium text-gray-700 ">
+						<label htmlFor="message" className="font-medium text-gray-700 ">
 							Message
 						</label>
 						<textarea

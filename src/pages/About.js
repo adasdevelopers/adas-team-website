@@ -8,10 +8,10 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 // Import components
 import Header from "../components/Header";
+import Loader from "../components/Loader";
 
 // Import  assets
 import about_image from "../assets/img/PageHeaders/about.svg";
-import blank_user from "../assets/img/Placeholders/blank-user.png";
 
 /**
  * Displays information about Ada's Team
@@ -20,8 +20,15 @@ import blank_user from "../assets/img/Placeholders/blank-user.png";
 const About = () => {
 	const [initiatives, setInitiatives] = useState(null);
 	const [executives, setExecutives] = useState(null);
+	const [loading, setLoading] = useState(true);
 
 	useEffect(() => {
+		// Set a timeout to wait at least 2 seconds before displaying data
+		// (so that spinner is not weird)
+		setTimeout(() => {
+			setLoading(false);
+		}, 3500);
+
 		// Pull in data from Firebase
 		// Import initiatives
 		db.collection("initiatives")
@@ -39,6 +46,7 @@ const About = () => {
 
 		// Import executives
 		db.collection("executives")
+			.orderBy("order", "asc")
 			.get()
 			.then((snapshot) => {
 				const executives = [];
@@ -55,26 +63,20 @@ const About = () => {
 	}, []);
 
 	const Executive = ({ image, role, name, description, contact }) => (
-		<div id="executives" className="blue-rect-shadow p-8 flex flex-col md:flex-row lg:mx-36 h-full">
-			{/* <div className="rounded-full w-full h-auto overflow-hidden"> */}
-			<div className="flex self-center md:mr-8" style={{ maxWidth: "240px", height: "auto" }}>
-				<img
-					src={image === "" ? blank_user : image}
-					alt="executive of Ada's Team"
-					className="rounded-full mb-8 md:mb-0 flex-1"
-				/>
-			</div>
+		<div id="executives" className="blue-rect-shadow p-8 flex flex-col md:flex-row lg:mx-36">
+			<div
+				className="executive-image self-center md:mr-8"
+				style={{ backgroundImage: `url(${image})`, backgroundColor: "black" }}
+				alt="executive of Ada's Team"
+			/>
+
 			<div className="flex justify-between flex-col my-2">
 				<div id="executive-information">
-					<div className="font-title font-bold text-xl">{name}</div>
-					<div className="mb-2 uppercase">
-						<p>
-							<em>{role}</em>
-						</p>
-					</div>
-					<div>
-						<p className="font-body font-thin">{description}</p>
-					</div>
+					<h4 className="font-title font-bold text-xl">{name}</h4>
+					<p className="mb-2 uppercase">
+						<em>{role}</em>
+					</p>
+					<p className="font-body font-thin">{description}</p>
 				</div>
 
 				{/* Executive Contact Information */}
@@ -83,7 +85,6 @@ const About = () => {
 						<div className="executive--contact">
 							<a href={contact.LinkedIn}>
 								<FontAwesomeIcon icon={["fab", "linkedin"]} />
-								{/* <AiFillLinkedin /> */}
 							</a>
 						</div>
 					)}
@@ -175,18 +176,29 @@ const About = () => {
 			{/* Initiative block */}
 			<div id="initiatives" className="my-12 lg:my-28 lg:mx-36">
 				<h2 className="pb-4">OUR INITIATIVES</h2>
+
 				{/* Initiative information */}
 				<p className="font-body italic text-sm mb-20">
 					Ada's Team hosts many initiatives that help our members thrive academically, socially, and
 					professionally. All of our initiatives have their own extraordinary organizing teams, even
 					though they are all under the umbrella of Ada's Team!
 				</p>
-				<div className="grid grid-cols-1 md:grid-cols-2 gap-x-36 gap-y-10">
-					{initiatives &&
-						initiatives.map(({ name, description, contact, image }) => (
-							<Initiative name={name} description={description} contact={contact} image={image} />
-						))}
-				</div>
+
+				{/* Initiative grid */}
+				<Loader loading={!initiatives || loading}>
+					<div className="grid grid-cols-1 md:grid-cols-2 gap-x-36 gap-y-10">
+						{initiatives &&
+							initiatives.map(({ name, description, contact, image }) => (
+								<Initiative
+									name={name}
+									description={description}
+									contact={contact}
+									image={image}
+									key={name}
+								/>
+							))}
+					</div>
+				</Loader>
 			</div>
 
 			{/* Slack and Discord Invite links*/}
@@ -239,16 +251,21 @@ const About = () => {
 					<h3 className="font-title text-pink text-2xl">2020-2021</h3>
 				</div>
 
-				{executives &&
-					executives.map(({ image, role, name, description, contact }, i) => (
-						<Executive
-							image={image}
-							role={role}
-							name={name}
-							description={description}
-							contact={contact}
-						/>
-					))}
+				<Loader loading={!executives || loading}>
+					<div>
+						{executives &&
+							executives.map(({ image, role, name, description, contact }, i) => (
+								<Executive
+									image={image}
+									role={role}
+									name={name}
+									description={description}
+									contact={contact}
+									key={role}
+								/>
+							))}
+					</div>
+				</Loader>
 			</div>
 		</div>
 	);

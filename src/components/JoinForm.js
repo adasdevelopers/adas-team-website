@@ -39,7 +39,7 @@ const JoinForm = () => {
 					</div>
 
 					<div className="col-span-6 sm:col-span-3">
-						<label for="first_name" className="block text-sm font-medium text-gray-700">
+						<label htmlFor="first_name" className="block text-sm font-medium text-gray-700">
 							First name
 						</label>
 						<input
@@ -50,14 +50,14 @@ const JoinForm = () => {
 							onChange={(e) => {
 								setFirst(e.target.value);
 							}}
-							autocomplete="given-name"
+							autoComplete="given-name"
 							className="mt-1 focus:outline-none focus:ring focus:border-blue-50 "
 							aria-required="false"
 						/>
 					</div>
 
 					<div className="col-span-6 sm:col-span-3">
-						<label for="last_name" className="block text-sm font-medium text-gray-700">
+						<label htmlFor="last_name" className="block text-sm font-medium text-gray-700">
 							Last name
 						</label>
 						<input
@@ -68,14 +68,14 @@ const JoinForm = () => {
 							onChange={(e) => {
 								setLast(e.target.value);
 							}}
-							autocomplete="family-name"
+							autoComplete="family-name"
 							className="mt-1 focus:outline-none focus:ring focus:border-blue-50 "
 							aria-required="false"
 						/>
 					</div>
 
 					<div className="col-span-6 sm:col-span-3">
-						<label for="studentAff" className="block text-sm font-medium text-gray-700">
+						<label htmlFor="studentAff" className="block text-sm font-medium text-gray-700">
 							Student Affiliation
 						</label>
 						<select
@@ -101,7 +101,7 @@ const JoinForm = () => {
 					</div>
 
 					<div className="col-span-6 sm:col-span-3">
-						<label for="faculty" className="block text-sm font-medium text-gray-700">
+						<label htmlFor="faculty" className="block text-sm font-medium text-gray-700">
 							Faculty
 						</label>
 						<select

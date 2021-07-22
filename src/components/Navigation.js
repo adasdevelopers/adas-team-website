@@ -15,7 +15,7 @@ import NavigationLinks from "./NavigationLinks";
  * in mobile/tablet and desktop views
  * @returns
  */
-const Nav = () => {
+const Navigation = () => {
 	const [isOpen, setIsOpen] = useState(false);
 
 	return (
@@ -73,4 +73,4 @@ const Nav = () => {
 	);
 };
 
-export default Nav;
+export default Navigation;

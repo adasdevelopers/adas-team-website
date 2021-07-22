@@ -6,8 +6,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Spartan:wght@400;500;600;700;800;900&display=swap");
 
 @layer base {
-	/* active link style */
-
 	/* Header: Title */
 	h1 {
 		@apply text-5xl;
@@ -15,12 +13,14 @@
 		@apply text-center;
 		@apply font-extrabold;
 	}
+
 	h2 {
 		@apply text-3xl;
 		@apply font-title;
 		@apply text-blue;
 		@apply font-bold;
 	}
+
 	h3 {
 		@apply text-2xl;
 		@apply font-title;
@@ -116,43 +116,56 @@
 	#navigation-menu > li {
 		@apply block;
 	}
+
+	.spin-animation {
+		stroke-dasharray: 360;
+		transform-origin: center;
+		animation: loading 3s ease-in-out infinite;
+	}
+
+	@keyframes loading {
+		0% {
+			stroke-dashoffset: -360;
+		}
+		20% {
+			stroke: #f8bbda;
+		}
+		100% {
+			stroke-dashoffset: 360;
+			transform: rotate(-1turn);
+		}
+	}
 }
 
-/*
-*   Custom Shape
-*   and fixed image sizes
-*/
-
+/* Custom shape and fixed image sizes */
 @layer utilities {
-	/* TODO: change margins to em */
 	.divider-thick {
-		width: 4em;
+		width: 4rem;
 		height: 0.625em;
 		background-color: pink;
 	}
 
 	.divider-thin {
-		height: 0.25em;
+		height: 0.25rem;
 		background-color: pink;
 	}
 
 	.divider-verythin {
-		height: 0.1em;
+		height: 0.1rem;
 		background-color: pink;
 	}
 
 	#social-media-icons > a > img {
-		width: 33.3px;
-		height: 33.3px;
+		width: 2rem;
+		height: 2rem;
 	}
 
 	#home-icon {
-		width: 73px;
-		height: 61px;
+		width: 6rem;
 	}
 
 	#home-bot {
-		width: 20em;
+		width: 20rem;
 	}
 
 	.wrapper {
@@ -162,14 +175,12 @@
 		color: black;
 	}
 
-	.image--cover {
-		width: 150px;
-		height: 150px;
+	.executive-image {
+		min-width: 200px;
+		width: 200px;
+		height: 200px;
+		background-size: cover;
 		border-radius: 50%;
-
-		background-color: bg-light-blue;
-		object-fit: cover;
-		object-position: center right;
 	}
 
 	.dropdown:hover .dropdown-menu {
@@ -185,15 +196,4 @@
 		justify-content: center;
 		border-radius: 50%;
 	}
-
-
-    .dropdown:hover .dropdown-menu {
-  display: block;
-    }
-
-    .dropdown:hover .dropdown-menu {
-  display: block;
-    }
-
-
 }

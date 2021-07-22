@@ -16,8 +16,15 @@ import blank_image from "../assets/img/Placeholders/blank.svg";
  */
 const JobBoard = () => {
 	const [jobs, setJobs] = useState(null);
+	const [loading, setLoading] = useState(true);
 
 	useEffect(() => {
+		// Set a timeout to wait at least 2 seconds before displaying data
+		// (so that spinner is not weird)
+		setTimeout(() => {
+			setLoading(false);
+		}, 3500);
+
 		// Pull in Firebase data
 		db.collection("job-postings")
 			.orderBy("created", "asc")
@@ -60,7 +67,7 @@ const JobBoard = () => {
 					</div>
 				)}
 
-				<Loader loading={!jobs}>
+				<Loader loading={loading || !jobs}>
 					<div id="job-posting" className="">
 						{jobs &&
 							jobs.map(
