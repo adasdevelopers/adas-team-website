@@ -210,7 +210,7 @@ const About = () => {
 						through virtual hangouts and study group sessions. There are tutors available to help
 						with various CMPUT, MATH and STAT courses.
 					</p>
-					<button className="w-64 self-center">
+					<button className="w-64 self-center md:self-start">
 						<a
 							href="https://join.slack.com/t/adastutoring/shared_invite/zt-rxka4nnk-Ox~fBNx2XgXkU4gk9TLQfw"
 							alt="Ada's Team Tutoring Slack Invite Link"
@@ -229,7 +229,7 @@ const About = () => {
 						opportunities and hackathons, review resumes, and hold each other accountable with
 						virtual coworking sessions.
 					</p>
-					<button className="w-64 self-center">
+					<button className="w-64 self-center md:self-start">
 						<a
 							href="https://discord.gg/7ZhmzHZjc8"
 							alt="Ada's Team Discord Invite Link"
@@ -248,7 +248,7 @@ const About = () => {
 			<div id="executive-team">
 				<div className="title my-10 lg:mx-36">
 					<h2>MEET THE TEAM</h2>
-					<h3 className="font-title text-pink text-2xl">2020-2021</h3>
+					<h3 className="font-title text-pink text-2xl">2021-2022</h3>
 				</div>
 
 				<Loader loading={!executives || loading}>
