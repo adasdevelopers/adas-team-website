@@ -1,11 +1,12 @@
 // Import components
 import SocialMedia from "./SocialMedia";
 import NavigationFooter from "./NavigationFooter";
+
 /**
  * Displays the footer without navigation
  * @returns Footer
  */
-function Footer() {
+const Footer = () => {
 	return (
 		<footer>
 			<div id="footer" className="m-0 bg-black text-xs text-white">
@@ -30,12 +31,12 @@ function Footer() {
 							<br />
 							Edmonton, AB T6G 2S4
 						</p>
-                    <div id="footer_nav" className="mt-6"> 
-                    <h3>Navigation</h3>
-                    <div className="">
-                        <NavigationFooter />
-                    </div>
-                    </div>
+						<div id="footer_nav" className="mt-6">
+							<h3>Navigation</h3>
+							<div className="">
+								<NavigationFooter />
+							</div>
+						</div>
 						<div className="divider-verythin my-4" />
 						<p>© Copyright 2020 Ada's Team</p>
 					</div>
@@ -43,6 +44,6 @@ function Footer() {
 			</div>
 		</footer>
 	);
-}
+};
 
 export default Footer;

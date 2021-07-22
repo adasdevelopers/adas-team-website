@@ -15,8 +15,9 @@ import NavigationLinks from "./NavigationLinks";
  * in mobile/tablet and desktop views
  * @returns
  */
-function Nav() {
+const Nav = () => {
 	const [isOpen, setIsOpen] = useState(false);
+
 	return (
 		<nav>
 			<div className="max-w-7xl mx-auto p-4 sm:px-6 lg:px-8">
@@ -70,6 +71,6 @@ function Nav() {
 			</Transition>
 		</nav>
 	);
-}
+};
 
 export default Nav;

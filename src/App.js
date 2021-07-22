@@ -2,6 +2,7 @@
 import Footer from "./components/Footer";
 import Nav from "./components/Navigation";
 import ScrollToTop from "./components/ScrollToTop";
+
 // Import pages
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -21,7 +22,7 @@ import "animate.css/animate.min.css";
  */
 function App() {
 	return (
-		<Router className="App">
+		<Router className="App" basename="/">
 			<ScrollToTop />
 			<Nav />
 

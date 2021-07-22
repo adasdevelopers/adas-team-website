@@ -6,7 +6,7 @@ import "../index.css";
  * Collection of the links to each page
  * @returns Links
  */
-function NavigationLinks() {
+const NavigationLinks = () => {
 	const pages = [
 		{ title: "Home", link: "/" },
 		{ title: "About", link: "/about" },
@@ -26,7 +26,7 @@ function NavigationLinks() {
 			</ul>
 		</div>
 	);
-}
+};
 
 const NavigationLink = ({ title, link }) => (
 	<li
