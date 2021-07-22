@@ -5,7 +5,7 @@ import { AiOutlineMenu } from "react-icons/ai";
 import { Link } from "react-router-dom";
 
 // Import Images
-import icon from "../assets/img/eicon_head_1.png";
+import icon from "../assets/img/AdaBot/icon_head.png";
 
 // Import components
 import NavigationLinks from "./NavigationLinks";

@@ -7,8 +7,8 @@ import Header from "../components/Header";
 import Loader from "../components/Loader";
 
 //Import assets
-import jobboard from "../assets/img/jobboard.svg";
-import blank_image from "../assets/img/blank.svg";
+import jobboard from "../assets/img/PageHeaders/jobboard.svg";
+import blank_image from "../assets/img/Placeholders/blank.svg";
 
 /**
  * Displays the Job Board with data

@@ -10,7 +10,7 @@ import JoinForm from "../components/JoinForm";
 import Header from "../components/Header";
 
 // Import assets
-import BigBot from "../assets/img/ada-home-bot.png";
+import BigBot from "../assets/img/AdaBot/ada-home-bot.png";
 import { IoIosArrowDown } from "react-icons/io";
 
 /**

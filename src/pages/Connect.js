@@ -6,7 +6,7 @@ import { useForm, ValidationError } from "@formspree/react";
 import Header from "../components/Header";
 
 // Import assets
-import connect_image from "../assets/img/connect.svg";
+import connect_image from "../assets/img/PageHeaders/connect.svg";
 
 /**
  *

@@ -9,7 +9,7 @@ import Header from "../components/Header";
 import Loader from "../components/Loader";
 
 //Import assets
-import faq from "../assets/img/faq.svg";
+import faq from "../assets/img/PageHeaders/faq.svg";
 
 /**
  * Displays FAQ for Ada's Team

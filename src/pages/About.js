@@ -10,8 +10,8 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import Header from "../components/Header";
 
 // Import  assets
-import about_image from "../assets/img/about.svg";
-import blank_user from "../assets/img/blank-user.png";
+import about_image from "../assets/img/PageHeaders/about.svg";
+import blank_user from "../assets/img/Placeholders/blank-user.png";
 
 /**
  * Displays information about Ada's Team

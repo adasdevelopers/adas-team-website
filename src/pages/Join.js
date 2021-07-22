@@ -8,8 +8,8 @@ import JoinForm from "../components/JoinForm";
 import Header from "../components/Header";
 
 // Import assets
-import icon from "../assets/img/eicon_head_1.png";
-import join_image from "../assets/img/join.svg";
+import icon from "../assets/img/AdaBot/icon_head.png";
+import join_image from "../assets/img/PageHeaders/join.svg";
 
 /**
  * Displays a form that allows the users to subscribe

@@ -3,7 +3,7 @@ import Header from "../components/Header";
 import EventsCalendar from "../components/EventsCalendar";
 
 // Import assets
-import events_image from "../assets/img/events.svg";
+import events_image from "../assets/img/PageHeaders/events.svg";
 
 /**
  * Displays monthly and daily view
