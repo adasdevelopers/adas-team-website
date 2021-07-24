@@ -40,7 +40,7 @@ const Events = () => {
 			</div>
 
 			<div id="event-roadmap" className="mt-16 flex flex-col max-w-6xl mx-auto ">
-				<div className="divider-thick my-10"></div>
+				<div className="divider-thick my-10" aria-hidden />
 				<h2>EVENT ROADMAP</h2>
 
 				{/* Canva Embedded roadmap */}

@@ -43,7 +43,6 @@ const Home = () => {
 			.catch((error) => console.log(error));
 
 		// Initialize animations
-		AOS.init();
 		AOS.init({
 			easing: "ease", // default easing for AOS animations
 			once: true, // whether animation should happen only once - while scrolling down
@@ -61,18 +60,10 @@ const Home = () => {
 	);
 
 	return (
-		<div id="home-page">
+		<main id="home-page">
 			<div id="home-image" className="mx-auto static p-5 md:p-5 relative animate-fade-in-down">
-				{/* Bot image */}
-				<img
-					id="home-bot"
-					src={BigBot}
-					alt="Ada's Home Bot waving"
-					className="absolute inset-y-0 right-0 md:mt-1 z-40 lg:inset-y-0 lg:right-0 "
-				></img>
-
 				{/* Welcome title */}
-				<div
+				<title
 					id="home-title"
 					className="flex flex-col place-items-center mx-auto inline-block mt-96 w-11/12 lg:mt-72 pt-2 z-30"
 				>
@@ -88,10 +79,18 @@ const Home = () => {
 							<IoIosArrowDown size="2em" />
 						</Link>
 					</div>
-				</div>
+				</title>
+
+				{/* Bot image */}
+				<img
+					id="home-bot"
+					src={BigBot}
+					alt="Ada's Home Bot waving"
+					className="absolute inset-y-0 right-0 md:mt-1 z-40 lg:inset-y-0 lg:right-0 "
+				/>
 			</div>
 
-			<div id="home-information" className="bg-black w-full py-20">
+			<section id="home-information" className="bg-black w-full py-20">
 				<div className="max-w-4xl mx-8 md:mx-24 lg:mx-64 xl:mx-auto">
 					<div data-aos="fade-right" data-aos-duration="500" data-aos-easing="ease-in-sine">
 						<h2 className="text-2xl font-title font-blue">COVID 19 UPDATE</h2>
@@ -100,7 +99,7 @@ const Home = () => {
 							until it's officially deemed safe to host in-person events.
 						</p>
 					</div>
-					<div className="divider-thick my-4" />
+					<div className="divider-thick my-4" aria-hidden />
 					<div data-aos="fade-left" data-aos-duration="500" data-aos-easing="ease-in-sine">
 						<h2 className="text-2xl font-title mb-4">TREATY 6 ACKNOWLEDGEMENT</h2>
 						<p className="font-body font-light text-white">
@@ -112,48 +111,42 @@ const Home = () => {
 						</p>
 					</div>
 				</div>
-			</div>
+			</section>
 
-			<div
+			<section
+				data-aos="fade-in"
+				data-aos-duration="500"
+				data-aos-easing="ease-in-sine"
+				className="py-8"
 				id="join-us-form"
-				className="max-w-6xl mx-8 md:mx-16 lg:py-24 lg:mx-auto animate-fade-in-down"
+				className="max-w-6xl mx-8 my-8 md:my-24 animate-fade-in-down md:mx-16 xl:mx-auto"
 			>
-				<div
-					data-aos="fade-in"
-					data-aos-duration="500"
-					data-aos-easing="ease-in-sine"
-					className="pt-20 pb-8"
-				>
-					<h2>Subscribe to our Mailing List</h2>
-					<p>
-						Join Ada’s Team and receive updates on events, opportunities, scholarships, and more!
-					</p>
-				</div>
-
+				<h2 className="uppercase">Subscribe to our mailing list</h2>
+				<p>Join Ada’s Team and receive updates on events, opportunities, scholarships, and more!</p>
 				<JoinForm />
+			</section>
 
-				<div className="divider-thick mt-16 mb-8"></div>
+			<section
+				id="sponsors-list"
+				data-aos="fade-in"
+				data-aos-duration="500"
+				data-aos-easing="ease-in-sine"
+				className="max-w-6xl mx-8 my-8 md:my-24 animate-fade-in-down md:mx-16 xl:mx-auto"
+			>
+				<div className="divider-thick mt-16 mb-8" aria-hidden />
 
-				<div
-					id="sponsors-list"
-					data-aos="fade-in"
-					data-aos-duration="500"
-					data-aos-easing="ease-in-sine"
-				>
-					<h2>SPONSORS</h2>
-					{/** main flex box wrapper **/}
-					<Loader loading={loading || !sponsors}>
-						<div className="mb-8 grid grid-cols-2 grid-rows-3 md:grid-cols-3  md:grid-rows-2 lg:my-10">
-							{/** divs within flex box **/}
-							{sponsors &&
-								sponsors.map(({ company_name, image }) => (
-									<Sponsor company={company_name} image={image} key={company_name} />
-								))}
-						</div>
-					</Loader>
-				</div>
-			</div>
-		</div>
+				<h2>SPONSORS</h2>
+
+				<Loader loading={loading || !sponsors}>
+					<div className="mb-8 grid grid-cols-2 grid-rows-3 md:grid-cols-3  md:grid-rows-2 lg:my-10">
+						{sponsors &&
+							sponsors.map(({ company_name, image }) => (
+								<Sponsor company={company_name} image={image} key={company_name} />
+							))}
+					</div>
+				</Loader>
+			</section>
+		</main>
 	);
 };
 

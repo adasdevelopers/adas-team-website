@@ -28,12 +28,19 @@ const SocialMedia = ({ gridStyle }) => {
 		<div id="social-media-icons" className={gridStyle}>
 			<div className="content-evenly space-x-4">
 				{socialMedia.map(({ name, link, icon }) => (
-					<a href={link} className="text-3xl" alt={name} target="_blank" rel="noreferrer">
+					<a
+						href={link}
+						className="text-3xl"
+						alt={name}
+						key={name}
+						target="_blank"
+						rel="noreferrer"
+					>
 						<FontAwesomeIcon icon={icon} />
 					</a>
 				))}
 			</div>
-			<div className="divider-thick my-4" />
+			<div className="divider-thick my-4" aria-hidden />
 		</div>
 	);
 };

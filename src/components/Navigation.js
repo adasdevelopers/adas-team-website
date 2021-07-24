@@ -24,10 +24,10 @@ const Navigation = () => {
 				<div className="flex items-center justify-between h-16">
 					<div className="flex flex-1 justify-between items-center">
 						{/* Ada's Team Home Icon */}
-						<div className="flex-shrink-0 mt-2">
-							<Link to="/">
-								<img id="home-icon" src={icon} alt="adas-team-icon" className="inline float-left" />
-								<h4 className="inline float-right my-4 mx-3 invisible md:visible">ADA'S TEAM</h4>
+						<div>
+							<Link to="/" className="flex items-center space-x-3">
+								<img id="home-icon" src={icon} alt="adas-team-icon" />
+								<h4 className="leading-none invisible md:visible">ADA'S TEAM</h4>
 							</Link>
 						</div>
 
@@ -61,9 +61,9 @@ const Navigation = () => {
 				leaveFrom="opacity-100 scale-100"
 				leaveTo="opacity-0 scale-95"
 			>
-				{(ref) => (
+				{() => (
 					<div className="lg:hidden" id="mobile-menu">
-						<div ref={ref} className="px-2 pt-2 pb-3 space-y-4 sm:px-3 bg-black text-white">
+						<div className="px-2 pt-2 pb-3 space-y-4 sm:px-3 bg-black text-white">
 							<NavigationLinks />
 						</div>
 					</div>

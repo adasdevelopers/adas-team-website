@@ -37,7 +37,7 @@ const Footer = () => {
 						<NavigationLinks footer />
 					</div>
 				</div>
-				<div className="divider-verythin my-4" />
+				<div className="divider-verythin my-4" aria-hidden />
 				<p>© Copyright 2020 Ada's Team</p>
 			</div>
 		</footer>

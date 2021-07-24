@@ -171,7 +171,7 @@ const About = () => {
 				</p>
 			</div>
 
-			<div className="divider-thick hidden lg:mx-36 "></div>
+			<div className="divider-thick hidden lg:mx-36" aria-hidden />
 
 			{/* Initiative block */}
 			<div id="initiatives" className="my-12 lg:my-28 lg:mx-36">

@@ -49,7 +49,7 @@ const Join = () => {
 
 			<JoinForm />
 
-			<div className="divider-thick lg:invisible my-8"></div>
+			<div className="divider-thick lg:invisible my-8" aria-hidden />
 
 			<div className="max-w-6xl mx-auto">
 				<img
