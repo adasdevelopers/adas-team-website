@@ -1,13 +1,16 @@
-import events_image from "../assets/img/events.svg";
+// Import components
 import Header from "../components/Header";
 import EventsCalendar from "../components/EventsCalendar";
+
+// Import assets
+import events_image from "../assets/img/PageHeaders/events.svg";
+
 /**
  * Displays monthly and daily view
  * from Ada's Team gCal
  * @returns
  */
-
-function Events() {
+const Events = () => {
 	return (
 		<div
 			id="events-page"
@@ -37,7 +40,7 @@ function Events() {
 			</div>
 
 			<div id="event-roadmap" className="mt-16 flex flex-col max-w-6xl mx-auto ">
-				<div className="divider-thick my-10"></div>
+				<div className="divider-thick my-10" aria-hidden />
 				<h2>EVENT ROADMAP</h2>
 
 				{/* Canva Embedded roadmap */}
@@ -57,7 +60,8 @@ function Events() {
 							willChange: "transform",
 						}}
 					>
-						<iframe title="canva roadmap"
+						<iframe
+							title="canva roadmap"
 							loading="lazy"
 							style={{
 								position: "absolute",
@@ -75,10 +79,10 @@ function Events() {
 				</div>
 
 				<button className="w-full self-center md:w-max hover:text-grey-900">
-					<a 
+					<a
 						href="https://www.canva.com/design/DAEE64Enu-4/view"
 						target="_blank"
-                        rel="noreferrer"
+						rel="noreferrer"
 						alt="Ada's Team Roadmap"
 					>
 						CHECK OUT OUR ROADMAP
@@ -87,6 +91,6 @@ function Events() {
 			</div>
 		</div>
 	);
-}
+};
 
 export default Events;

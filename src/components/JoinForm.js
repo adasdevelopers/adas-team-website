@@ -1,12 +1,13 @@
 // Import libraries
 import React, { useState } from "react";
 
-function JoinForm() {
+const JoinForm = () => {
 	const [email, setEmail] = useState("");
 	const [first, setFirst] = useState("");
 	const [last, setLast] = useState("");
 	const [faculty, setFaculty] = useState("");
 	const [studentAff, setStudentAff] = useState("");
+
 	/** https://codepen.io/bzerangue/pen/ExaBMXj **/
 	return (
 		<div id="connect-form" className="bg-light-blue p-5 rounded-lg md:my-7 max-w-6xl lg:mx-auto">
@@ -19,13 +20,13 @@ function JoinForm() {
 				<input type="hidden" name="id" value="8ac3f17ed3" />
 
 				<div className="grid grid-cols-6 gap-6">
-                              <div className="col-span-6 sm:col-span-6">
+					<div className="col-span-6 sm:col-span-6">
 						<label htmlFor="email" className="block text-sm font-medium text-gray-700">
 							Email Address
 						</label>
 						<input
 							required
-                                          aria-required="true"
+							aria-required="true"
 							id="email"
 							type="email"
 							name="EMAIL"
@@ -38,7 +39,7 @@ function JoinForm() {
 					</div>
 
 					<div className="col-span-6 sm:col-span-3">
-						<label for="first_name" className="block text-sm font-medium text-gray-700">
+						<label htmlFor="first_name" className="block text-sm font-medium text-gray-700">
 							First name
 						</label>
 						<input
@@ -49,14 +50,14 @@ function JoinForm() {
 							onChange={(e) => {
 								setFirst(e.target.value);
 							}}
-							autocomplete="given-name"
+							autoComplete="given-name"
 							className="mt-1 focus:outline-none focus:ring focus:border-blue-50 "
-                                          aria-required="false"
+							aria-required="false"
 						/>
 					</div>
 
 					<div className="col-span-6 sm:col-span-3">
-						<label for="last_name" className="block text-sm font-medium text-gray-700">
+						<label htmlFor="last_name" className="block text-sm font-medium text-gray-700">
 							Last name
 						</label>
 						<input
@@ -67,14 +68,14 @@ function JoinForm() {
 							onChange={(e) => {
 								setLast(e.target.value);
 							}}
-							autocomplete="family-name"
+							autoComplete="family-name"
 							className="mt-1 focus:outline-none focus:ring focus:border-blue-50 "
-                                          aria-required="false"
+							aria-required="false"
 						/>
 					</div>
 
 					<div className="col-span-6 sm:col-span-3">
-						<label for="studentAff" className="block text-sm font-medium text-gray-700">
+						<label htmlFor="studentAff" className="block text-sm font-medium text-gray-700">
 							Student Affiliation
 						</label>
 						<select
@@ -85,7 +86,7 @@ function JoinForm() {
 							onChange={(e) => {
 								setStudentAff(e.target.value);
 							}}
-                                          aria-required="true"
+							aria-required="true"
 							className="mt-1 block w-full py-2 px-3 bg-white rounded-md shadow-sm focus:outline-none focus:outline-none focus:ring focus:border-blue-50  sm:text-sm"
 						>
 							<option>Undergraduate Student</option>
@@ -100,7 +101,7 @@ function JoinForm() {
 					</div>
 
 					<div className="col-span-6 sm:col-span-3">
-						<label for="faculty" className="block text-sm font-medium text-gray-700">
+						<label htmlFor="faculty" className="block text-sm font-medium text-gray-700">
 							Faculty
 						</label>
 						<select
@@ -111,7 +112,7 @@ function JoinForm() {
 							onChange={(e) => {
 								setFaculty(e.target.value);
 							}}
-                                          aria-required="false"
+							aria-required="false"
 							className="mt-1 block w-full py-2 px-3 bg-white rounded-md shadow-sm focus:outline-none focus:outline-none focus:ring focus:border-blue-50  sm:text-sm"
 						>
 							<option>Arts</option>
@@ -132,6 +133,6 @@ function JoinForm() {
 			</form>
 		</div>
 	);
-}
+};
 
 export default JoinForm;

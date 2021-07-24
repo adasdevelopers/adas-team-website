@@ -5,7 +5,7 @@ import { AiOutlineMenu } from "react-icons/ai";
 import { Link } from "react-router-dom";
 
 // Import Images
-import icon from "../assets/img/eicon_head_1.png";
+import icon from "../assets/img/AdaBot/icon_head.png";
 
 // Import components
 import NavigationLinks from "./NavigationLinks";
@@ -15,18 +15,19 @@ import NavigationLinks from "./NavigationLinks";
  * in mobile/tablet and desktop views
  * @returns
  */
-function Nav() {
+const Navigation = () => {
 	const [isOpen, setIsOpen] = useState(false);
+
 	return (
 		<nav>
 			<div className="max-w-7xl mx-auto p-4 sm:px-6 lg:px-8">
 				<div className="flex items-center justify-between h-16">
 					<div className="flex flex-1 justify-between items-center">
 						{/* Ada's Team Home Icon */}
-						<div className="flex-shrink-0 mt-2">
-							<Link to="/">
-								<img id="home-icon" src={icon} alt="adas-team-icon" className="inline float-left" />
-								<h4 className="inline float-right my-4 mx-3 invisible md:visible">ADA'S TEAM</h4>
+						<div>
+							<Link to="/" className="flex items-center space-x-3">
+								<img id="home-icon" src={icon} alt="adas-team-icon" />
+								<h4 className="leading-none invisible md:visible">ADA'S TEAM</h4>
 							</Link>
 						</div>
 
@@ -60,9 +61,9 @@ function Nav() {
 				leaveFrom="opacity-100 scale-100"
 				leaveTo="opacity-0 scale-95"
 			>
-				{(ref) => (
+				{() => (
 					<div className="lg:hidden" id="mobile-menu">
-						<div ref={ref} className="px-2 pt-2 pb-3 space-y-4 sm:px-3 bg-black text-white">
+						<div className="px-2 pt-2 pb-3 space-y-4 sm:px-3 bg-black text-white">
 							<NavigationLinks />
 						</div>
 					</div>
@@ -70,6 +71,6 @@ function Nav() {
 			</Transition>
 		</nav>
 	);
-}
+};
 
-export default Nav;
+export default Navigation;

@@ -14,7 +14,6 @@ module.exports = {
 			title: ["Spartan", "sans-serif"],
 			body: ["Open\\ Sans", "sans-serif"],
 		},
-
 		extend: {
 			keyframes: {
 				"fade-in-down": {
@@ -36,6 +35,12 @@ module.exports = {
 				"11/10": "110%",
 				"6/5": "120%",
 				"7/5": "140%",
+			},
+			gridTemplateRows: {
+				footer: "repeat(3, minmax(0, auto))",
+			},
+			gridTemplateColumns: {
+				footer: "repeat(2, minmax(0, auto))",
 			},
 		},
 	},
