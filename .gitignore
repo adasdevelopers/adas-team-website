@@ -18,9 +18,12 @@
 .env.test.local
 .env.production.local
 
+# ignore debug logs
+debug.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
 # ignore jekyll files
 _site/
 .sass-cache/
@@ -35,6 +38,8 @@ _site/
 vendor/
 .eslintcache
 
+.vscode
+.netlify
 
 package-lock.json
 yarn.lock

@@ -3,44 +3,41 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 
-// Import images
-import icon from "../assets/img/eicon_head_1.png";
-import join_image from "../assets/img/join.svg";
-
 // Import components
 import JoinForm from "../components/JoinForm";
 import Header from "../components/Header";
+
+// Import assets
+import icon from "../assets/img/AdaBot/icon_head.png";
+import join_image from "../assets/img/PageHeaders/join.svg";
 
 /**
  * Displays a form that allows the users to subscribe
  * to the mailing list
  * @returns
  */
-function Join() {
+const Join = () => {
 	// importing brand icons
 	library.add(fab);
 
 	return (
 		<div id="join-page" className="page">
-			<div
+			<title
 				id="join"
 				className="max-w-6xl mx-auto flex flex-col items-center justify-between lg:flex-row-reverse animate-fade-in-down"
 			>
-                        <title>
-                              {/* Join image */}
-                              <img
-                                    id="join_image"
-                                    src={join_image}
-                                    alt="person standing next to envelope"
-                                    className="hidden md:inline-block w-screen px-16 lg:w-auto lg:px-0 lg:h-72"
-                              />
-                              <Header
-                                    title="Join Us"
-                                    subtitle="Join the Ada's Team community to stay updated and get involved!"
-                              />
-                        </title>
-
-			</div>
+				{/* Join image */}
+				<img
+					id="join_image"
+					src={join_image}
+					alt="person standing next to envelope"
+					className="hidden md:inline-block w-screen px-16 lg:w-auto lg:px-0 lg:h-72"
+				/>
+				<Header
+					title="Join Us"
+					subtitle="Join the Ada's Team community to stay updated and get involved!"
+				/>
+			</title>
 
 			<div className="max-w-6xl mx-auto">
 				<h3>JOIN US</h3>
@@ -52,7 +49,7 @@ function Join() {
 
 			<JoinForm />
 
-			<div className="divider-thick lg:invisible my-8"></div>
+			<div className="divider-thick lg:invisible my-8" aria-hidden />
 
 			<div className="max-w-6xl mx-auto">
 				<img
@@ -93,6 +90,6 @@ function Join() {
 			</div>
 		</div>
 	);
-}
+};
 
 export default Join;
