@@ -1,13 +1,8 @@
 // Import components
 import Footer from "./components/Footer";
-<<<<<<< HEAD
-import Nav from './components/Navigation';
-import ScrollToTop from "./components/ScrollToTop";
-=======
 import Navigation from "./components/Navigation";
 import ScrollToTop from "./components/ScrollToTop";
 
->>>>>>> 3f660155a978afb5339d59c88a06f590e02d19c6
 // Import pages
 import Home from "./pages/Home";
 import About from "./pages/About";
