@@ -137,8 +137,8 @@ const About = () => {
 	);
 
 	return (
-		<div className="page animate-fade-in-down font-body">
-			<div
+		<main className="page animate-fade-in-down font-body">
+			<title
 				id="about_image"
 				className="max-w-3xl lg:mx-auto flex flex-col items-center justify-between lg:flex-row-reverse animate-fade-in-down"
 			>
@@ -151,10 +151,10 @@ const About = () => {
 				/>
 
 				<Header title="About" subtitle="Learn more about Ada's Team." />
-			</div>
+			</title>
 
 			{/* Title Intro */}
-			<div id="about-goal" className="lg:mt-20 lg:px-36">
+			<section id="about-goal" className="lg:mt-20 lg:px-36">
 				<p className="font-sans font-thin">
 					In Ada's Team, our goal is to{" "}
 					<b>
@@ -169,12 +169,12 @@ const About = () => {
 						safe space for everyone to collaborate and thrive in.
 					</b>
 				</p>
-			</div>
+			</section>
 
 			<div className="divider-thick hidden lg:mx-36" aria-hidden />
 
 			{/* Initiative block */}
-			<div id="initiatives" className="my-12 lg:my-28 lg:mx-36">
+			<section id="initiatives" className="my-12 lg:my-28 lg:mx-36">
 				<h2 className="pb-4">OUR INITIATIVES</h2>
 
 				{/* Initiative information */}
@@ -199,10 +199,10 @@ const About = () => {
 							))}
 					</div>
 				</Loader>
-			</div>
+			</section>
 
 			{/* Slack and Discord Invite links*/}
-			<div id="join-links" className="flex flex-col space-y-5 lg:py-5 lg:my-32 lg:mx-36 lg:mr-48">
+			<section id="join-links" className="flex flex-col space-y-5 lg:py-5 lg:my-32 lg:mx-36 lg:mr-48">
 				<div id="adas-tutoring-join" className="flex flex-col w-full">
 					<h3 className="font-title text-black font-semibold">Ada's Tutoring</h3>
 					<p className="font-light">
@@ -242,10 +242,10 @@ const About = () => {
 						</a>
 					</button>
 				</div>
-			</div>
+			</section>
 
 			{/* Executive information from Firebase */}
-			<div id="executive-team">
+			<section id="executive-team">
 				<div className="title my-10 lg:mx-36">
 					<h2>MEET THE TEAM</h2>
 					<h3 className="font-title text-pink text-2xl">2021-2022</h3>
@@ -266,8 +266,8 @@ const About = () => {
 							))}
 					</div>
 				</Loader>
-			</div>
-		</div>
+			</section>
+		</main>
 	);
 };
 

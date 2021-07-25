@@ -41,8 +41,8 @@ const JobBoard = () => {
 	}, []);
 
 	return (
-		<div id="job-board-page" className="page">
-			<div
+		<main id="job-board-page" className="page">
+			<title
 				id="faq_image"
 				className="max-w-6xl mx-auto flex flex-col items-center justify-between lg:flex-row-reverse animate-fade-in-down"
 			>
@@ -57,9 +57,9 @@ const JobBoard = () => {
 					title="Job Board"
 					subtitle=" Search through our current job listings from various companies to get in touch and land your next job."
 				/>
-			</div>
+			</title>
 
-			<div className="max-w-6xl mx-8 lg:mx-auto">
+			<section id="available-jobs" className="max-w-6xl mx-8 lg:mx-auto">
 				<h2 className="font-title">AVAILABLE JOBS</h2>
 				{jobs && (
 					<div id="job-listings-number" className="text-xl font-body">
@@ -107,8 +107,8 @@ const JobBoard = () => {
 
 					<button className="w-full self-center md:w-2/5 uppercase font-title">Post a job</button>
 				</div>
-			</div>
-		</div>
+			</section>
+		</main>
 	);
 };
 

@@ -25,7 +25,7 @@ const Connect = () => {
 	}
 
 	return (
-		<div id="contact-page" className="page">
+		<main id="contact-page" className="page">
 			<title
 				id="connect_image"
 				className="max-w-6xl mx-auto flex flex-col items-center justify-between lg:flex-row-reverse animate-fade-in-down"
@@ -47,7 +47,7 @@ const Connect = () => {
 			<div>
 				<h3 className="text-center mb-10">SEND A MESSAGE</h3>
 
-				<div
+				<section
 					id="connect-form"
 					className="bg-light-blue p-5 rounded-lg mx-18 max-w-6xl lg:mx-auto md:16 lg:mb-10"
 				>
@@ -106,9 +106,9 @@ const Connect = () => {
 							SEND MESSAGE
 						</button>
 					</form>
-				</div>
+				</section>
 			</div>
-		</div>
+		</main>
 	);
 };
 
