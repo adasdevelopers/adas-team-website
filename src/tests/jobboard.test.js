@@ -11,6 +11,6 @@ import JobBoard from "../pages/JobBoard";
 afterEach(cleanup);
 
 it("renders", () => {
-  const { asFragment } = render(<Events />);
+  const { asFragment } = render(<JobBoard />);
   expect(asFragment()).toMatchSnapshot();
 });
