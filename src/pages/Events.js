@@ -1,19 +1,22 @@
-import events_image from "../assets/img/events.svg";
+// Import components
 import Header from "../components/Header";
 import EventsCalendar from "../components/EventsCalendar";
+
+// Import assets
+import events_image from "../assets/img/PageHeaders/events.svg";
+
 /**
  * Displays monthly and daily view
  * from Ada's Team gCal
  * @returns
  */
-
-function Events() {
+const Events = () => {
 	return (
-		<div
+		<main
 			id="events-page"
 			className="px-8 sm:px-8 md:px-16 lg:max-w-7xl page lg:px-auto relative animate-fade-in-down"
 		>
-			<div
+			<title
 				id="faq_image"
 				className="max-w-6xl mx-auto flex flex-col items-center justify-between lg:flex-row-reverse animate-fade-in-down"
 			>
@@ -29,15 +32,15 @@ function Events() {
 					subtitle="Learn more about our upcoming events."
 					additional="Due to COVID-19, please note that all of our events will operate in a virtually via Zoom or Google Meet."
 				/>
-			</div>
+			</title>
 
 			{/* Calendar */}
-			<div id="calendar" className="md:m-20 md:mt-24 sm:m-8 lg:mx-8">
+			<section id="calendar" className="md:m-20 md:mt-24 sm:m-8 lg:mx-8">
 				<EventsCalendar />
-			</div>
+			</section>
 
-			<div id="event-roadmap" className="mt-16 flex flex-col max-w-6xl mx-auto ">
-				<div className="divider-thick my-10"></div>
+			<section id="event-roadmap" className="mt-16 flex flex-col max-w-6xl mx-auto ">
+				<div className="divider-thick my-10" aria-hidden />
 				<h2>EVENT ROADMAP</h2>
 
 				{/* Canva Embedded roadmap */}
@@ -58,6 +61,7 @@ function Events() {
 						}}
 					>
 						<iframe
+							title="canva roadmap"
 							loading="lazy"
 							style={{
 								position: "absolute",
@@ -78,14 +82,15 @@ function Events() {
 					<a
 						href="https://www.canva.com/design/DAEE64Enu-4/view"
 						target="_blank"
+						rel="noreferrer"
 						alt="Ada's Team Roadmap"
 					>
 						CHECK OUT OUR ROADMAP
 					</a>
 				</button>
-			</div>
-		</div>
+			</section>
+		</main>
 	);
-}
+};
 
 export default Events;

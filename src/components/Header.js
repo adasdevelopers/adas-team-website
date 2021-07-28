@@ -1,8 +1,6 @@
-import icon from "../assets/img/eicon_head_1.png";
-import Nav from "./Navigation";
 import Typist from "react-typist";
 
-function Header({ title, subtitle, additional, homepage }) {
+const Header = ({ title, subtitle, additional, homepage }) => {
 	return (
 		<header>
 			<h1
@@ -23,6 +21,6 @@ function Header({ title, subtitle, additional, homepage }) {
 			</h2>
 		</header>
 	);
-}
+};
 
 export default Header;
