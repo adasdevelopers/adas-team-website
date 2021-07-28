@@ -21,7 +21,7 @@ const Join = () => {
 	library.add(fab);
 
 	return (
-		<div id="join-page" className="page">
+		<main id="join-page" className="page">
 			<title
 				id="join"
 				className="max-w-6xl mx-auto flex flex-col items-center justify-between lg:flex-row-reverse animate-fade-in-down"
@@ -51,7 +51,7 @@ const Join = () => {
 
 			<div className="divider-thick lg:invisible my-8" aria-hidden />
 
-			<div className="max-w-6xl mx-auto">
+			<section id="ada-team-info" className="max-w-6xl mx-auto">
 				<img
 					src={icon}
 					alt="Ada's Team icon"
@@ -87,8 +87,8 @@ const Join = () => {
 						</button>
 					</div>
 				</div>
-			</div>
-		</div>
+			</section>
+		</main>
 	);
 };
 
