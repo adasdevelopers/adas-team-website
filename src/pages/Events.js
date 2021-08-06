@@ -13,7 +13,7 @@ import events_image from "../assets/img/PageHeaders/events.svg";
 const Events = () => {
 	return (
 		<main
-			id="events-page"
+			id="main-content"
 			className="px-8 sm:px-8 md:px-16 lg:max-w-7xl page lg:px-auto relative animate-fade-in-down"
 		>
 			<title

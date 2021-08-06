@@ -23,6 +23,9 @@ import "animate.css/animate.min.css";
 function App() {
 	return (
 		<Router className="App" basename="/">
+			<a id="skip-nav" class="screenreader-text" href="#main-content">
+				Skip Navigation or Skip to Content
+			</a>
 			<ScrollToTop />
 			<Navigation />
 
