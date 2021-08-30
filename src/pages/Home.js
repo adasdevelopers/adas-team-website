@@ -60,7 +60,7 @@ const Home = () => {
 	);
 
 	return (
-		<main id="home-page">
+		<main id="main-content">
 			<div id="home-image" className="mx-auto static p-5 md:p-5 relative animate-fade-in-down">
 				{/* Welcome title */}
 				<title

@@ -137,7 +137,7 @@ const About = () => {
 	);
 
 	return (
-		<main className="page animate-fade-in-down font-body">
+		<main id="main-content" className="page animate-fade-in-down font-body">
 			<title
 				id="about_image"
 				className="max-w-3xl lg:mx-auto flex flex-col items-center justify-between lg:flex-row-reverse animate-fade-in-down"
