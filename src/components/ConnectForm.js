@@ -126,7 +126,7 @@ const ConnectForm = () => {
 			<button
 				type="submit"
 				disabled={state.submitting}
-				className="my-0 w-3/6 justify-self-center hover:bg-pink"
+				className="my-0 w-3/6 justify-self-center hover:bg-pink focus:bg-pink"
 			>
 				SEND MESSAGE
 			</button>

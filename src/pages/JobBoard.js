@@ -152,7 +152,7 @@ const JobPosting = ({
 				{email && (
 					<a
 						id="email"
-						className="flex-1 border text-center border-blue py-3 bg-white text-blue font-title font-semibold rounded-lg uppercase"
+						className="flex-1 border text-center border-blue py-3 bg-white text-blue font-title font-semibold rounded-lg uppercase hover:text-pink hover:border-pink focus:text-pink focus:border-pink"
 						href={`mailto:${email}`}
 					>
 						Contact
@@ -161,7 +161,7 @@ const JobPosting = ({
 				{apply_link && (
 					<a
 						id="application_link"
-						className="flex-1 border text-center border-blue py-3 bg-blue text-white hover:text-white font-title font-semibold rounded-lg uppercase"
+						className="flex-1 border text-center font-title font-semibold rounded-lg uppercase border-blue py-3 bg-blue text-white hover:text-white hover:bg-pink hover:border-pink focus:bg-pink focus:border-pink"
 						href={apply_link}
 					>
 						Apply

@@ -146,9 +146,9 @@ const Home = () => {
 
 			<section
 				id="sponsors-list"
-				data-aos={animate ? "fade-in" : ""}
-				data-aos-duration="500"
-				data-aos-easing="ease-in-sine"
+				// data-aos={animate ? "fade-in" : ""}
+				// data-aos-duration="500"
+				// data-aos-easing="ease-in-sine"
 				className="max-w-6xl mx-8 my-8 md:my-24 animate-fade-in-down md:mx-16 xl:mx-auto"
 			>
 				<div className="divider-thick mt-16 mb-8" aria-hidden />
