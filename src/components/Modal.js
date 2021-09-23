@@ -11,7 +11,7 @@ const Modal = ({ open, setOpen, title, children, titleCenter }) => {
 					}
 				}}
 			>
-				<div className="shadow rounded p-6 bg-white">
+				<div className="shadow rounded p-4 bg-white">
 					<div className="flex items-top">
 						<h3
 							className={`text-base flex-1 my-2 ${titleCenter ? "text-center px-2" : ""} uppercase`}

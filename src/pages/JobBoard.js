@@ -9,6 +9,8 @@ import Loader from "../components/Loader";
 //Import assets
 import jobboard from "../assets/img/PageHeaders/jobboard.svg";
 import blank_image from "../assets/img/Placeholders/blank.svg";
+import Modal from "../components/Modal";
+import JobForm from "../components/JobForm";
 
 /**
  * Displays the Job Board with data
@@ -17,6 +19,7 @@ import blank_image from "../assets/img/Placeholders/blank.svg";
 const JobBoard = () => {
 	const [jobs, setJobs] = useState(null);
 	const [loading, setLoading] = useState(true);
+	const [modalOpen, setModalOpen] = useState(false);
 
 	useEffect(() => {
 		// Set a timeout to wait at least 2 seconds before displaying data
@@ -102,6 +105,10 @@ const JobBoard = () => {
 
 	return (
 		<main id="main-content" className="page">
+			<Modal open={modalOpen} setOpen={setModalOpen} title="Submit A Job Posting" titleCenter>
+				<JobForm />
+			</Modal>
+
 			<title
 				id="faq_image"
 				className="max-w-6xl mx-auto flex flex-col items-center justify-between lg:flex-row-reverse animate-fade-in-down"
@@ -162,10 +169,15 @@ const JobBoard = () => {
 					</div>
 				</Loader>
 
-				<div id="post-a-job" className="flex flex-col mt-10">
+				<div id="post-a-job" className="hidden flex flex-col mt-10 md:flex">
 					<h4>Have a job posting you'd like to advertise here?</h4>
 
-					<button className="w-full self-center md:w-2/5 uppercase font-title hover:bg-pink focus:bg-pink">
+					<button
+						onClick={() => {
+							setModalOpen(true);
+						}}
+						className="w-full self-center md:w-2/5 uppercase font-title hover:bg-pink focus:bg-pink"
+					>
 						Post a job
 					</button>
 				</div>
