@@ -49,7 +49,7 @@ const FAQ = () => {
 
 	return (
 		<main
-			id="faq-page"
+			id="main-content"
 			className="max-w-7xl lg:mx-auto lg:px-12 page animate-fade-in-down font-body overflow-hidden"
 		>
 			<title

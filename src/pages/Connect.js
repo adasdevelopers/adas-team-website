@@ -14,7 +14,7 @@ import ConnectForm from "../components/ConnectForm";
  */
 const Connect = () => {
 	return (
-		<main id="contact-page" className="page">
+		<main id="main-content" className="page">
 			<title
 				id="connect_image"
 				className="max-w-6xl mx-auto flex flex-col items-center justify-between lg:flex-row-reverse animate-fade-in-down"

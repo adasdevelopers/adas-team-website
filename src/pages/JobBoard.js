@@ -101,7 +101,7 @@ const JobBoard = () => {
 	);
 
 	return (
-		<main id="job-board-page" className="page">
+		<main id="main-content" className="page">
 			<title
 				id="faq_image"
 				className="max-w-6xl mx-auto flex flex-col items-center justify-between lg:flex-row-reverse animate-fade-in-down"
