@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/adas-team-website/static/css/main.d8934f92.chunk.css",
-    "main.js": "/adas-team-website/static/js/main.55f38097.chunk.js",
-    "main.js.map": "/adas-team-website/static/js/main.55f38097.chunk.js.map",
-    "runtime-main.js": "/adas-team-website/static/js/runtime-main.953f87d9.js",
-    "runtime-main.js.map": "/adas-team-website/static/js/runtime-main.953f87d9.js.map",
+    "main.css": "/adas-team-website/static/css/main.c06f611f.chunk.css",
+    "main.js": "/adas-team-website/static/js/main.d8f55f3a.chunk.js",
+    "main.js.map": "/adas-team-website/static/js/main.d8f55f3a.chunk.js.map",
+    "runtime-main.js": "/adas-team-website/static/js/runtime-main.de058c4a.js",
+    "runtime-main.js.map": "/adas-team-website/static/js/runtime-main.de058c4a.js.map",
     "static/css/2.c13d9ee7.chunk.css": "/adas-team-website/static/css/2.c13d9ee7.chunk.css",
-    "static/js/2.35415014.chunk.js": "/adas-team-website/static/js/2.35415014.chunk.js",
-    "static/js/2.35415014.chunk.js.map": "/adas-team-website/static/js/2.35415014.chunk.js.map",
-    "static/js/3.f96d23d0.chunk.js": "/adas-team-website/static/js/3.f96d23d0.chunk.js",
-    "static/js/3.f96d23d0.chunk.js.map": "/adas-team-website/static/js/3.f96d23d0.chunk.js.map",
+    "static/js/2.eeb5dca9.chunk.js": "/adas-team-website/static/js/2.eeb5dca9.chunk.js",
+    "static/js/2.eeb5dca9.chunk.js.map": "/adas-team-website/static/js/2.eeb5dca9.chunk.js.map",
+    "static/js/3.a2c922b0.chunk.js": "/adas-team-website/static/js/3.a2c922b0.chunk.js",
+    "static/js/3.a2c922b0.chunk.js.map": "/adas-team-website/static/js/3.a2c922b0.chunk.js.map",
     "index.html": "/adas-team-website/index.html",
     "static/css/2.c13d9ee7.chunk.css.map": "/adas-team-website/static/css/2.c13d9ee7.chunk.css.map",
-    "static/css/main.d8934f92.chunk.css.map": "/adas-team-website/static/css/main.d8934f92.chunk.css.map",
-    "static/js/2.35415014.chunk.js.LICENSE.txt": "/adas-team-website/static/js/2.35415014.chunk.js.LICENSE.txt",
+    "static/css/main.c06f611f.chunk.css.map": "/adas-team-website/static/css/main.c06f611f.chunk.css.map",
+    "static/js/2.eeb5dca9.chunk.js.LICENSE.txt": "/adas-team-website/static/js/2.eeb5dca9.chunk.js.LICENSE.txt",
     "static/media/about.91b58831.svg": "/adas-team-website/static/media/about.91b58831.svg",
     "static/media/ada-home-bot.5838c72a.png": "/adas-team-website/static/media/ada-home-bot.5838c72a.png",
     "static/media/blank.03f4b2a1.svg": "/adas-team-website/static/media/blank.03f4b2a1.svg",
@@ -25,10 +25,10 @@
     "static/media/join.8c3245b5.svg": "/adas-team-website/static/media/join.8c3245b5.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.953f87d9.js",
+    "static/js/runtime-main.de058c4a.js",
     "static/css/2.c13d9ee7.chunk.css",
-    "static/js/2.35415014.chunk.js",
-    "static/css/main.d8934f92.chunk.css",
-    "static/js/main.55f38097.chunk.js"
+    "static/js/2.eeb5dca9.chunk.js",
+    "static/css/main.c06f611f.chunk.css",
+    "static/js/main.d8f55f3a.chunk.js"
   ]
 }
