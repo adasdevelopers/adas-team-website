@@ -79,12 +79,18 @@ const Join = () => {
 							virtual coworking sessions.
 						</p>
 
-						<button className="w-4/5 lg:w-2/6">
-							<span className="pr-3 text-lg">
+						<a
+							className="inline-block w-full md:w-max flex justify-center items-center self-center py-3 px-10 my-4 bg-blue text-white font-semibold rounded-lg md:self-start hover:text-white hover:bg-pink"
+							href="https://discord.gg/7ZhmzHZjc8"
+							alt="Ada's Team Discord Invite Link"
+							target="_blank"
+							rel="noreferrer"
+						>
+							<span className="pr-2 text-lg">
 								<FontAwesomeIcon icon={["fab", "discord"]} />
 							</span>
 							Join Ada's Base
-						</button>
+						</a>
 					</div>
 				</div>
 			</section>

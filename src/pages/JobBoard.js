@@ -40,6 +40,66 @@ const JobBoard = () => {
 			.catch((error) => console.log(error));
 	}, []);
 
+	const JobPosting = ({
+		title,
+		company,
+		website,
+		location,
+		description,
+		deadline,
+		apply_link,
+		email,
+		image,
+	}) => (
+		<div className="p-4 lg:px-16 md:flex justify-between md:space-x-8 blue-rect rounded-xl">
+			<img
+				className="hidden md:block h-24 w-auto"
+				src={image ? image : blank_image}
+				alt={`${company} logo`}
+			/>
+
+			<div className="md:flex-1">
+				<div className="flex md:flex-col justify-between space-x-8 md:space-x-0 font-title mb-4">
+					<img
+						className="md:hidden h-24 w-auto"
+						src={image ? image : blank_image}
+						alt={`${company} logo`}
+					/>
+					<div className="font-title flex-1">
+						<h4 className="">{title}</h4>
+						<a href={website}>{company}</a>
+						<p>{location}</p>
+					</div>
+				</div>
+
+				<p className="font-body font-light">{description}</p>
+
+				{deadline && <p className="font-body font-light mt-4">Deadline: {deadline}</p>}
+
+				<div className="mt-4 flex justify-between space-x-4">
+					{email && (
+						<a
+							id="email"
+							className="flex-1 border text-center border-blue py-3 bg-white text-blue font-title font-semibold rounded-lg uppercase hover:text-pink hover:border-pink focus:text-pink focus:border-pink"
+							href={`mailto:${email}`}
+						>
+							Contact
+						</a>
+					)}
+					{apply_link && (
+						<a
+							id="application_link"
+							className="flex-1 border text-center font-title font-semibold rounded-lg uppercase border-blue py-3 bg-blue text-white hover:text-white hover:bg-pink hover:border-pink focus:bg-pink focus:border-pink"
+							href={apply_link}
+						>
+							Apply
+						</a>
+					)}
+				</div>
+			</div>
+		</div>
+	);
+
 	return (
 		<main id="main-content" className="page">
 			<title
@@ -105,71 +165,13 @@ const JobBoard = () => {
 				<div id="post-a-job" className="flex flex-col mt-10">
 					<h4>Have a job posting you'd like to advertise here?</h4>
 
-					<button className="w-full self-center md:w-2/5 uppercase font-title">Post a job</button>
+					<button className="w-full self-center md:w-2/5 uppercase font-title hover:bg-pink focus:bg-pink">
+						Post a job
+					</button>
 				</div>
 			</section>
 		</main>
 	);
 };
-
-const JobPosting = ({
-	title,
-	company,
-	website,
-	location,
-	description,
-	deadline,
-	apply_link,
-	email,
-	image,
-}) => (
-	<div className="p-4 lg:px-16 md:flex justify-between md:space-x-8 blue-rect rounded-xl">
-		<img
-			className="hidden md:block h-24 w-auto"
-			src={image ? image : blank_image}
-			alt={`${company} logo`}
-		/>
-
-		<div className="md:flex-1">
-			<div className="flex md:flex-col justify-between space-x-8 md:space-x-0 font-title mb-4">
-				<img
-					className="md:hidden h-24 w-auto"
-					src={image ? image : blank_image}
-					alt={`${company} logo`}
-				/>
-				<div className="font-title flex-1">
-					<h4 className="">{title}</h4>
-					<a href={website}>{company}</a>
-					<p>{location}</p>
-				</div>
-			</div>
-
-			<p className="font-body font-light">{description}</p>
-
-			{deadline && <p className="font-body font-light mt-4">Deadline: {deadline}</p>}
-
-			<div className="mt-4 flex justify-between space-x-4">
-				{email && (
-					<a
-						id="email"
-						className="flex-1 border text-center border-blue py-3 bg-white text-blue font-title font-semibold rounded-lg uppercase"
-						href={`mailto:${email}`}
-					>
-						Contact
-					</a>
-				)}
-				{apply_link && (
-					<a
-						id="application_link"
-						className="flex-1 border text-center border-blue py-3 bg-blue text-white hover:text-white font-title font-semibold rounded-lg uppercase"
-						href={apply_link}
-					>
-						Apply
-					</a>
-				)}
-			</div>
-		</div>
-	</div>
-);
 
 export default JobBoard;

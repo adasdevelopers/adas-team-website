@@ -202,26 +202,31 @@ const About = () => {
 			</section>
 
 			{/* Slack and Discord Invite links*/}
-			<section id="join-links" className="flex flex-col space-y-5 lg:py-5 lg:my-32 lg:mx-36 lg:mr-48">
-				<div id="adas-tutoring-join" className="flex flex-col w-full">
+			<section
+				id="join-links"
+				className="flex flex-col space-y-5 lg:py-5 lg:my-32 lg:mx-36 lg:mr-48"
+			>
+				<div id="adas-tutoring-join" className="flex flex-col w-full lg:mb-10">
 					<h3 className="font-title text-black font-semibold">Ada's Tutoring</h3>
 					<p className="font-light">
 						Get FREE access to virtual one-on-one tutoring sessions, and connect with our students
 						through virtual hangouts and study group sessions. There are tutors available to help
 						with various CMPUT, MATH and STAT courses.
 					</p>
-					<button className="w-64 self-center md:self-start">
-						<a
-							href="https://join.slack.com/t/adastutoring/shared_invite/zt-rxka4nnk-Ox~fBNx2XgXkU4gk9TLQfw"
-							alt="Ada's Team Tutoring Slack Invite Link"
-						>
-							<span className="mt-1 pr-2 text-lg">
-								<FontAwesomeIcon icon={["fab", "slack"]} />
-							</span>
-							Join Ada's Tutoring
-						</a>
-					</button>
+					<a
+						className="w-64 flex justify-center items-center self-center py-3 px-10 my-4 bg-blue text-white font-semibold rounded-lg md:self-start hover:text-white hover:bg-pink"
+						href="https://join.slack.com/t/adastutoring/shared_invite/zt-rxka4nnk-Ox~fBNx2XgXkU4gk9TLQfw"
+						alt="Ada's Team Tutoring Slack Invite Link"
+						target="_blank"
+						rel="noreferrer"
+					>
+						<span className="pr-2 text-lg">
+							<FontAwesomeIcon icon={["fab", "slack"]} />
+						</span>
+						Join Ada's Tutoring
+					</a>
 				</div>
+
 				<div id="adas-base-join" className="flex flex-col w-full">
 					<h3 className="font-title text-black font-semibold">Ada's Base</h3>
 					<p className="font-light">
@@ -229,18 +234,18 @@ const About = () => {
 						opportunities and hackathons, review resumes, and hold each other accountable with
 						virtual coworking sessions.
 					</p>
-					<button className="w-64 self-center md:self-start">
-						<a
-							href="https://discord.gg/7ZhmzHZjc8"
-							alt="Ada's Team Discord Invite Link"
-							className="font-body"
-						>
-							<span className="pr-2 text-lg font-body">
-								<FontAwesomeIcon icon={["fab", "discord"]} />
-							</span>
-							Join Ada's Base
-						</a>
-					</button>
+					<a
+						className="w-64 flex justify-center items-center self-center py-3 px-10 my-4 bg-blue text-white font-semibold rounded-lg md:self-start hover:text-white hover:bg-pink"
+						href="https://discord.gg/7ZhmzHZjc8"
+						alt="Ada's Team Discord Invite Link"
+						target="_blank"
+						rel="noreferrer"
+					>
+						<span className="pr-2 text-lg">
+							<FontAwesomeIcon icon={["fab", "discord"]} />
+						</span>
+						Join Ada's Base
+					</a>
 				</div>
 			</section>
 

@@ -1,29 +1,18 @@
 // Import libraries
-import React, { useState } from "react";
-import { useForm, ValidationError } from "@formspree/react";
+import React from "react";
 
 // Import components
 import Header from "../components/Header";
 
 // Import assets
 import connect_image from "../assets/img/PageHeaders/connect.svg";
+import ConnectForm from "../components/ConnectForm";
 
 /**
  *
  * @returns
  */
 const Connect = () => {
-	// React hook
-	const [state, handleSubmit] = useForm("mrgredan");
-	const [email, setEmail] = useState("");
-	// /const [first, setFirst] = useState("");
-	// const [last, setLast] = useState("");
-
-	// TODO: display success message
-	if (state.succeeded) {
-		return <p>Thanks for connecting!</p>;
-	}
-
 	return (
 		<main id="main-content" className="page">
 			<title
@@ -51,61 +40,7 @@ const Connect = () => {
 					id="connect-form"
 					className="bg-light-blue p-5 rounded-lg mx-18 max-w-6xl lg:mx-auto md:16 lg:mb-10"
 				>
-					<form onSubmit={handleSubmit} className="grid grid-cols-1 gap-3">
-						<label htmlFor="email" className="font-medium text-gray-700 ">
-							Email Address
-						</label>
-						<input
-							required
-							aria-required="true"
-							id="email"
-							type="email"
-							name="EMAIL"
-							className="focus:outline-none focus:ring focus:border-blue-50 "
-							value={email}
-							onChange={(e) => {
-								setEmail(e.target.value);
-							}}
-						/>
-						<ValidationError prefix="Email" field="email" errors={state.errors} />
-
-						<label htmlFor="name" className="font-medium text-gray-700 ">
-							Name
-						</label>
-						<input
-							id="name"
-							type="name"
-							name="name"
-							className="mt-1 focus:outline-none focus:ring focus:border-blue-50 "
-							aria-required="false"
-						/>
-
-						<label htmlFor="subject" className="font-medium text-gray-700 ">
-							Subject
-						</label>
-						<input
-							id="subject"
-							type="subject"
-							name="subject"
-							className="w-full mt-1 focus:outline-none focus:ring focus:border-blue-50 "
-							aria-required="true"
-						/>
-
-						<label htmlFor="message" className="font-medium text-gray-700 ">
-							Message
-						</label>
-						<textarea
-							id="message"
-							name="message"
-							className="w-full mt-1 focus:outline-none focus:ring focus:border-blue-50 "
-							aria-required="true"
-						/>
-						<ValidationError prefix="Message" field="message" errors={state.errors} />
-
-						<button type="submit" disabled={state.submitting} className="w-3/6 justify-self-center">
-							SEND MESSAGE
-						</button>
-					</form>
+					<ConnectForm />
 				</section>
 			</div>
 		</main>

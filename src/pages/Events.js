@@ -78,16 +78,15 @@ const Events = () => {
 					</div>
 				</div>
 
-				<button className="w-full self-center md:w-max hover:text-grey-900">
-					<a
-						href="https://www.canva.com/design/DAEE64Enu-4/view"
-						target="_blank"
-						rel="noreferrer"
-						alt="Ada's Team Roadmap"
-					>
-						CHECK OUT OUR ROADMAP
-					</a>
-				</button>
+				<a
+					className="w-full md:w-max m-auto flex justify-center items-center self-center py-3 px-10 my-4 bg-blue text-white font-semibold rounded-lg md:self-start hover:text-white hover:bg-pink"
+					href="https://www.canva.com/design/DAEE64Enu-4/view"
+					target="_blank"
+					rel="noreferrer"
+					alt="Ada's Team Roadmap"
+				>
+					CHECK OUT OUR ROADMAP
+				</a>
 			</section>
 		</main>
 	);
