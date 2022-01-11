@@ -1,31 +1,57 @@
 // Import libraries
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { useForm } from "@formspree/react";
+import db from "../firebase";
 
 const JobForm = () => {
-	const [state, handleSubmit] = useForm("mpzkkgdg");
+	const [state, handleSubmit] = useForm("mrgrrnar");
 
 	// Form Fields
-	const [jobTitle, setJobTitle] = useState("");
+	const [title, setJobTitle] = useState("");
 	const [company, setCompany] = useState("");
 	const [website, setWebsite] = useState("");
 	const [image, setImage] = useState("");
 	const [location, setLocation] = useState("");
 	const [deadline, setDeadline] = useState("");
-	const [link, setLink] = useState("");
+	const [apply_link, setLink] = useState("");
 	const [email, setEmail] = useState("");
 	const [description, setDescription] = useState("");
 	const [notes, setNotes] = useState("");
 
 	const submitForm = (e) => {
+		// Submit to formspree for notification
 		handleSubmit(e);
+
+		// Store in firebase
+		db.collection("job-postings").add({
+			title,
+			company,
+			website,
+			image,
+			location,
+			deadline,
+			apply_link,
+			email,
+			description,
+			notes,
+			approved: false,
+		});
 	};
 
-	useEffect(() => {
-		if (state.succeeded) {
-			console.log("hi");
-		}
-	}, [state.succeeded]);
+	if (state.succeeded) {
+		return (
+			<div className="p-2 rounded-1 my-2 bg-lime-200">
+				Your job posting was successfully received. You may now close the modal.
+			</div>
+		);
+	} else if (state.errors.length) {
+		return (
+			<div className="p-2 rounded-md my-2 bg-red-100">
+				There was an error submitting your posting. Please try again later or contact us directly
+				with your posting information at adasteam@ualberta.ca.
+			</div>
+		);
+	}
 
 	return (
 		<form onSubmit={submitForm} className="grid grid-cols-2 gap-2 bg-light-blue p-3 rounded-lg ">
@@ -41,7 +67,7 @@ const JobForm = () => {
 					type="text"
 					name="job-title"
 					className="px-4 focus:outline-none focus:ring focus:border-blue-50"
-					value={jobTitle}
+					value={title}
 					onChange={(e) => {
 						setJobTitle(e.target.value);
 					}}
@@ -55,6 +81,7 @@ const JobForm = () => {
 					Company
 				</label>
 				<input
+					required
 					id="company"
 					type="text"
 					name="company"
@@ -152,12 +179,13 @@ const JobForm = () => {
 					Application Link
 				</label>
 				<input
+					required
 					id="application-link"
 					type="url"
 					name="application-link"
 					className="px-4 focus:outline-none focus:ring focus:border-blue-50"
 					aria-required="true"
-					value={link}
+					value={apply_link}
 					onChange={(e) => {
 						setLink(e.target.value);
 					}}
@@ -171,6 +199,7 @@ const JobForm = () => {
 					Contact Email <span className="font-light text-xs">(optional)</span>
 				</label>
 				<input
+					required
 					id="email"
 					type="email"
 					name="email"
@@ -190,6 +219,7 @@ const JobForm = () => {
 					Job Description
 				</label>
 				<textarea
+					required
 					id="description"
 					name="description"
 					className="px-4 py-2 h-20 focus:outline-none focus:ring focus:border-blue-50"

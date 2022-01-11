@@ -1,20 +1,24 @@
+const colors = require("tailwindcss/colors");
+
 module.exports = {
 	purge: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
 	darkMode: false, // or 'media' or 'class'
 	theme: {
-		colors: {
-			blue: "#39b6fb",
-			navy: "#253e4b",
-			white: "#ffffff",
-			pink: "#f8bbda",
-			black: "#080E11",
-			"light-blue": "#deeffc",
-		},
 		fontFamily: {
 			title: ["Spartan", "sans-serif"],
 			body: ["Open\\ Sans", "sans-serif"],
 		},
 		extend: {
+			colors: {
+				blue: "#39b6fb",
+				navy: "#253e4b",
+				white: "#ffffff",
+				pink: "#f8bbda",
+				black: "#080E11",
+				"light-blue": "#deeffc",
+				lime: colors.lime,
+				red: colors.red,
+			},
 			keyframes: {
 				"fade-in-down": {
 					"0%": {
@@ -41,6 +45,9 @@ module.exports = {
 			},
 			gridTemplateColumns: {
 				footer: "repeat(2, minmax(0, auto))",
+			},
+			minHeight: {
+				px: "100px",
 			},
 		},
 	},

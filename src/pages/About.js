@@ -1,66 +1,26 @@
 // Import libraries
-import React, { useEffect, useState } from "react";
-import db from "../firebase";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, faLink } from "@fortawesome/free-solid-svg-icons";
 
 // Import components
 import Header from "../components/Header";
-import Loader from "../components/Loader";
 
 // Import  assets
 import about_image from "../assets/img/PageHeaders/about.svg";
+
+// Import static files
+import initiatives from "../static/initiatives.json";
+import executives from "../static/executives.json";
 
 /**
  * Displays information about Ada's Team
  * initiatives and executive team
  */
 const About = () => {
-	const [initiatives, setInitiatives] = useState(null);
-	const [executives, setExecutives] = useState(null);
-	const [loading, setLoading] = useState(true);
-
-	useEffect(() => {
-		// Set a timeout to wait at least 2 seconds before displaying data
-		// (so that spinner is not weird)
-		setTimeout(() => {
-			setLoading(false);
-		}, 3500);
-
-		// Pull in data from Firebase
-		// Import initiatives
-		db.collection("initiatives")
-			.orderBy("order", "asc")
-			.get()
-			.then((snapshot) => {
-				const initiatives = [];
-				snapshot.forEach((doc) => {
-					const data = doc.data();
-					initiatives.push(data);
-				});
-				setInitiatives(initiatives);
-			})
-			.catch((error) => console.log(error));
-
-		// Import executives
-		db.collection("executives")
-			.orderBy("order", "asc")
-			.get()
-			.then((snapshot) => {
-				const executives = [];
-				snapshot.forEach((doc) => {
-					const data = doc.data();
-					executives.push(data);
-				});
-				setExecutives(executives);
-			})
-			.catch((error) => console.log(error));
-
-		// Importing brand icons for social media
-		library.add(fab, faEnvelope);
-	}, []);
+	// Import icons
+	library.add(fab, faEnvelope);
 
 	const Executive = ({ image, role, name, description, contact }) => (
 		<div id="executives" className="blue-rect-shadow p-8 flex flex-col md:flex-row lg:mx-36">
@@ -83,7 +43,7 @@ const About = () => {
 				<div id="executive-contact" className="mt-4 flex self-end space-x-2 text-xl">
 					{contact.LinkedIn && (
 						<div className="executive--contact">
-							<a href={contact.LinkedIn}>
+							<a href={contact.LinkedIn} rel="noreferrer" target="_blank">
 								<FontAwesomeIcon icon={["fab", "linkedin"]} />
 							</a>
 						</div>
@@ -91,7 +51,7 @@ const About = () => {
 
 					{contact.Github && (
 						<div className="executive--contact">
-							<a href={contact.Github} alt="Github">
+							<a href={contact.Github} alt="Github" rel="noreferrer" target="_blank">
 								<FontAwesomeIcon icon={["fab", "github"]} />
 							</a>
 						</div>
@@ -99,7 +59,13 @@ const About = () => {
 
 					{contact.Other && (
 						<div className="executive--contact">
-							<a className="Contact" href={contact.Other} alt="Contact">
+							<a
+								className="Contact"
+								href={contact.Other}
+								alt="Contact"
+								rel="noreferrer"
+								target="_blank"
+							>
 								<FontAwesomeIcon icon={faEnvelope} />
 							</a>
 						</div>
@@ -122,13 +88,26 @@ const About = () => {
 			</div>
 
 			<div className="initiative-social-media my-2 space-x-4">
-				{contact["instagram"] !== "" && (
-					<a href={contact["instagram"]} className="text-3xl">
+				{contact["instagram"] && (
+					<a href={contact["instagram"]} className="text-3xl" rel="noreferrer" target="_blank">
 						<FontAwesomeIcon icon={["fab", "instagram"]} />
 					</a>
 				)}
-				{contact["email"] !== "" && (
-					<a href={contact["email"]} className="text-3xl">
+
+				{contact["slack"] && (
+					<a href={contact["slack"]} className="text-3xl" rel="noreferrer" target="_blank">
+						<FontAwesomeIcon icon={["fab", "slack"]} />
+					</a>
+				)}
+
+				{contact["other"] && (
+					<a href={contact["other"]} className="text-2xl" rel="noreferrer" target="_blank">
+						<FontAwesomeIcon icon={faLink} />
+					</a>
+				)}
+
+				{contact["email"] && (
+					<a href={contact["email"]} className="text-3xl" rel="noreferrer" target="_blank">
 						<FontAwesomeIcon icon={faEnvelope} />
 					</a>
 				)}
@@ -185,92 +164,42 @@ const About = () => {
 				</p>
 
 				{/* Initiative grid */}
-				<Loader loading={!initiatives || loading}>
-					<div className="grid grid-cols-1 md:grid-cols-2 gap-x-36 gap-y-10">
-						{initiatives &&
-							initiatives.map(({ name, description, contact, image }) => (
-								<Initiative
-									name={name}
-									description={description}
-									contact={contact}
-									image={image}
-									key={name}
-								/>
-							))}
-					</div>
-				</Loader>
-			</section>
 
-			{/* Slack and Discord Invite links*/}
-			<section
-				id="join-links"
-				className="flex flex-col space-y-5 lg:py-5 lg:my-32 lg:mx-36 lg:mr-48"
-			>
-				<div id="adas-tutoring-join" className="flex flex-col w-full lg:mb-10">
-					<h3 className="font-title text-black font-semibold">Ada's Tutoring</h3>
-					<p className="font-light">
-						Get FREE access to virtual one-on-one tutoring sessions, and connect with our students
-						through virtual hangouts and study group sessions. There are tutors available to help
-						with various CMPUT, MATH and STAT courses.
-					</p>
-					<a
-						className="w-64 flex justify-center items-center self-center py-3 px-10 my-4 bg-blue text-white font-semibold rounded-lg md:self-start hover:text-white hover:bg-pink"
-						href="https://join.slack.com/t/adastutoring/shared_invite/zt-rxka4nnk-Ox~fBNx2XgXkU4gk9TLQfw"
-						alt="Ada's Team Tutoring Slack Invite Link"
-						target="_blank"
-						rel="noreferrer"
-					>
-						<span className="pr-2 text-lg">
-							<FontAwesomeIcon icon={["fab", "slack"]} />
-						</span>
-						Join Ada's Tutoring
-					</a>
-				</div>
-
-				<div id="adas-base-join" className="flex flex-col w-full">
-					<h3 className="font-title text-black font-semibold">Ada's Base</h3>
-					<p className="font-light">
-						Join the Ada's Base Discord server: an online community of students that share job
-						opportunities and hackathons, review resumes, and hold each other accountable with
-						virtual coworking sessions.
-					</p>
-					<a
-						className="w-64 flex justify-center items-center self-center py-3 px-10 my-4 bg-blue text-white font-semibold rounded-lg md:self-start hover:text-white hover:bg-pink"
-						href="https://discord.gg/7ZhmzHZjc8"
-						alt="Ada's Team Discord Invite Link"
-						target="_blank"
-						rel="noreferrer"
-					>
-						<span className="pr-2 text-lg">
-							<FontAwesomeIcon icon={["fab", "discord"]} />
-						</span>
-						Join Ada's Base
-					</a>
+				<div className="grid grid-cols-1 md:grid-cols-2 gap-x-36 gap-y-10">
+					{initiatives &&
+						initiatives.map(({ name, description, contact, image }) => (
+							<Initiative
+								name={name}
+								description={description}
+								contact={contact}
+								image={image}
+								key={name}
+							/>
+						))}
 				</div>
 			</section>
 
 			{/* Executive information from Firebase */}
 			<section id="executive-team">
 				<div className="title my-10 lg:mx-36">
+					<div className="divider-thick mt-16 mb-8" aria-hidden />
 					<h2>MEET THE TEAM</h2>
 					<h3 className="font-title text-pink text-2xl">2021-2022</h3>
 				</div>
 
-				<Loader loading={!executives || loading}>
-					<div>
-						{executives &&
-							executives.map(({ image, role, name, description, contact }, i) => (
-								<Executive
-									image={image}
-									role={role}
-									name={name}
-									description={description}
-									contact={contact}
-									key={role}
-								/>
-							))}
-					</div>
-				</Loader>
+				<div>
+					{executives &&
+						executives.map(({ image, role, name, description, contact }, i) => (
+							<Executive
+								image={image}
+								role={role}
+								name={name}
+								description={description}
+								contact={contact}
+								key={role}
+							/>
+						))}
+				</div>
 			</section>
 		</main>
 	);

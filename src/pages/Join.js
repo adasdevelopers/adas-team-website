@@ -8,7 +8,8 @@ import JoinForm from "../components/JoinForm";
 import Header from "../components/Header";
 
 // Import assets
-import icon from "../assets/img/AdaBot/icon_head.png";
+import main_icon from "../assets/img/AdaBot/icon_head.png";
+import student_icon from "../assets/img/AdaBot/adas_students_icon.png";
 import join_image from "../assets/img/PageHeaders/join.svg";
 
 /**
@@ -40,20 +41,74 @@ const Join = () => {
 			</title>
 
 			<div className="max-w-6xl mx-auto">
-				<h3>JOIN US</h3>
+				<div className="divider-thick my-8" aria-hidden />
+
+				<div className="title">
+					<h2>JOIN OUR MAILING LIST</h2>
+				</div>
+
 				<p className="my-5">
-					Subcribe to our mailing list to receive updates on events, opportunities, scholarships,
+					Subscribe to our mailing list to receive updates on events, opportunities, scholarships,
 					and more!
 				</p>
 			</div>
 
 			<JoinForm />
 
-			<div className="divider-thick lg:invisible my-8" aria-hidden />
+			<div className="divider-thick my-8" aria-hidden />
 
+			<div className="title mb-8">
+				<h2>JOIN OUR NETWORKS</h2>
+			</div>
+
+			{/* Ada's Students Slack Invite*/}
 			<section id="ada-team-info" className="max-w-6xl mx-auto">
 				<img
-					src={icon}
+					src={student_icon}
+					alt="Ada's Team icon"
+					className="hidden lg:block px-2 w-36 pl-4 pr-9 pb-28 float-left"
+				/>
+
+				<div id="discord-invite">
+					<h4 className="uppercase lg:normal-case">Ada's Students Slack</h4>
+					<div className="container py-3 font-body font-light">
+						<p className="block lg:hidden">
+							Get FREE access to virtual one-on-one tutoring sessions, and connect with our students
+							through virtual hangouts and study group sessions. There are tutors available to help
+							with various CMPUT, MATH and STAT courses.
+						</p>
+
+						<p className="hidden lg:block">
+							Thanks to the time and effort of our wonderful volunteers, we are able to provide FREE
+							drop-in tutoring for our members. The tutors offer help with various CMPUT, MATH and
+							STAT courses.
+							<br />
+							<br />
+							To take advantage of our services, you can join the Slack channel below. There, you
+							can post in different channels and ask for help. You can also book online sessions, or
+							drop in when a tutor has office hours.
+						</p>
+
+						<a
+							className="inline-block w-full md:w-max flex justify-center items-center self-center py-3 px-10 my-4 bg-blue text-white font-semibold rounded-lg md:self-start hover:text-white hover:bg-pink"
+							href="https://join.slack.com/t/adastutoring/shared_invite/zt-rxka4nnk-Ox~fBNx2XgXkU4gk9TLQfw"
+							alt="Ada's Team Tutoring Slack Invite Link"
+							target="_blank"
+							rel="noreferrer"
+						>
+							<span className="pr-2 text-lg">
+								<FontAwesomeIcon icon={["fab", "slack"]} />
+							</span>
+							Join Ada's Students
+						</a>
+					</div>
+				</div>
+			</section>
+
+			{/* Ada's Base Discord Invite*/}
+			<section id="ada-team-info" className="max-w-6xl mx-auto">
+				<img
+					src={main_icon}
 					alt="Ada's Team icon"
 					className="hidden lg:block px-2 w-36 pr-7 pb-28 float-left"
 				/>

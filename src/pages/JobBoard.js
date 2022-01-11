@@ -22,15 +22,9 @@ const JobBoard = () => {
 	const [modalOpen, setModalOpen] = useState(false);
 
 	useEffect(() => {
-		// Set a timeout to wait at least 2 seconds before displaying data
-		// (so that spinner is not weird)
-		setTimeout(() => {
-			setLoading(false);
-		}, 3500);
-
 		// Pull in Firebase data
 		db.collection("job-postings")
-			.orderBy("created", "asc")
+			.where("approved", "==", true)
 			.get()
 			.then((snapshot) => {
 				const jobs = [];
@@ -39,6 +33,7 @@ const JobBoard = () => {
 					jobs.push(data);
 				});
 				setJobs(jobs);
+				setLoading(false);
 			})
 			.catch((error) => console.log(error));
 	}, []);
@@ -106,7 +101,7 @@ const JobBoard = () => {
 	return (
 		<main id="main-content" className="page">
 			<Modal open={modalOpen} setOpen={setModalOpen} title="Submit A Job Posting" titleCenter>
-				<JobForm />
+				<JobForm setOpen={setModalOpen} />
 			</Modal>
 
 			<title
@@ -135,7 +130,7 @@ const JobBoard = () => {
 				)}
 
 				<Loader loading={loading || !jobs}>
-					<div id="job-posting" className="">
+					<div id="job-posting" className="min-h-px">
 						{jobs &&
 							jobs.map(
 								(

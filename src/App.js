@@ -23,7 +23,7 @@ import "animate.css/animate.min.css";
 function App() {
 	return (
 		<Router className="App" basename="/">
-			<a id="skip-nav" class="screenreader-text" href="#main-content">
+			<a id="skip-nav" className="screenreader-text" href="#main-content">
 				Skip Navigation or Skip to Content
 			</a>
 			<ScrollToTop />
@@ -54,7 +54,7 @@ function App() {
 				</Route>
 			</Switch>
 
-			<Footer className="absolute inset-x-0 bottom-0 w-full" />
+			<Footer className="absolute inset-x-0 bottom-0 w-full justify-self-end" />
 		</Router>
 	);
 }
