@@ -7,6 +7,16 @@
 
 @layer base {
 	/* Header: Title */
+	body,
+	#root {
+		min-height: 100vh;
+	}
+
+	#root {
+		display: flex;
+		flex-direction: column;
+	}
+
 	h1 {
 		@apply text-5xl;
 		@apply font-title;

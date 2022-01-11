@@ -54,7 +54,7 @@ function App() {
 				</Route>
 			</Switch>
 
-			<Footer className="absolute inset-x-0 bottom-0 w-full" />
+			<Footer className="absolute inset-x-0 bottom-0 w-full justify-self-end" />
 		</Router>
 	);
 }

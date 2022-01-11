@@ -80,7 +80,7 @@ const Connect = () => {
 
 			{/* Contact form section */}
 			<section>
-				<div className="divider-thick lg:invisible my-8" aria-hidden />
+				<div className="divider-thick my-8" aria-hidden />
 				<h3 className="mb-10">SEND A MESSAGE</h3>
 
 				<div
@@ -93,7 +93,7 @@ const Connect = () => {
 
 			{/* Contact information section */}
 			<section>
-				<div className="divider-thick lg:invisible mt-12 mb-8" aria-hidden />
+				<div className="divider-thick mt-12 mb-8" aria-hidden />
 
 				{contactInformation.map(({ name, handle, link, icon }, i) => (
 					<div key={`platform${i}`} className="flex items-center my-2">

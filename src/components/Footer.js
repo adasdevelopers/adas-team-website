@@ -24,7 +24,7 @@ const Footer = () => {
 		</p>
 	);
 	return (
-		<footer className="m-0 bg-black text-xs text-white">
+		<footer className="m-0 bg-black text-xs text-white mt-auto">
 			<div id="footer-content" className="max-w-7xl mx-8 lg:mx-auto md:px-12 py-8">
 				<div className="grid grid-cols-footer grid-rows-footer">
 					<SocialMedia gridStyle="col-span-2 lg:col-span-1" />
@@ -38,7 +38,7 @@ const Footer = () => {
 					</div>
 				</div>
 				<div className="divider-verythin my-4" aria-hidden />
-				<p>© Copyright 2020 Ada's Team</p>
+				<p>© Copyright 2022 Ada's Team</p>
 			</div>
 		</footer>
 	);
