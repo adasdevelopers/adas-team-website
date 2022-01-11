@@ -164,10 +164,6 @@
 		width: 6rem;
 	}
 
-	#home-bot {
-		width: 20rem;
-	}
-
 	.wrapper {
 		display: flex;
 		flex-direction: column wrap;
@@ -212,5 +208,4 @@
 		position: static;
 		margin: auto;
 	}
-
 }

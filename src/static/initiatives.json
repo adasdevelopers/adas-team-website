@@ -1,0 +1,52 @@
+[
+	{
+		"name": "Ada's Developers",
+		"contact": {
+			"instagram": "adasdevelopers",
+			"email": "adasdevelopers@gmail.com",
+			"other": "http://tinyurl.com/y5n3vjxv"
+		},
+		"image": "https://firebasestorage.googleapis.com/v0/b/adas-website-345a1.appspot.com/o/Initiative%20Images%2Fadas_developers.png?alt=media&token=b8a08a65-bbda-4335-8dbb-472425b521df",
+		"description": "Open-source technical opportunities within an agile team to prepare students for entering the tech industry."
+	},
+	{
+		"name": "Ada's Students",
+		"contact": {
+			"other": "",
+			"email": "adasteam@gmail.com",
+			"instagram": ""
+		},
+		"image": "https://firebasestorage.googleapis.com/v0/b/adas-website-345a1.appspot.com/o/Initiative%20Images%2Fadas_students.png?alt=media&token=66f0ac7a-b7c8-49a1-bbc3-54e9a07f21d4",
+		"description": "A collaborative space to organize mini-study groups, tutors, room-sitters, and crash courses."
+	},
+	{
+		"name": "Ada's Mentors",
+		"contact": {
+			"email": "adasmentors@gmail.com",
+			"other": "",
+			"instagram": "adasmentors"
+		},
+		"image": "https://firebasestorage.googleapis.com/v0/b/adas-website-345a1.appspot.com/o/Initiative%20Images%2Fadas_mentors.png?alt=media&token=127e7c10-cfa2-4061-b05b-2e3bc4bd57d9",
+		"description": "Mentoring underprivileged high school students lacking the confidence and exposure to university."
+	},
+	{
+		"name": "Ada's Podcast",
+		"contact": {
+			"other": "https://open.spotify.com/show/32lOHUjFvXAHwNbnFK2BZS?si=2UOoaCDPRwCRrzfaSQbzZw",
+			"email": "adasteam@gmail.com",
+			"instagram": ""
+		},
+		"image": "https://firebasestorage.googleapis.com/v0/b/adas-website-345a1.appspot.com/o/Initiative%20Images%2Fadas_podcast.png?alt=media&token=7d0acb44-71f4-4dc2-a75b-6a202c095bb3",
+		"description": "A series aimed at enriching the experiences of university students amidst the current COVID-19 pandemic."
+	},
+	{
+		"name": "Ada's Conferences",
+		"contact": {
+			"other": "",
+			"instagram": "https://www.instagram.com/adasconferences/",
+			"email": "mailto:adasconferences@gmail.com"
+		},
+		"image": "https://firebasestorage.googleapis.com/v0/b/adas-website-345a1.appspot.com/o/Initiative%20Images%2Fadas_conferences.png?alt=media&token=e77950a3-3b1a-4356-8a9b-b71076ff5d87",
+		"description": "Providing opportunities for students to attend conferences as a team."
+	}
+]

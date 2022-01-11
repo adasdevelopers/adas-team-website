@@ -12,7 +12,7 @@ const Header = ({ title, subtitle, additional, homepage }) => {
 			<h1
 				className={
 					homepage
-						? `font-title text-5xl text-left md:text-7xl md:text-center md:text-blue ${
+						? `font-title text-5xl text-left md:text-7xl md:text-center text-blue ${
 								animate ? "animate-fade-in-down" : ""
 						  }`
 						: "text-center lg:text-left"

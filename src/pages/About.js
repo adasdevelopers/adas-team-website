@@ -1,6 +1,4 @@
 // Import libraries
-import React, { useEffect, useState } from "react";
-import db from "../firebase";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
@@ -8,59 +6,21 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 // Import components
 import Header from "../components/Header";
-import Loader from "../components/Loader";
 
 // Import  assets
 import about_image from "../assets/img/PageHeaders/about.svg";
+
+// Import static files
+import initiatives from "../static/initiatives.json";
+import executives from "../static/executives.json";
 
 /**
  * Displays information about Ada's Team
  * initiatives and executive team
  */
 const About = () => {
-	const [initiatives, setInitiatives] = useState(null);
-	const [executives, setExecutives] = useState(null);
-	const [loading, setLoading] = useState(true);
-
-	useEffect(() => {
-		// Set a timeout to wait at least 2 seconds before displaying data
-		// (so that spinner is not weird)
-		setTimeout(() => {
-			setLoading(false);
-		}, 3500);
-
-		// Pull in data from Firebase
-		// Import initiatives
-		db.collection("initiatives")
-			.orderBy("order", "asc")
-			.get()
-			.then((snapshot) => {
-				const initiatives = [];
-				snapshot.forEach((doc) => {
-					const data = doc.data();
-					initiatives.push(data);
-				});
-				setInitiatives(initiatives);
-			})
-			.catch((error) => console.log(error));
-
-		// Import executives
-		db.collection("executives")
-			.orderBy("order", "asc")
-			.get()
-			.then((snapshot) => {
-				const executives = [];
-				snapshot.forEach((doc) => {
-					const data = doc.data();
-					executives.push(data);
-				});
-				setExecutives(executives);
-			})
-			.catch((error) => console.log(error));
-
-		// Importing brand icons for social media
-		library.add(fab, faEnvelope);
-	}, []);
+	// Import icons
+	library.add(fab, faEnvelope);
 
 	const Executive = ({ image, role, name, description, contact }) => (
 		<div id="executives" className="blue-rect-shadow p-8 flex flex-col md:flex-row lg:mx-36">
@@ -185,20 +145,19 @@ const About = () => {
 				</p>
 
 				{/* Initiative grid */}
-				<Loader loading={!initiatives || loading}>
-					<div className="grid grid-cols-1 md:grid-cols-2 gap-x-36 gap-y-10">
-						{initiatives &&
-							initiatives.map(({ name, description, contact, image }) => (
-								<Initiative
-									name={name}
-									description={description}
-									contact={contact}
-									image={image}
-									key={name}
-								/>
-							))}
-					</div>
-				</Loader>
+
+				<div className="grid grid-cols-1 md:grid-cols-2 gap-x-36 gap-y-10">
+					{initiatives &&
+						initiatives.map(({ name, description, contact, image }) => (
+							<Initiative
+								name={name}
+								description={description}
+								contact={contact}
+								image={image}
+								key={name}
+							/>
+						))}
+				</div>
 			</section>
 
 			{/* Slack and Discord Invite links*/}
@@ -206,6 +165,12 @@ const About = () => {
 				id="join-links"
 				className="flex flex-col space-y-5 lg:py-5 lg:my-32 lg:mx-36 lg:mr-48"
 			>
+				<div className="divider-thick mb-8" aria-hidden />
+
+				<div className="title">
+					<h2>JOIN OUR NETWORKS</h2>
+				</div>
+
 				<div id="adas-tutoring-join" className="flex flex-col w-full lg:mb-10">
 					<h3 className="font-title text-black font-semibold">Ada's Tutoring</h3>
 					<p className="font-light">
@@ -252,25 +217,24 @@ const About = () => {
 			{/* Executive information from Firebase */}
 			<section id="executive-team">
 				<div className="title my-10 lg:mx-36">
+					<div className="divider-thick mt-16 mb-8" aria-hidden />
 					<h2>MEET THE TEAM</h2>
 					<h3 className="font-title text-pink text-2xl">2021-2022</h3>
 				</div>
 
-				<Loader loading={!executives || loading}>
-					<div>
-						{executives &&
-							executives.map(({ image, role, name, description, contact }, i) => (
-								<Executive
-									image={image}
-									role={role}
-									name={name}
-									description={description}
-									contact={contact}
-									key={role}
-								/>
-							))}
-					</div>
-				</Loader>
+				<div>
+					{executives &&
+						executives.map(({ image, role, name, description, contact }, i) => (
+							<Executive
+								image={image}
+								role={role}
+								name={name}
+								description={description}
+								contact={contact}
+								key={role}
+							/>
+						))}
+				</div>
 			</section>
 		</main>
 	);
