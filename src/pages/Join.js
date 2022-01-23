@@ -22,10 +22,11 @@ const Join = () => {
 	library.add(fab);
 
 	return (
-		<main id="main-content" className="page">
+		<main id="main-content" className="page max-w-6xl mx-auto">
 			<title
 				id="join"
-				className="max-w-6xl mx-auto flex flex-col items-center justify-between lg:flex-row-reverse animate-fade-in-down"
+				className="flex flex-col items-center justify-between
+						lg:flex-row-reverse animate-fade-in-down"
 			>
 				{/* Join image */}
 				<img
@@ -40,57 +41,52 @@ const Join = () => {
 				/>
 			</title>
 
-			<div className="max-w-6xl mx-auto">
+			<section id="join-form">
 				<div className="divider-thick my-8" aria-hidden />
 
-				<div className="title">
-					<h2>JOIN OUR MAILING LIST</h2>
-				</div>
+				<h2 className="title">JOIN OUR MAILING LIST</h2>
 
 				<p className="my-5">
 					Subscribe to our mailing list to receive updates on events, opportunities, scholarships,
 					and more!
 				</p>
-			</div>
 
-			<JoinForm />
+				<JoinForm />
+			</section>
 
-			<div className="divider-thick my-8" aria-hidden />
+			<section id="ada-team-networks">
+				<div className="divider-thick my-8" aria-hidden />
+				<h2 className="title mb-8">JOIN OUR NETWORKS</h2>
 
-			<div className="title mb-8">
-				<h2>JOIN OUR NETWORKS</h2>
-			</div>
+				{/* Ada's Students Slack Invite*/}
+				<div id="slack-invite" className="grid grid-cols-footer">
+					<img src={student_icon} alt="Ada's Team icon" className="hidden lg:block w-36 pr-9" />
 
-			{/* Ada's Students Slack Invite*/}
-			<section id="ada-team-info" className="max-w-6xl mx-auto">
-				<img
-					src={student_icon}
-					alt="Ada's Team icon"
-					className="hidden lg:block px-2 w-36 pl-4 pr-9 pb-28 float-left"
-				/>
+					<article>
+						<h4 className="uppercase lg:normal-case">Ada's Students Slack</h4>
 
-				<div id="discord-invite">
-					<h4 className="uppercase lg:normal-case">Ada's Students Slack</h4>
-					<div className="container py-3 font-body font-light">
-						<p className="block lg:hidden">
+						<p className="block lg:hidden py-3 font-body font-light" aria-hidden>
 							Get FREE access to virtual one-on-one tutoring sessions, and connect with our students
 							through virtual hangouts and study group sessions. There are tutors available to help
 							with various CMPUT, MATH and STAT courses.
 						</p>
 
-						<p className="hidden lg:block">
+						<p className="hidden lg:block py-3 font-body font-light">
 							Thanks to the time and effort of our wonderful volunteers, we are able to provide FREE
 							drop-in tutoring for our members. The tutors offer help with various CMPUT, MATH and
 							STAT courses.
-							<br />
-							<br />
+						</p>
+
+						<p className="hidden lg:block py-3 font-body font-light">
 							To take advantage of our services, you can join the Slack channel below. There, you
 							can post in different channels and ask for help. You can also book online sessions, or
 							drop in when a tutor has office hours.
 						</p>
 
 						<a
-							className="inline-block w-full md:w-max flex justify-center items-center self-center py-3 px-10 my-4 bg-blue text-white font-semibold rounded-lg md:self-start hover:text-white hover:bg-pink"
+							className="inline-block w-full md:w-max flex justify-center 
+								items-center self-center py-3 px-10 my-4 bg-blue text-white
+								font-semibold rounded-lg md:self-start hover:text-white hover:bg-pink"
 							href="https://join.slack.com/t/adastutoring/shared_invite/zt-rxka4nnk-Ox~fBNx2XgXkU4gk9TLQfw"
 							alt="Ada's Team Tutoring Slack Invite Link"
 							target="_blank"
@@ -101,33 +97,29 @@ const Join = () => {
 							</span>
 							Join Ada's Students
 						</a>
-					</div>
+					</article>
 				</div>
-			</section>
 
-			{/* Ada's Base Discord Invite*/}
-			<section id="ada-team-info" className="max-w-6xl mx-auto">
-				<img
-					src={main_icon}
-					alt="Ada's Team icon"
-					className="hidden lg:block px-2 w-36 pr-7 pb-28 float-left"
-				/>
+				{/* Ada's Base Discord Invite*/}
+				<div id="discord-invite" className="grid grid-cols-footer">
+					<img src={main_icon} alt="Ada's Team icon" className="hidden lg:block w-36 pr-4" />
 
-				<div id="discord-invite">
-					<h4 className="uppercase lg:normal-case">Ada's Base</h4>
-					<div className="container py-3 font-body font-light">
-						<p className="block lg:hidden">
+					<article>
+						<h4 className="uppercase lg:normal-case">Ada's Base</h4>
+
+						<p className="block lg:hidden py-3 font-body font-light" aria-hidden>
 							Join the Ada's Base Discord server: an online community of students that share job
 							opportunities and hackathons, review resumes, and hold each other accountable with
 							virtual coworking sessions.
 						</p>
 
-						<p className="hidden lg:block">
+						<p className="hidden lg:block py-3 font-body font-light">
 							Pre-COVID, students were able to drop-by anytime to our room and connect with other
 							students. However, that casual, supportive atmosphere has now been hampered due to the
 							virtual environment.
-							<br />
-							<br />
+						</p>
+
+						<p className="hidden lg:block py-3 font-body font-light">
 							To welcome new students and help us all stay connected during COVID-19, join the Ada's
 							Base Discord server! Join a community of students that share job opportunities and
 							hackathons, review resumes, host jackbox sessions, and hold you accountable during
@@ -135,7 +127,9 @@ const Join = () => {
 						</p>
 
 						<a
-							className="inline-block w-full md:w-max flex justify-center items-center self-center py-3 px-10 my-4 bg-blue text-white font-semibold rounded-lg md:self-start hover:text-white hover:bg-pink"
+							className="inline-block w-full md:w-max flex justify-center 
+								items-center self-center py-3 px-10 my-4 bg-blue text-white 
+								font-semibold rounded-lg md:self-start hover:text-white hover:bg-pink"
 							href="https://discord.gg/7ZhmzHZjc8"
 							alt="Ada's Team Discord Invite Link"
 							target="_blank"
@@ -146,7 +140,7 @@ const Join = () => {
 							</span>
 							Join Ada's Base
 						</a>
-					</div>
+					</article>
 				</div>
 			</section>
 		</main>
