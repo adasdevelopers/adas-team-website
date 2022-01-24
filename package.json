@@ -1,6 +1,6 @@
 {
-	"homepage": "https://adasdevelopers.github.io/adas-team-website/",
-	"name": "adas-team-site",
+	"homepage": "https://www.adasteam.ca/",
+	"name": "adas-team-website",
 	"version": "0.1.0",
 	"private": true,
 	"dependencies": {

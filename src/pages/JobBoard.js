@@ -68,7 +68,6 @@ const JobBoard = () => {
 					)}
 
 					<ul id="job-posting" className="min-h-px">
-
 						{jobs &&
 							jobs.map(
 								(
