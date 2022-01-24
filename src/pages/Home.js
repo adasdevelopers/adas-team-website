@@ -1,4 +1,6 @@
 // Import libraries
+import { useEffect } from "react";
+
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { Link } from "react-scroll";
@@ -13,7 +15,6 @@ import { IoIosArrowDown } from "react-icons/io";
 
 // Import static files
 import sponsors from "../static/sponsors.json";
-import { useEffect } from "react";
 
 /**
  * Welcome page
