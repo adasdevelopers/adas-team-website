@@ -22,7 +22,7 @@ const Join = () => {
 	library.add(fab);
 
 	return (
-		<main id="main-content" className="page max-w-6xl mx-auto">
+		<main id="main-content" className="page max-w-6xl mx-auto animate-fade-in-down">
 			<title
 				id="join"
 				className="flex flex-col items-center justify-between

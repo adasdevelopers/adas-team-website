@@ -22,104 +22,11 @@ const About = () => {
 	// Import icons
 	library.add(fab, faEnvelope);
 
-	const Executive = ({ image, role, name, description, contact }) => (
-		<div id="executives" className="blue-rect-shadow p-8 flex flex-col md:flex-row lg:mx-36">
-			<div
-				className="executive-image self-center md:mr-8"
-				style={{ backgroundImage: `url(${image})`, backgroundColor: "black" }}
-				alt="executive of Ada's Team"
-			/>
-
-			<div className="flex justify-between flex-col my-2">
-				<div id="executive-information">
-					<h4 className="font-title font-bold text-xl">{name}</h4>
-					<p className="mb-2 uppercase">
-						<em>{role}</em>
-					</p>
-					<p className="font-body font-thin">{description}</p>
-				</div>
-
-				{/* Executive Contact Information */}
-				<div id="executive-contact" className="mt-4 flex self-end space-x-2 text-xl">
-					{contact.LinkedIn && (
-						<div className="executive--contact">
-							<a href={contact.LinkedIn} rel="noreferrer" target="_blank">
-								<FontAwesomeIcon icon={["fab", "linkedin"]} />
-							</a>
-						</div>
-					)}
-
-					{contact.Github && (
-						<div className="executive--contact">
-							<a href={contact.Github} alt="Github" rel="noreferrer" target="_blank">
-								<FontAwesomeIcon icon={["fab", "github"]} />
-							</a>
-						</div>
-					)}
-
-					{contact.Other && (
-						<div className="executive--contact">
-							<a
-								className="Contact"
-								href={contact.Other}
-								alt="Contact"
-								rel="noreferrer"
-								target="_blank"
-							>
-								<FontAwesomeIcon icon={faEnvelope} />
-							</a>
-						</div>
-					)}
-				</div>
-			</div>
-		</div>
-	);
-
-	const Initiative = ({ name, image, description, contact }) => (
-		<div className="grid justify-items-left">
-			<div className="initiative-image justify-self-center">
-				{image !== "" && <img src={image} alt="adas-team-bot" className="h-40 w-30 pb-3" />}
-			</div>
-
-			<h4 className="font-title text-2xl text-left">{name}</h4>
-
-			<div className="description text-left font-light">
-				<p>{description}</p>
-			</div>
-
-			<div className="initiative-social-media my-2 space-x-4">
-				{contact["instagram"] && (
-					<a href={contact["instagram"]} className="text-3xl" rel="noreferrer" target="_blank">
-						<FontAwesomeIcon icon={["fab", "instagram"]} />
-					</a>
-				)}
-
-				{contact["slack"] && (
-					<a href={contact["slack"]} className="text-3xl" rel="noreferrer" target="_blank">
-						<FontAwesomeIcon icon={["fab", "slack"]} />
-					</a>
-				)}
-
-				{contact["other"] && (
-					<a href={contact["other"]} className="text-2xl" rel="noreferrer" target="_blank">
-						<FontAwesomeIcon icon={faLink} />
-					</a>
-				)}
-
-				{contact["email"] && (
-					<a href={contact["email"]} className="text-3xl" rel="noreferrer" target="_blank">
-						<FontAwesomeIcon icon={faEnvelope} />
-					</a>
-				)}
-			</div>
-		</div>
-	);
-
 	return (
-		<main id="main-content" className="page animate-fade-in-down font-body">
+		<main id="main-content" className="page max-w-6xl mx-auto font-body animate-fade-in-down">
 			<title
 				id="about_image"
-				className="max-w-3xl lg:mx-auto flex flex-col items-center justify-between lg:flex-row-reverse animate-fade-in-down"
+				className="flex flex-col items-center justify-between lg:flex-row-reverse animate-fade-in-down"
 			>
 				{/* About image */}
 				<img
@@ -133,27 +40,28 @@ const About = () => {
 			</title>
 
 			{/* Title Intro */}
-			<section id="about-goal" className="lg:mt-20 lg:px-36">
-				<p className="font-sans font-thin">
-					In Ada's Team, our goal is to{" "}
-					<b>
+			<section id="about-goal" className="lg:mt-20">
+				<p className="font-body font-light">
+					At Ada's Team, our goal is to{" "}
+					<span className="font-bold">
 						promote diversity in computing science, games, technology, engineering, and mathematics.
-					</b>{" "}
+					</span>{" "}
 					By diversity, we include but are not limited to the following categories: gender, race,
 					ethnicity, religion, ability, sexuality, social class, and any other factor of
 					discrimination or minority group.
-					<br />
-					<b>
-						We embrace and celebrate your differences, striving to foster an inclusive culture and
-						safe space for everyone to collaborate and thrive in.
-					</b>
+				</p>
+
+				<p className="font-body mt-4 font-bold">
+					We embrace and celebrate your differences, striving to foster an inclusive culture and
+					safe space for everyone to collaborate and thrive in.
 				</p>
 			</section>
 
-			<div className="divider-thick hidden lg:mx-36" aria-hidden />
+			<div className="divider-thick hidden" aria-hidden />
 
 			{/* Initiative block */}
-			<section id="initiatives" className="my-12 lg:my-28 lg:mx-36">
+			<section id="initiatives">
+				<div className="divider-thick mt-16 mb-8" aria-hidden />
 				<h2 className="pb-4">OUR INITIATIVES</h2>
 
 				{/* Initiative information */}
@@ -181,11 +89,9 @@ const About = () => {
 
 			{/* Executive information from Firebase */}
 			<section id="executive-team">
-				<div className="title my-10 lg:mx-36">
-					<div className="divider-thick mt-16 mb-8" aria-hidden />
-					<h2>MEET THE TEAM</h2>
-					<h3 className="font-title text-pink text-2xl">2021-2022</h3>
-				</div>
+				<div className="divider-thick mt-16 mb-8" aria-hidden />
+				<h2>MEET THE TEAM</h2>
+				<p className="font-title text-pink text-2xl mb-8">2021-2022</p>
 
 				<div>
 					{executives &&
@@ -204,5 +110,98 @@ const About = () => {
 		</main>
 	);
 };
+
+const Executive = ({ image, role, name, description, contact }) => (
+	<div id="executives" className="blue-rect-shadow p-8 flex flex-col md:flex-row">
+		<div
+			className="executive-image self-center md:mr-8"
+			style={{ backgroundImage: `url(${image})`, backgroundColor: "black" }}
+			alt="executive of Ada's Team"
+		/>
+
+		<div className="flex justify-between flex-col my-2">
+			<div id="executive-information">
+				<h4 className="font-title font-bold text-xl">{name}</h4>
+				<p className="mb-2 uppercase">
+					<em>{role}</em>
+				</p>
+				<p className="font-body font-thin">{description}</p>
+			</div>
+
+			{/* Executive Contact Information */}
+			<div id="executive-contact" className="mt-4 flex self-end space-x-2 text-xl">
+				{contact.LinkedIn && (
+					<div className="executive--contact">
+						<a href={contact.LinkedIn} rel="noreferrer" target="_blank">
+							<FontAwesomeIcon icon={["fab", "linkedin"]} />
+						</a>
+					</div>
+				)}
+
+				{contact.Github && (
+					<div className="executive--contact">
+						<a href={contact.Github} alt="Github" rel="noreferrer" target="_blank">
+							<FontAwesomeIcon icon={["fab", "github"]} />
+						</a>
+					</div>
+				)}
+
+				{contact.Other && (
+					<div className="executive--contact">
+						<a
+							className="Contact"
+							href={contact.Other}
+							alt="Contact"
+							rel="noreferrer"
+							target="_blank"
+						>
+							<FontAwesomeIcon icon={faEnvelope} />
+						</a>
+					</div>
+				)}
+			</div>
+		</div>
+	</div>
+);
+
+const Initiative = ({ name, image, description, contact }) => (
+	<div className="grid justify-items-left">
+		<div className="initiative-image justify-self-center">
+			{image !== "" && <img src={image} alt="adas-team-bot" className="h-40 w-30 pb-3" />}
+		</div>
+
+		<h4 className="font-title text-2xl text-left">{name}</h4>
+
+		<div className="description text-left font-light">
+			<p>{description}</p>
+		</div>
+
+		<div className="initiative-social-media my-2 space-x-4">
+			{contact["instagram"] && (
+				<a href={contact["instagram"]} className="text-3xl" rel="noreferrer" target="_blank">
+					<FontAwesomeIcon icon={["fab", "instagram"]} />
+				</a>
+			)}
+
+			{contact["slack"] && (
+				<a href={contact["slack"]} className="text-3xl" rel="noreferrer" target="_blank">
+					<FontAwesomeIcon icon={["fab", "slack"]} />
+				</a>
+			)}
+
+			{contact["other"] && (
+				<a href={contact["other"]} className="text-2xl" rel="noreferrer" target="_blank">
+					<FontAwesomeIcon icon={faLink} />
+				</a>
+			)}
+
+			{contact["email"] && (
+				<a href={contact["email"]} className="text-3xl" rel="noreferrer" target="_blank">
+					<FontAwesomeIcon icon={faEnvelope} />
+				</a>
+			)}
+		</div>
+	</div>
+);
 
 export default About;

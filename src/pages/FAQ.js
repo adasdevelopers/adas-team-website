@@ -26,11 +26,11 @@ const FAQ = () => {
 	return (
 		<main
 			id="main-content"
-			className="max-w-7xl lg:mx-auto lg:px-12 page animate-fade-in-down font-body overflow-hidden"
+			className={`page max-w-7xl lg:mx-auto lg:px-12 font-body overflow-hidden animate-fade-in-down`}
 		>
 			<title
 				id="faq_image"
-				className="max-w-4xl mx-auto flex flex-col items-center justify-between lg:flex-row-reverse animate-fade-in-down"
+				className={`flex flex-col items-center justify-between lg:flex-row-reverse animate-fade-in-down`}
 			>
 				{/* FAQ image */}
 				<img
