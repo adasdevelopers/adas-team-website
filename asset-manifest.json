@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/adas-team-website/static/css/main.32c9d229.chunk.css",
-    "main.js": "/adas-team-website/static/js/main.8b245346.chunk.js",
-    "main.js.map": "/adas-team-website/static/js/main.8b245346.chunk.js.map",
+    "main.css": "/adas-team-website/static/css/main.9c69c2ca.chunk.css",
+    "main.js": "/adas-team-website/static/js/main.139db8fe.chunk.js",
+    "main.js.map": "/adas-team-website/static/js/main.139db8fe.chunk.js.map",
     "runtime-main.js": "/adas-team-website/static/js/runtime-main.aea67bf4.js",
     "runtime-main.js.map": "/adas-team-website/static/js/runtime-main.aea67bf4.js.map",
     "static/css/2.c13d9ee7.chunk.css": "/adas-team-website/static/css/2.c13d9ee7.chunk.css",
-    "static/js/2.31df7012.chunk.js": "/adas-team-website/static/js/2.31df7012.chunk.js",
-    "static/js/2.31df7012.chunk.js.map": "/adas-team-website/static/js/2.31df7012.chunk.js.map",
+    "static/js/2.a74067fe.chunk.js": "/adas-team-website/static/js/2.a74067fe.chunk.js",
+    "static/js/2.a74067fe.chunk.js.map": "/adas-team-website/static/js/2.a74067fe.chunk.js.map",
     "static/js/3.6316fd2f.chunk.js": "/adas-team-website/static/js/3.6316fd2f.chunk.js",
     "static/js/3.6316fd2f.chunk.js.map": "/adas-team-website/static/js/3.6316fd2f.chunk.js.map",
     "index.html": "/adas-team-website/index.html",
     "static/css/2.c13d9ee7.chunk.css.map": "/adas-team-website/static/css/2.c13d9ee7.chunk.css.map",
-    "static/css/main.32c9d229.chunk.css.map": "/adas-team-website/static/css/main.32c9d229.chunk.css.map",
-    "static/js/2.31df7012.chunk.js.LICENSE.txt": "/adas-team-website/static/js/2.31df7012.chunk.js.LICENSE.txt",
+    "static/css/main.9c69c2ca.chunk.css.map": "/adas-team-website/static/css/main.9c69c2ca.chunk.css.map",
+    "static/js/2.a74067fe.chunk.js.LICENSE.txt": "/adas-team-website/static/js/2.a74067fe.chunk.js.LICENSE.txt",
     "static/media/about.91b58831.svg": "/adas-team-website/static/media/about.91b58831.svg",
     "static/media/ada-home-bot.5838c72a.png": "/adas-team-website/static/media/ada-home-bot.5838c72a.png",
     "static/media/adas_students_icon.e41f17f6.png": "/adas-team-website/static/media/adas_students_icon.e41f17f6.png",
@@ -28,8 +28,8 @@
   "entrypoints": [
     "static/js/runtime-main.aea67bf4.js",
     "static/css/2.c13d9ee7.chunk.css",
-    "static/js/2.31df7012.chunk.js",
-    "static/css/main.32c9d229.chunk.css",
-    "static/js/main.8b245346.chunk.js"
+    "static/js/2.a74067fe.chunk.js",
+    "static/css/main.9c69c2ca.chunk.css",
+    "static/js/main.139db8fe.chunk.js"
   ]
 }
