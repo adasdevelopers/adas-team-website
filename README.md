@@ -41,3 +41,7 @@ Run `yarn start` or `npm run`
      ```
 
    - It's an issue with this specific package, and likely it was not updated
+
+### Deployment
+
+To deploy to GitHub pages, run `yarn deploy` or `npm run deploy`

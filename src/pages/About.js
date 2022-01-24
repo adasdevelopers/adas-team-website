@@ -21,7 +21,7 @@ import executives from "../static/executives.json";
 const About = () => {
 	// Import icons
 	library.add(fab, faEnvelope);
-
+  
 	return (
 		<main id="main-content" className="page max-w-6xl mx-auto font-body animate-fade-in-down">
 			<title

@@ -218,12 +218,6 @@
 		position: static;
 		margin: auto;
 	}
-
-	.job-posting {
-		display: grid;
-		/* grid-template-columns: auto auto; */
-		grid-auto-columns: 8rem auto;
-	}
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -239,4 +233,5 @@
 		transition-duration: 0.01ms !important;
 		scroll-behavior: auto !important;
 	}
+
 }
