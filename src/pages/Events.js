@@ -12,13 +12,11 @@ import events_image from "../assets/img/PageHeaders/events.svg";
  */
 const Events = () => {
 	return (
-		<main
-			id="main-content"
-			className="px-8 sm:px-8 md:px-16 lg:max-w-7xl page lg:px-auto relative animate-fade-in-down"
-		>
+		<main id="main-content" className="page max-w-6xl mx-auto animate-fade-in-down">
 			<title
 				id="faq_image"
-				className="max-w-6xl mx-auto flex flex-col items-center justify-between lg:flex-row-reverse animate-fade-in-down"
+				className="flex relative flex-col items-center justify-between
+					 lg:flex-row-reverse animate-fade-in-down"
 			>
 				{/* Events image */}
 				<img
@@ -27,10 +25,12 @@ const Events = () => {
 					alt="people sitting on a sofa"
 					className="hidden md:inline-block w-screen px-16 lg:w-auto lg:px-0 lg:h-72"
 				/>
+
 				<Header
 					title="Events"
 					subtitle="Learn more about our upcoming events."
-					additional="Due to COVID-19, please note that all of our events will operate in a virtually via Zoom or Google Meet."
+					additional="Due to COVID-19, please note that all of our events 
+						will operate in a virtually via Zoom or Google Meet."
 				/>
 			</title>
 
@@ -44,38 +44,37 @@ const Events = () => {
 				<h2>EVENT ROADMAP</h2>
 
 				{/* Canva Embedded roadmap */}
-				<div id="canva-roadmap">
-					<div
+				<div
+					id="canva-roadmap"
+					style={{
+						position: "relative",
+						width: "100%",
+						height: "0",
+						paddingTop: "56.2500%",
+						paddingBottom: "48px",
+						boxShadow: "0 2px 8px 0 rgba(63,69,81,0.16)",
+						marginTop: "1.6em",
+						marginBottom: "0.9em",
+						overflow: "hidden",
+						borderRadius: "8px",
+						willChange: "transform",
+					}}
+				>
+					<iframe
+						title="canva roadmap"
+						loading="lazy"
 						style={{
-							position: "relative",
+							position: "absolute",
 							width: "100%",
-							height: "0",
-							paddingTop: "56.2500%",
-							paddingBottom: "48px",
-							boxShadow: "0 2px 8px 0 rgba(63,69,81,0.16)",
-							marginTop: "1.6em",
-							marginBottom: "0.9em",
-							overflow: "hidden",
-							borderRadius: "8px",
-							willChange: "transform",
+							height: "100%",
+							top: "0",
+							left: "0",
+							border: "none",
+							padding: "0",
+							margin: "0",
 						}}
-					>
-						<iframe
-							title="canva roadmap"
-							loading="lazy"
-							style={{
-								position: "absolute",
-								width: "100%",
-								height: "100%",
-								top: "0",
-								left: "0",
-								border: "none",
-								padding: "0",
-								margin: "0",
-							}}
-							src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAEE64Enu-4&#x2F;view?embed"
-						></iframe>
-					</div>
+						src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAEE64Enu-4&#x2F;view?embed"
+					></iframe>
 				</div>
 
 				<a

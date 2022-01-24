@@ -59,10 +59,11 @@ const Connect = () => {
 	];
 
 	return (
-		<main id="main-content" className="page">
+		<main id="main-content" className="page max-w-6xl mx-auto animate-fade-in-down">
 			<title
 				id="connect_image"
-				className="max-w-6xl mx-auto flex flex-col items-center justify-between lg:flex-row-reverse animate-fade-in-down"
+				className="flex flex-col items-center justify-between
+						lg:flex-row-reverse animate-fade-in-down"
 			>
 				{/* Connect image */}
 				<img
@@ -74,14 +75,15 @@ const Connect = () => {
 
 				<Header
 					title="Connect With Us"
-					subtitle="We'd love to get in touch with you! Connect with us through email or any of our social media."
+					subtitle="We'd love to get in touch with you! Connect with us through email 
+							or any of our social media."
 				/>
 			</title>
 
 			{/* Contact form section */}
 			<section>
-				<div className="divider-thick my-8" aria-hidden />
-				<h3 className="mb-10">SEND A MESSAGE</h3>
+				<div className="divider-thick" aria-hidden />
+				<h3 className="my-6">SEND A MESSAGE</h3>
 
 				<div
 					id="connect-form"
@@ -92,18 +94,26 @@ const Connect = () => {
 			</section>
 
 			{/* Contact information section */}
-			<section>
-				<div className="divider-thick mt-12 mb-8" aria-hidden />
+			<section className="my-12">
+				<div className="divider-thick" aria-hidden />
+				<h3 className="my-6">MORE PLACES TO FIND US</h3>
 
-				{contactInformation.map(({ name, handle, link, icon }, i) => (
-					<div key={`platform${i}`} className="flex items-center my-2">
-						<div className="w-8 h-8 inline-block bg-blue rounded-full flex items-center justify-center mr-2">
-							<FontAwesomeIcon icon={icon} className="text-xl text-white" />
-						</div>
-						<span className="font-bold mr-2">{name}:</span>
-						<a href={link}>{handle}</a>
-					</div>
-				))}
+				<ul id="social-media-grid" className="md:grid md:grid-cols-2">
+					{contactInformation.map(({ name, handle, link, icon }, i) => (
+						<li id={name} key={`platform${i}`} className="flex items-center my-2">
+							<div
+								className="w-8 h-8 inline-block bg-blue rounded-full flex 
+									items-center justify-center mr-2"
+							>
+								<FontAwesomeIcon icon={icon} className="text-xl text-white" />
+							</div>
+							<span className="font-bold mr-2">{name}:</span>
+							<a href={link} className="font-normal">
+								{handle}
+							</a>
+						</li>
+					))}
+				</ul>
 			</section>
 		</main>
 	);

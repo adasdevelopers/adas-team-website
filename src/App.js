@@ -13,7 +13,7 @@ import JobBoard from "./pages/JobBoard";
 import Join from "./pages/Join";
 
 // Import React libraries
-import { HashRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "animate.css/animate.min.css";
 
 /**
@@ -24,16 +24,14 @@ function App() {
 	return (
 		<Router className="App" basename="/">
 			<a id="skip-nav" className="screenreader-text" href="#main-content">
-				Skip Navigation or Skip to Content
+				Skip to Content
 			</a>
+
 			<ScrollToTop />
 			<Navigation />
 
 			{/* Routers */}
 			<Switch>
-				<Route exact path="/">
-					<Home />
-				</Route>
 				<Route exact path="/about">
 					<About />
 				</Route>
@@ -51,6 +49,9 @@ function App() {
 				</Route>
 				<Route exact path="/connect">
 					<Connect />
+				</Route>
+				<Route>
+					<Home />
 				</Route>
 			</Switch>
 
