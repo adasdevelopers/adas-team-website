@@ -1,5 +1,6 @@
 // Import libraries
 import { useEffect } from "react";
+import { FaSlack, FaCalendarWeek, FaCalendarPlus } from "react-icons/fa";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -22,7 +23,6 @@ import sponsors from "../static/sponsors.json";
  */
 const Home = () => {
 	// Initialize animations
-
 	useEffect(() => {
 		AOS.init({
 			easing: "ease", // default easing for AOS animations
@@ -94,6 +94,74 @@ const Home = () => {
 				<h2 className="uppercase">Subscribe to our mailing list</h2>
 				<p>Join Ada’s Team and receive updates on events, opportunities, scholarships, and more!</p>
 				<JoinForm />
+			</section>
+
+			<section
+				id="tutoring"
+				data-aos="fade-in"
+				data-aos-duration="500"
+				data-aos-easing="ease-in-sine"
+				className="max-w-6xl mx-8 my-8 md:my-24 animate-fade-in-down md:mx-16 xl:mx-auto"
+			>
+				<div className="divider-thick mt-16 mb-8" aria-hidden />
+
+				<h2>TUTORING</h2>
+
+				<p className="py-3 font-body font-light">
+					Thanks to the time and effort of our wonderful volunteers, we are able to provide FREE
+					drop-in tutoring for our members. The tutors offer help with various CMPUT, MATH and STAT
+					courses.
+				</p>
+
+				<p className="py-3 font-body font-light">
+					To take advantage of our services, you can join the Slack channel below. There, you can
+					post in different channels and ask for help. You can also book online sessions, or drop in
+					when a tutor has office hours.
+				</p>
+
+				<div id="tutoring-links" className="flex flex-col gap-4 md:flex-row my-4">
+					<a
+						className="w-full md:w-max flex justify-center items-center self-center py-3 px-5
+								bg-blue text-white font-semibold rounded-lg hover:text-white hover:bg-pink"
+						href="https://join.slack.com/t/adastutoring/shared_invite/zt-rxka4nnk-Ox~fBNx2XgXkU4gk9TLQfw"
+						alt="Ada's Team Tutoring Slack Invite Link"
+						target="_blank"
+						rel="noreferrer"
+					>
+						<span className="pr-2 text-lg">
+							<FaSlack />
+						</span>
+						Join Ada's Students Slack
+					</a>
+
+					<a
+						className="w-full md:w-max flex justify-center items-center self-center py-3 px-5
+								bg-blue text-white font-semibold rounded-lg hover:text-white hover:bg-pink"
+						href="https://calendar.google.com/calendar/embed?src=v9j8ohim8qc5g8af4bfm5409ac%40group.calendar.google.com&ctz=America%2FEdmonton"
+						alt="Ada's Team Tutoring Hours Calendar"
+						target="_blank"
+						rel="noreferrer"
+					>
+						<span className="pr-2 text-lg">
+							<FaCalendarWeek />
+						</span>
+						View In-person Office Hours
+					</a>
+
+					<a
+						className="w-full md:w-max flex justify-center items-center self-center py-3 px-5
+								bg-blue text-white font-semibold rounded-lg hover:text-white hover:bg-pink"
+						href="https://calendar.google.com/calendar/u/0/selfsched?sstoken=UUljZjZTQVBhYkdBfGRlZmF1bHR8NGFkMDk2YmNhNzI1OWQxNDhjYWRlZmVkNWEyMzlmYjU"
+						alt="Ada's Team Appointment Booking Center"
+						target="_blank"
+						rel="noreferrer"
+					>
+						<span className="pr-2 text-lg">
+							<FaCalendarPlus />
+						</span>
+						Book Online Appointments
+					</a>
+				</div>
 			</section>
 
 			{sponsors[0] && (
