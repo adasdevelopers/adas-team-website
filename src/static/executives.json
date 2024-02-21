@@ -1,101 +1,66 @@
 [
 	{
 		"role": "President",
-		"name": "Nadeen Mohamed",
-		"description": "As president, my responsibilities include managing the general executives, setting a strategic direction for Ada's Team, creating meeting agendas, and more. In my free time, I like to solve puzzles, read fiction novels, create apps and take naps, rewatch the same 6 shows, and occasionally woodwork. If you'd like to see Ada's Team host an event or have any other suggestions, feel free to reach out!",
+		"name": "Mark Maligalig",
+		"description": "Hi! As president, my role is to lead our team in our various initiatives and events. If you’d like to learn more about this role or the group, feel free to contact me!",
 		"contact": {
-			"LinkedIn": "https://www.linkedin.com/in/nadeenmohamed/",
-			"Github": "https://github.com/nadeensami",
-			"Other": "mailto:nadeen@ualberta.ca"
+			"LinkedIn": "https://www.linkedin.com/in/mark-maligalig/",
+			"Github": "https://github.com/mark8m",
+			"Other": "mailto:maligali@ualberta.ca"
 		},
-		"image": "https://firebasestorage.googleapis.com/v0/b/adas-website-345a1.appspot.com/o/Executive%20Images%2FNadeen.png?alt=media&token=5407ff7b-1f71-4886-9813-761199bd9887"
+		"image": "/Execs/MarkMaligalig.jpg"
 	},
 	{
 		"role": "VP Administration",
-		"name": "Della Humanita",
-		"description": "As your VP Administration, I am responsible for recording the club's meeting minutes and maintaining internal communication within the executive team and our many committees. In my free time, I love reading psychological thriller novels and watching feel-good TV shows while knitting my next pair of socks.",
+		"name": "Saba Gul",
+		"description": "As VP Admin, I support the team by maintaining internal communication, coordinating workshops, and am a part of many initiatives. In my downtime, I enjoy playing sudoku and listening to podcasts :)",
 		"contact": {
-			"Github": "https://github.com/dellahumanita",
-			"LinkedIn": "https://www.linkedin.com/in/della-humanita/",
-			"Other": "mailto:humanita@ualberta.ca"
+			"Github": "https://github.com/s-gul",
+			"Other": "mailto:gul@ualberta.ca"
 		},
-		"image": "https://firebasestorage.googleapis.com/v0/b/adas-website-345a1.appspot.com/o/Executive%20Images%2FDellaHumanita.jpg?alt=media&token=7fe745a1-ef7d-4d3d-9162-2340f4f5beb4"
+		"image": "/Execs/Saba_Gul.jpg"
 	},
 	{
 		"role": "VP Academics",
-		"name": "Elizabeth “Lizzy” Barron",
-		"description": "As VP Academic my role is to facilitate the different academic support initiatives Ada’s Team offers, like Ada’s Students, and to advocate to the department on behalf of students. If there’s something you’d like me to bring up to better your experience in CS please reach out and let me know! My hobbies include listening to podcasts and reading many books simultaneously.",
+		"name": "Khushi Shah",
+		"description": "As VP Academic my role is to facilitate the different academic support initiatives Ada’s Team offers, like Ada’s Students, and to advocate to the department on behalf of students. If there’s something you’d like me to bring up to better your experience in CS please reach out and let me know! My hobbies include listening to music and watching Modern Family!",
 		"contact": {
-			"Github": "",
-			"Other": "mailto:ebarron@ualberta.ca",
-			"LinkedIn": "https://www.linkedin.com/in/elizabeth-k-barron/"
+			"Other": "mailto:khushi3@ualberta.ca",
+			"LinkedIn": "www.linkedin.com/in/khushishah310"
 		},
-		"image": "https://firebasestorage.googleapis.com/v0/b/adas-website-345a1.appspot.com/o/Executive%20Images%2FLizzy.png?alt=media&token=1e77d28d-9eef-46b7-8d7a-b90e839b0f2e"
-	},
-	{
-		"role": "VP Finance",
-		"name": "Alishbah Farooq",
-		"description": "My role as VP Finance is to handle all the financial aspects of the group! I track all the spending, ensuring it’s on target with our budget, and manage any reimbursements. I am currently in my 3rd year as a Mathematics major with a Computing Science minor. And when I’m not doing work I enjoy reading and watching the Harry Potter movies!",
-		"contact": {
-			"Github": "https://github.com/afaro4",
-			"LinkedIn": "http://www.linkedin.com/in/alishbah",
-			"Other": "mailto:alishbah@ualberta.ca"
-		},
-		"image": "https://firebasestorage.googleapis.com/v0/b/adas-website-345a1.appspot.com/o/Executive%20Images%2FAlishbah.png?alt=media&token=3e494324-eed0-4e69-8198-ef35a1836e14"
-	},
-	{
-		"role": "VP Digital Media",
-		"name": "Helen Aquino",
-		"description": "As your VP Digital Media, I'm in charge of Ada's Team's online presence and our overall brand identity! I manage the club's social media accounts and create our promotional posters. If you reach out to us on our social media, I'll most likely be the one to respond, so feel free to say hi! In my free time, I like to sing in choirs (or wherever people will tolerate it), watch anime, and rearrange my room décor for the umpteenth time.",
-		"contact": {
-			"Other": "mailto:haquino@ualberta.ca",
-			"Github": "https://github.com/aqueeno",
-			"LinkedIn": "https://www.linkedin.com/in/helenaquino/"
-		},
-		"image": "https://firebasestorage.googleapis.com/v0/b/adas-website-345a1.appspot.com/o/Executive%20Images%2FHelen.png?alt=media&token=90569a19-fa18-4628-b6dd-da141a6ad5a3"
+		"image": "/Execs/Khushi.jpg"
 	},
 	{
 		"role": "VP Communications",
-		"name": "Grace Mullane",
-		"description": "As VP Communications, I am responsible for tracking memberships, replying to emails and collaborating with VP Digital Media in making posters and advertising events. I am passionate about math and using CS to improve our quality of life. When I am not in school, I love playing sports and enjoying a London fog with a friend! ",
+		"name": "MacKenzie Luong",
+		"description": "As VP Communications I handle promoting our events via many platforms such as our Newsletter and Discord server and am the main contact of our email. In my free time I enjoy gaming (currently in my Terraria phase), drawing, and beadwork!",
 		"contact": {
-			"Github": "",
-			"LinkedIn": "http://www.linkedin.com/in/gracemullane",
-			"Other": "mailto:mullane@ualberta.ca"
+			"Github": "https://github.com/MacKenzieLuong",
+			"LinkedIn": "https://www.linkedin.com/in/mackenzie-luong/",
+			"Other": "mailto:mackenz3@ualberta.ca"
 		},
-		"image": "https://firebasestorage.googleapis.com/v0/b/adas-website-345a1.appspot.com/o/Executive%20Images%2FGraceMullaneHeadshot.jpg?alt=media&token=927db6a5-ef5a-42fc-b15f-2697e483047e"
-	},
-	{
-		"role": "VP Industry Outreach",
-		"name": "Katie Lin",
-		"description": "My role as the VP of Industry Outreach is to bring onboard as many companies and industry professionals to campus and introduce/connect them with our talented students. I like watching movies, reading about philosophy, and dabbling in filmmaking.",
-		"contact": {
-			"LinkedIn": "https://www.linkedin.com/in/katie-c-lin/",
-			"Other": "mailto:chiachen@ualberta.ca",
-			"Github": "https://github.com/katielin42"
-		},
-		"image": "https://firebasestorage.googleapis.com/v0/b/adas-website-345a1.appspot.com/o/Executive%20Images%2FKatie.png?alt=media&token=d50a2e36-fef5-436a-8785-15dcfdfeb836"
-	},
-	{
-		"role": "VP Campus Outreach",
-		"name": "Justine Ventura",
-		"description": "As VP Campus Outreach, I liaise with other campus groups and local organizations who have a similar mission to Ada’s Team. I also promote the club to the greater student body through university events. I enjoy cooking/baking, playing the guitar, and watching sitcoms :)",
-		"contact": {
-			"Github": "https://github.com/j-vent",
-			"Other": "mailto:linnrose@ualberta.ca",
-			"LinkedIn": "https://www.linkedin.com/in/j-vent/"
-		},
-		"image": "https://firebasestorage.googleapis.com/v0/b/adas-website-345a1.appspot.com/o/Executive%20Images%2FJustine.png?alt=media&token=b87654d5-61c4-4383-90c8-ff3dd71b11fc"
+		"image": "/Execs/MacKenzieLuong.jpg"
 	},
 	{
 		"role": "VP Conference Relations",
-		"name": "Aniket Mishra",
-		"description": "As VP Conference Relations, I am responsible for hosting UAlberta events at conferences such as CAN-CWIC. In my spare time, I enjoy playing video games with my friends and binge-watching Netflix shows.",
+		"name": "Bhavnoor Kaur",
+		"description": " As the VP Conference - Relations, I work with our Conference Team to orchestrate and oversee UofA’s participation in conferences like Grace Hopper Celebration and CAN-CWiC. Outside school and Work, I love to paint and am also involved with multiple cultural clubs on campus.",
 		"contact": {
-			"Github": "https://github.com/iAniket23",
-			"LinkedIn": "http://www.linkedin.com/in/ianiket23",
-			"Other": "mailto:mishra2@ualberta.ca"
+			"Other": "mailto:bkaur@ualberta.ca",
+			"Github": "https://github.com/Bhavnoor-Kaur",
+			"LinkedIn": "https://www.linkedin.com/in/bhavnoor-kaur"
 		},
-		"image": "https://firebasestorage.googleapis.com/v0/b/adas-website-345a1.appspot.com/o/Executive%20Images%2FAniket.png?alt=media&token=9942fdc7-4d4f-4df2-a168-0d5ae6ac93e0"
+		"image": "/Execs/BhavnoorKaur.jpeg"
+	},
+	{
+		"role": "VP Conference Operations",
+		"name": "Frances Igwe",
+		"description": "As VP Conference - Operations, I provide support to the Conference Team in managing logistics and ensuring our attendance at major conference events is approved by the U of A. In my free time, I enjoy reading fantasy and watching TV shows.",
+		"contact": {
+			"Github": "https://github.com/IEfrances",
+			"LinkedIn": "https://www.linkedin.com/in/frances-i-384014229/",
+			"Other": "mailto:figwe@ualberta.ca"
+		},
+		"image": "/Execs/Frances.jpg"
 	}
 ]

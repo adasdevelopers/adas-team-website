@@ -87,11 +87,11 @@ const About = () => {
 				</div>
 			</section>
 
-			{/* Executive information from Firebase */}
+			{/* Executive information */}
 			<section id="executive-team">
 				<div className="divider-thick mt-16 mb-8" aria-hidden />
 				<h2>MEET THE TEAM</h2>
-				<p className="font-title text-pink text-2xl mb-8">2021-2022</p>
+				<p className="font-title text-pink text-2xl mb-8">2023-2024</p>
 
 				<div>
 					{executives &&
