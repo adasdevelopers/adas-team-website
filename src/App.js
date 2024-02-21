@@ -13,7 +13,7 @@ import JobBoard from "./pages/JobBoard";
 import Join from "./pages/Join";
 
 // Import React libraries
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { HashRouter as Router, Switch, Route } from "react-router-dom";
 import "animate.css/animate.min.css";
 
 /**
