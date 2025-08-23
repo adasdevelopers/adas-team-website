@@ -1,4 +1,4 @@
-import Typist from "react-typist";
+import Typewriter from 'typewriter-effect';
 
 const Header = ({ title, subtitle, additional, homepage }) => {
 	return (
@@ -14,10 +14,19 @@ const Header = ({ title, subtitle, additional, homepage }) => {
 			</h1>
 
 			<p className="font-body text-left text-lg text-black font-normal md:text-center lg:text-left italic ">
-				<Typist avgTypingDelay={40} stdTypingDelay={0}>
-					<Typist.Delay ms={800} />
-					{subtitle}
-				</Typist>
+				<Typewriter
+					onInit={(typewriter) => {
+						typewriter
+							.pauseFor(800)  // Equivalent to Typist.Delay ms={800}
+							.typeString(subtitle)
+							.start();
+					}}
+					options={{
+						delay: 40,  // Equivalent to avgTypingDelay={40}
+						deleteSpeed: 40,
+						cursor: '|'  // You can customize or remove the cursor
+					}}
+				/>
 			</p>
 
 			{additional && (

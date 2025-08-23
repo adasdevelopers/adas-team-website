@@ -1,6 +1,6 @@
 // Import components
 import Header from "../components/Header";
-import EventsCalendar from "../components/EventsCalendar";
+// import EventsCalendar from "../components/EventsCalendar";
 
 // Import assets
 import events_image from "../assets/img/PageHeaders/events.svg";
@@ -35,9 +35,9 @@ const Events = () => {
 			</title>
 
 			{/* Calendar */}
-			<section id="calendar" className="md:m-20 md:mt-24 sm:m-8 lg:mx-8">
+			{/* <section id="calendar" className="md:m-20 md:mt-24 sm:m-8 lg:mx-8">
 				<EventsCalendar />
-			</section>
+			</section> */}
 
 			<section id="event-roadmap" className="mt-16 flex flex-col max-w-6xl mx-auto ">
 				<div className="divider-thick my-10" aria-hidden />

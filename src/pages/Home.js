@@ -42,7 +42,7 @@ const Home = () => {
 				>
 					<Header
 						title="ADA'S TEAM"
-						subtitle="Promoting diversity in STEAM with an emphasis on technology."
+						subtitle="Promoting diversity and inclusivity in technology."
 						homepage
 					/>
 					{/* Arrow */}
@@ -64,12 +64,6 @@ const Home = () => {
 
 			<section id="home-information" className="bg-black w-full py-20">
 				<div className="max-w-4xl mx-8 md:mx-24 lg:mx-64 xl:mx-auto">
-					<div data-aos="fade-right" data-aos-duration="500" data-aos-easing="ease-in-sine">
-						<h2 className="text-2xl font-title font-blue">COVID 19 UPDATE</h2>
-						<p className="font-body font-light text-white">
-							Due to COVID-19, all Ada's Team events can be assumed to operate in a virtual manner
-						</p>
-					</div>
 					<div className="divider-thick my-6" aria-hidden />
 					<div data-aos="fade-left" data-aos-duration="500" data-aos-easing="ease-in-sine">
 						<h2 className="text-2xl font-title mb-4">TREATY 6 ACKNOWLEDGEMENT</h2>
