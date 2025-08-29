@@ -26,7 +26,7 @@ const NavigationLinks = ({ footer }) => {
 		: "text-sm text-center last:mr-0 lg:text-right lg:flex-grow lg:justify-between lg:pl-0";
 
 	const liStyle =
-		"block mt-4 text-teal-100 text-md font-extralight font-title lg:inline-block lg:mt-0 " +
+		"block mt-4 text-black text-md font-extralight font-title lg:inline-block lg:mt-0 " +
 		(footer ? "lg:mr-6" : "lg:ml-12");
 
 	const NavigationLink = ({ title, link }) => (

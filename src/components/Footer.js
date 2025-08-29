@@ -1,6 +1,6 @@
 // Import components
 import SocialMedia from "./SocialMedia";
-import NavigationLinks from "./NavigationLinks";
+import NavigationLinks from "./NavigationFooter";
 
 /**
  * Displays the footer without navigation
