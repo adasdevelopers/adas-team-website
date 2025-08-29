@@ -11,16 +11,20 @@ const Footer = () => {
 		<p id="address" className={gridStyle}>
 			<b>Our Office Location</b>
 			<br />
-			CSC 1-32
+			UComms 2-136
 			<br />
 			<br />
 			<b>Address</b>
 			<br />
-			Computing Science Centre (CSC)
+			Ada's Team
 			<br />
-			8900 114 St NW
+			2-136 University Commons
 			<br />
-			Edmonton, AB T6G 2S4
+			11308 - 89 Ave NW
+			<br />
+			Edmonton, AB T6G 2N8
+			<br />
+			Canada
 		</p>
 	);
 	return (
@@ -38,7 +42,7 @@ const Footer = () => {
 					</div>
 				</div>
 				<div className="divider-verythin my-4" aria-hidden />
-				<p>© Copyright 2022 Ada's Team</p>
+				<p>© Copyright 2025 Ada's Team</p>
 			</div>
 		</footer>
 	);
