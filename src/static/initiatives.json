@@ -1,18 +1,16 @@
 [
 	{
-		"name": "Ada's Developers",
+		"name": "Ada's Conferences",
 		"contact": {
-			"instagram": "https://www.instagram.com/adasdevelopers/",
-			"email": "mailto:adasdevelopers@gmail.com",
-			"other": "http://tinyurl.com/y5n3vjxv"
+			"email": "mailto:adasteam@ualberta.ca"
 		},
-		"image": "https://firebasestorage.googleapis.com/v0/b/adas-website-345a1.appspot.com/o/Initiative%20Images%2Fadas_developers.png?alt=media&token=b8a08a65-bbda-4335-8dbb-472425b521df",
-		"description": "Open-source technical opportunities within an agile team to prepare students for entering the tech industry."
+		"image": "https://firebasestorage.googleapis.com/v0/b/adas-website-345a1.appspot.com/o/Initiative%20Images%2Fadas_conferences.png?alt=media&token=e77950a3-3b1a-4356-8a9b-b71076ff5d87",
+		"description": "Providing fully-funded opportunities for students to attend conferences representing Ada's Team."
 	},
 	{
 		"name": "Ada's Students",
 		"contact": {
-			"slack": "https://join.slack.com/t/adasstudents/shared_invite/zt-rxka4nnk-Ox~fBNx2XgXkU4gk9TLQfw",
+			"discord": "https://discord.gg/utuPjhW",
 			"email": "mailto:adasteam@ualberta.ca"
 		},
 		"image": "https://firebasestorage.googleapis.com/v0/b/adas-website-345a1.appspot.com/o/Initiative%20Images%2Fadas_students.png?alt=media&token=66f0ac7a-b7c8-49a1-bbc3-54e9a07f21d4",
@@ -21,28 +19,17 @@
 	{
 		"name": "Ada's Mentors",
 		"contact": {
-			"email": "mailto:adasmentors@gmail.com",
-			"instagram": "https://www.instagram.com/adasmentors/"
-		},
-		"image": "https://firebasestorage.googleapis.com/v0/b/adas-website-345a1.appspot.com/o/Initiative%20Images%2Fadas_mentors.png?alt=media&token=127e7c10-cfa2-4061-b05b-2e3bc4bd57d9",
-		"description": "Mentoring underprivileged high school students lacking the confidence and exposure to university."
-	},
-	{
-		"name": "Ada's Podcast",
-		"contact": {
-			"other": "https://anchor.fm/adas-podcast",
 			"email": "mailto:adasteam@ualberta.ca"
 		},
-		"image": "https://firebasestorage.googleapis.com/v0/b/adas-website-345a1.appspot.com/o/Initiative%20Images%2Fadas_podcast.png?alt=media&token=7d0acb44-71f4-4dc2-a75b-6a202c095bb3",
-		"description": "A series aimed at enriching the experiences of university students amidst the current COVID-19 pandemic."
+		"image": "https://firebasestorage.googleapis.com/v0/b/adas-website-345a1.appspot.com/o/Initiative%20Images%2Fadas_mentors.png?alt=media&token=127e7c10-cfa2-4061-b05b-2e3bc4bd57d9",
+		"description": "Supporting students’ academic and career growth through mentorship with industry professionals and upper-year students."
 	},
 	{
-		"name": "Ada's Conferences",
+		"name": "Ada's Developers",
 		"contact": {
-			"instagram": "https://www.instagram.com/adasconferences/",
-			"email": "mailto:adasconferences@gmail.com"
+			"email": "mailto:adasteam@ualberta.ca"
 		},
-		"image": "https://firebasestorage.googleapis.com/v0/b/adas-website-345a1.appspot.com/o/Initiative%20Images%2Fadas_conferences.png?alt=media&token=e77950a3-3b1a-4356-8a9b-b71076ff5d87",
-		"description": "Providing opportunities for students to attend conferences as a team."
+		"image": "https://firebasestorage.googleapis.com/v0/b/adas-website-345a1.appspot.com/o/Initiative%20Images%2Fadas_developers.png?alt=media&token=b8a08a65-bbda-4335-8dbb-472425b521df",
+		"description": "Open-source technical opportunities within an agile team to prepare students for entering the tech industry."
 	}
 ]

@@ -44,11 +44,9 @@ const About = () => {
 				<p className="font-body font-light">
 					At Ada's Team, our goal is to{" "}
 					<span className="font-bold">
-						promote diversity in computing science, games, technology, engineering, and mathematics.
+						promote diversity and inclusivity within technology,
 					</span>{" "}
-					By diversity, we include but are not limited to the following categories: gender, race,
-					ethnicity, religion, ability, sexuality, social class, and any other factor of
-					discrimination or minority group.
+					empowering women, LGBTQ+, people with disabilities, and other historically underrepresented minorities within Computer Science, Software Engineering, and related fields.
 				</p>
 
 				<p className="font-body mt-4 font-bold">
@@ -67,12 +65,11 @@ const About = () => {
 				{/* Initiative information */}
 				<p className="font-body italic text-sm mb-20">
 					Ada's Team hosts many initiatives that help our members thrive academically, socially, and
-					professionally. All of our initiatives have their own extraordinary organizing teams, even
-					though they are all under the umbrella of Ada's Team!
+					professionally!
 				</p>
 
 				{/* Initiative grid */}
-
+				{/* TODO: Update Conference Adabot image */}
 				<div className="grid grid-cols-1 md:grid-cols-2 gap-x-36 gap-y-10">
 					{initiatives &&
 						initiatives.map(({ name, description, contact, image }) => (
@@ -91,7 +88,7 @@ const About = () => {
 			<section id="executive-team">
 				<div className="divider-thick mt-16 mb-8" aria-hidden />
 				<h2>MEET THE TEAM</h2>
-				<p className="font-title text-pink text-2xl mb-8">2023-2024</p>
+				<p className="font-title text-pink text-2xl mb-8">2025-2026</p>
 
 				<div>
 					{executives &&
@@ -186,6 +183,12 @@ const Initiative = ({ name, image, description, contact }) => (
 			{contact["slack"] && (
 				<a href={contact["slack"]} className="text-3xl" rel="noreferrer" target="_blank">
 					<FontAwesomeIcon icon={["fab", "slack"]} />
+				</a>
+			)}
+
+			{contact["discord"] && (
+				<a href={contact["discord"]} className="text-3xl" rel="noreferrer" target="_blank">
+					<FontAwesomeIcon icon={["fab", "discord"]} />
 				</a>
 			)}
 
