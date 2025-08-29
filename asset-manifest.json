@@ -1,35 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.c2c2e29f.chunk.css",
-    "main.js": "/static/js/main.6bbc6569.chunk.js",
-    "main.js.map": "/static/js/main.6bbc6569.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.c6fef15d.js",
-    "runtime-main.js.map": "/static/js/runtime-main.c6fef15d.js.map",
-    "static/css/2.c13d9ee7.chunk.css": "/static/css/2.c13d9ee7.chunk.css",
-    "static/js/2.f7ea0ad5.chunk.js": "/static/js/2.f7ea0ad5.chunk.js",
-    "static/js/2.f7ea0ad5.chunk.js.map": "/static/js/2.f7ea0ad5.chunk.js.map",
-    "static/js/3.4304078d.chunk.js": "/static/js/3.4304078d.chunk.js",
-    "static/js/3.4304078d.chunk.js.map": "/static/js/3.4304078d.chunk.js.map",
+    "main.css": "/static/css/main.3cb8d12c.css",
+    "main.js": "/static/js/main.e409499a.js",
+    "static/js/422.ccc6a229.chunk.js": "/static/js/422.ccc6a229.chunk.js",
+    "static/media/jobboard.svg": "/static/media/jobboard.0dacfb36087154d76b5f0b86db3fa151.svg",
+    "static/media/events.svg": "/static/media/events.c2f6282e23a9810744bfb7d76e0d7b6d.svg",
+    "static/media/adas_students_icon.png": "/static/media/adas_students_icon.e41f17f6aeea27870a90.png",
+    "static/media/ada-home-bot.png": "/static/media/ada-home-bot.5838c72a75fc76f0f63a.png",
+    "static/media/faq.svg": "/static/media/faq.b50b63b949b1535bfe4383720fc7e0b1.svg",
+    "static/media/about.svg": "/static/media/about.91b58831bdf2bfd5143ddf60dd2b135c.svg",
+    "static/media/join.svg": "/static/media/join.8c3245b519f526a0ad7a1831aced7ee4.svg",
+    "static/media/connect.svg": "/static/media/connect.0f7363e62b37041de44a5af6230e70b5.svg",
+    "static/media/icon_head.png": "/static/media/icon_head.7eefefa34f3b1d320cd6.png",
     "index.html": "/index.html",
-    "static/css/2.c13d9ee7.chunk.css.map": "/static/css/2.c13d9ee7.chunk.css.map",
-    "static/css/main.c2c2e29f.chunk.css.map": "/static/css/main.c2c2e29f.chunk.css.map",
-    "static/js/2.f7ea0ad5.chunk.js.LICENSE.txt": "/static/js/2.f7ea0ad5.chunk.js.LICENSE.txt",
-    "static/media/about.91b58831.svg": "/static/media/about.91b58831.svg",
-    "static/media/ada-home-bot.5838c72a.png": "/static/media/ada-home-bot.5838c72a.png",
-    "static/media/adas_students_icon.e41f17f6.png": "/static/media/adas_students_icon.e41f17f6.png",
-    "static/media/blank.03f4b2a1.svg": "/static/media/blank.03f4b2a1.svg",
-    "static/media/connect.0f7363e6.svg": "/static/media/connect.0f7363e6.svg",
-    "static/media/events.c2f6282e.svg": "/static/media/events.c2f6282e.svg",
-    "static/media/faq.b50b63b9.svg": "/static/media/faq.b50b63b9.svg",
-    "static/media/icon_head.7eefefa3.png": "/static/media/icon_head.7eefefa3.png",
-    "static/media/jobboard.0dacfb36.svg": "/static/media/jobboard.0dacfb36.svg",
-    "static/media/join.8c3245b5.svg": "/static/media/join.8c3245b5.svg"
+    "static/media/blank.svg": "/static/media/blank.03f4b2a1ea1dba2e3014a99a07952b7e.svg",
+    "main.3cb8d12c.css.map": "/static/css/main.3cb8d12c.css.map",
+    "main.e409499a.js.map": "/static/js/main.e409499a.js.map",
+    "422.ccc6a229.chunk.js.map": "/static/js/422.ccc6a229.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.c6fef15d.js",
-    "static/css/2.c13d9ee7.chunk.css",
-    "static/js/2.f7ea0ad5.chunk.js",
-    "static/css/main.c2c2e29f.chunk.css",
-    "static/js/main.6bbc6569.chunk.js"
+    "static/css/main.3cb8d12c.css",
+    "static/js/main.e409499a.js"
   ]
 }
