@@ -1,6 +1,5 @@
 // Import libraries
 import { useEffect } from "react";
-import { FaSlack, FaCalendarWeek, FaCalendarPlus } from "react-icons/fa";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
