@@ -3,7 +3,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import { faMap } from "@fortawesome/free-solid-svg-icons";
-import { FaSlack, FaCalendarWeek, FaCalendarPlus } from "react-icons/fa";
 
 // Import components
 import JoinForm from "../components/JoinForm";
@@ -11,7 +10,7 @@ import Header from "../components/Header";
 
 // Import assets
 import main_icon from "../assets/img/AdaBot/icon_head.png";
-import student_icon from "../assets/img/AdaBot/adas_students_icon.png";
+// import student_icon from "../assets/img/AdaBot/adas_students_icon.png";
 import join_image from "../assets/img/PageHeaders/join.svg";
 
 /**
