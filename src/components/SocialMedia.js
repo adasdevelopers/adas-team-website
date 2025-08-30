@@ -12,14 +12,8 @@ const SocialMedia = ({ gridStyle }) => {
 	library.add(fab, faEnvelope); //importing brand icons for social-media
 
 	const socialMedia = [
-		{ name: "Facebook", link: "https://www.facebook.com/AdasTeamFB/", icon: ["fab", "facebook"] },
-		{ name: "Twitter", link: "https://twitter.com/adas_team?lang=en", icon: ["fab", "twitter"] },
 		{ name: "Instagram", link: "https://www.instagram.com/adas_team/", icon: ["fab", "instagram"] },
-		{
-			name: "LinkedIn",
-			link: "https://www.linkedin.com/company/adas-team/",
-			icon: ["fab", "linkedin"],
-		},
+		{ name: "LinkedIn", link: "https://www.linkedin.com/company/adas-team/", icon: ["fab", "linkedin"] },
 		{ name: "GitHub", link: "https://github.com/adas-team", icon: ["fab", "github"] },
 		{ name: "Email", link: "mailto:adasteam@ualberta.ca", icon: faEnvelope },
 	];

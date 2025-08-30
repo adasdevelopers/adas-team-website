@@ -1,6 +1,6 @@
 // Import components
 import SocialMedia from "./SocialMedia";
-import NavigationLinks from "./NavigationLinks";
+import NavigationLinks from "./NavigationFooter";
 
 /**
  * Displays the footer without navigation
@@ -11,20 +11,16 @@ const Footer = () => {
 		<p id="address" className={gridStyle}>
 			<b>Our Office Location</b>
 			<br />
-			UComms 2-136
+			University Commons 2-136
 			<br />
 			<br />
 			<b>Address</b>
 			<br />
-			Ada's Team
+			University Commons (UCOMMS)		
 			<br />
-			2-136 University Commons
+			11308 89 Avenue NW
 			<br />
-			11308 - 89 Ave NW
-			<br />
-			Edmonton, AB T6G 2N8
-			<br />
-			Canada
+			Edmonton, Alberta, Canada T6G 2N8
 		</p>
 	);
 	return (

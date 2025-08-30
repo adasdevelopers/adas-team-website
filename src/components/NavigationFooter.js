@@ -31,7 +31,7 @@ function NavigationLinks() {
 const NavigationLink = ({ title, link }) => (
 	<li
 		key={title}
-		className="block mt-4  text-teal-100 text-md font-extralight font-title lg:inline-block lg:mt-0 lg:mr-6"
+		className="block mt-4  text-white text-md font-extralight font-title lg:inline-block lg:mt-0 lg:mr-6"
 	>
 		<NavLink
 			to={link}
