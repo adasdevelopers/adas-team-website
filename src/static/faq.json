@@ -1,7 +1,7 @@
 [
 	{
 		"question": "What is Ada's Team?",
-		"answer": "Within the Computer Science Department at the University of Alberta, we're a student group that promotes diversity in STEAM with an emphasis on technology."
+		"answer": "Within the Computer Science Department at the University of Alberta, we're a student group that promotes diversity and inclusivity in technology."
 	},
 	{
 		"question": "Why are we called Ada's Team?",
@@ -9,10 +9,14 @@
 	},
 	{
 		"question": "What type of events does Ada's Team hold?",
-		"answer": "From outreach events to high school students, funding university students to attend international conferences, and hosting technical workshops to equip students with industry skills, we do it all! For more details on our events, you can check out our Events page that contains our roadmap and our calendar. Also, please make sure to join our mailing list to receive monthly newsletters containing details on our events and other opportunities. Please note that all our events will operate in a virtual manner via Zoom or Google Meet due to COVID-19."
+		"answer": "From outreach events, funding university students to attend international conferences, and hosting technical workshops to equip students with industry skills, we do it all! For more details on our events, you can check out our Events page that contains our roadmap and our calendar. Also, please make sure to join our mailing list to receive monthly newsletters containing details on our events and other opportunities."
+	},
+		{
+		"question": "How do I become a member of Ada's Team?",
+		"answer": "It's free and easy! You can navigate to our Memberships Page for more details on how to sign up."
 	},
 	{
-		"question": "How do I get involved, help or volunteer with Ada's Team?",
+		"question": "How do I get more involved with Ada's Team?",
 		"answer": "Great question - join our mailing list! It's the best way to stay up-to-date on all our events and take advantage of opportunities we're offering. You can also follow us on our socials to receive reminders from our posts and get a closer look at our events. All our socials have been linked in the footer of the page! Throughout the year, we are always looking for volunteers to help out with our free tutoring service, outreach events, initiatives, and technical workshops. Please send us an email if you would like to help!"
 	},
 	{
