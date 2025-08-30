@@ -29,6 +29,8 @@ const Events = () => {
 				<Header
 					title="Events"
 					subtitle="Learn more about our upcoming events."
+					additional="Due to COVID-19, please note that all of our events 
+						will operate in a virtually via Zoom or Google Meet."
 				/>
 			</title>
 

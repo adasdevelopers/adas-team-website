@@ -2,7 +2,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
-import { faMap } from "@fortawesome/free-solid-svg-icons";
 import { FaSlack, FaCalendarWeek, FaCalendarPlus } from "react-icons/fa";
 
 // Import components
@@ -22,7 +21,6 @@ import join_image from "../assets/img/PageHeaders/join.svg";
 const Join = () => {
 	// importing brand icons
 	library.add(fab);
-	library.add(fab, faMap);
 
 	return (
 		<main id="main-content" className="page max-w-6xl mx-auto animate-fade-in-down">
@@ -49,7 +47,7 @@ const Join = () => {
 
 				<h2 className="title">JOIN OUR MAILING LIST</h2>
 
-				<p className="my-5 font-body">
+				<p className="my-5">
 					Subscribe to our mailing list to receive updates on events, opportunities, scholarships,
 					and more!
 				</p>
@@ -62,7 +60,6 @@ const Join = () => {
 				<h2 className="title mb-8">JOIN OUR NETWORKS</h2>
 
 				{/* Ada's Students Slack Invite*/}
-				{/*
 				<div id="slack-invite" className="grid grid-cols-footer">
 					<img src={student_icon} alt="Ada's Team icon" className="hidden lg:block w-36 pr-9" />
 
@@ -132,61 +129,36 @@ const Join = () => {
 						</div>
 					</article>
 				</div>
-				*/}
 
-				{/* Ada's Base (Clubroom) */}
-				<div id="club-room" className="grid grid-cols-footer">
+				{/* Ada's Base Discord Invite*/}
+				<div id="discord-invite" className="grid grid-cols-footer">
 					<img src={main_icon} alt="Ada's Team icon" className="hidden lg:block w-36 pr-4" />
 
 					<article>
 						<h4 className="uppercase lg:normal-case">Ada's Base</h4>
 
 						<p className="block lg:hidden py-3 font-body font-light" aria-hidden>
-							Ada's Base, our club room in UCOMMS 2-136, is a welcoming space to study, relax, and connect with peers. Members are free to drop by whenever it’s open to meet others and hang out with the team.
+							Join the Ada's Base Discord server: an online community of students that share job
+							opportunities and hackathons, review resumes, and hold each other accountable with
+							virtual coworking sessions.
 						</p>
 
 						<p className="hidden lg:block py-3 font-body font-light">
-							Ada's Base, our club room in UCOMMS 2-136, is a welcoming space to study, relax, and connect with peers. Members are free to drop by whenever it’s open to meet others and hang out with the team.
+							Pre-COVID, students were able to drop-by anytime to our room and connect with other
+							students. However, that casual, supportive atmosphere has now been hampered due to the
+							virtual environment.
 						</p>
+
+						<p className="hidden lg:block py-3 font-body font-light">
+							To welcome new students and help us all stay connected during COVID-19, join the Ada's
+							Base Discord server! Join a community of students that share job opportunities and
+							hackathons, review resumes, host jackbox sessions, and hold you accountable during
+							virtual coworking sessions.
+						</p>
+
 						<a
 							className="inline-block w-full md:w-max flex justify-center 
 								items-center self-center py-3 px-10 my-4 bg-blue text-white 
-								font-semibold rounded-lg md:self-start hover:text-white hover:bg-pink"
-							href="https://www.ualberta.ca/en/maps.html?l=53.52331021245194,-113.524151504805&z=17&campus=north_campus&b=dp"
-							alt="Ada's Base Directions"
-							target="_blank"
-							rel="noreferrer"
-						>
-							<span className="pr-2 text-lg">
-								<FontAwesomeIcon icon={faMap} />
-							</span>
-							Directions to Ada's Base
-						</a>
-					</article>
-				</div>
-
-				{/* Ada's Team Discord Invite*/}
-				<div id="discord-invite" className="grid grid-cols-footer">
-					<img src={main_icon} alt="Ada's Team icon" className="hidden lg:block w-36 pr-4" />
-
-					<article>
-						<h4 className="uppercase lg:normal-case">Ada's Team Discord</h4>
-
-						<p className="block lg:hidden py-3 font-body font-light" aria-hidden>
-							Join the Ada's Base Discord server: an online community of students that share job
-							opportunities and hackathons, review resumes, and hold each other accountable with
-							virtual coworking sessions.
-						</p>
-
-						<p className="hidden lg:block py-3 font-body font-light">
-							Join the Ada's Base Discord server: an online community of students that share job
-							opportunities and hackathons, review resumes, and hold each other accountable with
-							virtual coworking sessions.
-						</p>
-
-						<a
-							className="inline-block w-full md:w-max flex justify-center 
-								items-center self-center py-3 px-5 my-4 bg-blue text-white 
 								font-semibold rounded-lg md:self-start hover:text-white hover:bg-pink"
 							href="https://discord.gg/7ZhmzHZjc8"
 							alt="Ada's Team Discord Invite Link"
@@ -196,7 +168,7 @@ const Join = () => {
 							<span className="pr-2 text-lg">
 								<FontAwesomeIcon icon={["fab", "discord"]} />
 							</span>
-							Join the Ada's Team Discord
+							Join Ada's Base
 						</a>
 					</article>
 				</div>

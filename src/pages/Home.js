@@ -85,11 +85,8 @@ const Home = () => {
 				id="join-us-form"
 				className="max-w-6xl mx-8 my-8 md:my-24 animate-fade-in-down md:mx-16 xl:mx-auto"
 			>
-				<h2 className="title">JOIN OUR MAILING LIST</h2>
-				<p className="my-5 font-body">
-					Subscribe to our mailing list to receive updates on events, opportunities, scholarships,
-					and more!
-				</p>
+				<h2 className="uppercase">Subscribe to our mailing list</h2>
+				<p>Join Ada’s Team and receive updates on events, opportunities, scholarships, and more!</p>
 				<JoinForm />
 			</section>
 
