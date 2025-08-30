@@ -110,11 +110,11 @@ const About = () => {
 
 const Executive = ({ image, role, name, description, contact }) => (
 	<div id="executives" className="blue-rect-shadow p-8 flex flex-col md:flex-row">
-		<div
-			className="executive-image self-center md:mr-8"
-			style={{ backgroundImage: `url(${image})`, backgroundColor: "black" }}
-			alt="executive of Ada's Team"
-		/>
+        <img
+            src={image}
+            alt={`Executive of Ada's Team: ${name}`}
+            className="executive-image self-center md:mr-8 rounded-full w-40 h-40 object-cover bg-black"
+        />
 
 		<div className="flex justify-between flex-col my-2">
 			<div id="executive-information">
