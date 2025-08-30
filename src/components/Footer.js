@@ -11,16 +11,16 @@ const Footer = () => {
 		<p id="address" className={gridStyle}>
 			<b>Our Office Location</b>
 			<br />
-			CSC 1-32
+			University Commons 2-136
 			<br />
 			<br />
 			<b>Address</b>
 			<br />
-			Computing Science Centre (CSC)
+			University Commons (UCOMMS)		
 			<br />
-			8900 114 St NW
+			11308 89 Avenue NW
 			<br />
-			Edmonton, AB T6G 2S4
+			Edmonton, Alberta, Canada T6G 2N8
 		</p>
 	);
 	return (

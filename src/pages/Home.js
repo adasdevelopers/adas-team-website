@@ -90,6 +90,7 @@ const Home = () => {
 				<JoinForm />
 			</section>
 
+			{/*
 			<section
 				id="tutoring"
 				data-aos="fade-in"
@@ -157,7 +158,8 @@ const Home = () => {
 					</a>
 				</div>
 			</section>
-
+			*/}
+			
 			{sponsors[0] && (
 				<section
 					id="sponsors-list"
