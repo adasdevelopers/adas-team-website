@@ -38,7 +38,7 @@ const Footer = () => {
 					</div>
 				</div>
 				<div className="divider-verythin my-4" aria-hidden />
-				<p>© Copyright 2022 Ada's Team</p>
+				<p>© Copyright 2025 Ada's Team</p>
 			</div>
 		</footer>
 	);
