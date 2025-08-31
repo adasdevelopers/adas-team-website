@@ -8,6 +8,7 @@ import { Link } from "react-scroll";
 // Import components
 import JoinForm from "../components/JoinForm";
 import Header from "../components/Header";
+import EmailOctopusEmbed from "../components/EOEmbed";
 
 // Import assets
 import BigBot from "../assets/img/AdaBot/ada-home-bot.png";
@@ -89,7 +90,12 @@ const Home = () => {
 					Subscribe to our mailing list to receive updates on events, opportunities, scholarships,
 					and more!
 				</p>
-				<JoinForm />
+
+				<EmailOctopusEmbed
+					src="https://eocampaign1.com/form/e824a0e6-856c-11f0-9e82-cd73e6c7282d.js"
+					formId="e824a0e6-856c-11f0-9e82-cd73e6c7282d"
+					className="mt-6"
+				/>
 			</section>
 
 			{/*

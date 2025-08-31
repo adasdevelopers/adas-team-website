@@ -7,6 +7,7 @@ import { faMap } from "@fortawesome/free-solid-svg-icons";
 // Import components
 import JoinForm from "../components/JoinForm";
 import Header from "../components/Header";
+import EmailOctopusEmbed from "../components/EOEmbed";
 
 // Import assets
 import main_icon from "../assets/img/AdaBot/icon_head.png";
@@ -53,7 +54,11 @@ const Join = () => {
 					and more!
 				</p>
 
-				<JoinForm />
+				<EmailOctopusEmbed
+					src="https://eocampaign1.com/form/e824a0e6-856c-11f0-9e82-cd73e6c7282d.js"
+					formId="e824a0e6-856c-11f0-9e82-cd73e6c7282d"
+					className="mt-6"
+				/>
 			</section>
 
 			<section id="ada-team-networks">
