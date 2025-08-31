@@ -47,3 +47,7 @@ yarn.lock
 TODO.md
 
 src/tests/__snapshots__/*
+
+# intellij gitignore
+*.iml
+.idea/

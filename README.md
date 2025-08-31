@@ -8,7 +8,7 @@ Run `yarn` or `npm install`
 
 ### To start the development server (localhost:3000)
 
-Run `yarn start` or `npm run`
+Run `yarn start` or `npm start`
 
 ### Common Issues
 
