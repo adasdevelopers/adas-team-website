@@ -37,7 +37,41 @@ const Events = () => {
 				<EventsCalendar />
 			</section> */}
 
-			<section id="event-roadmap" className="mt-16 flex flex-col max-w-6xl mx-auto ">
+			<section id="luma-calendar" className="mt-16 flex flex-col max-w-6xl mx-auto">
+				<div className="divider-thick my-10" aria-hidden />
+				<h2>UPCOMING EVENTS</h2>
+
+				<div 
+					id="luma-embed"
+					style={{
+						position: "relative",
+						width: "100%",
+						height: "500px",
+						boxShadow: "0 2px 8px 0 rgba(63,69,81,0.16)",
+						marginTop: "1.6em",
+						marginBottom: "0.9em",
+						overflow: "hidden",
+						borderRadius: "8px",
+						willChange: "transform",
+					}}
+				>
+					<iframe
+						title="luma events calendar"
+						src="https://lu.ma/embed/calendar/cal-2grODvX83Oc8rfh/events?lt=light"
+						width="100%"
+						height="100%"
+						style={{
+							border: "1px solid #bfcbda88",
+							borderRadius: "4px"
+						}}
+						allowFullScreen=""
+						aria-hidden="false"
+						tabIndex="0"
+					></iframe>
+				</div>
+			</section>
+
+			<section id="event-roadmap" className="mt-16 flex flex-col max-w-6xl mx-auto">
 				<div className="divider-thick my-10" aria-hidden />
 				<h2>EVENT ROADMAP</h2>
 
