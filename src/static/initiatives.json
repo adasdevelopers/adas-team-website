@@ -5,16 +5,17 @@
 			"email": "mailto:adasteam@ualberta.ca"
 		},
 		"image": "https://firebasestorage.googleapis.com/v0/b/adas-website-345a1.appspot.com/o/Initiative%20Images%2Fadas_conferences.png?alt=media&token=e77950a3-3b1a-4356-8a9b-b71076ff5d87",
-		"description": "Providing fully-funded opportunities for students to attend conferences representing Ada's Team."
+		"description": "Providing fully-funded opportunities for students to attend conferences representing Ada's Team, such as the Grace Hopper Celebration, the Canadian Celebration of Women in Computing, or QueerTech Qonference."
 	},
 	{
 		"name": "Ada's Students",
 		"contact": {
 			"discord": "https://discord.gg/utuPjhW",
-			"email": "mailto:adasteam@ualberta.ca"
+			"email": "mailto:adasteam@ualberta.ca",
+			"calendar": "https://calendar.google.com/calendar/embed?src=v9j8ohim8qc5g8af4bfm5409ac%40group.calendar.google.com&ctz=America%2FEdmonton"
 		},
 		"image": "https://firebasestorage.googleapis.com/v0/b/adas-website-345a1.appspot.com/o/Initiative%20Images%2Fadas_students.png?alt=media&token=66f0ac7a-b7c8-49a1-bbc3-54e9a07f21d4",
-		"description": "A collaborative space to organize mini-study groups, tutors, room-sitters, and crash courses."
+		"description": "Get free virtual or in-person tutoring for CMPUT, MATH, and STAT courses. Click the calendar below to view tutor availability or join our discord to ask any questions."
 	},
 	{
 		"name": "Ada's Mentors",

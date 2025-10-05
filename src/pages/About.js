@@ -2,7 +2,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope, faLink } from "@fortawesome/free-solid-svg-icons";
+import { faCalendar, faEnvelope, faLink } from "@fortawesome/free-solid-svg-icons";
 
 // Import components
 import Header from "../components/Header";
@@ -201,6 +201,12 @@ const Initiative = ({ name, image, description, contact }) => (
 			{contact["email"] && (
 				<a href={contact["email"]} className="text-3xl" rel="noreferrer" target="_blank">
 					<FontAwesomeIcon icon={faEnvelope} />
+				</a>
+			)}
+
+			{contact["calendar"] && (
+				<a href={contact["calendar"]} className="text-3xl" rel="noreferrer" target="_blank">
+					<FontAwesomeIcon icon={faCalendar} />
 				</a>
 			)}
 		</div>
