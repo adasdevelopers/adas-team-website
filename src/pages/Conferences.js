@@ -1,11 +1,14 @@
+// Import libraries
+import { Link } from "react-router-dom";
+import ReactMarkdown from "react-markdown";
+
 // Import components
 import Header from "../components/Header";
 
 // Import assets
 import events_image from "../assets/img/PageHeaders/events.svg";
 import conferences from "../static/conferences.json";
-import { Link } from "react-router-dom";
-import ReactMarkdown from "react-markdown";
+import conference_image from "../assets/img/PageHeaders/conference.svg";
 
 
 /**
@@ -23,9 +26,9 @@ const Conferences = () => {
 			>
 				{/* Events image */}
 				<img
-					id="events"
-					src={events_image}
-					alt="people sitting on a sofa"
+					id="conference"
+					src={conference_image}
+					alt="conference speaker"
 					className="hidden md:inline-block w-screen px-16 lg:w-auto lg:px-0 lg:h-72"
 				/>
 
