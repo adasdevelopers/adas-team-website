@@ -5,16 +5,12 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { Link } from "react-scroll";
 
-// Import components
-import JoinForm from "../components/JoinForm";
 import Header from "../components/Header";
-import EmailOctopusEmbed from "../components/EOEmbed";
+import EmailOctopusEmbed from "../components/EmailOctopusEmbed";
 
-// Import assets
 import BigBot from "../assets/img/AdaBot/ada-home-bot.png";
 import { IoIosArrowDown } from "react-icons/io";
 
-// Import static files
 import sponsors from "../static/sponsors.json";
 
 /**
@@ -25,10 +21,10 @@ const Home = () => {
 	// Initialize animations
 	useEffect(() => {
 		AOS.init({
-			easing: "ease", // default easing for AOS animations
-			once: true, // whether animation should happen only once - while scrolling down
-			mirror: false, // whether elements should animate out while scrolling past them
-			anchorPlacement: "top-bottom", // defines which position of the element regarding to window should trigger the animation
+			easing: "ease",
+			once: true, 
+			mirror: false,
+			anchorPlacement: "top-bottom", 
 		});
 	}, []);
 
@@ -89,16 +85,14 @@ const Home = () => {
 				<p className="my-5 font-body">
 					Subscribe to our mailing list to receive updates on events, opportunities, scholarships,
 					and more!
-				</p>
+			</p>
 
-				<EmailOctopusEmbed
-					src="https://eocampaign1.com/form/e824a0e6-856c-11f0-9e82-cd73e6c7282d.js"
-					formId="e824a0e6-856c-11f0-9e82-cd73e6c7282d"
-					className="mt-6"
-				/>
-			</section>
-
-			{/*
+			<EmailOctopusEmbed
+				src="https://eocampaign1.com/form/e824a0e6-856c-11f0-9e82-cd73e6c7282d.js"
+				formId="e824a0e6-856c-11f0-9e82-cd73e6c7282d"
+				className="w-full"
+			/>
+		</section>			{/*
 			<section
 				id="tutoring"
 				data-aos="fade-in"

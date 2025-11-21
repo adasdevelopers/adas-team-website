@@ -5,9 +5,8 @@ import { fab } from "@fortawesome/free-brands-svg-icons";
 import { faMap } from "@fortawesome/free-solid-svg-icons";
 
 // Import components
-import JoinForm from "../components/JoinForm";
 import Header from "../components/Header";
-import EmailOctopusEmbed from "../components/EOEmbed";
+import EmailOctopusEmbed from "../components/EmailOctopusEmbed";
 
 // Import assets
 import main_icon from "../assets/img/AdaBot/icon_head.png";
@@ -52,16 +51,14 @@ const Join = () => {
 				<p className="my-5 font-body">
 					Subscribe to our mailing list to receive updates on events, opportunities, scholarships,
 					and more!
-				</p>
+			</p>
 
-				<EmailOctopusEmbed
-					src="https://eocampaign1.com/form/e824a0e6-856c-11f0-9e82-cd73e6c7282d.js"
-					formId="e824a0e6-856c-11f0-9e82-cd73e6c7282d"
-					className="mt-6"
-				/>
-			</section>
-
-			<section id="ada-team-networks">
+			<EmailOctopusEmbed
+				src="https://eocampaign1.com/form/e824a0e6-856c-11f0-9e82-cd73e6c7282d.js"
+				formId="e824a0e6-856c-11f0-9e82-cd73e6c7282d"
+				className="w-full"
+			/>
+		</section>			<section id="ada-team-networks">
 				<div className="divider-thick my-8" aria-hidden />
 				<h2 className="title mb-8">JOIN OUR NETWORKS</h2>
 
