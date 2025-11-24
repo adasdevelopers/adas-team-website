@@ -2,8 +2,6 @@
 import Header from "../components/Header";
 
 // Import assets
-import events_image from "../assets/img/PageHeaders/events.svg";
-import conferences from "../static/conferences.json";
 
 
 const GHC25 = () => {

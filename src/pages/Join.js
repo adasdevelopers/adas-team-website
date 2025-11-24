@@ -5,7 +5,6 @@ import { fab } from "@fortawesome/free-brands-svg-icons";
 import { faMap } from "@fortawesome/free-solid-svg-icons";
 
 // Import components
-import JoinForm from "../components/JoinForm";
 import Header from "../components/Header";
 
 // Import assets

@@ -82,7 +82,7 @@ const Conference = ({ image, title, description, acronym, slug, testimony_link }
                 
                 <img
                     src={image}
-                    alt={`${title} group photo`}
+                    alt={`${title}`}
                     className="conference-image w-full md:w-[32rem] h-[18rem] object-cover rounded-lg bg-black self-center md:self-start flex-shring-0"
                 />
 

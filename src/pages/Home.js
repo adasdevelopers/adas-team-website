@@ -6,7 +6,6 @@ import "aos/dist/aos.css";
 import { Link } from "react-scroll";
 
 // Import components
-import JoinForm from "../components/JoinForm";
 import Header from "../components/Header";
 
 // Import assets
