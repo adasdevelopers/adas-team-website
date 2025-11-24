@@ -1,21 +1,21 @@
 [
 	{
 		"image": "/Conferences/GHC25.jpg",
-		"title": "Grace Hopper Celebration 2025",
+		"title": "GRACE HOPPER CELEBRATION 2025",
 		"description": "Grace Hopper Celebration (GHC) is the world’s largest gathering of women in tech, with over 30,000+ attendees from across the globe to learn, network, and celebrate their achievements. \n\n**This year, Ada's Team sent a delegation of 12 students to Chicago, Illinois** from November 4th - 7th to attend this inspiring 4 day conference. Attendees explored what it means to be unbound. They connected with companies like NVIDIA, Amazon, and Meta, learned about emerging technologies, and made meaningful connections to support their career growth. They left Chicago with new skills, fresh inspirations, and a stronger belief of their place in technology.",
 		"acronym": "GHC 2025",
         "slug": "ghc25"
 	},
     {
 		"image": "/Conferences/CANCWIC25.jpg",
-		"title": "Canadian Celebration of Women in Computing 2025",
+		"title": "CANADIAN CELEBRATION OF WOMEN IN COMPUTING 2025",
 		"description": "CAN-CWiC is the premiere Canadian computing conference for young women and non-binary people in technology. CAN-CWiC features networking, learning, sharing, and mentoring, and embodies the mission of encouraging curiosity and awareness for the digital innovations that change the community and world around us.\n\nThis year, **Ada's Team sent 20 students to Toronto** from November 7th - 8th. Attendees connected with students, researchers, and industry leaders from across Canada, and explored into research talks, workshops, and a vibrant career fair. They came back with renewed confidence and a stronger sense of belonging in the tech community.",
 		"acronym": "CAN-CWiC 2025",
         "slug": "cancwic25"
 	},
     {
 		"image": "",
-		"title": "QueerTech Qonference 2025",
+		"title": "QUEERTECH QONFERENCE 2025",
 		"description": "QueerTech Qonference is a conference where innovation meets inclusion, and queer brilliance leads the charge into the future of tech. QTQ 2025 is a space to celebrate queer excellence, fuel community-driven change, and center equity in every corner of the tech industry.\n\nAda's Team will be supporting 13 students to attend virtually. This is an upcoming conference, so stay tuned on what our attendees walk away with!",
 		"acronym": "QTQ 2025",
         "slug": "qtq25"

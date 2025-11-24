@@ -94,9 +94,12 @@ const Conference = ({ image, title, description, acronym, slug, testimony_link }
                         <ReactMarkdown>{description}</ReactMarkdown>
                     </p>
                     {internalPath && (
-                    <p className="font-body mt-4 font-bold">
-                        <Link to={internalPath}>  {acronym} Attendee Testimonies</Link>
-                    </p>
+                        <Link 
+                            to={internalPath}
+                            className="w-full md:w-max flex justify-center items-center py-3 px-10 mt-4 bg-blue text-white font-semibold rounded-lg hover:text-white hover:bg-pink"
+                        >
+                            {acronym} ATTENDEE TESTIMONIES
+                        </Link>
                     )}
                     
                     
