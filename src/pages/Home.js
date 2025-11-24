@@ -7,7 +7,7 @@ import { Link } from "react-scroll";
 
 // Import components
 import Header from "../components/Header";
-import JoinForm from "../components/JoinForm";
+import EmailOctopusEmbed from "../components/EmailOctopusEmbed";
 
 import BigBot from "../assets/img/AdaBot/ada-home-bot.png";
 import { IoIosArrowDown } from "react-icons/io";
