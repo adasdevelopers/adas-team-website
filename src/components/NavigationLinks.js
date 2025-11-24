@@ -10,10 +10,11 @@ const NavigationLinks = ({ footer }) => {
 	const pages = [
 		{ title: "Home", link: "/" },
 		{ title: "About", link: "/about" },
-		{ title: "FAQ", link: "/faq" },
 		{ title: "Events", link: "/events" },
-		{ title: "Job Board", link: "/jobboard" },
+		{ title: "Conferences", link: "/conferences"},
+		// { title: "Job Board", link: "/jobboard" },
 		{ title: "Join", link: "/join" },
+		{ title: "FAQ", link: "/faq" },
 		{ title: "Contact", link: "/connect" },
 	];
 

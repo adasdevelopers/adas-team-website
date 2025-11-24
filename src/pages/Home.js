@@ -5,8 +5,9 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { Link } from "react-scroll";
 
+// Import components
 import Header from "../components/Header";
-import EmailOctopusEmbed from "../components/EmailOctopusEmbed";
+import JoinForm from "../components/JoinForm";
 
 import BigBot from "../assets/img/AdaBot/ada-home-bot.png";
 import { IoIosArrowDown } from "react-icons/io";

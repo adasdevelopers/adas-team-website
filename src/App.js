@@ -9,8 +9,12 @@ import About from "./pages/About";
 import Connect from "./pages/Connect";
 import Events from "./pages/Events";
 import FAQ from "./pages/FAQ";
-import JobBoard from "./pages/JobBoard";
+import Conferences from "./pages/Conferences"
 import Join from "./pages/Join";
+
+// Import testimony pages
+import ConferenceTestimony from "./pages/ConferenceTestimony";
+
 
 // Import React libraries
 import { HashRouter as Router, Switch, Route } from "react-router-dom";
@@ -41,8 +45,11 @@ function App() {
 				<Route exact path="/events">
 					<Events />
 				</Route>
-				<Route exact path="/jobboard">
-					<JobBoard />
+				<Route exact path="/conferences">
+					<Conferences />
+				</Route>
+				<Route exact path="/conferences/:slug">
+					<ConferenceTestimony />
 				</Route>
 				<Route exact path="/join">
 					<Join />
