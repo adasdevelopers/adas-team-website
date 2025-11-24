@@ -2,7 +2,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope, faLink } from "@fortawesome/free-solid-svg-icons";
+import { faCalendar, faEnvelope, faLink } from "@fortawesome/free-solid-svg-icons";
 
 // Import components
 import Header from "../components/Header";
@@ -41,17 +41,20 @@ const About = () => {
 
 			{/* Title Intro */}
 			<section id="about-goal" className="lg:mt-20">
-				<p className="font-body font-light">
-					At Ada's Team, our goal is to{" "}
+				<p className="font-body mt-4 font-light">
+					Established in 2013, Ada's Team is a student-led Computing Science department group from the University of Alberta. 
+				</p>
+
+				<p className="font-body mt-4 font-light">
+					Our goal is to{" "}
 					<span className="font-bold">
 						promote diversity and inclusivity within technology,
 					</span>{" "}
 					empowering women, LGBTQ+, people with disabilities, and other historically underrepresented minorities within Computer Science, Software Engineering, and related fields.
 				</p>
 
-				<p className="font-body mt-4 font-bold">
-					We embrace and celebrate your differences, striving to foster an inclusive culture and
-					safe space for everyone to collaborate and thrive in.
+				<p className="font-body mt-4 font-light">
+					We focus on creating opportunities, supporting career growth and discovery, and building community to support and uplift underrepresented groups.
 				</p>
 			</section>
 
@@ -201,6 +204,12 @@ const Initiative = ({ name, image, description, contact }) => (
 			{contact["email"] && (
 				<a href={contact["email"]} className="text-3xl" rel="noreferrer" target="_blank">
 					<FontAwesomeIcon icon={faEnvelope} />
+				</a>
+			)}
+
+			{contact["calendar"] && (
+				<a href={contact["calendar"]} className="text-3xl" rel="noreferrer" target="_blank">
+					<FontAwesomeIcon icon={faCalendar} />
 				</a>
 			)}
 		</div>

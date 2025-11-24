@@ -6,8 +6,8 @@ import "aos/dist/aos.css";
 import { Link } from "react-scroll";
 
 // Import components
-import JoinForm from "../components/JoinForm";
 import Header from "../components/Header";
+import JoinForm from "../components/JoinForm";
 
 // Import assets
 import BigBot from "../assets/img/AdaBot/ada-home-bot.png";
