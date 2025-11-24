@@ -27,18 +27,6 @@ const Connect = () => {
 			icon: faEnvelope,
 		},
 		{
-			name: "Facebook",
-			handle: "AdasTeamFB",
-			link: "https://www.facebook.com/AdasTeamFB/",
-			icon: ["fab", "facebook"],
-		},
-		{
-			name: "Twitter",
-			handle: "@adas_team",
-			link: "https://twitter.com/adas_team?lang=en",
-			icon: ["fab", "twitter"],
-		},
-		{
 			name: "Instagram",
 			handle: "@adas_team",
 			link: "https://www.instagram.com/adas_team/",
