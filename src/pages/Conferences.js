@@ -6,7 +6,6 @@ import ReactMarkdown from "react-markdown";
 import Header from "../components/Header";
 
 // Import assets
-import events_image from "../assets/img/PageHeaders/events.svg";
 import conferences from "../static/conferences.json";
 import conference_image from "../assets/img/PageHeaders/conference.svg";
 
