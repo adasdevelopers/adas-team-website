@@ -6,6 +6,7 @@ import { faMap } from "@fortawesome/free-solid-svg-icons";
 
 // Import components
 import Header from "../components/Header";
+import JoinForm from "../components/JoinForm";
 
 // Import assets
 import main_icon from "../assets/img/AdaBot/icon_head.png";
