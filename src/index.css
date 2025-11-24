@@ -145,64 +145,6 @@
 			transform: rotate(-1turn);
 		}
 	}
-	/* Make EO wrappers fill the host width but keep the card centered */
-	.eo-scope .emailoctopus-form-wrapper,
-	.eo-scope .main-form,
-	.eo-scope form.emailoctopus-form {
-		width: 100% !important;
-		max-width: 100% !important;   /* respect the host's max-w-* */
-		margin-left: auto !important; /* center if EO sets margins */
-		margin-right: auto !important;
-		box-sizing: border-box !important;
-		/* (optional) card look — keep if you want your blue background here */
-		/* background: #deeffc !important;
-           border-radius: 24px !important;
-           padding: 24px !important;
-           box-shadow: 0 2px 8px rgba(0,0,0,.06) !important; */
-	}
-
-	/* Turn the fields container into a responsive grid */
-	.eo-scope .eo-form-fields-container {
-		display: grid !important;              /* overrides EO's inline flex */
-		grid-template-columns: 1fr !important;
-		gap: 1rem !important;
-	}
-	@media (min-width: 768px) {
-		.eo-scope .eo-form-fields-container {
-			grid-template-columns: 1fr 1fr !important;
-		}
-	}
-
-	/* Email (first row) spans both columns */
-	.eo-scope .eo-form-fields-container > .emailoctopus-form-row:first-child {
-		grid-column: 1 / -1 !important;
-	}
-
-	/* Actions (submit) spans both columns */
-	.eo-scope .emailoctopus-form-actions {
-		grid-column: 1 / -1 !important;
-		width: 100% !important;
-	}
-
-	/* Inputs/selects stretch within each row */
-	.eo-scope input,
-	.eo-scope select,
-	.eo-scope textarea {
-		width: 100% !important;
-	}
-
-	/* ---- Row-specific styling (YES, you can style each row) ---- */
-	/* Row 2 = First name, Row 3 = Last name (from your screenshot) */
-	.eo-scope .eo-form-fields-container > .emailoctopus-form-row:nth-child(2) { /* First name */
-		/* example: add right margin on md+ */
-	}
-	.eo-scope .eo-form-fields-container > .emailoctopus-form-row:nth-child(3) { /* Last name */
-		/* example: add left margin on md+ */
-	}
-
-	/* Row 4 = Student Affiliation, Row 5 = Faculty */
-	.eo-scope .eo-form-fields-container > .emailoctopus-form-row:nth-child(4) { /* Affiliation */ }
-	.eo-scope .eo-form-fields-container > .emailoctopus-form-row:nth-child(5) { /* Faculty */ }
 }
 
 /* Custom shape and fixed image sizes */
