@@ -1,9 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.2a542b27.css",
-    "main.js": "/static/js/main.3cef8615.js",
+    "main.css": "/static/css/main.876f55c8.css",
+    "main.js": "/static/js/main.ecd52461.js",
     "static/js/422.ccc6a229.chunk.js": "/static/js/422.ccc6a229.chunk.js",
-    "static/media/jobboard.svg": "/static/media/jobboard.0dacfb36087154d76b5f0b86db3fa151.svg",
     "static/media/icon_head.png": "/static/media/icon_head.a26542351fdd482c8c40.png",
     "static/media/events.svg": "/static/media/events.c2f6282e23a9810744bfb7d76e0d7b6d.svg",
     "static/media/ada-home-bot.png": "/static/media/ada-home-bot.5838c72a75fc76f0f63a.png",
@@ -11,14 +10,14 @@
     "static/media/about.svg": "/static/media/about.91b58831bdf2bfd5143ddf60dd2b135c.svg",
     "static/media/join.svg": "/static/media/join.8c3245b519f526a0ad7a1831aced7ee4.svg",
     "static/media/connect.svg": "/static/media/connect.0f7363e62b37041de44a5af6230e70b5.svg",
+    "static/media/conference.svg": "/static/media/conference.a92fcf6faa4229491edf086e66f6eac0.svg",
     "index.html": "/index.html",
-    "static/media/blank.svg": "/static/media/blank.03f4b2a1ea1dba2e3014a99a07952b7e.svg",
-    "main.2a542b27.css.map": "/static/css/main.2a542b27.css.map",
-    "main.3cef8615.js.map": "/static/js/main.3cef8615.js.map",
+    "main.876f55c8.css.map": "/static/css/main.876f55c8.css.map",
+    "main.ecd52461.js.map": "/static/js/main.ecd52461.js.map",
     "422.ccc6a229.chunk.js.map": "/static/js/422.ccc6a229.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2a542b27.css",
-    "static/js/main.3cef8615.js"
+    "static/css/main.876f55c8.css",
+    "static/js/main.ecd52461.js"
   ]
 }
