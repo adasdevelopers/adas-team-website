@@ -2,7 +2,7 @@
 	{
 		"role": "President",
 		"name": "Selena Chainani",
-		"description": "Hi! As president, my role is to oversee our team in various initiatives and events. I lead the team to ensure we’re always supporting the needs and interests of our members!",
+		"description": "Hello there! As President, I help set the club’s direction, chair executive meetings, coordinate agendas, support executives in their roles, and keep club initiatives moving! That, and some administrative stuff. When I’m not working, you can find me making fanart for several fandoms at once, playing video games, or making video games!",
 		"contact": {
 			"LinkedIn": "https://www.linkedin.com/in/selena-chainani-792208249/",
 			"Other": "mailto:chainani@ualberta.ca"
@@ -50,6 +50,16 @@
 			"Other": "mailto:alabar@ualberta.ca"
 		},
 		"image": "/Execs/Arien_Alabar.jpg"
+	},
+	{
+		"role": "VP Publicity",
+		"name": "Sai Vashnavi Jattu",
+		"description": " As VP Publicity, I lead the promotion plan and social media presence for Ada's Team — from Instagram posts and Discord announcements to LinkedIn and outreach to other clubs! I also work closely with our Event Organizers and VP Digital Media to make sure everything gets the spotlight it deserves.",
+		"contact": {
+			"LinkedIn": "https://www.linkedin.com/in/saijattu/",
+			"Other": "mailto:jattu@ualberta.ca"
+		},
+		"image": "/Execs/Sai_Vashnavi_Jattu.jpg"
 	},
 	{
 		"role": "VP Finance",
