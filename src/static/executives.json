@@ -31,6 +31,18 @@
 		},
 		"image": "/Execs/Kashish_Gupta.jpg"
 	},
+
+	{
+		"role": "VP Campus Outreach",
+		"name": "Jasmine Switzer ",
+		"description": "As VP Campus outreach, I help with the planning of campus events and relations for Ada’s Team! I am on the cheerleading team and love to bake!",
+		"contact": {
+			"LinkedIn": " https://www.linkedin.com/in/jasmine-switzer/",
+			"Other": "mailto:Jaswitze@ualberta.ca"
+
+		},
+		"image": "/Execs/Jasmine_Switzer.jpg"
+	},
 	{
 		"role": "VP Communications",
 		"name": "Ipsa Manhas",
