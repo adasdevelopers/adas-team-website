@@ -4,7 +4,7 @@
 		"contact": {
 			"email": "mailto:adasteam@ualberta.ca"
 		},
-		"image": "https://firebasestorage.googleapis.com/v0/b/adas-website-345a1.appspot.com/o/Initiative%20Images%2Fadas_conferences.png?alt=media&token=e77950a3-3b1a-4356-8a9b-b71076ff5d87",
+		"image": "/Initiatives/adas_conferences.png",
 		"description": "Providing fully-funded opportunities for students to attend conferences representing Ada's Team, such as the Grace Hopper Celebration, the Canadian Celebration of Women in Computing, or QueerTech Qonference."
 	},
 	{
@@ -14,7 +14,7 @@
 			"email": "mailto:adasteam@ualberta.ca",
 			"calendar": "https://calendar.google.com/calendar/embed?src=v9j8ohim8qc5g8af4bfm5409ac%40group.calendar.google.com&ctz=America%2FEdmonton"
 		},
-		"image": "https://firebasestorage.googleapis.com/v0/b/adas-website-345a1.appspot.com/o/Initiative%20Images%2Fadas_students.png?alt=media&token=66f0ac7a-b7c8-49a1-bbc3-54e9a07f21d4",
+		"image": "/Initiatives/adas_students.png",
 		"description": "Get free virtual or in-person tutoring for CMPUT, MATH, and STAT courses. Click the calendar below to view tutor availability or join our discord to ask any questions."
 	},
 	{
@@ -22,7 +22,7 @@
 		"contact": {
 			"email": "mailto:adasteam@ualberta.ca"
 		},
-		"image": "https://firebasestorage.googleapis.com/v0/b/adas-website-345a1.appspot.com/o/Initiative%20Images%2Fadas_mentors.png?alt=media&token=127e7c10-cfa2-4061-b05b-2e3bc4bd57d9",
+		"image": "/Initiatives/adas_mentors.png",
 		"description": "Supporting students’ academic and career growth through mentorship with industry professionals and upper-year students."
 	},
 	{
@@ -30,7 +30,7 @@
 		"contact": {
 			"email": "mailto:adasteam@ualberta.ca"
 		},
-		"image": "https://firebasestorage.googleapis.com/v0/b/adas-website-345a1.appspot.com/o/Initiative%20Images%2Fadas_developers.png?alt=media&token=b8a08a65-bbda-4335-8dbb-472425b521df",
+		"image": "/Initiatives/adas_developers.png",
 		"description": "Open-source technical opportunities within an agile team to prepare students for entering the tech industry."
 	}
 ]
