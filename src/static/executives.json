@@ -1,103 +1,117 @@
 [
 	{
 		"role": "President",
-		"name": "Caly Zheng",
-		"description": "Hi! As president, my role is to oversee our team in various initiatives and events. I lead the team to ensure we’re always supporting the needs and interests of our members!",
+		"name": "Selena Chainani",
+		"description": "Hello there! As President, I help set the club’s direction, chair executive meetings, coordinate agendas, support executives in their roles, and keep club initiatives moving! That, and some administrative stuff. When I’m not working, you can find me making fanart for several fandoms at once, playing video games, or making video games!",
 		"contact": {
-			"LinkedIn": "https://www.linkedin.com/in/calyzheng",
-			"Other": "mailto:cjzheng@ualberta.ca"
+			"LinkedIn": "https://www.linkedin.com/in/selena-chainani-792208249/",
+			"Other": "mailto:chainani@ualberta.ca"
 		},
-		"image": "/Execs/CalyZheng.jpg"
+		"image": "/Execs/Selena_Chainani.jpg"
 	},
+
 	{
 		"role": "VP Administration",
-		"name": "Mark Maligalig",
-		"description": "Hi y’all, as VP Admin, I work to support our internal communications and help organize our initiatives. In my free time, I enjoy watching drag shows and going to the gym!",
+		"name": "MacKenzie Luong",
+		"description": "As VP Admin, I help with internal logistics and planning for Ada's Team! In my free time, I play games (Minecraft phase rn) and draw!",
 		"contact": {
-			"LinkedIn": "https://linkedin.com/in/mark-maligalig",
-			"Github": "https://github.com/mark8m",
-			"Other": "mailto:maligali@ualberta.ca"
+			"LinkedIn": "https://www.linkedin.com/in/mackenzie-luong/",
+			"Other": "mailto:mackenz3@ualberta.ca"
 		},
-		"image": "/Execs/MarkMaligalig.jpg"
+		"image": "/Execs/MacKenzie_Luong.jpg"
 	},
 	{
 		"role": "VP Academics",
 		"name": "Kashish Gupta",
-		"description": "Hi! As VP Academic, I help organize Ada’s Base office hours and tutoring services to support students in their courses. I also gather feedback on academic challenges and help improve the student experience. I also love to read books and travel!",
+		"description": "Hi! As VP Academic, I help organize Ada’s Base office hours and tutoring services to support students in their courses. also manage the mentorship program where we connect undergraduates with upper-year students or industry professionals. In my free time, I also love to read books and travel!",
 		"contact": {
 			"LinkedIn": "linkedin.com/in/kashish-gupta-72668320b/",
 			"Other": "mailto:kgupta5@ualberta.ca"
 
 		},
-		"image": "/Execs/KashishGupta.jpg"
+		"image": "/Execs/Kashish_Gupta.jpg"
+	},
+
+	{
+		"role": "VP Campus Outreach",
+		"name": "Jasmine Switzer ",
+		"description": "As VP Campus outreach, I help with the planning of campus events and relations for Ada’s Team! I am on the cheerleading team and love to bake!",
+		"contact": {
+			"LinkedIn": " https://www.linkedin.com/in/jasmine-switzer/",
+			"Other": "mailto:Jaswitze@ualberta.ca"
+
+		},
+		"image": "/Execs/Jasmine_Switzer.jpg"
 	},
 	{
 		"role": "VP Communications",
-		"name": "Melrita Cyriac",
-		"description": "Hi! As VP Communications, I’m responsible for promoting our amazing events across multiple platforms and serving as the main point of contact for our email communications. Feel free to reach out :)",
+		"name": "Ipsa Manhas",
+		"description": "As VP Communications, I send out monthly newsletters, keep track of the active members on the mailing list, and go over the emails. In my free time, I love journaling, listening to music, and trying out new matcha spots!",
 		"contact": {
-			"LinkedIn": "https://www.linkedin.com/in/melrita-cyriac/",
-			"Other": "mailto:melritac@ualberta.ca"
+			"LinkedIn": "https://www.linkedin.com/in/ipsa-manhas/",
+			"Other": "mailto:imanhas@ualberta.ca.ca"
 		},
-		"image": "/Execs/MelritaCyriac.jpg"
+		"image": "/Execs/Ipsa_Manhas.jpg"
 	},
 	{
 		"role": "VP Digital Media",
-		"name": "Selena Chainani",
-		"description": "As VP Digital Media, I’m the one behind the creation of most of the graphics, posters and promotional material you’ll come across! My work involves maintaining our website and social media. When I’m not here or studying, you can probably find me gaming (currently nursing a Risk of Rain 2 addiction), or making stuff in general - art, prose, music, you name it.",
+		"name": "Arien Alabar",
+		"description": "As VP Digital Media, I’m currently in charge of the assets of Ada’s Team, making new designs and informing everyone of new Ada’s Team events! In my free time you’ll catch me cafe hopping or doing photography.",
 		"contact": {
-			"LinkedIn": "linkedin.com/in/selena-chainani-792208249",
-			"Other": "mailto:chainani@ualberta.ca"
+			"LinkedIn": "https://www.linkedin.com/in/arienalabar",
+			"Other": "mailto:alabar@ualberta.ca"
 		},
-		"image": "/Execs/SelenaChainani.jpg"
+		"image": "/Execs/Arien_Alabar.jpg"
+	},
+	{
+		"role": "VP Publicity",
+		"name": "Sai Vashnavi Jattu",
+		"description": " As VP Publicity, I lead the promotion plan and social media presence for Ada's Team — from Instagram posts and Discord announcements to LinkedIn and outreach to other clubs! I also work closely with our Event Organizers and VP Digital Media to make sure everything gets the spotlight it deserves.",
+		"contact": {
+			"LinkedIn": "https://www.linkedin.com/in/saijattu/",
+			"Other": "mailto:jattu@ualberta.ca"
+		},
+		"image": "/Execs/Sai_Vashnavi_Jattu.jpg"
 	},
 	{
 		"role": "VP Finance",
 		"name": "Aara Likun Vanatia",
-		"description": "Hi!! As VP Finance I document yearly spendings, manage reimbursements and look after grant approvals for funding our really cool events/conferences :)",
+		"description": "As VP Finance, I look after planning budgets for events, applying for various grants and looking after reimbursements. In my free time you’ll find me watching food vlogs, reading books or hunting down my next food spot.",
 		"contact": {
+			"LinkedIn": "https://www.linkedin.com/in/aara-vanatia/",
 			"Other": "mailto:vanatia@ualberta.ca"
 		},
-		"image": "/Execs/AaraVanatia.jpg"
+		"image": "/Execs/Aara_Vanatia.jpg"
 	},
-	{
-		"role": "VP Campus Outreach",
-		"name": "Mackenzie Luong",
-		"description": "As VP Campus Outreach, I handle collaborations with other student groups and campus initiatives and host fun events! In my free time, I enjoy gaming (currently in my Terraria phase), drawing, and making jewelry.",
-		"contact": {
-			"LinkedIn": "https://www.linkedin.com/in/mackenzie-luong/",
-			"Other": "mailto:mackenz3@ualberta.ca"
-		},
-		"image": "/Execs/MackenzieLuong.jpg"
-	},
+	
 	{
 		"role": "VP Industry Outreach",
-		"name": "Angela Solanki",
-		"description": "Hey guys! As VP Industry Outreach, I help maintain relationships with companies and industry folks, as well as host fun events (such as Coffee&&Code)! In my free time you can probably find me building legos :-)",
+		"name": "Melrita Cyriac",
+		"description": "As Industry Outreach, I help out with the coffee&codes as well as serving as a communication link between members and industry folks!",
 		"contact": {
-			"LinkedIn": "http://linkedin.com/in/angela-solanki",
-			"Other": "mailto:aasolank@ualberta.ca"
+			"LinkedIn": "https://www.linkedin.com/in/melrita-cyriac/",
+			"Other": "mailto:melritac@ualberta.ca"
 		},
-		"image": "/Execs/AngelaSolanki.jpg"
+		"image": "/Execs/Melrita_Cyriac.jpg"
 	},
 	{
 		"role": "VP Conference Operations",
-		"name": "Ravinder Kaur",
-		"description": "Hi! As VP Conference Operations, I handle behind-the-scenes logistics like booking accommodations and making sure everything runs smoothly at our conferences. I love organizing travel almost as much as I love going on trips myself!",
+		"name": "Ria Ahir",
+		"description": " As VP Conference Operations, I help coordinate travel, accommodations, and all the behind the scenes logistics to make attending conferences as smooth as possible! In my free time, I enjoy listening to music and going on long walks.",
 		"contact": {
-			"LinkedIn": "https://www.linkedin.com/in/ravinder-kaur-8a6587164/",
-			"Other": "mailto:rk6@ualberta.ca"
+			"LinkedIn": "https://www.linkedin.com/in/ria-ahir/",
+			"Other": "mailto:rahir@ualberta.ca"
 		},
-		"image": "/Execs/RavinderKaur.jpg"
+		"image": "/Execs/Ria_Ahir.jpg"
 	},
 	{
 		"role": "VP Conference Finance",
 		"name": "Samia Rahman",
-		"description": "Hi! As VP Conference - Finance, I manage all financial aspects for our fun conferences, from grant applications to student reimbursements! In my free time, I love trying out new restaurants and traveling :)",
+		"description": "As VP Conference - Finance, I look after all the budget and grants that go towards conferences! In my free time you’ll find me at some Matcha pop-up or vintage market pop-up!",
 		"contact": {
 			"LinkedIn": "https://linkedin.com/in/samia-rahman-3264281b2/",
 			"Other": "mailto:samia5@ualberta.ca"
 		},
-		"image": "/Execs/SamiaRahman.jpg"
+		"image": "/Execs/Samia_Rahman.jpg"
 	}
 ]

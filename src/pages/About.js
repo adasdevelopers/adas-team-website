@@ -91,7 +91,7 @@ const About = () => {
 			<section id="executive-team">
 				<div className="divider-thick mt-16 mb-8" aria-hidden />
 				<h2>MEET THE TEAM</h2>
-				<p className="font-title text-pink text-2xl mb-8">2025-2026</p>
+				<p className="font-title text-pink text-2xl mb-8">2026-2027</p>
 
 				<div>
 					{executives &&
